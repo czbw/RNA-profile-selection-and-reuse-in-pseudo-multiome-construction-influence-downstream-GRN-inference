@@ -4,6 +4,7 @@ Module membership is supplied explicitly. Historical decision-rule fields are
 retained for output compatibility; the current 55-member selection is post hoc."""
 import argparse
 import json
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -30,6 +31,10 @@ def main():
                     help="basename of the NULL B pool to use; defaults to --tag. Only set this "
                          "for the frozen-old-module reproduction check.")
     ap.add_argument("--out-suffix", default=None)
+    ap.add_argument("--out-dir", type=Path, default=None,
+                    help="Result directory; defaults to the arm's output directory.")
+    ap.add_argument("--pool-dir", type=Path, default=None,
+                    help="Directory containing the pre-scored random-gene pools.")
     ap.add_argument("--nullb-name-fmt", default="nullB_pool_{tag}_{vocab}.npz",
                     help="filename pattern for the NULL B pool; the default is the re-drawn, "
                          "size-matched pool. Set to 'nullB_pool_{vocab}.npz' ONLY for the "
@@ -41,7 +46,9 @@ def main():
     log = lambda m: print(f"[test:{tag}] {m}", flush=True)
 
     M = C.resolve_module(a.module, a.arm)
-    OUT = C.out_dir(a.arm)
+    OUT = a.out_dir or C.out_dir(a.arm)
+    POOL = a.pool_dir or C.out_dir(a.arm)
+    OUT.mkdir(parents=True, exist_ok=True)
     module_regulons, background_regulons = M["regulons"], M["background"]
     st, pairs, patients, nbm = C.load_pairs(a.arm)
     log(f"{M['name']} {len(module_regulons)} regulons / {M['n_TFs']} TFs | arm vocabulary '{M['arm']}' | "
@@ -70,13 +77,13 @@ def main():
         for p, v in zip(patients, d):
             delta_rows.append(dict(vocabulary=vocab, patient=p, delta=v))
 
-        # ---- NULL A ----
+        # Sign flips are tested in both directions around zero.
         r2 = np.random.default_rng(C.SEED)
         nullA = np.array([np.mean(d * r2.choice([-1.0, 1.0], size=len(d))) for _ in range(N_DRAWS)])
         pA = float((np.sum(np.abs(nullA) >= abs(obs)) + 1) / (N_DRAWS + 1))
 
-        # ---- NULL B (size-matched pool) ----
-        z = np.load(OUT / a.nullb_name_fmt.format(tag=nbtag, vocab=vocab), allow_pickle=True)
+        # Random targets and modules are compared in the upper tail.
+        z = np.load(POOL / a.nullb_name_fmt.format(tag=nbtag, vocab=vocab), allow_pickle=True)
         pool, pool_samples = z["pool"], list(z["samples"])
         if pool.shape[1] != len(module_regulons):
             raise SystemExit(f"[test] NULL B pool has {pool.shape[1]} slots but the module has "
@@ -95,9 +102,9 @@ def main():
             sel = pool[:, np.arange(pool.shape[1]), pick]
             m = (sel * sg).mean(axis=1)
             nullB[b] = np.mean((m[idx_rl] - m[idx_dx]) - offd * sg.mean())
-        pB = float((np.sum(np.abs(nullB) >= abs(obs)) + 1) / (N_DRAWS + 1))
+        pB = float((np.sum(nullB >= obs) + 1) / (N_DRAWS + 1))
 
-        # ---- NULL C (random modules of the SAME size from the background) ----
+        # Random modules retain each sampled regulon's pediatric orientation.
         Cm = S.values - S.values.mean(axis=1, keepdims=True)
         allsg = np.array([signs[r] for r in S.columns], dtype=float)
         six = {s: i for i, s in enumerate(S.index)}
@@ -109,12 +116,20 @@ def main():
             pick = r4.choice(Cm.shape[1], size=len(module_regulons), replace=False)
             m = (Cm[:, pick] * allsg[pick]).mean(axis=1)
             nullC[b] = np.mean(m[a_rl] - m[a_dx])
-        pC = float((np.sum(np.abs(nullC) >= abs(obs)) + 1) / (N_DRAWS + 1))
+        pC = float((np.sum(nullC >= obs) + 1) / (N_DRAWS + 1))
+
+        pd.DataFrame({"draw": np.arange(1, N_DRAWS + 1),
+                      "null_A": nullA, "null_B": nullB, "null_C": nullC}).to_csv(
+            OUT / f"null_draws_{suffix}_{vocab}.csv", index=False)
 
         res["nulls_used"][vocab] = {
             "nullA_label_permutation": {"n_draws": N_DRAWS, "seed": C.SEED,
+                                        "alternative": "two-sided",
+                                        "extreme_rule": "abs(T_b) >= abs(T_observed)",
                                         "unit": f"sign flip of each of {len(patients)} patient deltas"},
             "nullB_random_gene_sets": {"n_draws": N_DRAWS, "seed": C.SEED + 1,
+                                       "alternative": "greater",
+                                       "extreme_rule": "T_b >= T_observed",
                                        "n_slots": int(pool.shape[1]),
                                        "sets_per_slot": int(pool.shape[2]),
                                        "n_random_gene_sets_scored": int(pool.shape[1] * pool.shape[2]),
@@ -123,6 +138,8 @@ def main():
                                        "slot_sizes_median": float(np.median(z["sizes"])),
                                        "size_matched_to": f"{len(module_regulons)}-regulon module {M['name']}"},
             "nullC_random_regulon_modules": {"n_draws": N_DRAWS, "seed": C.SEED + 2,
+                                             "alternative": "greater",
+                                             "extreme_rule": "T_b >= T_observed",
                                              "module_size_drawn": len(module_regulons),
                                              "background_pool": len(background_regulons)}}
 
@@ -144,13 +161,19 @@ def main():
              "frac_patients_positive": float((d > 0).mean()),
              "p_wilcoxon": float(w.pvalue),
              "nullA_label_permutation": {"mean": float(nullA.mean()), "sd": float(nullA.std()),
+                                         "alternative": "two-sided",
+                                         "n_extreme": int(np.sum(np.abs(nullA) >= abs(obs))),
                                          "p_empirical": pA},
              "nullB_random_gene_sets": {"mean": float(nullB.mean()), "sd": float(nullB.std()),
+                                        "alternative": "greater",
+                                        "n_extreme": int(np.sum(nullB >= obs)),
                                         "p_empirical": pB},
              "nullC_random_regulon_modules": {"mean": float(nullC.mean()), "sd": float(nullC.std()),
+                                              "alternative": "greater",
+                                              "n_extreme": int(np.sum(nullC >= obs)),
                                               "p_empirical": pC,
                                               "percentile_of_observed":
-                                                  float(stats.percentileofscore(np.abs(nullC), abs(obs)))},
+                                                  float(stats.percentileofscore(nullC, obs))},
              "sensitivities": sens,
              "raw_scale": {"mean_delta": float(draw.mean()),
                            "frac_positive": float((draw > 0).mean()),
