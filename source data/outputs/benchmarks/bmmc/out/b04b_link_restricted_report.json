@@ -1,0 +1,4681 @@
+{
+ "n_cells": 69249,
+ "n_shared_genes": 11461,
+ "n_hvg": 2000,
+ "n_pcs": 50,
+ "top_singular_value": 5556034.5,
+ "reduction": "cca (matrix-free svds) \u2014 identical construction to prep_04_link.py",
+ "reproduction_gate": {
+  "checked_against": "arm_link_seed555.csv",
+  "statistic": "per-cell equality of the UNRESTRICTED greedy nearest neighbour implied by the re-derived space",
+  "n_cells_compared": 69249,
+  "n_disagreements": 0,
+  "passed": true
+ },
+ "block_squareness": {
+  "link_x_donor": {
+   "block_definition": "donor",
+   "block_columns": [
+    "donor"
+   ],
+   "n_blocks": 10,
+   "all_blocks_square": true,
+   "sizes_sum_to_n_cells": true,
+   "min_block_size": 1679,
+   "max_block_size": 18467,
+   "median_block_size": 6425.5,
+   "n_blocks_le_10": 0,
+   "n_blocks_le_25": 0,
+   "cells_in_blocks_le_10": 0,
+   "cells_in_blocks_le_25": 0,
+   "random_within_block_expected_exact_accuracy": 0.0001444064174211902,
+   "per_block": {
+    "donor1": {
+     "n_atac": 18467,
+     "n_rna": 18467,
+     "square": true
+    },
+    "donor10": {
+     "n_atac": 6781,
+     "n_rna": 6781,
+     "square": true
+    },
+    "donor2": {
+     "n_atac": 6740,
+     "n_rna": 6740,
+     "square": true
+    },
+    "donor3": {
+     "n_atac": 8604,
+     "n_rna": 8604,
+     "square": true
+    },
+    "donor4": {
+     "n_atac": 6111,
+     "n_rna": 6111,
+     "square": true
+    },
+    "donor5": {
+     "n_atac": 4895,
+     "n_rna": 4895,
+     "square": true
+    },
+    "donor6": {
+     "n_atac": 1679,
+     "n_rna": 1679,
+     "square": true
+    },
+    "donor7": {
+     "n_atac": 1771,
+     "n_rna": 1771,
+     "square": true
+    },
+    "donor8": {
+     "n_atac": 9876,
+     "n_rna": 9876,
+     "square": true
+    },
+    "donor9": {
+     "n_atac": 4325,
+     "n_rna": 4325,
+     "square": true
+    }
+   }
+  },
+  "link_x_celltype_donor": {
+   "block_definition": "cell type x donor",
+   "block_columns": [
+    "cell_type",
+    "donor"
+   ],
+   "n_blocks": 190,
+   "all_blocks_square": true,
+   "sizes_sum_to_n_cells": true,
+   "min_block_size": 8,
+   "max_block_size": 4089,
+   "median_block_size": 148.0,
+   "n_blocks_le_10": 2,
+   "n_blocks_le_25": 21,
+   "cells_in_blocks_le_10": 17,
+   "cells_in_blocks_le_25": 370,
+   "random_within_block_expected_exact_accuracy": 0.0027437219310026137,
+   "per_block": {
+    "B1 B|donor1": {
+     "n_atac": 688,
+     "n_rna": 688,
+     "square": true
+    },
+    "B1 B|donor10": {
+     "n_atac": 127,
+     "n_rna": 127,
+     "square": true
+    },
+    "B1 B|donor2": {
+     "n_atac": 127,
+     "n_rna": 127,
+     "square": true
+    },
+    "B1 B|donor3": {
+     "n_atac": 290,
+     "n_rna": 290,
+     "square": true
+    },
+    "B1 B|donor5": {
+     "n_atac": 123,
+     "n_rna": 123,
+     "square": true
+    },
+    "B1 B|donor6": {
+     "n_atac": 55,
+     "n_rna": 55,
+     "square": true
+    },
+    "B1 B|donor7": {
+     "n_atac": 56,
+     "n_rna": 56,
+     "square": true
+    },
+    "B1 B|donor8": {
+     "n_atac": 326,
+     "n_rna": 326,
+     "square": true
+    },
+    "B1 B|donor9": {
+     "n_atac": 98,
+     "n_rna": 98,
+     "square": true
+    },
+    "CD14+ Mono|donor1": {
+     "n_atac": 3243,
+     "n_rna": 3243,
+     "square": true
+    },
+    "CD14+ Mono|donor10": {
+     "n_atac": 1603,
+     "n_rna": 1603,
+     "square": true
+    },
+    "CD14+ Mono|donor2": {
+     "n_atac": 704,
+     "n_rna": 704,
+     "square": true
+    },
+    "CD14+ Mono|donor3": {
+     "n_atac": 1097,
+     "n_rna": 1097,
+     "square": true
+    },
+    "CD14+ Mono|donor4": {
+     "n_atac": 1140,
+     "n_rna": 1140,
+     "square": true
+    },
+    "CD14+ Mono|donor5": {
+     "n_atac": 1716,
+     "n_rna": 1716,
+     "square": true
+    },
+    "CD14+ Mono|donor6": {
+     "n_atac": 208,
+     "n_rna": 208,
+     "square": true
+    },
+    "CD14+ Mono|donor7": {
+     "n_atac": 674,
+     "n_rna": 674,
+     "square": true
+    },
+    "CD14+ Mono|donor8": {
+     "n_atac": 458,
+     "n_rna": 458,
+     "square": true
+    },
+    "CD16+ Mono|donor1": {
+     "n_atac": 526,
+     "n_rna": 526,
+     "square": true
+    },
+    "CD16+ Mono|donor10": {
+     "n_atac": 253,
+     "n_rna": 253,
+     "square": true
+    },
+    "CD16+ Mono|donor2": {
+     "n_atac": 179,
+     "n_rna": 179,
+     "square": true
+    },
+    "CD16+ Mono|donor3": {
+     "n_atac": 67,
+     "n_rna": 67,
+     "square": true
+    },
+    "CD16+ Mono|donor4": {
+     "n_atac": 177,
+     "n_rna": 177,
+     "square": true
+    },
+    "CD16+ Mono|donor5": {
+     "n_atac": 380,
+     "n_rna": 380,
+     "square": true
+    },
+    "CD16+ Mono|donor6": {
+     "n_atac": 18,
+     "n_rna": 18,
+     "square": true
+    },
+    "CD16+ Mono|donor7": {
+     "n_atac": 41,
+     "n_rna": 41,
+     "square": true
+    },
+    "CD16+ Mono|donor8": {
+     "n_atac": 99,
+     "n_rna": 99,
+     "square": true
+    },
+    "CD16+ Mono|donor9": {
+     "n_atac": 154,
+     "n_rna": 154,
+     "square": true
+    },
+    "CD4+ T activated|donor1": {
+     "n_atac": 1901,
+     "n_rna": 1901,
+     "square": true
+    },
+    "CD4+ T activated|donor10": {
+     "n_atac": 207,
+     "n_rna": 207,
+     "square": true
+    },
+    "CD4+ T activated|donor2": {
+     "n_atac": 709,
+     "n_rna": 709,
+     "square": true
+    },
+    "CD4+ T activated|donor3": {
+     "n_atac": 620,
+     "n_rna": 620,
+     "square": true
+    },
+    "CD4+ T activated|donor4": {
+     "n_atac": 385,
+     "n_rna": 385,
+     "square": true
+    },
+    "CD4+ T activated|donor5": {
+     "n_atac": 493,
+     "n_rna": 493,
+     "square": true
+    },
+    "CD4+ T activated|donor6": {
+     "n_atac": 276,
+     "n_rna": 276,
+     "square": true
+    },
+    "CD4+ T activated|donor7": {
+     "n_atac": 102,
+     "n_rna": 102,
+     "square": true
+    },
+    "CD4+ T activated|donor8": {
+     "n_atac": 684,
+     "n_rna": 684,
+     "square": true
+    },
+    "CD4+ T activated|donor9": {
+     "n_atac": 149,
+     "n_rna": 149,
+     "square": true
+    },
+    "CD4+ T naive|donor1": {
+     "n_atac": 1198,
+     "n_rna": 1198,
+     "square": true
+    },
+    "CD4+ T naive|donor10": {
+     "n_atac": 106,
+     "n_rna": 106,
+     "square": true
+    },
+    "CD4+ T naive|donor2": {
+     "n_atac": 1289,
+     "n_rna": 1289,
+     "square": true
+    },
+    "CD4+ T naive|donor3": {
+     "n_atac": 852,
+     "n_rna": 852,
+     "square": true
+    },
+    "CD4+ T naive|donor4": {
+     "n_atac": 214,
+     "n_rna": 214,
+     "square": true
+    },
+    "CD4+ T naive|donor5": {
+     "n_atac": 163,
+     "n_rna": 163,
+     "square": true
+    },
+    "CD4+ T naive|donor6": {
+     "n_atac": 58,
+     "n_rna": 58,
+     "square": true
+    },
+    "CD4+ T naive|donor7": {
+     "n_atac": 98,
+     "n_rna": 98,
+     "square": true
+    },
+    "CD4+ T naive|donor8": {
+     "n_atac": 299,
+     "n_rna": 299,
+     "square": true
+    },
+    "CD4+ T naive|donor9": {
+     "n_atac": 121,
+     "n_rna": 121,
+     "square": true
+    },
+    "CD8+ T naive|donor10": {
+     "n_atac": 366,
+     "n_rna": 366,
+     "square": true
+    },
+    "CD8+ T naive|donor3": {
+     "n_atac": 427,
+     "n_rna": 427,
+     "square": true
+    },
+    "CD8+ T naive|donor9": {
+     "n_atac": 219,
+     "n_rna": 219,
+     "square": true
+    },
+    "CD8+ T|donor1": {
+     "n_atac": 1653,
+     "n_rna": 1653,
+     "square": true
+    },
+    "CD8+ T|donor10": {
+     "n_atac": 432,
+     "n_rna": 432,
+     "square": true
+    },
+    "CD8+ T|donor2": {
+     "n_atac": 1632,
+     "n_rna": 1632,
+     "square": true
+    },
+    "CD8+ T|donor3": {
+     "n_atac": 1398,
+     "n_rna": 1398,
+     "square": true
+    },
+    "CD8+ T|donor4": {
+     "n_atac": 230,
+     "n_rna": 230,
+     "square": true
+    },
+    "CD8+ T|donor5": {
+     "n_atac": 752,
+     "n_rna": 752,
+     "square": true
+    },
+    "CD8+ T|donor6": {
+     "n_atac": 488,
+     "n_rna": 488,
+     "square": true
+    },
+    "CD8+ T|donor7": {
+     "n_atac": 110,
+     "n_rna": 110,
+     "square": true
+    },
+    "CD8+ T|donor8": {
+     "n_atac": 4089,
+     "n_rna": 4089,
+     "square": true
+    },
+    "CD8+ T|donor9": {
+     "n_atac": 805,
+     "n_rna": 805,
+     "square": true
+    },
+    "Erythroblast|donor1": {
+     "n_atac": 1749,
+     "n_rna": 1749,
+     "square": true
+    },
+    "Erythroblast|donor10": {
+     "n_atac": 391,
+     "n_rna": 391,
+     "square": true
+    },
+    "Erythroblast|donor2": {
+     "n_atac": 136,
+     "n_rna": 136,
+     "square": true
+    },
+    "Erythroblast|donor3": {
+     "n_atac": 620,
+     "n_rna": 620,
+     "square": true
+    },
+    "Erythroblast|donor4": {
+     "n_atac": 1485,
+     "n_rna": 1485,
+     "square": true
+    },
+    "Erythroblast|donor5": {
+     "n_atac": 64,
+     "n_rna": 64,
+     "square": true
+    },
+    "Erythroblast|donor6": {
+     "n_atac": 84,
+     "n_rna": 84,
+     "square": true
+    },
+    "Erythroblast|donor7": {
+     "n_atac": 31,
+     "n_rna": 31,
+     "square": true
+    },
+    "Erythroblast|donor8": {
+     "n_atac": 266,
+     "n_rna": 266,
+     "square": true
+    },
+    "Erythroblast|donor9": {
+     "n_atac": 90,
+     "n_rna": 90,
+     "square": true
+    },
+    "G/M prog|donor1": {
+     "n_atac": 341,
+     "n_rna": 341,
+     "square": true
+    },
+    "G/M prog|donor10": {
+     "n_atac": 432,
+     "n_rna": 432,
+     "square": true
+    },
+    "G/M prog|donor2": {
+     "n_atac": 27,
+     "n_rna": 27,
+     "square": true
+    },
+    "G/M prog|donor3": {
+     "n_atac": 32,
+     "n_rna": 32,
+     "square": true
+    },
+    "G/M prog|donor4": {
+     "n_atac": 92,
+     "n_rna": 92,
+     "square": true
+    },
+    "G/M prog|donor6": {
+     "n_atac": 119,
+     "n_rna": 119,
+     "square": true
+    },
+    "G/M prog|donor7": {
+     "n_atac": 8,
+     "n_rna": 8,
+     "square": true
+    },
+    "G/M prog|donor8": {
+     "n_atac": 66,
+     "n_rna": 66,
+     "square": true
+    },
+    "G/M prog|donor9": {
+     "n_atac": 86,
+     "n_rna": 86,
+     "square": true
+    },
+    "HSC|donor1": {
+     "n_atac": 230,
+     "n_rna": 230,
+     "square": true
+    },
+    "HSC|donor10": {
+     "n_atac": 291,
+     "n_rna": 291,
+     "square": true
+    },
+    "HSC|donor2": {
+     "n_atac": 33,
+     "n_rna": 33,
+     "square": true
+    },
+    "HSC|donor3": {
+     "n_atac": 146,
+     "n_rna": 146,
+     "square": true
+    },
+    "HSC|donor4": {
+     "n_atac": 100,
+     "n_rna": 100,
+     "square": true
+    },
+    "HSC|donor5": {
+     "n_atac": 20,
+     "n_rna": 20,
+     "square": true
+    },
+    "HSC|donor6": {
+     "n_atac": 38,
+     "n_rna": 38,
+     "square": true
+    },
+    "HSC|donor7": {
+     "n_atac": 34,
+     "n_rna": 34,
+     "square": true
+    },
+    "HSC|donor8": {
+     "n_atac": 108,
+     "n_rna": 108,
+     "square": true
+    },
+    "HSC|donor9": {
+     "n_atac": 72,
+     "n_rna": 72,
+     "square": true
+    },
+    "ID2-hi myeloid prog|donor1": {
+     "n_atac": 67,
+     "n_rna": 67,
+     "square": true
+    },
+    "ID2-hi myeloid prog|donor2": {
+     "n_atac": 41,
+     "n_rna": 41,
+     "square": true
+    },
+    "ILC|donor1": {
+     "n_atac": 120,
+     "n_rna": 120,
+     "square": true
+    },
+    "ILC|donor10": {
+     "n_atac": 129,
+     "n_rna": 129,
+     "square": true
+    },
+    "ILC|donor2": {
+     "n_atac": 367,
+     "n_rna": 367,
+     "square": true
+    },
+    "ILC|donor3": {
+     "n_atac": 124,
+     "n_rna": 124,
+     "square": true
+    },
+    "ILC|donor5": {
+     "n_atac": 95,
+     "n_rna": 95,
+     "square": true
+    },
+    "Lymph prog|donor1": {
+     "n_atac": 452,
+     "n_rna": 452,
+     "square": true
+    },
+    "Lymph prog|donor10": {
+     "n_atac": 231,
+     "n_rna": 231,
+     "square": true
+    },
+    "Lymph prog|donor2": {
+     "n_atac": 28,
+     "n_rna": 28,
+     "square": true
+    },
+    "Lymph prog|donor3": {
+     "n_atac": 134,
+     "n_rna": 134,
+     "square": true
+    },
+    "Lymph prog|donor4": {
+     "n_atac": 286,
+     "n_rna": 286,
+     "square": true
+    },
+    "Lymph prog|donor6": {
+     "n_atac": 15,
+     "n_rna": 15,
+     "square": true
+    },
+    "Lymph prog|donor7": {
+     "n_atac": 17,
+     "n_rna": 17,
+     "square": true
+    },
+    "Lymph prog|donor8": {
+     "n_atac": 327,
+     "n_rna": 327,
+     "square": true
+    },
+    "Lymph prog|donor9": {
+     "n_atac": 289,
+     "n_rna": 289,
+     "square": true
+    },
+    "MK/E prog|donor1": {
+     "n_atac": 298,
+     "n_rna": 298,
+     "square": true
+    },
+    "MK/E prog|donor10": {
+     "n_atac": 125,
+     "n_rna": 125,
+     "square": true
+    },
+    "MK/E prog|donor2": {
+     "n_atac": 71,
+     "n_rna": 71,
+     "square": true
+    },
+    "MK/E prog|donor3": {
+     "n_atac": 95,
+     "n_rna": 95,
+     "square": true
+    },
+    "MK/E prog|donor4": {
+     "n_atac": 33,
+     "n_rna": 33,
+     "square": true
+    },
+    "MK/E prog|donor6": {
+     "n_atac": 48,
+     "n_rna": 48,
+     "square": true
+    },
+    "MK/E prog|donor7": {
+     "n_atac": 14,
+     "n_rna": 14,
+     "square": true
+    },
+    "MK/E prog|donor8": {
+     "n_atac": 120,
+     "n_rna": 120,
+     "square": true
+    },
+    "MK/E prog|donor9": {
+     "n_atac": 80,
+     "n_rna": 80,
+     "square": true
+    },
+    "NK|donor1": {
+     "n_atac": 1984,
+     "n_rna": 1984,
+     "square": true
+    },
+    "NK|donor10": {
+     "n_atac": 545,
+     "n_rna": 545,
+     "square": true
+    },
+    "NK|donor2": {
+     "n_atac": 982,
+     "n_rna": 982,
+     "square": true
+    },
+    "NK|donor3": {
+     "n_atac": 1173,
+     "n_rna": 1173,
+     "square": true
+    },
+    "NK|donor4": {
+     "n_atac": 136,
+     "n_rna": 136,
+     "square": true
+    },
+    "NK|donor5": {
+     "n_atac": 848,
+     "n_rna": 848,
+     "square": true
+    },
+    "NK|donor6": {
+     "n_atac": 126,
+     "n_rna": 126,
+     "square": true
+    },
+    "NK|donor7": {
+     "n_atac": 256,
+     "n_rna": 256,
+     "square": true
+    },
+    "NK|donor8": {
+     "n_atac": 421,
+     "n_rna": 421,
+     "square": true
+    },
+    "NK|donor9": {
+     "n_atac": 458,
+     "n_rna": 458,
+     "square": true
+    },
+    "Naive CD20+ B|donor1": {
+     "n_atac": 1301,
+     "n_rna": 1301,
+     "square": true
+    },
+    "Naive CD20+ B|donor10": {
+     "n_atac": 421,
+     "n_rna": 421,
+     "square": true
+    },
+    "Naive CD20+ B|donor2": {
+     "n_atac": 121,
+     "n_rna": 121,
+     "square": true
+    },
+    "Naive CD20+ B|donor3": {
+     "n_atac": 526,
+     "n_rna": 526,
+     "square": true
+    },
+    "Naive CD20+ B|donor4": {
+     "n_atac": 590,
+     "n_rna": 590,
+     "square": true
+    },
+    "Naive CD20+ B|donor5": {
+     "n_atac": 105,
+     "n_rna": 105,
+     "square": true
+    },
+    "Naive CD20+ B|donor6": {
+     "n_atac": 18,
+     "n_rna": 18,
+     "square": true
+    },
+    "Naive CD20+ B|donor7": {
+     "n_atac": 190,
+     "n_rna": 190,
+     "square": true
+    },
+    "Naive CD20+ B|donor8": {
+     "n_atac": 883,
+     "n_rna": 883,
+     "square": true
+    },
+    "Naive CD20+ B|donor9": {
+     "n_atac": 897,
+     "n_rna": 897,
+     "square": true
+    },
+    "Normoblast|donor1": {
+     "n_atac": 630,
+     "n_rna": 630,
+     "square": true
+    },
+    "Normoblast|donor10": {
+     "n_atac": 129,
+     "n_rna": 129,
+     "square": true
+    },
+    "Normoblast|donor2": {
+     "n_atac": 69,
+     "n_rna": 69,
+     "square": true
+    },
+    "Normoblast|donor3": {
+     "n_atac": 147,
+     "n_rna": 147,
+     "square": true
+    },
+    "Normoblast|donor4": {
+     "n_atac": 641,
+     "n_rna": 641,
+     "square": true
+    },
+    "Normoblast|donor5": {
+     "n_atac": 17,
+     "n_rna": 17,
+     "square": true
+    },
+    "Normoblast|donor6": {
+     "n_atac": 18,
+     "n_rna": 18,
+     "square": true
+    },
+    "Normoblast|donor7": {
+     "n_atac": 9,
+     "n_rna": 9,
+     "square": true
+    },
+    "Normoblast|donor8": {
+     "n_atac": 90,
+     "n_rna": 90,
+     "square": true
+    },
+    "Normoblast|donor9": {
+     "n_atac": 30,
+     "n_rna": 30,
+     "square": true
+    },
+    "Plasma cell|donor1": {
+     "n_atac": 286,
+     "n_rna": 286,
+     "square": true
+    },
+    "Plasma cell|donor10": {
+     "n_atac": 13,
+     "n_rna": 13,
+     "square": true
+    },
+    "Plasma cell|donor2": {
+     "n_atac": 13,
+     "n_rna": 13,
+     "square": true
+    },
+    "Plasma cell|donor3": {
+     "n_atac": 25,
+     "n_rna": 25,
+     "square": true
+    },
+    "Plasma cell|donor5": {
+     "n_atac": 16,
+     "n_rna": 16,
+     "square": true
+    },
+    "Plasma cell|donor8": {
+     "n_atac": 26,
+     "n_rna": 26,
+     "square": true
+    },
+    "Proerythroblast|donor1": {
+     "n_atac": 472,
+     "n_rna": 472,
+     "square": true
+    },
+    "Proerythroblast|donor10": {
+     "n_atac": 111,
+     "n_rna": 111,
+     "square": true
+    },
+    "Proerythroblast|donor2": {
+     "n_atac": 30,
+     "n_rna": 30,
+     "square": true
+    },
+    "Proerythroblast|donor3": {
+     "n_atac": 313,
+     "n_rna": 313,
+     "square": true
+    },
+    "Proerythroblast|donor4": {
+     "n_atac": 316,
+     "n_rna": 316,
+     "square": true
+    },
+    "Proerythroblast|donor5": {
+     "n_atac": 18,
+     "n_rna": 18,
+     "square": true
+    },
+    "Proerythroblast|donor6": {
+     "n_atac": 27,
+     "n_rna": 27,
+     "square": true
+    },
+    "Proerythroblast|donor7": {
+     "n_atac": 21,
+     "n_rna": 21,
+     "square": true
+    },
+    "Proerythroblast|donor8": {
+     "n_atac": 800,
+     "n_rna": 800,
+     "square": true
+    },
+    "Proerythroblast|donor9": {
+     "n_atac": 192,
+     "n_rna": 192,
+     "square": true
+    },
+    "Transitional B|donor1": {
+     "n_atac": 809,
+     "n_rna": 809,
+     "square": true
+    },
+    "Transitional B|donor10": {
+     "n_atac": 359,
+     "n_rna": 359,
+     "square": true
+    },
+    "Transitional B|donor2": {
+     "n_atac": 40,
+     "n_rna": 40,
+     "square": true
+    },
+    "Transitional B|donor3": {
+     "n_atac": 197,
+     "n_rna": 197,
+     "square": true
+    },
+    "Transitional B|donor4": {
+     "n_atac": 185,
+     "n_rna": 185,
+     "square": true
+    },
+    "Transitional B|donor6": {
+     "n_atac": 18,
+     "n_rna": 18,
+     "square": true
+    },
+    "Transitional B|donor7": {
+     "n_atac": 30,
+     "n_rna": 30,
+     "square": true
+    },
+    "Transitional B|donor8": {
+     "n_atac": 630,
+     "n_rna": 630,
+     "square": true
+    },
+    "Transitional B|donor9": {
+     "n_atac": 542,
+     "n_rna": 542,
+     "square": true
+    },
+    "cDC2|donor1": {
+     "n_atac": 181,
+     "n_rna": 181,
+     "square": true
+    },
+    "cDC2|donor10": {
+     "n_atac": 83,
+     "n_rna": 83,
+     "square": true
+    },
+    "cDC2|donor2": {
+     "n_atac": 89,
+     "n_rna": 89,
+     "square": true
+    },
+    "cDC2|donor3": {
+     "n_atac": 188,
+     "n_rna": 188,
+     "square": true
+    },
+    "cDC2|donor4": {
+     "n_atac": 53,
+     "n_rna": 53,
+     "square": true
+    },
+    "cDC2|donor5": {
+     "n_atac": 30,
+     "n_rna": 30,
+     "square": true
+    },
+    "cDC2|donor6": {
+     "n_atac": 26,
+     "n_rna": 26,
+     "square": true
+    },
+    "cDC2|donor7": {
+     "n_atac": 25,
+     "n_rna": 25,
+     "square": true
+    },
+    "cDC2|donor8": {
+     "n_atac": 160,
+     "n_rna": 160,
+     "square": true
+    },
+    "cDC2|donor9": {
+     "n_atac": 24,
+     "n_rna": 24,
+     "square": true
+    },
+    "pDC|donor1": {
+     "n_atac": 338,
+     "n_rna": 338,
+     "square": true
+    },
+    "pDC|donor10": {
+     "n_atac": 427,
+     "n_rna": 427,
+     "square": true
+    },
+    "pDC|donor2": {
+     "n_atac": 53,
+     "n_rna": 53,
+     "square": true
+    },
+    "pDC|donor3": {
+     "n_atac": 133,
+     "n_rna": 133,
+     "square": true
+    },
+    "pDC|donor4": {
+     "n_atac": 48,
+     "n_rna": 48,
+     "square": true
+    },
+    "pDC|donor5": {
+     "n_atac": 55,
+     "n_rna": 55,
+     "square": true
+    },
+    "pDC|donor6": {
+     "n_atac": 39,
+     "n_rna": 39,
+     "square": true
+    },
+    "pDC|donor7": {
+     "n_atac": 55,
+     "n_rna": 55,
+     "square": true
+    },
+    "pDC|donor8": {
+     "n_atac": 24,
+     "n_rna": 24,
+     "square": true
+    },
+    "pDC|donor9": {
+     "n_atac": 19,
+     "n_rna": 19,
+     "square": true
+    }
+   }
+  }
+ },
+ "donor_site_structure": {
+  "donor1": {
+   "n_cells": 18467,
+   "n_sites": 3,
+   "n_batches": 3
+  },
+  "donor10": {
+   "n_cells": 6781,
+   "n_sites": 1,
+   "n_batches": 1
+  },
+  "donor2": {
+   "n_cells": 6740,
+   "n_sites": 1,
+   "n_batches": 1
+  },
+  "donor3": {
+   "n_cells": 8604,
+   "n_sites": 2,
+   "n_batches": 2
+  },
+  "donor4": {
+   "n_cells": 6111,
+   "n_sites": 1,
+   "n_batches": 1
+  },
+  "donor5": {
+   "n_cells": 4895,
+   "n_sites": 1,
+   "n_batches": 1
+  },
+  "donor6": {
+   "n_cells": 1679,
+   "n_sites": 1,
+   "n_batches": 1
+  },
+  "donor7": {
+   "n_cells": 1771,
+   "n_sites": 1,
+   "n_batches": 1
+  },
+  "donor8": {
+   "n_cells": 9876,
+   "n_sites": 1,
+   "n_batches": 1
+  },
+  "donor9": {
+   "n_cells": 4325,
+   "n_sites": 1,
+   "n_batches": 1
+  }
+ },
+ "cells_in_multi_site_donors": 27071,
+ "cells_in_multi_site_donors_pct": 0.390922612600904,
+ "graph": {
+  "forward_knn_requested": 100,
+  "reverse_knn": 15,
+  "per_family": {
+   "link_x_donor": {
+    "n_blocks": 10,
+    "n_edges_total": 6995963,
+    "permutation_fallback_needed_any_block": false,
+    "fallback_edges_in_solution_total": 0,
+    "n_solver_stalls": 3,
+    "n_blocks_not_solved_on_raw_costs": 2,
+    "n_blocks_needing_k_escalation": 0,
+    "solver_note": "a stall is scipy LAPJVsp failing to converge, not an infeasible graph; see BudgetedMatcher and out/b04b_solver_equivalence.json",
+    "per_block": {
+     "donor1": {
+      "n_cells": 18467,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 1862173,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor10": {
+      "n_cells": 6781,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 687676,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "rescaled",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "stalled"
+       },
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "rescaled",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor2": {
+      "n_cells": 6740,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 680405,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor3": {
+      "n_cells": 8604,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 867388,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor4": {
+      "n_cells": 6111,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 620234,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor5": {
+      "n_cells": 4895,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 493209,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor6": {
+      "n_cells": 1679,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 168565,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor7": {
+      "n_cells": 1771,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 181187,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor8": {
+      "n_cells": 9876,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 1001045,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "quantized",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "stalled"
+       },
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "rescaled",
+        "outcome": "stalled"
+       },
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "quantized",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "donor9": {
+      "n_cells": 4325,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 434081,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     }
+    }
+   },
+   "link_x_celltype_donor": {
+    "n_blocks": 190,
+    "n_edges_total": 6885419,
+    "permutation_fallback_needed_any_block": false,
+    "fallback_edges_in_solution_total": 0,
+    "n_solver_stalls": 3,
+    "n_blocks_not_solved_on_raw_costs": 2,
+    "n_blocks_needing_k_escalation": 0,
+    "solver_note": "a stall is scipy LAPJVsp failing to converge, not an infeasible graph; see BudgetedMatcher and out/b04b_solver_equivalence.json",
+    "per_block": {
+     "B1 B|donor1": {
+      "n_cells": 688,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 70562,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "B1 B|donor10": {
+      "n_cells": 127,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12714,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "B1 B|donor2": {
+      "n_cells": 127,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12705,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "B1 B|donor3": {
+      "n_cells": 290,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 29100,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "B1 B|donor5": {
+      "n_cells": 123,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12302,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "B1 B|donor6": {
+      "n_cells": 55,
+      "forward_knn_used": 55,
+      "reverse_knn": 15,
+      "n_edges": 3025,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 55,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "B1 B|donor7": {
+      "n_cells": 56,
+      "forward_knn_used": 56,
+      "reverse_knn": 15,
+      "n_edges": 3136,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 56,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "B1 B|donor8": {
+      "n_cells": 326,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 32966,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "B1 B|donor9": {
+      "n_cells": 98,
+      "forward_knn_used": 98,
+      "reverse_knn": 15,
+      "n_edges": 9604,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 98,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor1": {
+      "n_cells": 3243,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 326893,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor10": {
+      "n_cells": 1603,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 162374,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor2": {
+      "n_cells": 704,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 71602,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor3": {
+      "n_cells": 1097,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 110064,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor4": {
+      "n_cells": 1140,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 114739,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor5": {
+      "n_cells": 1716,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 173770,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor6": {
+      "n_cells": 208,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 20831,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor7": {
+      "n_cells": 674,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 69791,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD14+ Mono|donor8": {
+      "n_cells": 458,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 45972,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor1": {
+      "n_cells": 526,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 53555,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor10": {
+      "n_cells": 253,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 25774,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor2": {
+      "n_cells": 179,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 18140,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor3": {
+      "n_cells": 67,
+      "forward_knn_used": 67,
+      "reverse_knn": 15,
+      "n_edges": 4489,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 67,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor4": {
+      "n_cells": 177,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 17743,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor5": {
+      "n_cells": 380,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 38613,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor6": {
+      "n_cells": 18,
+      "forward_knn_used": 18,
+      "reverse_knn": 15,
+      "n_edges": 324,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 18,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor7": {
+      "n_cells": 41,
+      "forward_knn_used": 41,
+      "reverse_knn": 15,
+      "n_edges": 1681,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 41,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor8": {
+      "n_cells": 99,
+      "forward_knn_used": 99,
+      "reverse_knn": 15,
+      "n_edges": 9801,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 99,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD16+ Mono|donor9": {
+      "n_cells": 154,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 15516,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor1": {
+      "n_cells": 1901,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 191640,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor10": {
+      "n_cells": 207,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 20727,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor2": {
+      "n_cells": 709,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 71281,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor3": {
+      "n_cells": 620,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 62222,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor4": {
+      "n_cells": 385,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 38536,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "rescaled",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "stalled"
+       },
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "rescaled",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor5": {
+      "n_cells": 493,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 49372,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor6": {
+      "n_cells": 276,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 27657,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor7": {
+      "n_cells": 102,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 10200,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor8": {
+      "n_cells": 684,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 68711,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T activated|donor9": {
+      "n_cells": 149,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 14900,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor1": {
+      "n_cells": 1198,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 120240,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor10": {
+      "n_cells": 106,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 10601,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor2": {
+      "n_cells": 1289,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 130646,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor3": {
+      "n_cells": 852,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 85933,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor4": {
+      "n_cells": 214,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 21409,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor5": {
+      "n_cells": 163,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 16307,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor6": {
+      "n_cells": 58,
+      "forward_knn_used": 58,
+      "reverse_knn": 15,
+      "n_edges": 3364,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 58,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor7": {
+      "n_cells": 98,
+      "forward_knn_used": 98,
+      "reverse_knn": 15,
+      "n_edges": 9604,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 98,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor8": {
+      "n_cells": 299,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 30147,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD4+ T naive|donor9": {
+      "n_cells": 121,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12100,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T naive|donor10": {
+      "n_cells": 366,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 37205,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T naive|donor3": {
+      "n_cells": 427,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 43270,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T naive|donor9": {
+      "n_cells": 219,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 21950,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor1": {
+      "n_cells": 1653,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 166629,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor10": {
+      "n_cells": 432,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 43238,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor2": {
+      "n_cells": 1632,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 165639,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor3": {
+      "n_cells": 1398,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 141120,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor4": {
+      "n_cells": 230,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 23000,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor5": {
+      "n_cells": 752,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 75600,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor6": {
+      "n_cells": 488,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 49162,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor7": {
+      "n_cells": 110,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 11000,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor8": {
+      "n_cells": 4089,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 415529,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "quantized",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "stalled"
+       },
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "rescaled",
+        "outcome": "stalled"
+       },
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "quantized",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "CD8+ T|donor9": {
+      "n_cells": 805,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 80627,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor1": {
+      "n_cells": 1749,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 179597,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor10": {
+      "n_cells": 391,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 39553,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor2": {
+      "n_cells": 136,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 13626,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor3": {
+      "n_cells": 620,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 63263,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor4": {
+      "n_cells": 1485,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 151722,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor5": {
+      "n_cells": 64,
+      "forward_knn_used": 64,
+      "reverse_knn": 15,
+      "n_edges": 4096,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 64,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor6": {
+      "n_cells": 84,
+      "forward_knn_used": 84,
+      "reverse_knn": 15,
+      "n_edges": 7056,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 84,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor7": {
+      "n_cells": 31,
+      "forward_knn_used": 31,
+      "reverse_knn": 15,
+      "n_edges": 961,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 31,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor8": {
+      "n_cells": 266,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 26632,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Erythroblast|donor9": {
+      "n_cells": 90,
+      "forward_knn_used": 90,
+      "reverse_knn": 15,
+      "n_edges": 8100,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 90,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor1": {
+      "n_cells": 341,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 34309,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor10": {
+      "n_cells": 432,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 43690,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor2": {
+      "n_cells": 27,
+      "forward_knn_used": 27,
+      "reverse_knn": 15,
+      "n_edges": 729,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 27,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor3": {
+      "n_cells": 32,
+      "forward_knn_used": 32,
+      "reverse_knn": 15,
+      "n_edges": 1024,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 32,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor4": {
+      "n_cells": 92,
+      "forward_knn_used": 92,
+      "reverse_knn": 15,
+      "n_edges": 8464,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 92,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor6": {
+      "n_cells": 119,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 11902,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor7": {
+      "n_cells": 8,
+      "forward_knn_used": 8,
+      "reverse_knn": 8,
+      "n_edges": 64,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 8,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor8": {
+      "n_cells": 66,
+      "forward_knn_used": 66,
+      "reverse_knn": 15,
+      "n_edges": 4356,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 66,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "G/M prog|donor9": {
+      "n_cells": 86,
+      "forward_knn_used": 86,
+      "reverse_knn": 15,
+      "n_edges": 7396,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 86,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor1": {
+      "n_cells": 230,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 23211,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor10": {
+      "n_cells": 291,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 29652,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor2": {
+      "n_cells": 33,
+      "forward_knn_used": 33,
+      "reverse_knn": 15,
+      "n_edges": 1089,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 33,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor3": {
+      "n_cells": 146,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 14619,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor4": {
+      "n_cells": 100,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 10000,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor5": {
+      "n_cells": 20,
+      "forward_knn_used": 20,
+      "reverse_knn": 15,
+      "n_edges": 400,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 20,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor6": {
+      "n_cells": 38,
+      "forward_knn_used": 38,
+      "reverse_knn": 15,
+      "n_edges": 1444,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 38,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor7": {
+      "n_cells": 34,
+      "forward_knn_used": 34,
+      "reverse_knn": 15,
+      "n_edges": 1156,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 34,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor8": {
+      "n_cells": 108,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 10803,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "HSC|donor9": {
+      "n_cells": 72,
+      "forward_knn_used": 72,
+      "reverse_knn": 15,
+      "n_edges": 5184,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 72,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "ID2-hi myeloid prog|donor1": {
+      "n_cells": 67,
+      "forward_knn_used": 67,
+      "reverse_knn": 15,
+      "n_edges": 4489,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 67,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "ID2-hi myeloid prog|donor2": {
+      "n_cells": 41,
+      "forward_knn_used": 41,
+      "reverse_knn": 15,
+      "n_edges": 1681,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 41,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "ILC|donor1": {
+      "n_cells": 120,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12001,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "ILC|donor10": {
+      "n_cells": 129,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12900,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "ILC|donor2": {
+      "n_cells": 367,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 36728,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "ILC|donor3": {
+      "n_cells": 124,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12400,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "ILC|donor5": {
+      "n_cells": 95,
+      "forward_knn_used": 95,
+      "reverse_knn": 15,
+      "n_edges": 9025,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 95,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor1": {
+      "n_cells": 452,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 46257,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor10": {
+      "n_cells": 231,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 23249,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor2": {
+      "n_cells": 28,
+      "forward_knn_used": 28,
+      "reverse_knn": 15,
+      "n_edges": 784,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 28,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor3": {
+      "n_cells": 134,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 13402,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor4": {
+      "n_cells": 286,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 28778,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor6": {
+      "n_cells": 15,
+      "forward_knn_used": 15,
+      "reverse_knn": 15,
+      "n_edges": 225,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 15,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor7": {
+      "n_cells": 17,
+      "forward_knn_used": 17,
+      "reverse_knn": 15,
+      "n_edges": 289,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 17,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor8": {
+      "n_cells": 327,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 33138,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Lymph prog|donor9": {
+      "n_cells": 289,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 29147,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor1": {
+      "n_cells": 298,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 30234,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor10": {
+      "n_cells": 125,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12514,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor2": {
+      "n_cells": 71,
+      "forward_knn_used": 71,
+      "reverse_knn": 15,
+      "n_edges": 5041,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 71,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor3": {
+      "n_cells": 95,
+      "forward_knn_used": 95,
+      "reverse_knn": 15,
+      "n_edges": 9025,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 95,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor4": {
+      "n_cells": 33,
+      "forward_knn_used": 33,
+      "reverse_knn": 15,
+      "n_edges": 1089,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 33,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor6": {
+      "n_cells": 48,
+      "forward_knn_used": 48,
+      "reverse_knn": 15,
+      "n_edges": 2304,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 48,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor7": {
+      "n_cells": 14,
+      "forward_knn_used": 14,
+      "reverse_knn": 14,
+      "n_edges": 196,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 14,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor8": {
+      "n_cells": 120,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12013,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "MK/E prog|donor9": {
+      "n_cells": 80,
+      "forward_knn_used": 80,
+      "reverse_knn": 15,
+      "n_edges": 6400,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 80,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor1": {
+      "n_cells": 1984,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 199028,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor10": {
+      "n_cells": 545,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 54721,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor2": {
+      "n_cells": 982,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 99030,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor3": {
+      "n_cells": 1173,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 118809,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor4": {
+      "n_cells": 136,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 13603,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor5": {
+      "n_cells": 848,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 85449,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor6": {
+      "n_cells": 126,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12607,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor7": {
+      "n_cells": 256,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 25681,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor8": {
+      "n_cells": 421,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 42180,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "NK|donor9": {
+      "n_cells": 458,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 45892,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor1": {
+      "n_cells": 1301,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 130878,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor10": {
+      "n_cells": 421,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 42420,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor2": {
+      "n_cells": 121,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12100,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor3": {
+      "n_cells": 526,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 52875,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor4": {
+      "n_cells": 590,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 59361,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor5": {
+      "n_cells": 105,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 10500,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor6": {
+      "n_cells": 18,
+      "forward_knn_used": 18,
+      "reverse_knn": 15,
+      "n_edges": 324,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 18,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor7": {
+      "n_cells": 190,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 19101,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor8": {
+      "n_cells": 883,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 90061,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Naive CD20+ B|donor9": {
+      "n_cells": 897,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 90111,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor1": {
+      "n_cells": 630,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 65942,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor10": {
+      "n_cells": 129,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 12941,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor2": {
+      "n_cells": 69,
+      "forward_knn_used": 69,
+      "reverse_knn": 15,
+      "n_edges": 4761,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 69,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor3": {
+      "n_cells": 147,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 14855,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor4": {
+      "n_cells": 641,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 67454,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor5": {
+      "n_cells": 17,
+      "forward_knn_used": 17,
+      "reverse_knn": 15,
+      "n_edges": 289,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 17,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor6": {
+      "n_cells": 18,
+      "forward_knn_used": 18,
+      "reverse_knn": 15,
+      "n_edges": 324,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 18,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor7": {
+      "n_cells": 9,
+      "forward_knn_used": 9,
+      "reverse_knn": 9,
+      "n_edges": 81,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 9,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor8": {
+      "n_cells": 90,
+      "forward_knn_used": 90,
+      "reverse_knn": 15,
+      "n_edges": 8100,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 90,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Normoblast|donor9": {
+      "n_cells": 30,
+      "forward_knn_used": 30,
+      "reverse_knn": 15,
+      "n_edges": 900,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 30,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Plasma cell|donor1": {
+      "n_cells": 286,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 29844,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Plasma cell|donor10": {
+      "n_cells": 13,
+      "forward_knn_used": 13,
+      "reverse_knn": 13,
+      "n_edges": 169,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 13,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Plasma cell|donor2": {
+      "n_cells": 13,
+      "forward_knn_used": 13,
+      "reverse_knn": 13,
+      "n_edges": 169,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 13,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Plasma cell|donor3": {
+      "n_cells": 25,
+      "forward_knn_used": 25,
+      "reverse_knn": 15,
+      "n_edges": 625,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 25,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Plasma cell|donor5": {
+      "n_cells": 16,
+      "forward_knn_used": 16,
+      "reverse_knn": 15,
+      "n_edges": 256,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 16,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Plasma cell|donor8": {
+      "n_cells": 26,
+      "forward_knn_used": 26,
+      "reverse_knn": 15,
+      "n_edges": 676,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 26,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor1": {
+      "n_cells": 472,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 48349,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor10": {
+      "n_cells": 111,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 11109,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor2": {
+      "n_cells": 30,
+      "forward_knn_used": 30,
+      "reverse_knn": 15,
+      "n_edges": 900,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 30,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor3": {
+      "n_cells": 313,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 31773,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor4": {
+      "n_cells": 316,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 32217,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor5": {
+      "n_cells": 18,
+      "forward_knn_used": 18,
+      "reverse_knn": 15,
+      "n_edges": 324,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 18,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor6": {
+      "n_cells": 27,
+      "forward_knn_used": 27,
+      "reverse_knn": 15,
+      "n_edges": 729,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 27,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor7": {
+      "n_cells": 21,
+      "forward_knn_used": 21,
+      "reverse_knn": 15,
+      "n_edges": 441,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 21,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor8": {
+      "n_cells": 800,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 84311,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Proerythroblast|donor9": {
+      "n_cells": 192,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 19348,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor1": {
+      "n_cells": 809,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 81946,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor10": {
+      "n_cells": 359,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 36322,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor2": {
+      "n_cells": 40,
+      "forward_knn_used": 40,
+      "reverse_knn": 15,
+      "n_edges": 1600,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 40,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor3": {
+      "n_cells": 197,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 19810,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor4": {
+      "n_cells": 185,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 18567,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor6": {
+      "n_cells": 18,
+      "forward_knn_used": 18,
+      "reverse_knn": 15,
+      "n_edges": 324,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 18,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor7": {
+      "n_cells": 30,
+      "forward_knn_used": 30,
+      "reverse_knn": 15,
+      "n_edges": 900,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 30,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor8": {
+      "n_cells": 630,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 64511,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "Transitional B|donor9": {
+      "n_cells": 542,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 55006,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor1": {
+      "n_cells": 181,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 18211,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor10": {
+      "n_cells": 83,
+      "forward_knn_used": 83,
+      "reverse_knn": 15,
+      "n_edges": 6889,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 83,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor2": {
+      "n_cells": 89,
+      "forward_knn_used": 89,
+      "reverse_knn": 15,
+      "n_edges": 7921,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 89,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor3": {
+      "n_cells": 188,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 18862,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor4": {
+      "n_cells": 53,
+      "forward_knn_used": 53,
+      "reverse_knn": 15,
+      "n_edges": 2809,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 53,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor5": {
+      "n_cells": 30,
+      "forward_knn_used": 30,
+      "reverse_knn": 15,
+      "n_edges": 900,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 30,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor6": {
+      "n_cells": 26,
+      "forward_knn_used": 26,
+      "reverse_knn": 15,
+      "n_edges": 676,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 26,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor7": {
+      "n_cells": 25,
+      "forward_knn_used": 25,
+      "reverse_knn": 15,
+      "n_edges": 625,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 25,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor8": {
+      "n_cells": 160,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 16034,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "cDC2|donor9": {
+      "n_cells": 24,
+      "forward_knn_used": 24,
+      "reverse_knn": 15,
+      "n_edges": 576,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 24,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor1": {
+      "n_cells": 338,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 35151,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor10": {
+      "n_cells": 427,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 44393,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor2": {
+      "n_cells": 53,
+      "forward_knn_used": 53,
+      "reverse_knn": 15,
+      "n_edges": 2809,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 53,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor3": {
+      "n_cells": 133,
+      "forward_knn_used": 100,
+      "reverse_knn": 15,
+      "n_edges": 13388,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 100,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor4": {
+      "n_cells": 48,
+      "forward_knn_used": 48,
+      "reverse_knn": 15,
+      "n_edges": 2304,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 48,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor5": {
+      "n_cells": 55,
+      "forward_knn_used": 55,
+      "reverse_knn": 15,
+      "n_edges": 3025,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 55,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor6": {
+      "n_cells": 39,
+      "forward_knn_used": 39,
+      "reverse_knn": 15,
+      "n_edges": 1521,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 39,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor7": {
+      "n_cells": 55,
+      "forward_knn_used": 55,
+      "reverse_knn": 15,
+      "n_edges": 3025,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 55,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor8": {
+      "n_cells": 24,
+      "forward_knn_used": 24,
+      "reverse_knn": 15,
+      "n_edges": 576,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 24,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     },
+     "pDC|donor9": {
+      "n_cells": 19,
+      "forward_knn_used": 19,
+      "reverse_knn": 15,
+      "n_edges": 361,
+      "permutation_fallback_needed": false,
+      "fallback_edges_in_solution": 0,
+      "cost_form": "raw",
+      "solver_attempts": [
+       {
+        "k": 19,
+        "fallback": false,
+        "cost_form": "raw",
+        "outcome": "ok"
+       }
+      ]
+     }
+    }
+   }
+  },
+  "solver_budget_s": 90.0,
+  "worker_restarts_after_stall": 6
+ },
+ "cost_conditioning": {
+  "forms_tried_in_order": [
+   "raw",
+   "rescaled",
+   "quantized"
+  ],
+  "rescaled": "(c - min c)/(max c - min c); EXACT \u2014 every full matching uses exactly m edges, so a positive-slope affine map is strictly increasing in the matching cost and cannot reorder matchings",
+  "quantized": "the rescaled costs rounded onto a 1e+09 grid; approximate, total error over a full matching bounded by m * 0.5/GRID of the cost range (~1.2e-5 raw cost units at the largest block here, against optimal costs of order 1e4). Deterministic; no RNG.",
+  "empirical_check": "prep_04c_solver_equivalence.py re-solves every block on the raw and the conditioned costs and compares the two matchings cell by cell; verdict in out/b04b_solver_equivalence.json",
+  "why_needed": "scipy LAPJVsp does not converge on some of these graphs \u2014 measured, and not an infeasibility (maximum_bipartite_matching finds a perfect matching on the same graph in ~0.02 s). See the BudgetedMatcher docstring for the timings."
+ },
+ "seed": 555,
+ "method": "prep_04_link.py's CCA linkage with the candidate edge set restricted to within-block pairs; see module docstring",
+ "arms": {
+  "link_x_donor": {
+   "block_definition": "donor",
+   "reuse_mean_per_used_rna_cell": 1.9516106304427472,
+   "reuse_max": 65,
+   "distinct_rna_cells": 35483,
+   "pct_pool_used": 0.5123972909356092,
+   "exact_cell_accuracy": 0.007263642796285867,
+   "cross_donor_rate": 0.0,
+   "cross_site_rate": 0.1890568816878222,
+   "cross_cell_type_rate": 0.34429378041560166,
+   "random_within_block_expected_exact_accuracy": 0.0001444064174211902,
+   "file": "arm_link_x_donor_seed555.csv",
+   "row_unit": "one row per ATAC cell"
+  },
+  "link_x_donor_1to1": {
+   "block_definition": "donor",
+   "reuse_mean_per_used_rna_cell": 1.0,
+   "reuse_max": 1,
+   "distinct_rna_cells": 69249,
+   "pct_pool_used": 1.0,
+   "exact_cell_accuracy": 0.007566896272870366,
+   "cross_donor_rate": 0.0,
+   "cross_site_rate": 0.18460916403124955,
+   "cross_cell_type_rate": 0.38107409493277883,
+   "random_within_block_expected_exact_accuracy": 0.0001444064174211902,
+   "file": "arm_link_x_donor_1to1_seed555.csv",
+   "row_unit": "one row per ATAC cell"
+  },
+  "link_x_celltype_donor": {
+   "block_definition": "cell type x donor",
+   "reuse_mean_per_used_rna_cell": 2.0079157967988865,
+   "reuse_max": 80,
+   "distinct_rna_cells": 34488,
+   "pct_pool_used": 0.49802885240220074,
+   "exact_cell_accuracy": 0.014180710190760877,
+   "cross_donor_rate": 0.0,
+   "cross_site_rate": 0.17824084102297505,
+   "cross_cell_type_rate": 0.0,
+   "random_within_block_expected_exact_accuracy": 0.0027437219310026137,
+   "file": "arm_link_x_celltype_donor_seed555.csv",
+   "row_unit": "one row per ATAC cell"
+  },
+  "link_x_celltype_donor_1to1": {
+   "block_definition": "cell type x donor",
+   "reuse_mean_per_used_rna_cell": 1.0,
+   "reuse_max": 1,
+   "distinct_rna_cells": 69249,
+   "pct_pool_used": 1.0,
+   "exact_cell_accuracy": 0.015509249231035827,
+   "cross_donor_rate": 0.0,
+   "cross_site_rate": 0.17211800892431658,
+   "cross_cell_type_rate": 0.0,
+   "random_within_block_expected_exact_accuracy": 0.0027437219310026137,
+   "file": "arm_link_x_celltype_donor_1to1_seed555.csv",
+   "row_unit": "one row per ATAC cell"
+  }
+ },
+ "reference_arms_from_b04_link_report": {
+  "link": {
+   "reuse_mean_per_used_rna_cell": 1.8260422434933945,
+   "reuse_max": 65,
+   "distinct_rna_cells": 37923,
+   "pct_pool_used": 0.5476324567863796,
+   "exact_cell_accuracy": 0.002166096261317853,
+   "cross_donor_rate": 0.7648919117965602,
+   "cross_site_rate": 0.6494967436352872,
+   "cross_cell_type_rate": 0.37844589813571317
+  },
+  "link_1to1": {
+   "reuse_mean_per_used_rna_cell": 1.0,
+   "reuse_max": 1,
+   "distinct_rna_cells": 69249,
+   "pct_pool_used": 1.0,
+   "exact_cell_accuracy": 0.0020072492021545436,
+   "cross_donor_rate": 0.767650074369305,
+   "cross_site_rate": 0.6482981703706913,
+   "cross_cell_type_rate": 0.41821542549350893
+  }
+ },
+ "reference_graph_from_b04_link_report": {
+  "forward_knn_requested": 100,
+  "forward_knn_used": 100,
+  "reverse_knn": 15,
+  "n_edges": 7011833,
+  "permutation_fallback_needed": false,
+  "fallback_edges_in_solution": 0,
+  "fallback_note": "edges added at 1000x max cost purely to guarantee a perfect matching exists; a large count means the arm is not a nearest-neighbour bijection"
+ },
+ "runtime_s": 640.2
+}

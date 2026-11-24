@@ -1,0 +1,1525 @@
+[
+  {
+    "path": "analysis/pairing/aml_metacell_counts.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/aml_metacell_counts.py",
+    "source_sha256": "918b54dbb0307578dcb875db8c9081afef9875317f50bbe85756ef81797e5cd6",
+    "release_sha256": "81c23e32a8aef66a7b844691c74f8b8fd81a30f474576a16ef0b05963b47a068",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/pairing/aml_reuse_composite_key.py",
+    "copied_from": "analysis/scripts/aml_reuse_composite_key.py",
+    "source_sha256": "faec272386efc76634cbd12ec342dc95dca89e3ff859325d1f9a845a3c5b77a8",
+    "release_sha256": "9fb9f872aee2b7de1dd274ed2ea17c4e52ce9e46587e926be03bb2adab76219c",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/pairing/pairing_target_sets.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_00_sets_and_targets.py",
+    "source_sha256": "ee78205b466e03033eb0cec6a54a373088aa2e5dadddec2cf1eff190d42252fd",
+    "release_sha256": "692a4c19f597c913fdba2c21bdf5a5392e040cc689d11e964787ef609dfcaa30",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/functional/tf_families.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_01_family.py",
+    "source_sha256": "d5efda218d62f7080e947f4278d6a4f2ce88acebbfd59709697c28773d82934b",
+    "release_sha256": "a976e74ce1f1e0af3925510ab163f5be14ca367b63437437818363cb0e01951a",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/functional/pairing_enrichment.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_02_enrichment.py",
+    "source_sha256": "9552cf837e338ea85ed081b99671ee3e6ae92d4215350a1807df480adca9c362",
+    "release_sha256": "09d3767b906d667faf48d5674d471f827891ced1b3b267e6926a5eedf540e024",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/activity/celltype_profiles.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_04_celltype.py",
+    "source_sha256": "1525332183af1bb5793857968db146038977992c125fd708fb591a184580c847",
+    "release_sha256": "60ff8c5412575c2b34e66edc58811d9830464b4dbcfc3e528acac01955f021e8",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/pairing/celltype_labels.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_06_label_provenance.py",
+    "source_sha256": "4cb05470b36355f2a9aff4ad7c8bc786d543f63d5314ee617511e402d1c7cd08",
+    "release_sha256": "7ea1cc91607dccc0b545b951c10ece33544c516bf45ba50bf9792fcb17cd91ef",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/activity/shared_regulon_activity.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_07_celltype_agreement_allshared.py",
+    "source_sha256": "1376554adfcbc8c5fe18773730493ca4b756f4b5c88c59076b69d81b6fa6fd99",
+    "release_sha256": "7017e249672dff1f046f85d66a2631432e970b57088fa8ff96801991526372af",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/pairing/cell_count_sensitivity.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_08_floor_sensitivity.py",
+    "source_sha256": "8a6cb68177e9fa4bf52938f649a031bec71625fbbac925c596c1b8cc676501c9",
+    "release_sha256": "be7fdd3fd7e6665b63af465741cdafdc35f49d6296ade7c313150d180b6e6072",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/pairing/activity_target_agreement.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_09_activity_vs_target.py",
+    "source_sha256": "100afd8abd3928244200b06bde057db2f1f46294a5a9e5ca23d81672e3672900",
+    "release_sha256": "14f629df913840b8644b5f7308706b4014d43a9a95fd1755127df60b3ae95df6",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/activity/random_gene_sets.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f1_10_random_geneset_control.py",
+    "source_sha256": "d1fd43a199a9638699334da66056b07c2601336c9e4ccbdbb4fd58cba972a37e",
+    "release_sha256": "6ca5acb2f58b792b2502d363bf5f1bb4d3b15a08f696c8a000cbb8920223e231",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/activity/stratum_mean_activity.py",
+    "copied_from": "analysis/scripts/f3_01_stratum_mean_activity.py",
+    "source_sha256": "6b40b6e6e5a3073be4c523afbcf1618c9d07d23f643159ba89b2f16c34e93919",
+    "release_sha256": "e6f11301cad0413ef31ea3d4fe96d019278224da33ea48a00b18009e421c8568",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/sensitivity/exclude_maturity_markers.py",
+    "copied_from": "analysis/scripts/f5_08_module_marker_exclusion.py",
+    "source_sha256": "dd9d3b79f9bdf8836879349c237ab0a4dff721e2c5133740e6409c271f1bfc17",
+    "release_sha256": "4406a583c270d215a8eba500be8c5a8d059691c9d7d3138d572a30b0d0e3ca94",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/sensitivity/verify_marker_exclusion.py",
+    "copied_from": "analysis/scripts/f5_09_verify_module_marker_exclusion.py",
+    "source_sha256": "d22361462a021f9529ab11eebffbf38c877b27253480bb20a3e6626877c4450b",
+    "release_sha256": "395f1ba0ce85741132fa14e36f2a4841333d8db75606f90fa380c9465218737a",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/functional/regulon_characterization.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_00_per_regulon.py",
+    "source_sha256": "e9d1e8643713a7f6a46809bdba0648bf41a51321c14eaed3a6509c64a25f4d7a",
+    "release_sha256": "dce7ad72e9052f97afc2967a7bf85bc9b83aea93dc8b84a53e200e137d923c0d",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/functional/module_characterization.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_02_set55.py",
+    "source_sha256": "960291253d615b0aec464a704ac7c8ae137d38675e1bf5c7bf28f1d7359814a0",
+    "release_sha256": "38f75f66b0a53f5eff196f22168d9a84488614580953bd6a5e0f6e6cb287a46e",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/functional/module_network.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_04_network.py",
+    "source_sha256": "32c20bfc3a9b2c5bec1b5310af76fcb38d80c32a04f2f9552612d863ae7c08da",
+    "release_sha256": "0f8b857b21172787f8db7db67180e5f1814196ed6b54742ae5d47f3cb891e6ce",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/functional/ribosomal_controls.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_05_ribosome_check.py",
+    "source_sha256": "1497e4c8152130db5e927f2be8c09062e05feb26aca93cd7a603e21a53f70088",
+    "release_sha256": "d4906c2e56622724676e007b738eb826af73a339027b46a97ce7e9de7c5a84a8",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/module/patient_unit_adjustment.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_06_unit_correction.py",
+    "source_sha256": "aea66edd8f7918103ee18a0f7390fb9be0105c1ac402ad2b582b0eb21a45c9e7",
+    "release_sha256": "7e8b0c8930e4ed507132376baaa8060fd9929c31bb29abe3dac217b80569ed02",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/module/module_decomposition.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_07_decomposition_set55.py",
+    "source_sha256": "cc38dfef25a62ad8570b3fb981913fa2a9e25607b4befad8ee912c26372f69f7",
+    "release_sha256": "c07783b1335d40a39beb1e55df2ee1a4bede89d7aa35ff2d6e0d9d9882a491b6",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/module/module_figure_data.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_08_fig06_support.py",
+    "source_sha256": "81345e713a38ee937314ed60a9edd9c25fe91fe48dac183b933269a067c06207",
+    "release_sha256": "1a3ab139eb0ae940597ffb1c752d5576089547984636fcb7195c50abb2469f1c",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/functional/go_stage_comparison.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_09_go_stage_comparison.py",
+    "source_sha256": "798e3c6e57e87a6284ee5d4ebc4c2df795bf6faebd18a025daa3729090811ae1",
+    "release_sha256": "b1312881e0eaad09304ef9842f06e11a0fbeaae65b19880b4053b06c9ff8aa18",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/sensitivity/patient_omission.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/f6_10_patient_omission.py",
+    "source_sha256": "78b66bc3416c938cc40b1952175fdfe1f168d8a555306d040007d7425886738a",
+    "release_sha256": "8c749187ada8ed60d9a39ac5944ca42af1e3dd3183ab1d08331cec6e44537709",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/activity/nearest_neighbor_comparator.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/l6_ceiling_test.py",
+    "source_sha256": "7e8eb6f22f8705737bb893cbf9826ec7eeecca9c28226e6e524ab7bde4a80d53",
+    "release_sha256": "438635e3d1dbae2d83cb9e33aa89ef49c4948086c267507553c9251fc7bce7a5",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/sensitivity/report_patient_omission.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/report_patient_omission.py",
+    "source_sha256": "10d7ae0316100e068dcc69ee138f52c15e56f6e21e77932e7a1c9008f4fd2e68",
+    "release_sha256": "78f4d2bc5092cb23197272bfbbc7f290bb141861d851f018a43f60c95cf63ac1",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/sensitivity/seven_celltype_nomination.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/sens_clp7_01_nomination_and_decomposition.py",
+    "source_sha256": "4831882b088facde0ec29af13c7497551add0b803b3258122d1736cf3e42b263",
+    "release_sha256": "9ffdd3d2ceb057716e340c51c52e86d075548210dc37376ad000fc581ba72049",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/sensitivity/seven_celltype_module.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/sens_clp7_02_make_module.py",
+    "source_sha256": "ff00d5f5f3d89eaca3a2aab31b3f7f1222b4487a2c3b91ba06425a292f2d6689",
+    "release_sha256": "72cffb31386cb15dcd7ce153859b891c52f1d9837f00da812570e7ce7c000a86",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "analysis/functional/summarize_go_stage_comparison.py",
+    "copied_from": "manuscript/analysis_code/sources/analysis/scripts/summarize_go_stage_comparison.py",
+    "source_sha256": "e50ccccd00aa6805b135120f0cc70653a9b98885c85df6ac20018fe47ad5f541",
+    "release_sha256": "0d29a8ae6ca27441170ad2075858c36fcf7d52c803b8ad8a7af272b3cb34fd84",
+    "rationale": "Supplementary tables, figure inputs and intermediate gene sets or network summaries."
+  },
+  {
+    "path": "paml/corrected/run_corrected.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/run_repair.sh",
+    "source_sha256": "db141ec96770c551fb4f2765d5c4b01c47569b05780345caa618dbc6bfd3333b",
+    "release_sha256": "74e4e148a24e5261f6371b4d5118b0e4de9957428e953afac8806bdefa411243",
+    "rationale": "Job scripts for corrected pAML network inference."
+  },
+  {
+    "path": "paml/corrected/scripts/build_paired_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/build_paired_rna_repair.py",
+    "source_sha256": "c5ddd02883e5ccc89e5fcaa5df9e4d1c0177904ea33756362fb13350c652ee58",
+    "release_sha256": "f9837eceb7ec7a148a62df6bb2d7d9264fadecc73bf543f6c35a99e0bee37e26",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/scripts/common.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/common.py",
+    "source_sha256": "f04d08340390117920e84ec9fba6bc763f7331983787744d048d14067f0230d9",
+    "release_sha256": "9d32179590914dfdc94f38a93adf1a0a43dae3af94a837000415bf1f66f49223",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/scripts/config.yaml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/config.cubic.yaml",
+    "source_sha256": "f8d6b4290857b3c621fb7c01693b8659b89a2746d5749db8916cda61078ebeed",
+    "release_sha256": "f8d6b4290857b3c621fb7c01693b8659b89a2746d5749db8916cda61078ebeed",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/scripts/feasibility_census.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/p_a00_feasibility_census.py",
+    "source_sha256": "38410a07d959ce214f9c78280384921c0e5918ea7d6d5839e1f6f811a4b0879c",
+    "release_sha256": "e56e70e015d07e0df5f20dec19d605d64799a9f08af0f8cdc957fe895e8dbc41",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/scripts/capacity_assign.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/p_a01_capacity_assign.py",
+    "source_sha256": "6a7ed054837053ca62d1762702fd429420cc2c0417d4d1818f521d2977dc75d8",
+    "release_sha256": "d251233f1d570986bcc6a30f744638eb821e1a780a21ea4661e42e9da6964425",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/scripts/verify_assignment.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/p_a02_verify_assignment.py",
+    "source_sha256": "178615ce63994287f9912e0658df84e24f0dc3c271ef38742690f0d57553bb68",
+    "release_sha256": "b44fd3be58d7dea2f5c0201992910c7e7355791b2769f00242d9f5336b65cb4f",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/scripts/compare_networks.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/p_a03_t2_compare.py",
+    "source_sha256": "4b9c5170ea13415b7cf651f8982cd71e3f689fa4074088ecc26d50efbda613e7",
+    "release_sha256": "9844af0cfe843c742d31069019cd98a2472d0ee2484969f8dd9a9d8488558bbd",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/scripts/compare_activity.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/p_a04_t1_activity.py",
+    "source_sha256": "294a49949d407723d1c2894ef0a673c4741f7cfad9b84dc28c5246d2ce5b16c8",
+    "release_sha256": "5cf53f85448e874b326ec54427e428f806cf82f310658c09de2b578939b33192",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/scripts/run_grn.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/scripts/run_grn_repair.sh",
+    "source_sha256": "617cc3893c26a22364ab7a6d14ad3aa2f2e53d5b234702599bc940277a76a969",
+    "release_sha256": "617cc3893c26a22364ab7a6d14ad3aa2f2e53d5b234702599bc940277a76a969",
+    "rationale": "Corrected pAML assignment, RNA construction and network comparisons (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "paml/corrected/submit_corrected.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair/submit_repair.sh",
+    "source_sha256": "4a2d8f2b3361ce8eff23e121eb1e63ed12e8c2ca2687cb26c242da6ad45f786d",
+    "release_sha256": "ec7afdca7004635ee94aad3343f1c42daeb6d33dc6e882dedbd5646ff2f824d3",
+    "rationale": "Job scripts for corrected pAML network inference."
+  },
+  {
+    "path": "paml/healthy_corrected/run_healthy.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair_healthy/run_healthy_repair.sh",
+    "source_sha256": "727b3a38debb4923f1d25ddf55c995376c7cf4711b040e83c9774f22cda83106",
+    "release_sha256": "e1bf2dccc28664f090277cee237b296c10a0fed1374c1e60a595016e2493c4e7",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "paml/healthy_corrected/scripts/build_paired_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair_healthy/scripts/build_paired_rna_healthy_repair.py",
+    "source_sha256": "5db84088a673b0c64eeda68e11cac48dfa3dfd7232e38c097501e5a6f5303138",
+    "release_sha256": "1215bd41e3578ebf87f068ed6040f3203f800709af9a216b5310a12817b3f39d",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "paml/healthy_corrected/scripts/crossscore.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair_healthy/scripts/h_s01_healthy_crossscore.sh",
+    "source_sha256": "ae0454fcd4d274912897591540f8c301dd251dbabc1bfbcbb16b8cb7ae04d40a",
+    "release_sha256": "4978a35ccdeb2773ab8fd4b90b6b9383a060da87f00204d0b18855db05a1b7e0",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "paml/healthy_corrected/scripts/healthy_feasibility_census.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair_healthy/scripts/p_h00_healthy_feasibility_census.py",
+    "source_sha256": "bec6fc5c0257ab11feb32386cc01a51859ae5dc862b3211212f50ea93c17c26f",
+    "release_sha256": "dcf888c79cde636d1d81aa584093c79b28d30f6e9bde88bd4abb275278fd6488",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "paml/healthy_corrected/scripts/healthy_capacity_assign.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair_healthy/scripts/p_h01_healthy_capacity_assign.py",
+    "source_sha256": "bb760ee2e9e56ba2cbd2f0434f363873e9b1d54695d75e57ec06bb86e4357d90",
+    "release_sha256": "0a93133532405322d4ca09a74b68b6189e60bbd6f4a210c60a8d62ca5be98a87",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "paml/healthy_corrected/scripts/healthy_verify_assignment.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair_healthy/scripts/p_h02_healthy_verify_assignment.py",
+    "source_sha256": "fecca63678cfb8e084f143a51e932a858f2d36dff8c4436c817c1e67bbe83615",
+    "release_sha256": "0730fee0e82d87d1f2ebb3e9c72fed7ede85c4341038483ae43b86cfb8ae63d9",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "paml/healthy_corrected/submit_healthy.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_aml_repair_healthy/submit_healthy_repair.sh",
+    "source_sha256": "b8f6505334856b71bfb00976e6cf241d02c55afc5432f213e8f405a1af870eb1",
+    "release_sha256": "68685eeda8bdd3c3b98e5446eb5ea0ebcb178ded1677e78361d5c73a6c01c5dd",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "paml/healthy/env/environment.macs3.yml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/env/environment.macs3.yml",
+    "source_sha256": "fda14f810a822eaa8110ccd52e03b0834d3549f6bea35a16084a2a56e6c8aa11",
+    "release_sha256": "fda14f810a822eaa8110ccd52e03b0834d3549f6bea35a16084a2a56e6c8aa11",
+    "rationale": "Environment configuration for SCENIC+ inference."
+  },
+  {
+    "path": "paml/healthy/env/environment.yml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/env/environment.yml",
+    "source_sha256": "10cbf36b27c4f13afde88070ef6b13166477bec68681bcea640388f97be91c01",
+    "release_sha256": "10cbf36b27c4f13afde88070ef6b13166477bec68681bcea640388f97be91c01",
+    "rationale": "Environment configuration for SCENIC+ inference."
+  },
+  {
+    "path": "paml/healthy/env/setup_env.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/env/setup_env.sh",
+    "source_sha256": "295bb0b9b2aeda12dded631fe93db92235bf1b3ae237300a98548406830ed950",
+    "release_sha256": "295bb0b9b2aeda12dded631fe93db92235bf1b3ae237300a98548406830ed950",
+    "rationale": "Environment configuration for SCENIC+ inference."
+  },
+  {
+    "path": "paml/healthy/run_all.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/run_all.sh",
+    "source_sha256": "25b807027f552a99aadc234107198c67366040d70d25e08d65dfd9020941aa00",
+    "release_sha256": "b09361f46941176a56444cadc7033f9ff4fe7a4676e9ac488e09176a140fd479",
+    "rationale": "Job scripts and shared inputs for healthy-cell and chromatin analyses."
+  },
+  {
+    "path": "paml/healthy/scripts/make_cell_data.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/03_make_cell_data.py",
+    "source_sha256": "2f8dc8443251b2b3a5a21757a394074923a5b5a65ff5b842d28a9dae7f87ddca",
+    "release_sha256": "b6a22f479d5b97b0835573488efa8741a750619e013d90940a22c15bc735e938",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/atac_chain.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/atac_chain.py",
+    "source_sha256": "07d264562e21f856f176d76f54461af4679f2eafa370b36a1b1f66522f7d4a1d",
+    "release_sha256": "f097f73bcea4680ab9ff12d4cbeebee78e0be0f76296defcf5a436b3777f7867",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/build_native_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/build_native_rna.py",
+    "source_sha256": "25e240410b8cd5b6c35a90dcf6b44c84591cc649223eaf743dd18368f69ff5ec",
+    "release_sha256": "d75120c58938a86934eec78b409f049d5e66b175f9c339b2eb8f1351d99db443",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/build_paired_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/build_paired_rna.py",
+    "source_sha256": "83786e46c6f77dae4d2f1ac9537c34024bfe6758cc97f6277392306ebb458b0b",
+    "release_sha256": "3fc1e2681286ce0c495ce20ac5b9762386108598ef8dc2cd694f4361ff1e19d8",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/common.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/common.py",
+    "source_sha256": "cb03deea807df3ba1a0ea8d7935e3b9909374a3744cad9acfb01d5491399abb5",
+    "release_sha256": "45ed3edc170080f0718adf5507c2770fb1af7084b1e0dfd40c9e6ab81364ccc6",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/config.yaml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/config.cubic.yaml",
+    "source_sha256": "2dbd2138254b0a0f755f6130b2726153d154cfb8ef5059c208b12002ea03d478",
+    "release_sha256": "2dbd2138254b0a0f755f6130b2726153d154cfb8ef5059c208b12002ea03d478",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/filter_gex_for_metacells.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/filter_gex_for_metacells.py",
+    "source_sha256": "0e99a746256fbf724b1f4facf3e161630989554c951c51dd05c2f48a179d4daa",
+    "release_sha256": "f5f214b0a2f66b25d001c723d085e9d2ee7790e31dc1619742b0a8837386f03c",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/prepare_fragments.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/prepare_fragments.sh",
+    "source_sha256": "19d3aed15d74f2c49930d369ef764573ed91546b344f5dd013d1fd561961aecc",
+    "release_sha256": "19d3aed15d74f2c49930d369ef764573ed91546b344f5dd013d1fd561961aecc",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/region_sets.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/region_sets.py",
+    "source_sha256": "d11f010e5b5728f5d0d228907b5adca3e9c08d99406354802f533e9a8ffb5260",
+    "release_sha256": "43d43058a7b77a27a71871221fd63def8bdf5a4a0a2a9fee4485d377a93349ff",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/scripts/run_grn.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/scripts/run_grn.sh",
+    "source_sha256": "c04a5b71772e7f12bf614c5df972b25fa652f20ff0310570b26d0995f107233f",
+    "release_sha256": "c04a5b71772e7f12bf614c5df972b25fa652f20ff0310570b26d0995f107233f",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/healthy/setup_container.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/setup_container.sh",
+    "source_sha256": "0fde9b9bb33588cffe5c07bf2cec7a3d621f0fbb56a08b421818f08909549789",
+    "release_sha256": "f2695afe2ce4cdace70e94adeee41358c97e3c58bddc154b568961c4d7e49a19",
+    "rationale": "Job scripts and shared inputs for healthy-cell and chromatin analyses."
+  },
+  {
+    "path": "paml/healthy/stage_big_files.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/stage_big_files.sh",
+    "source_sha256": "dfa94924205a3a064439b51a9f25f365bbdcc2b09a250ae6933f413c155a189e",
+    "release_sha256": "3793076aceb5f6b5bad0f6bd36e7cad79015afaaf62842e868c05585d233e9b1",
+    "rationale": "Job scripts and shared inputs for healthy-cell and chromatin analyses."
+  },
+  {
+    "path": "paml/healthy/submit_bigmem.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/submit_bigmem.sh",
+    "source_sha256": "3d0eb55d854613d086740320a5362746ad58ab8ea84cafe6748cd89aed35d23c",
+    "release_sha256": "17c4574446af4a2d6d4712424e3adf0f031136ea0d22b73e9619aee5f64e9c0d",
+    "rationale": "Job scripts and shared inputs for healthy-cell and chromatin analyses."
+  },
+  {
+    "path": "paml/healthy/submit_container.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_armA_full/submit_container.sh",
+    "source_sha256": "64e8e79aecb3c0b9f13394c019b6f9b9a88b4e439af99e55bab81312288d19bd",
+    "release_sha256": "6274958f4be500efae19f80926d6a5cbb11de9d434326984a2bf26e4c9af676f",
+    "rationale": "Job scripts and shared inputs for healthy-cell and chromatin analyses."
+  },
+  {
+    "path": "benchmarks/bmmc/preflight_metacell_bmmc.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/preflight_metacell_bmmc.sh",
+    "source_sha256": "18b0fd395fc1471e63ad643e236a4b2bff9b40e7919b4079373523fa5b12578d",
+    "release_sha256": "820ca2cecd2b90d703b4c4abf3da57d73031cf90bc97d3dcf386f0136bdbcdef",
+    "rationale": "Job scripts for the BMMC benchmark."
+  },
+  {
+    "path": "benchmarks/bmmc/run_bmmc.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/run_bmmc.sh",
+    "source_sha256": "79417b9a976e05495e97387b1410dcd56952f3e6f5ac4e238da84aa507f47519",
+    "release_sha256": "10482b7160094d6b4d6a520d273b8905ef742357a44eeadc8de4c634ad3f1ee3",
+    "rationale": "Job scripts for the BMMC benchmark."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/atac_chain.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_01_atac_chain.py",
+    "source_sha256": "2535ea1b0c78b8bee30100c87df562a4312c8bf71587a1f9bdb916b03a6eb614",
+    "release_sha256": "9cb1e60051c2fce68a3975f36327a9d4908120a99799caf0ce25fa37876f97ae",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/region_sets.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_02_region_sets.py",
+    "source_sha256": "91254c98aced1d495a835c651cdc6a4894d60d3736a51060aa86aa9d1b3ae94b",
+    "release_sha256": "801b65b2e0302d5ce23a2e4ad2c19c5d542e3dde7719edf2ce8a87fd5c3f4cba",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/build_arm_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_03_build_arm_rna.py",
+    "source_sha256": "4230f46cc7698ab734f411a0126f0d6bc29c184e7cc97c87b01e6596b866a5c1",
+    "release_sha256": "155099c23622c9253c666baf381ec377a44cf08ec132247b7c6f01959a867441",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/network_agreement.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_04_edge_rungs.py",
+    "source_sha256": "67ef9aae9ecd16a33da4987565b6c2648ba2d6260ed4209677055780e3fefcc9",
+    "release_sha256": "4fc9bfd21ef48f6db7e3385e697c406fe5f42d70bc3c39d17cbaf9cb673a9f3c",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/pairing_error.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_05_pairing_error.py",
+    "source_sha256": "821b0e6e80be7a962456bb931bd71b5c5913aa125f289e2975bcc5ffcb944a02",
+    "release_sha256": "32330c827874fb70712b7414c3ae4f9ea7943dfb74cfef3b42e862783cccca84",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/activity_agreement.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_06_track_a_rescore.py",
+    "source_sha256": "1e8f62181612cf7a95352f3ed658f5c4404c5540c9c10d2a6168737dbab97415",
+    "release_sha256": "910b98d8d7bee474be02da7895f3a38e7ec24ea3aef5f0d9fa515cc5b05d037c",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/group_mean_activity.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_07_stat3_celltype_profile.py",
+    "source_sha256": "59f85d2d5629f16b0fa7b7bea9f852b008164649cc53122065a41cb7d05d55bd",
+    "release_sha256": "2508e7eb79a3fb5412e192350ef3049e176618544add33d9ed6d1630993aa180",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/native_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_10_native_rna.py",
+    "source_sha256": "2b74d489802bd2aea0a31a70bc58e152128539ee1f7b17942629e404146d8303",
+    "release_sha256": "0063070f315b7061d0fd751517abe06a1da80896e8a1c0809251ff2143e313c4",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/filter_gex_for_metacells.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_11_filter_gex_for_metacells.py",
+    "source_sha256": "5eb7403d83ab0ac52cf054fc384eb64498979bd105a2f5f22a8659c3a3010a9a",
+    "release_sha256": "4aab844e7d85ff2d885d6db91f185a1a04349da4ac08dc931057f035454d1538",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/metacell_floor.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_12_metacell_floor.py",
+    "source_sha256": "0b217892c9b1c6e8e10a2d856940789212d2141f8c94b816f844f1430a49a0d6",
+    "release_sha256": "5fbafa6f7f68199231f8c7a1cc94c2260f5eaf8a74ecdec99c0c58928ee9b0af",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/activity_common.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/b_trackA_common.py",
+    "source_sha256": "abb6d8bbd91b271eb2738695cf077fc28040fd1016c49f9220f5d49da7b2ae15",
+    "release_sha256": "8b58c9794830d14f8a3dc5056e3dd310ddda04bfefea43b24405440ba44f83f7",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/chain_guard.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/chain_guard.sh",
+    "source_sha256": "6e1636915e107f7eb0205581f1d7490efa7c5d63cdccbde084b73953da361853",
+    "release_sha256": "6e1636915e107f7eb0205581f1d7490efa7c5d63cdccbde084b73953da361853",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/config.yaml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/config.bmmc.yaml",
+    "source_sha256": "7de0d0a76e82dadf83670fe34f5cb163c4bf73453ee4947fa55388a20aa6ca2d",
+    "release_sha256": "7de0d0a76e82dadf83670fe34f5cb163c4bf73453ee4947fa55388a20aa6ca2d",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/egrn_guard.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/egrn_guard.py",
+    "source_sha256": "dd5e301f7d0cfc91a0e1f3d90f78b204fa51a33931f994860011aa4eec6de3fd",
+    "release_sha256": "e3375ec6273445495217473f4712209a826725e1b2fbb418088358e46577b3c4",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/fetch_fragments.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/fetch_fragments.sh",
+    "source_sha256": "380ac7ade5c06b8897162c9adaf0e6e822f17bc7bf181584edb16ee20c8fccec",
+    "release_sha256": "380ac7ade5c06b8897162c9adaf0e6e822f17bc7bf181584edb16ee20c8fccec",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/census.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_00_census.py",
+    "source_sha256": "c47d0b6451b88cab540c8fb13367f65e0b02d77d97d93e1e1a86eb3a4692b1c6",
+    "release_sha256": "ed5529c758a5aa802b06598bf0fbf19fe6f7e6c2d42815a0a23b92dadd580c1e",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/export.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_01_export.py",
+    "source_sha256": "dae0228b93af2bd96c200d05773d02d782ddf19ee1df333f5a12fbad5a9ae73a",
+    "release_sha256": "24f24d749d8c6af558bab4a0c817cc54a122ef9002ecf3b7cec688b13056c9c4",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/arms.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_02_arms.py",
+    "source_sha256": "8f1b3225df3076ecb52360e0937bf97311e104c1d7fd36bfba1cf48550c4cc49",
+    "release_sha256": "289119908db184ec9bf51ffec1c048b9f8a025ca93cc226e6ef9396086cc187d",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/export_gene_activity.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_03_export_gene_activity.py",
+    "source_sha256": "de42dde26d47f4e92068d5f46ad22f39774121583967be932a1905ea1d3343fb",
+    "release_sha256": "6cbf9dd3a970ab83ee3c94c6b9b64abc64cd4608777896f318876cd7e5e8b738",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/infer_pairings.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_04_link.py",
+    "source_sha256": "53fd1d1ed65ef6d2eb93b1a9adea689e7bd8643271bc0c43c9e9c85218575168",
+    "release_sha256": "ed4a63e2420e77a0cea691f60475c33f56c3eab2f7fdaf2222287528b5296315",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/infer_stratified_pairings.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_04b_link_restricted.py",
+    "source_sha256": "8a8ef08daafefedb29d0a6ee41250c19df016cded3fcfd0952dc66d8060f3871",
+    "release_sha256": "5b451f3d3f772b4d916488f9b20cdb7ffe0a07b336ac32634d91f99055a7ba1b",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/check_assignment_solvers.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_04c_solver_equivalence.py",
+    "source_sha256": "8b4ee3f51a4b3e4add604374a867541f56e010935ca2aa9f3ba019545eb5e3ff",
+    "release_sha256": "71bc1d86ab2ece1dfd0b6001984aaa48e23fe575e9243628cd5fa39b435c9326",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/infer_capped_pairings.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_04d_link_capped.py",
+    "source_sha256": "4e66c91bee3f3ac3fa4edd30239875db2be1c6efe2c76f7c2901c9d2af9d75ec",
+    "release_sha256": "bd3c9e169fca20db29701be51c518e791e4997ef26e50a431af88724a742556b",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/verify_matched_reuse.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/prep_04e_cap14_pair_verify.py",
+    "source_sha256": "2b8947f5947c2a2898e4f496f0cbe900efe57abad9bb5ed5cfc9c6f11bbcf1fa",
+    "release_sha256": "ccf315d61a450f2fec6a48316bb15cae51e10f88690edb538dce2e85c8fc4163",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/scripts/run_grn_bmmc.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/scripts/run_grn_bmmc.sh",
+    "source_sha256": "da0cba94bb6d507fc9a11bbfb861bd2cfd9ea2e39b343b182fdc384e4119a9df",
+    "release_sha256": "35110765a1a43c814666262482232d5f5d9156db57550524bc5004473252e209",
+    "rationale": "BMMC chromatin processing, pairing construction and network or activity comparisons (Figures 2-3 and S3; Supplementary Data 3-5)."
+  },
+  {
+    "path": "benchmarks/bmmc/submit_bmmc.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/submit_bmmc.sh",
+    "source_sha256": "00d38e94cf92c8f659ceca08947e19bdbe82e79d3193c635654a75d0ba1b00be",
+    "release_sha256": "0e5b54b8b1c995689bbb05c45ba879dc2ac27fe2f23d21be9e1fa0ccf73f8a67",
+    "rationale": "Job scripts for the BMMC benchmark."
+  },
+  {
+    "path": "benchmarks/bmmc/submit_bmmc_arm.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_bmmc_ladder/submit_bmmc_arm.sh",
+    "source_sha256": "c72719abba58521943ba03d72eb8229e609c0e17e250e9289c2d58135ee93873",
+    "release_sha256": "8f31fa7bda06fccaba0097c3d75366a850ea011fe0d17dc6e20b1f46ea55a57e",
+    "rationale": "Job scripts for the BMMC benchmark."
+  },
+  {
+    "path": "benchmarks/pbmc/preflight_arm.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/preflight_arm.sh",
+    "source_sha256": "513c4489bdabfb45c21ec020b3b5f791eda39fad4c695bed0385bbbdb72a95a0",
+    "release_sha256": "4ecede49d27ab4364236863e0d86d448fde3be20fb752c70e3cfbb26ab3ec67a",
+    "rationale": "Job scripts and input preparation for the PBMC benchmark."
+  },
+  {
+    "path": "benchmarks/pbmc/run_full.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/run_full.sh",
+    "source_sha256": "1a3f2be99a4d3d010423c0ece519de5d0f08537a1a50d399cac4ab5852a16ccf",
+    "release_sha256": "ba8e599b10b0bac4d3e56840ab7e7d301712c36a90aaf8a59034901802e245bc",
+    "rationale": "Job scripts and input preparation for the PBMC benchmark."
+  },
+  {
+    "path": "benchmarks/pbmc/run_link_local.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/run_link_local.sh",
+    "source_sha256": "bb7266412a7121f7ef56f06611074cd6678df4e311cdf79e3e54e5bd0ea40d08",
+    "release_sha256": "612577bf45bdadc14519e9ce9c3b237d54cff3dc3844c5996a844b6dde1f5263",
+    "rationale": "Job scripts and input preparation for the PBMC benchmark."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/atac_chain.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/atac_chain.py",
+    "source_sha256": "cd0cb031d8ea153a226324d6fd1fea1de0ffab9e4e5ec091a555a7759b09f79f",
+    "release_sha256": "7a52a65a3b6f4b0f371014c5f1f022eb4232e04a6b1b7f4787a230839aaee66f",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/chain_guard.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/chain_guard.sh",
+    "source_sha256": "5a8f071c62640b46fa2244ff7393fd699fc9d1b0b6888a198ac1c1598a95a7e6",
+    "release_sha256": "5a8f071c62640b46fa2244ff7393fd699fc9d1b0b6888a198ac1c1598a95a7e6",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/common.py",
+    "copied_from": "manuscript/review/publication_refresh_20261123/code_review/recovered_cubic_sources/cubic_pbmc_pairing/scripts/common.py",
+    "source_sha256": "c472d93a1ee2942d35fb39bde9d2ea852ce2968d5d9635d27893ea892c03ca7d",
+    "release_sha256": "90a9c2aa138be1509157e1ca00f3c089072a4de3a6fb8ee9c3c4d2da1c814eca",
+    "rationale": "Shared PBMC helper recovered from the cluster source archive; its exact version in each historical job is unverified.",
+    "archive_member": "files/root01/cubic_pbmc_pairing/scripts/common.py"
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/config.yaml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/config.pbmc.yaml",
+    "source_sha256": "2e8f7271376317ff00ffaad8ab4833fddf7d63a635caa970d0628d61f6b1da72",
+    "release_sha256": "2e8f7271376317ff00ffaad8ab4833fddf7d63a635caa970d0628d61f6b1da72",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/egrn_guard.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/egrn_guard.py",
+    "source_sha256": "ff6a3103b7d4cd2cda7e1b11b693108a6de4280c45aaecfa323ded7dabc7b08a",
+    "release_sha256": "911d50f3253d5a6b32ff029b202356a0e47cb3278d8b766ab620fae5f99e39dc",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/prepare.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_00_prepare.py",
+    "source_sha256": "f02b329367be66ea58a4b165a35b35385fffaa574caf1174e8ba134f60420168",
+    "release_sha256": "1b29aaf90d289f1cec5b7b00401a16eac2a4ce980b410ad3b5928e0c1fdfbf56",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/annotate.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_01_annotate.py",
+    "source_sha256": "20202cfb18fed36b8b65c4ecb233733546b92ae5abcab0684c9314173dbf920a",
+    "release_sha256": "2e66275c46211cbd00ba4587586a23c444a4157819675a44ee2b708c4ef9f228",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/archr_link.R",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_02_archr_link.R",
+    "source_sha256": "1464ad237a03043a2d8aa267024722f4cb661b1f78184c2d2c9657984b3bfb33",
+    "release_sha256": "7244795d20ca7a28b71daa3190a67c89e539f5e099489dd92ca0ca57c7ce1c2a",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/make_pairings.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_03_make_pairings.py",
+    "source_sha256": "245a93f0b1d6ada989b9d25b8a2540d37066a3f34de701dfb3c8f996d00fb367",
+    "release_sha256": "6b14b559475cbf1cecd7a90bbd64741b9abcb1ba12b0bb637774992db9e36da3",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/make_random_arms.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_07_make_random_arms.py",
+    "source_sha256": "d412df948c3a2bde584960a6776217df8113185bf3153097f4b6eba6b4bb5a36",
+    "release_sha256": "1c810d8bfd3dfb1884bad82cb68e6ae69b011d21f3f4bc8cf87216691c66f9bd",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/activity_agreement.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_08_track_a_rescore.py",
+    "source_sha256": "94bf5dd143580fab9b0ebb80126ce72782bb084caf341d68d40222b764fab65a",
+    "release_sha256": "10edfd2fca1474c2ab4b3a4f8d6c0114c29ec9b80eab9d091e042e7ca7c3f2c1",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/group_mean_activity.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_09_stat3_celltype_profile.py",
+    "source_sha256": "f1c62f92e21c7a047be10f8e0b4ede8f8b8aa0962b2baed7abb753768a0037b2",
+    "release_sha256": "1d945ad2feb1190e6c3e7ec83139b77bf7d6e3b2745272882e774f3f8661e6d8",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/build_arm_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_12_build_arm_rna.py",
+    "source_sha256": "79d0bce0c252fbca9e87c676ace27f2aa04aa3ede17ee517ad4d01e7ee5d2a9e",
+    "release_sha256": "11d1840343fa5aab504a83a4df6bd7027b60819da4bd633f2762e73f45eedbbc",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/network_agreement.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_13_edge_rungs.py",
+    "source_sha256": "173a5e09f377a755df73e1ce9defdab5513457e759986f7c3554db569453d743",
+    "release_sha256": "f7316756b72dd88f4a050df58a0223a8bcc62f844dd9fc9b22c93895017824c0",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/metacell_floor.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_14_metacell_floor.py",
+    "source_sha256": "5ec7c5281345a4773da2da826c197017774ec27c54d8102d5ed970296648df3c",
+    "release_sha256": "2cec3cd7b0609f4fa2bbd867217fe144a34b0000af79464571e3750656a45a5f",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/link_full_ref.R",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_16_link_full_ref.R",
+    "source_sha256": "84ffd5f9b543921e54a83fff24bb23c7db178445079b20e96db1851ca665393a",
+    "release_sha256": "2419cefac8e81de4af084e09494f9c2d2a45afc303d0db343b1e7880f41d00ae",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/link_1to1_assign.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_17_link_1to1_assign.py",
+    "source_sha256": "e1f4745a73a9fe1a07c29799f4e8d95cbce04920b8f726cdba396b46d9e1d9fe",
+    "release_sha256": "39e4b50bbbe8c67fa85f3ccee6fcc5d59e433d88f5ebe9796fdb61aa0861ce96",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/link_subcluster_1to1_assign.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/p_19_link_subcluster_1to1_assign.py",
+    "source_sha256": "700142b64727d8c53fac6418c9be00d2540d423809f5b50ac4b6fdc6d6ee1ffa",
+    "release_sha256": "4171237a71ca93615f531633009f1525247140652a2fc89fa58c45833e288176",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/region_sets.py",
+    "copied_from": "manuscript/review/publication_refresh_20261123/code_review/recovered_cubic_sources/cubic_pbmc_pairing/scripts/region_sets.py",
+    "source_sha256": "54f85f3ef0f71b0285abea30198fdee0f5bcbf97a9bd9c868c6fe116295fe01d",
+    "release_sha256": "5447081c50b19558dfb2ab5683335093f74818e8eb5441a47da2c2761a1cf336",
+    "rationale": "Shared PBMC helper recovered from the cluster source archive; its exact version in each historical job is unverified.",
+    "archive_member": "files/root01/cubic_pbmc_pairing/scripts/region_sets.py"
+  },
+  {
+    "path": "benchmarks/pbmc/scripts/run_grn.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/scripts/run_grn.sh",
+    "source_sha256": "309aa5ff8061b11a43bcd3d799ee1709ca421c154582ef08adf1e6b4b11151bf",
+    "release_sha256": "d282358704f1f85bbfde81371afd3075e5a57e17ba0760be0c217b33cf14bcdd",
+    "rationale": "PBMC pairing construction, shared chromatin processing and network or activity comparisons (Figure 2; Supplementary Data 3)."
+  },
+  {
+    "path": "benchmarks/pbmc/stage_big_files.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/stage_big_files.sh",
+    "source_sha256": "2310e0c9733ae8e5e84d131f539889b78f4e1fe851a04d5f22ffa29732a96814",
+    "release_sha256": "8f85872dfbc4871b444f49c99bcfb5c1adca61d15caa5961a53e2f18470b3b92",
+    "rationale": "Job scripts and input preparation for the PBMC benchmark."
+  },
+  {
+    "path": "benchmarks/pbmc/submit_full.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_pairing/submit_full.sh",
+    "source_sha256": "9817a36934e2817847571e5f77035beb84636bcc298f49531cdfe66021bd9f2b",
+    "release_sha256": "81c606754f73275b8a235628e726be501479e2be24fbcc0142dc94ab52c61887",
+    "rationale": "Job scripts and input preparation for the PBMC benchmark."
+  },
+  {
+    "path": "benchmarks/repeats/scripts/rerun_native.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_seedrep/scripts/s_01_rerun_truth.sh",
+    "source_sha256": "50a8f6c3e5baca38e6791d0c187531bf40b964bc86cdea0aeac848083cfb8329",
+    "release_sha256": "f7e1a530f486162bb600b7a0803105f5543342999858b11fa9ea4baa1d912499",
+    "rationale": "Identical-input repeat analysis (Supplementary Methods S4)."
+  },
+  {
+    "path": "benchmarks/repeats/scripts/compare_replicates.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_seedrep/scripts/s_02_compare_replicates.py",
+    "source_sha256": "9864f6642a79eee6806b3756c208a083c0cc5ce8e602d7dc8a2a5a95bd00873c",
+    "release_sha256": "cc345fbb400dfe89061f9fa6bd80e5ca9da0fc88b31b41ad54416205a3e4dd2a",
+    "rationale": "Identical-input repeat analysis (Supplementary Methods S4)."
+  },
+  {
+    "path": "benchmarks/repeats/submit_seedrep.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_pbmc_seedrep/submit_seedrep.sh",
+    "source_sha256": "e942b6426650f3809105b11c1b1997252829015d3e8707ed97a06ad31b714ab3",
+    "release_sha256": "d7350910c28469d7b955c0cf23160dccd2e4b93e4ac298540e50a4f7cbeb56a4",
+    "rationale": "Identical-input repeat analysis (Supplementary Methods S4)."
+  },
+  {
+    "path": "paml/malignant/env/environment.macs3.yml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/env/environment.macs3.yml",
+    "source_sha256": "fda14f810a822eaa8110ccd52e03b0834d3549f6bea35a16084a2a56e6c8aa11",
+    "release_sha256": "fda14f810a822eaa8110ccd52e03b0834d3549f6bea35a16084a2a56e6c8aa11",
+    "rationale": "Environment configuration for SCENIC+ inference."
+  },
+  {
+    "path": "paml/malignant/env/environment.yml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/env/environment.yml",
+    "source_sha256": "10cbf36b27c4f13afde88070ef6b13166477bec68681bcea640388f97be91c01",
+    "release_sha256": "10cbf36b27c4f13afde88070ef6b13166477bec68681bcea640388f97be91c01",
+    "rationale": "Environment configuration for SCENIC+ inference."
+  },
+  {
+    "path": "paml/malignant/env/setup_env.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/env/setup_env.sh",
+    "source_sha256": "295bb0b9b2aeda12dded631fe93db92235bf1b3ae237300a98548406830ed950",
+    "release_sha256": "295bb0b9b2aeda12dded631fe93db92235bf1b3ae237300a98548406830ed950",
+    "rationale": "Environment configuration for SCENIC+ inference."
+  },
+  {
+    "path": "paml/malignant/link_shared_assets.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/link_shared_assets.sh",
+    "source_sha256": "f940beced8d12e82e2e705327b4d0cc768e907e0141d4f71c9defd85f8461611",
+    "release_sha256": "c0783226fcf5137dfdf8459c2f01039bd4c1e66ebd18a9e39558976735ad43be",
+    "rationale": "Job scripts and shared inputs for malignant-cell SCENIC+ inference."
+  },
+  {
+    "path": "paml/malignant/run_all.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/run_all.sh",
+    "source_sha256": "b6ef3cb84a44228718c503fdd9344c02429feaf0febd1afd132e501d11f7be63",
+    "release_sha256": "0c7628f5f2ae33bfbe2292dc24a5ba94732505cf7dd08b73708db08557f133d0",
+    "rationale": "Job scripts and shared inputs for malignant-cell SCENIC+ inference."
+  },
+  {
+    "path": "paml/malignant/scripts/build_malignant_h5ad.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/00_build_malignant_h5ad.py",
+    "source_sha256": "9e7d210d67d3594f1bb41a1ee01289d1524606165ace9d514e3c54a93b108d95",
+    "release_sha256": "1bd215a074014d123c770cfbf417579e8d86dfd298c3acb971ed9c839a3b9d45",
+    "rationale": "Malignant expression matrices for network inference and gene-background definition."
+  },
+  {
+    "path": "paml/malignant/scripts/make_cell_data.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/03_make_cell_data.py",
+    "source_sha256": "db9d69e07aed9b7a5b2ee0d2acab0bbf3824007c2ab4f842730d38470e24442d",
+    "release_sha256": "db9d69e07aed9b7a5b2ee0d2acab0bbf3824007c2ab4f842730d38470e24442d",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/atac_chain.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/atac_chain.py",
+    "source_sha256": "46233a9cfbcdb3d136db562325ec850c22a9d5fcae67b684e12b00fd2ce7690b",
+    "release_sha256": "7b9be887c78e10e15891dba5754fb9c200004861032766beabbf8c929a7febde",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/build_native_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/build_native_rna.py",
+    "source_sha256": "4ad44e658e3f519e71f0e72011c6cbc5f61106c8c595b8f57259348316b5f557",
+    "release_sha256": "c49f67eb75ea578bb1e4c5420c718e67e4e68cb1e87eb01668b5eb6639ecb7f3",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/build_paired_rna.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/build_paired_rna.py",
+    "source_sha256": "2edd08c402dcb46d62c602f8b009bb1e79c3570b6f2330652267cfff5b3a69da",
+    "release_sha256": "c1b82445141ab9e6974e4dba75c9db9134f652c5b319ae318b1dbfdfb5ab341f",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/common.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/common.py",
+    "source_sha256": "f04d08340390117920e84ec9fba6bc763f7331983787744d048d14067f0230d9",
+    "release_sha256": "9d32179590914dfdc94f38a93adf1a0a43dae3af94a837000415bf1f66f49223",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/config.yaml",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/config.cubic.yaml",
+    "source_sha256": "ea18782224d0d118bc4202b20b77b3fa8b9087cac2d0c8c9ee26fab85c5ea065",
+    "release_sha256": "ea18782224d0d118bc4202b20b77b3fa8b9087cac2d0c8c9ee26fab85c5ea065",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/filter_gex_for_metacells.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/filter_gex_for_metacells.py",
+    "source_sha256": "0e99a746256fbf724b1f4facf3e161630989554c951c51dd05c2f48a179d4daa",
+    "release_sha256": "f5f214b0a2f66b25d001c723d085e9d2ee7790e31dc1619742b0a8837386f03c",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/prepare_fragments.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/prepare_fragments.sh",
+    "source_sha256": "19d3aed15d74f2c49930d369ef764573ed91546b344f5dd013d1fd561961aecc",
+    "release_sha256": "19d3aed15d74f2c49930d369ef764573ed91546b344f5dd013d1fd561961aecc",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/region_sets.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/region_sets.py",
+    "source_sha256": "d11f010e5b5728f5d0d228907b5adca3e9c08d99406354802f533e9a8ffb5260",
+    "release_sha256": "43d43058a7b77a27a71871221fd63def8bdf5a4a0a2a9fee4485d377a93349ff",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/scripts/run_grn.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/scripts/run_grn.sh",
+    "source_sha256": "4be99af2631e041df8129098d6f8b75ab928b3d25e28798dc0ebbbdc5ac04cc1",
+    "release_sha256": "4be99af2631e041df8129098d6f8b75ab928b3d25e28798dc0ebbbdc5ac04cc1",
+    "rationale": "Healthy and malignant pAML preprocessing and SCENIC+ inference with shared chromatin inputs."
+  },
+  {
+    "path": "paml/malignant/submit_bigmem.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/submit_bigmem.sh",
+    "source_sha256": "704ef62ede848e3d6d511acbbb15f2b4b56e89ade1a76490b369c2a2a919a9c3",
+    "release_sha256": "6485b4655a5ad937f4c62f8af642bb1b6da9f446794c6a44f637533debbaed34",
+    "rationale": "Job scripts and shared inputs for malignant-cell SCENIC+ inference."
+  },
+  {
+    "path": "paml/malignant/submit_container.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage2_malignant/submit_container.sh",
+    "source_sha256": "7a7ec1680a61535b93768d4d323f96a3fb27dc3b1d696c604dad5903269a0ee2",
+    "release_sha256": "840b81e977585fd93f38237f8fa7efae6756bffcba32a1ed55f66fedd871f4c8",
+    "rationale": "Job scripts and shared inputs for malignant-cell SCENIC+ inference."
+  },
+  {
+    "path": "scoring/published/scripts/preflight.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore/scripts/s3_00_preflight.py",
+    "source_sha256": "3bcd7cc585454b963ba08fbe929c3826c071f63daa67cf2cab2adce65d4ad503",
+    "release_sha256": "78fcd29e6703f189312114691588438b9b6cf627a66af6e6920197109d978f8c",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/published/scripts/crossscore.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore/scripts/s3_01_crossscore.sh",
+    "source_sha256": "ba55437b80cc8dd7efc84b20f2ae03efe3d5e3a567ace6371ac42fea9805067e",
+    "release_sha256": "c42244ad443461bc556b98e645dc44d18d0060a19e7c9dba519bb53d54be8820",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/published/submit_crossscore.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore/submit_crossscore.sh",
+    "source_sha256": "0f2c7922de9b6db05d6d9d852b72b6253fe01b11f6204b0cc53bbdedfd509369",
+    "release_sha256": "7882652004d8a7ea194e0405e10a1e82ea295a947ae42ae708da5f3f5bf1689c",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/published/submit_preflight.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore/submit_preflight.sh",
+    "source_sha256": "08dbfa87a1e5a42e8719de589dbf27424035da21422499a9d13ab65fea13455d",
+    "release_sha256": "9d25ef08a5efcb3d4eaf3a37dd461ce32b27679130fa5b9caafe0c2ce6663e81",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/corrected/scripts/preflight.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore_repair/scripts/s3r_00_preflight.py",
+    "source_sha256": "c0c8f0d503a1892eec585ca9f2be8d0315e9a58effc0928b6913211d2ff8873d",
+    "release_sha256": "22f1537f7b3534ab991e7bb2aa6fcf243e48a5e341ea6732416d635538a04a94",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/corrected/scripts/crossscore.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore_repair/scripts/s3r_01_crossscore.sh",
+    "source_sha256": "db76dfa233646f5675335b17a42e5864ae857729869f0d8c8c06e9e91aa7f0c6",
+    "release_sha256": "a453fd10442f7c2e376a677cb2afd5b2d3a84f2bd7deace58ab97d2a34c057ae",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/corrected/scripts/verify.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore_repair/scripts/s3r_02_verify.py",
+    "source_sha256": "b2e27fa16b9d292544e7a24a100030d321e9739517117a11032266cc57f46fc2",
+    "release_sha256": "580481d08c3aaa200e62d6a502eb47447a90b56fb7203f72fd133ab2dd220c5d",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/corrected/submit_crossscore.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore_repair/submit_crossscore.sh",
+    "source_sha256": "6bcff2aae2fc3f4063f8e242c7761e1f6d78759f56ee43f335ed26bea5a73c6e",
+    "release_sha256": "c56fef78bd27661648f604a19a4354095b772aa954e4d91e13914fffb2af4f14",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/corrected/submit_preflight.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore_repair/submit_preflight.sh",
+    "source_sha256": "a8a421b500fbaa5644c113699661f30b75801ac7f41fb3111ade7d7ce135f110",
+    "release_sha256": "d632d4cd3e24ef71a38bbbd4d1e4a2f23341fd235ccc39fc26b03841a2aee0bb",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/corrected/submit_verify.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3_rescore_repair/submit_verify.sh",
+    "source_sha256": "0790ce71390c1e009f72c80549bd555c54948e0f9df15d76e4c745e0268aedb7",
+    "release_sha256": "d6301a1447dab505e8da1695020ccfaf9792056e72612d878c30112a29cb29cf",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/healthy/scripts/preflight.py",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3b_healthy/scripts/s3b_00_preflight.py",
+    "source_sha256": "08d806c4260f659827fce415674f04878e55fd24a69ca2a513dde13f89fc49e5",
+    "release_sha256": "d411ae14b7789684135c2657b5fd2cbdb1e66784e93aaf3e1d0c314a6b432558",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/healthy/scripts/crossscore.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3b_healthy/scripts/s3b_01_crossscore.sh",
+    "source_sha256": "89ac9ae5ad1cd27253b63e22e91191a79188d1d7d0556fef523fab1b1679e4d5",
+    "release_sha256": "7b93c381b85bbe7613b8ebd5859e909af2745ea41bb64b4f64dd8a282f4c41de",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/healthy/submit_crossscore.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3b_healthy/submit_crossscore.sh",
+    "source_sha256": "77014ea5ee1307f7b7c7a179a925ee1febb4d3eba7d29849eda0fd51051f1b02",
+    "release_sha256": "407fffd2f6fc96f8bfb8e75d26fcbb64646f8a8e0b03914a974022d51f0ad989",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "scoring/healthy/submit_preflight.sh",
+    "copied_from": "manuscript/analysis_code/sources/cubic_stage3b_healthy/submit_preflight.sh",
+    "source_sha256": "82ad9db2e122bafd04592940a56685374cbfc84713eaa3e5d9e25041d49746f4",
+    "release_sha256": "4ae9c16491f5be128c07b888eb12b20fd5d44e4bf96625e07bd6dc464b7413f2",
+    "rationale": "Cross-stage AUCell scoring and checks for malignant and healthy cells (Figures 4-5; Supplementary Data 5-7)."
+  },
+  {
+    "path": "figures/shared/gridkit.R",
+    "copied_from": "manuscript/analysis_code/sources/figures/R/gridkit.R",
+    "source_sha256": "39fe661fda18a5140ea3b88ebaffa881987eb4d285675568b08ac4bcb2b63948",
+    "release_sha256": "39fe661fda18a5140ea3b88ebaffa881987eb4d285675568b08ac4bcb2b63948",
+    "rationale": "Shared plotting functions and access to figure input records."
+  },
+  {
+    "path": "figures/shared/manifest.R",
+    "copied_from": "manuscript/analysis_code/sources/figures/R/manifest.R",
+    "source_sha256": "05f7412b1f20d05f011728e76860e5f757f0f1c26e49d4ccf2b8c8b3c87435dd",
+    "release_sha256": "9e08ee5a722cad2b1a9083614f92232a7c1bf088df8b07d5a0fc47d5ed13024e",
+    "rationale": "Shared plotting functions and access to figure input records."
+  },
+  {
+    "path": "figures/shared/palette.R",
+    "copied_from": "manuscript/analysis_code/sources/figures/R/palette.R",
+    "source_sha256": "6d4cbd19b85136dc7996948db49bf1394eb58fb0f8c95d1f74521bed547a07c3",
+    "release_sha256": "6d4cbd19b85136dc7996948db49bf1394eb58fb0f8c95d1f74521bed547a07c3",
+    "rationale": "Shared plotting functions and access to figure input records."
+  },
+  {
+    "path": "figures/shared/theme_paper.R",
+    "copied_from": "manuscript/analysis_code/sources/figures/R/theme_paper.R",
+    "source_sha256": "c6e9d80be7fb5f012dde5279c14c5a619d809df415b3a044712c00806a137552",
+    "release_sha256": "4fb560fb83fe96b62999ad036d79d1adf32f19a48ba0d541b272bd2d073673c1",
+    "rationale": "Shared plotting functions and access to figure input records."
+  },
+  {
+    "path": "figures/shared/pairing_styles.R",
+    "copied_from": "manuscript/analysis_code/sources/figures/journal_v2/style_v2.R",
+    "source_sha256": "de7abaf80a74698297895fcb578ba06afc47627314e03f075403a4486a161e1f",
+    "release_sha256": "d1c9721d16574e4ff7270ed057d7d839e2fd2244028aeb4ef8c423196d73cc1f",
+    "rationale": "Plot style used by Figures 2-4 and S3."
+  },
+  {
+    "path": "figures/main/make_fig01_construction.R",
+    "copied_from": "figures/journal_v3/make_fig01_construction.R",
+    "source_sha256": "556465c3695c746effbff5b4fee46ae940222396ceab57116cb070d651a79068",
+    "release_sha256": "589cbb38844c69091424d94613139903db1b295d88b6b494a1c4189b41a2aacc",
+    "rationale": "Main and supplementary figure construction and plot styling."
+  },
+  {
+    "path": "figures/main/make_fig02_ladder.R",
+    "copied_from": "figures/journal_v3/make_fig02_ladder.R",
+    "source_sha256": "5558623f35c1abcc3f4b4f8eb5b5b4992960a361176cdde3ab7b7a2f94186446",
+    "release_sha256": "0f9461cd6ac67d682a8b875c197d2479ffca25fda14f5f80b7026fc1dd019ec9",
+    "rationale": "Main and supplementary figure construction and plot styling."
+  },
+  {
+    "path": "figures/main/make_fig03_concentration.R",
+    "copied_from": "figures/journal_v3/make_fig03_concentration.R",
+    "source_sha256": "68cc40068365fa871e5334a9dab2d8d3103367893fa607cdb0620f7c8fc63868",
+    "release_sha256": "066be2adba5667d3a6aca4754438dcc096ad2d2fad8eb1a22a67be869784fad5",
+    "rationale": "Main and supplementary figure construction and plot styling."
+  },
+  {
+    "path": "figures/main/make_fig04_consequence.R",
+    "copied_from": "manuscript/review/publication_refresh_20261123/overrides/figures/journal_v3/make_fig04_consequence.R",
+    "source_sha256": "80b85cff6f8aea5633e358fa13dd04be21506a97c1b68de1a819cfe6046df2fa",
+    "release_sha256": "d990ec3ce8ee54c3f9e77686839b0d158a6c137cbd3e1b0d9f2b2b4e694da7b8",
+    "rationale": "Main and supplementary figure construction and plot styling."
+  },
+  {
+    "path": "figures/main/make_fig05_module.R",
+    "copied_from": "figures/journal_v3/make_fig05_module.R",
+    "source_sha256": "efae943910b16c3b7dc6d9edbaf2bd90dcd54caf3e334845337fd2540918885a",
+    "release_sha256": "d724499d7bd7a91a81ecee9a530c066e0e17b155280fbab758793ec403d9f023",
+    "rationale": "Main and supplementary figure construction and plot styling."
+  },
+  {
+    "path": "figures/supplementary/make_figS_reuse_native_agreement.R",
+    "copied_from": "figures/journal_v3/make_figS_reuse_native_agreement.R",
+    "source_sha256": "709cdbe3c12d168266ebb835d4251e253882b3f93eb39c5c24e7a3934820cd01",
+    "release_sha256": "e0f4a8bfdef716cd0e9fef9bdad5e9de94dc03825f5f68fa6be75a388e876c6a",
+    "rationale": "Main and supplementary figure construction and plot styling."
+  },
+  {
+    "path": "figures/shared/number_labels.R",
+    "copied_from": "figures/journal_v3/style_v3.R",
+    "source_sha256": "f4c7521b17bef4f98fc869efbc9cc8da967d81bd442351bb695cf1252a7f19c5",
+    "release_sha256": "bac26794bafc6de30ffafd4bc661f8c054129b85e3f97cb08d52bcee27c1313b",
+    "rationale": "Main and supplementary figure construction and plot styling."
+  },
+  {
+    "path": "analysis/activity/gene_detection.py",
+    "copied_from": "groundtruth_encode/scripts/gt_02b_detection_malignant.py",
+    "source_sha256": "aeeb3abe126af69d66fcaa982ecfaa2a77a8a79f63a0b8affcad20db543deeba",
+    "release_sha256": "eb469e300827935c1b5544e9f8f0ddc36e963b13086689cb28b4fc45105e04d7",
+    "rationale": "Malignant gene-detection tables required by the ribosomal-control script; uses the original gene-panel inputs."
+  },
+  {
+    "path": "figures/graphical_abstract/build_graphical_abstract.py",
+    "copied_from": "manuscript/graphical_abstract/v3/build_graphical_abstract.py",
+    "source_sha256": "87274e7d2879fbbd657fa61761f83b21047ba75f87b75be6de85a23212bc76c6",
+    "release_sha256": "081904ea00332117a480b025f1d78bb5443508fa9f5757fea3993b227ac42bfc",
+    "rationale": "Graphical abstract drawn with vector shapes and text."
+  },
+  {
+    "path": "modules/scripts/module_definitions.py",
+    "copied_from": "manuscript/analysis_code/sources/modules/scripts/m_00_module_definitions.py",
+    "source_sha256": "ea545b9e5d648a16fe560639b941719562454f16733ccd5e3b92325077af4c0f",
+    "release_sha256": "d29e5e6416dd6d5cecf47cfebc3143bc4808b0671a231e3c54db5af7770ccde5",
+    "rationale": "T3_repair and T3_link module membership, background targets and orientations."
+  },
+  {
+    "path": "adult/shared/scoring_common.py",
+    "copied_from": "manuscript/analysis_code/sources/replication/scripts/_mod_common.py",
+    "source_sha256": "c5a1b56a7c5e5dce2f754f79f3274539f9f3cf74bbedb79e426f5f412da505c3",
+    "release_sha256": "6ff66ae81bab26396640027eac4311a824474a4ba4e474c45b7310869590d81b",
+    "rationale": "Adult cohort preparation, module definitions, scoring, null comparisons and maturity-axis analyses (Figure 5; Supplementary Data 6-7)."
+  },
+  {
+    "path": "adult/published/scripts/feasibility.py",
+    "copied_from": "manuscript/analysis_code/sources/replication/scripts/r_00_feasibility.py",
+    "source_sha256": "f2d8ede2088961edbb908e48fe572d1baf3af3db71092ae45cb6fc8b3c67689b",
+    "release_sha256": "a30b413fb98b7ffc7613b14e1d93659b5c401448c066fef70b42e5a22689b08e",
+    "rationale": "Adult cohort preparation, module definitions, scoring, null comparisons and maturity-axis analyses (Figure 5; Supplementary Data 6-7)."
+  },
+  {
+    "path": "adult/published/scripts/build_module.py",
+    "copied_from": "manuscript/analysis_code/sources/replication/scripts/r_01_build_module.py",
+    "source_sha256": "120d6bbc8301f9b20302f6d1a114affbcac1502cf63ef83c38f9ab1ecc63a964",
+    "release_sha256": "004e6e8f81affe0257c8a028c7a3026634a22bfb9afee23441ecd5d372ac0e54",
+    "rationale": "Adult cohort preparation, module definitions, scoring, null comparisons and maturity-axis analyses (Figure 5; Supplementary Data 6-7)."
+  },
+  {
+    "path": "adult/shared/coverage.py",
+    "copied_from": "manuscript/analysis_code/sources/replication/scripts/rx_00_coverage.py",
+    "source_sha256": "e7d386be2476c565947254223ecb387a9bbe058bbd6c694e889ae07eab5c35c2",
+    "release_sha256": "00d97b7c0dbca3439210635c185f1b3bf905b6be6b6f19c9e52e2c1ef23c03a2",
+    "rationale": "Adult cohort preparation, module definitions, scoring, null comparisons and maturity-axis analyses (Figure 5; Supplementary Data 6-7)."
+  },
+  {
+    "path": "adult/shared/nullB_pool.py",
+    "copied_from": "manuscript/analysis_code/sources/replication/scripts/rx_02_nullB_pool.py",
+    "source_sha256": "83717cbf944c874b471b1e193a7665b08cb3c992a3111e13ee73227c6fc25da8",
+    "release_sha256": "71e5b4b650526a3f337fc7b3cd4a3541866349deb5c0b4193e94a793039e8801",
+    "rationale": "Adult cohort preparation, module definitions, scoring, null comparisons and maturity-axis analyses (Figure 5; Supplementary Data 6-7)."
+  },
+  {
+    "path": "adult/shared/test.py",
+    "copied_from": "manuscript/analysis_code/sources/replication/scripts/rx_03_test.py",
+    "source_sha256": "65fb4a90ede4c46818a2726f006b55e4b57983e5a4c4486b3232bd9d35f82075",
+    "release_sha256": "8a9883739f2ff1816159a931f42444de91d9ceae31308db78c5a8f19c2e8db23",
+    "rationale": "Adult cohort preparation, module definitions, scoring, null comparisons and maturity-axis analyses (Figure 5; Supplementary Data 6-7)."
+  },
+  {
+    "path": "adult/shared/robustness.py",
+    "copied_from": "manuscript/analysis_code/sources/replication/scripts/rx_04_robustness.py",
+    "source_sha256": "56b23c0b54725f1e6d66583c8f9416baa57109b014c0b71a4f29a242ef066051",
+    "release_sha256": "77adb8aa57942e9b78c66df85d0581a76da6eadb8b0e0411e0b93bbdd705aee0",
+    "rationale": "Adult cohort preparation, module definitions, scoring, null comparisons and maturity-axis analyses (Figure 5; Supplementary Data 6-7)."
+  },
+  {
+    "path": "adult/shared/axis_lambo.py",
+    "copied_from": "manuscript/analysis_code/sources/replication/scripts/rx_06_axis_lambo.py",
+    "source_sha256": "1ed933f31e15d2d78e71db560868f35965c91daca3759dec1aac08d97b4dd93f",
+    "release_sha256": "6266b18f78f461a2c0c1bd094b61821081088e2db2d3b5e5e558e6a66d342af6",
+    "rationale": "Adult cohort preparation, module definitions, scoring, null comparisons and maturity-axis analyses (Figure 5; Supplementary Data 6-7)."
+  },
+  {
+    "path": "adult/corrected/scripts/prepare_candidate_table.py",
+    "copied_from": "manuscript/analysis_code/sources/replication_repair/scripts/rr_00_schema_shim.py",
+    "source_sha256": "911f62585019707dc7463437ed30a934a972fd8714ef3b903bbae5896b22a1c2",
+    "release_sha256": "721caa8a71272ddd0e1cef43bf6da56b8f5976a0748f94e3acf0a93b85314b98",
+    "rationale": "Target and background definitions for 201 regulons, with adult AUCell, singscore and standardized-expression matrices."
+  },
+  {
+    "path": "adult/corrected/scripts/build_module.py",
+    "copied_from": "manuscript/analysis_code/sources/replication_repair/scripts/rr_01_build_module.py",
+    "source_sha256": "fb584279a64237e19f1f2fe2ff3b935308066f369ed7c72181fe1e4c9c396339",
+    "release_sha256": "30b1e60adc6c3ee1c0bbbee8fdeebd035c3ec57b52d89835589858b69bfe35f9",
+    "rationale": "Target and background definitions for 201 regulons, with adult AUCell, singscore and standardized-expression matrices."
+  },
+  {
+    "path": "adult/corrected/scripts/score.py",
+    "copied_from": "manuscript/analysis_code/sources/replication_repair/scripts/rr_02_score.py",
+    "source_sha256": "50b80d2371cb822d21bbeba159d5120838006648ba83d7569c8b4ab31d57520b",
+    "release_sha256": "e81b00f681c667e9468f3343354b47bce82f2214f597d769a12c5abbe51c9125",
+    "rationale": "Target and background definitions for 201 regulons, with adult AUCell, singscore and standardized-expression matrices."
+  },
+  {
+    "path": "preprocessing/scripts/extract_atac.sh",
+    "copied_from": "manuscript/analysis_code/sources/stage1/armA/00_extract_atac.sh",
+    "source_sha256": "24ff26615b4782f92c0e697cb39e553fb1d647a2db4de62d7125fe63a98b1890",
+    "release_sha256": "e4b39c4527ea43e164ab8aaf3c4f65f749a3511373ac0d2b1ebd242718635787",
+    "rationale": "ATAC fragment extraction and shared reference-resource preparation."
+  },
+  {
+    "path": "preprocessing/scripts/audit_atac.py",
+    "copied_from": "manuscript/analysis_code/sources/stage1/armA/01_audit_atac.py",
+    "source_sha256": "5fb0bfdc2b0dc3a709efd46035d05e8c3ee1a8f94978896cb7bdae0544defd9a",
+    "release_sha256": "98908bdf3ed553f01eaf93941d2a3c0d6e938b517e501b48f7cc45d858fe7871",
+    "rationale": "ATAC fragment extraction and shared reference-resource preparation."
+  },
+  {
+    "path": "preprocessing/scripts/prepare_fragments.sh",
+    "copied_from": "manuscript/analysis_code/sources/stage1/armA/02_prepare_fragments.sh",
+    "source_sha256": "6fedbe7426922131ad6f59c3d57a49cec4665d07dd9d09c5905419942b981a1e",
+    "release_sha256": "8f5bcc17bad9fbd96118f9a737228f1ce8d7a4bb5d47a0e5b362823a8f6af06f",
+    "rationale": "ATAC fragment extraction and shared reference-resource preparation."
+  },
+  {
+    "path": "preprocessing/scripts/download_databases.sh",
+    "copied_from": "manuscript/analysis_code/sources/stage1/armA/download_databases.sh",
+    "source_sha256": "63f9ef9883bf9e682f682a3dd79e5f3032ab49f276e88924bc353e4f8d4b4774",
+    "release_sha256": "576ff7a65c5c592d2a4e64448b8dc18bb23b386e352d4f210d0203f7134b2bcc",
+    "rationale": "ATAC fragment extraction and shared reference-resource preparation."
+  },
+  {
+    "path": "analysis/network_comparison/scripts/compare_networks.py",
+    "copied_from": "manuscript/analysis_code/sources/stage2_local_analysis/scripts/s2_analysis.py",
+    "source_sha256": "d4504ec1b7997fcb70123072a992ed794d3002e5c0fb3d5a166aba1665cf2d25",
+    "release_sha256": "aadb4fa72577ef679e58b97d0505214091a613adbb5bea39e3e294a2438a1d9b",
+    "rationale": "Regulon catalogue and intersections required for nomination and module definitions."
+  },
+  {
+    "path": "longitudinal/published/scripts/prep.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_10_prep.py",
+    "source_sha256": "e142fbff9c6e77a704b6e53445794af6d64785dd9a479aa4491cf16a1be8967b",
+    "release_sha256": "f4a06e560f49f393b659fe636bde3ba8768209bc25d8e6debf586e0bfec103b8",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/published/scripts/model.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_11_model.py",
+    "source_sha256": "65f3a42f5d0eb5b5ee6a18026308d65f9045837b4c38d1cbe6f9a57689377ba4",
+    "release_sha256": "922d37422a0c3181a61ee004803a60ac7ca41481028ffb09a80b18d842d3ee1b",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/published/scripts/controls.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_12_controls.py",
+    "source_sha256": "2b300b299d0539330d2830aaded8a7c7caace092650cb29d599788088869c728",
+    "release_sha256": "521e46e828e1d3e506a26fb94f001d33f8262a9e6891df0e761218b72bd6e2b6",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/published/scripts/offset.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_13_offset.py",
+    "source_sha256": "1b8ee4c40c4d2d824f283260c2cbec5028c913ab57b3cb528a17ea2e858db740",
+    "release_sha256": "c83545586173564f2baffef85ae74dfb77fd00ea213edcb46156c98cbe6a3e1a",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/published/scripts/recalibrate.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_15_recalibrate.py",
+    "source_sha256": "6c7241ff60e53a27be085603a0c1847a4a0bfe1f1e015e17945af6d05095b79f",
+    "release_sha256": "20f1fad2bd95f2ca4314bccc19a555bf5758862bb8b231ecdfe2b9fea1f4ac7a",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/published/scripts/candidates.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_18_candidates.py",
+    "source_sha256": "d48f3779ba83ec1dbf17873c98a4d81462fc7c8b5dbcab569bb968602c78e241",
+    "release_sha256": "7f5e770ee75cd546c22aaafc8ab7162cbec808f163378be65059f9690e5f8fdf",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/published/scripts/decomposition.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_21_decomposition.py",
+    "source_sha256": "27e009a9d350f2e5e3f7c731079ec016d99811890e8dc8dcd2dc2257ca4c03cc",
+    "release_sha256": "dbff0dd37a2a2779da2e05f1bb6ec5adea25003aa33e6bee415c77b25e48c6e5",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/published/scripts/nomination.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_22_nomination.py",
+    "source_sha256": "55db66db0ff55c5a7b722d3f3a981d13351fca033e266ae3c7b1e3a7f22fa1ca",
+    "release_sha256": "39f36d8611baf9cd6b948f6d1b4335b004a74da3338922231bf91c88108cdd27",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/published/scripts/test_module.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_local_analysis/scripts/s3_23b_module_test_newscheme.py",
+    "source_sha256": "ff5f335357f8fee038bb80b318dc5e519113fa331dacf243db8026e26c506837",
+    "release_sha256": "cc342438a053c9bbc07184d7733e3a505f0e177d905873c66305b28aa1db0ce7",
+    "rationale": "Module-test intermediate used by the figure manifest, including the corrected construction."
+  },
+  {
+    "path": "longitudinal/corrected/scripts/prep.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_repair_analysis/scripts_run/s3r_10_prep.py",
+    "source_sha256": "f7650173460fe9b81f0ec0d3942c5ad0a40a00693b6f0c2171fa53fbc19aecc4",
+    "release_sha256": "7c62508495860fa9e94578f9502343559ef881170a7d104b41fbc67e56671e7d",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/corrected/scripts/model.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_repair_analysis/scripts_run/s3r_11_model.py",
+    "source_sha256": "1c8500b68d80cfe97cfcc08bbcc1b16d2661c55efb09b69537d228732839a066",
+    "release_sha256": "1371d6b1c2235bc9189a31f825828078ad6966f20f8060163252e1eace529467",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/corrected/scripts/controls.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_repair_analysis/scripts_run/s3r_12_controls.py",
+    "source_sha256": "fcc677e17b11739489d6bda63d779844d721a26271336555b05f4b5e19e5137e",
+    "release_sha256": "426079f9522c4b1e0dd4a0af13f3d4c3cf80e371a8f88d095eeac794bc4373b1",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/corrected/scripts/offset.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_repair_analysis/scripts_run/s3r_13_offset.py",
+    "source_sha256": "1b8ee4c40c4d2d824f283260c2cbec5028c913ab57b3cb528a17ea2e858db740",
+    "release_sha256": "3cb63ea2eace0691df4ebe3b234e6a1d11c398bf36d19405d926b8ed77ade1a1",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/corrected/scripts/recalibrate.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_repair_analysis/scripts_run/s3r_15_recalibrate.py",
+    "source_sha256": "1a5c3e1042c38cbe2aa99b613b54fc2f37c4153d1c325e33ac7fc2f937e2b539",
+    "release_sha256": "1898761ffda45468dfa46cf95372a316ec1b973e4558826598fd67a5ff0edd68",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/corrected/scripts/candidates.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_repair_analysis/scripts_run/s3r_18_candidates.py",
+    "source_sha256": "d48f3779ba83ec1dbf17873c98a4d81462fc7c8b5dbcab569bb968602c78e241",
+    "release_sha256": "6b6d62a9641bb5edb6b9ccc5e7c8e462b65fc2ebf1d82bddfd0b16c3ab579b10",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/corrected/scripts/decomposition.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_repair_analysis/scripts_run/s3r_21_decomposition.py",
+    "source_sha256": "87ebd88e96bf5550bd1f2fc01b4e4d86a7a58d4ba574524b8ac0fe09fe01680c",
+    "release_sha256": "983e610bb1c7cf95f4bad11ae98073fbd8b2e4ea04afbc2c83e693f2511966cd",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/corrected/scripts/nomination.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3_repair_analysis/scripts_run/s3r_22_nomination.py",
+    "source_sha256": "609ce080a927839a227c230f5543983762a6eaffd70323d81f7e96c773a288ee",
+    "release_sha256": "26ae2744c303525447a027f141d57df8b8c1148e60a8f4fc716599f538b49271",
+    "rationale": "Patient-cell-type pseudobulks, activity models, permutation calibration, decomposition and nomination (Figure 4; Supplementary Data 5)."
+  },
+  {
+    "path": "longitudinal/healthy_published/scripts/prep.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3b_local_analysis/scripts/s3b_10_prep.py",
+    "source_sha256": "a06febf33fecb77e1a3fd57ef7bf493c30a5abbed3538e14f2edc93ee179022a",
+    "release_sha256": "d9ba0ec8c12c46938f7d0ac1276cc740d033b4204dd402e1da1d3b78537c420f",
+    "rationale": "Healthy-cell pseudobulks and selectivity comparisons required for published link nomination."
+  },
+  {
+    "path": "longitudinal/healthy_published/scripts/model.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3b_local_analysis/scripts/s3b_11_model.py",
+    "source_sha256": "924fd14ae5f5022041b283fb4961ea7865f9afab20c3e50549c9fcb36366dfb5",
+    "release_sha256": "c86bfd8220ac86d24b776d7fae17c1da39d49c9a74bf7d228d8a4e1e632ba008",
+    "rationale": "Healthy-cell pseudobulks and selectivity comparisons required for published link nomination."
+  },
+  {
+    "path": "longitudinal/healthy_published/scripts/selectivity.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3b_local_analysis/scripts/s3b_12_selectivity.py",
+    "source_sha256": "9009cdd7f9e983e0f5930eab75f378e5542915df7b4545ce0ce1ce9f4d75c26f",
+    "release_sha256": "7857bc14bc273f78554ce65c991531fb2b710ccb6a78d36e4c46ecf22b3e594b",
+    "rationale": "Healthy-cell pseudobulks and selectivity comparisons required for published link nomination."
+  },
+  {
+    "path": "longitudinal/healthy_published/scripts/shared_module.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3b_local_analysis/scripts/s3b_14_shared_module.py",
+    "source_sha256": "61e20e4ebf00b30722a82ec125f925a4c67ca14485bef037aaf7b8b68a14ad52",
+    "release_sha256": "7d3ce8f5ee8328ad6fa0a96b286ceb9e48c0ab05b2893605cdb1befdc6a7ef66",
+    "rationale": "Healthy-cell pseudobulks and selectivity comparisons required for published link nomination."
+  },
+  {
+    "path": "longitudinal/healthy_corrected/scripts/prep.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3b_repair_analysis/scripts/s3br_10_prep.py",
+    "source_sha256": "0d4fdb91c1afb13f361399d07ee864c4462ddb221445d64715d5785badb6497e",
+    "release_sha256": "ed7fa44f8578581ee35aa77d7f762ccfd970102364c34ea68ffd40d2ca5e3c36",
+    "rationale": "Corrected healthy-cell comparisons required for nomination."
+  },
+  {
+    "path": "longitudinal/healthy_corrected/scripts/model.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3b_repair_analysis/scripts/s3br_11_model.py",
+    "source_sha256": "924fd14ae5f5022041b283fb4961ea7865f9afab20c3e50549c9fcb36366dfb5",
+    "release_sha256": "5a348d5ea7eb3146e3c39ddfc8ea22478df5e9f1349a9a2b7000b3a7857893f1",
+    "rationale": "Corrected healthy-cell comparisons required for nomination."
+  },
+  {
+    "path": "longitudinal/healthy_corrected/scripts/construction_dependence.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3b_repair_analysis/scripts/s3br_12_construction_dependence.py",
+    "source_sha256": "95e794f9b158fa9c25353aebd5645d1d39ada1eada10d1e2f2cd34f91480977a",
+    "release_sha256": "29f4570f1475e2d0d1af6976ba13f099c3ba74f51197a71567bf0498df8701d0",
+    "rationale": "Corrected healthy-cell comparisons required for nomination."
+  },
+  {
+    "path": "longitudinal/healthy_corrected/scripts/selectivity.py",
+    "copied_from": "manuscript/analysis_code/sources/stage3b_repair_analysis/scripts/s3br_13_selectivity.py",
+    "source_sha256": "bed16a7aaa9c407b790c6557edef1aae3b7decea8fd10025c75be73f03df1c84",
+    "release_sha256": "7a139942a61a717592b3c8535bc57fdc33a44dbc01ba9ffdbe9b8de25c1342bd",
+    "rationale": "Corrected healthy-cell comparisons required for nomination."
+  },
+  {
+    "path": "figures/data/manifest.json",
+    "copied_from": "figures/data/manifest.json",
+    "source_sha256": "9ad07cff42009dd4f9eae6b5e7f5bd997db795a273f0aa7943f31e40cdb4ac69",
+    "release_sha256": "80c35599fbd0042b564070cacbbe60042e7e11d906134f9c9ea14fab05da872d",
+    "rationale": "Fixed figure or module input."
+  },
+  {
+    "path": "modules/out/published_module.json",
+    "copied_from": "modules/out/module_definition_T3_link.json",
+    "source_sha256": "0e14629021776faf42fe8a80ddfc4fae27f551907916b583503b3fec67826081",
+    "release_sha256": "0e14629021776faf42fe8a80ddfc4fae27f551907916b583503b3fec67826081",
+    "rationale": "Fixed figure or module input."
+  },
+  {
+    "path": "modules/out/corrected_module.json",
+    "copied_from": "modules/out/module_definition_T3_repair.json",
+    "source_sha256": "eab2bd8410060ba4d07f5e24fa85273e68be0b4007d7914c701d3c53bfdb91eb",
+    "release_sha256": "eab2bd8410060ba4d07f5e24fa85273e68be0b4007d7914c701d3c53bfdb91eb",
+    "rationale": "Fixed figure or module input."
+  },
+  {
+    "path": "modules/out/shared_module.json",
+    "copied_from": "modules/out/module_definition_T4_intersection.json",
+    "source_sha256": "1bf1773f1bd8417fd9bf5cc30f55279f49902e41287cab88565d341fb6277a64",
+    "release_sha256": "1bf1773f1bd8417fd9bf5cc30f55279f49902e41287cab88565d341fb6277a64",
+    "rationale": "Fixed figure or module input."
+  },
+  {
+    "path": "modules/out/module_membership_crosswalk.csv",
+    "copied_from": "modules/out/module_membership_crosswalk.csv",
+    "source_sha256": "4f7b495db1e872db2f0efbfc742562b283bbde9d5fabe68fcd19c81d2769bb6c",
+    "release_sha256": "4f7b495db1e872db2f0efbfc742562b283bbde9d5fabe68fcd19c81d2769bb6c",
+    "rationale": "Fixed figure or module input."
+  },
+  {
+    "path": "scripts/prepare_outputs.py",
+    "copied_from": null,
+    "source_sha256": null,
+    "release_sha256": "adb7b0596a08c963462f3560487eec9a3f79a64f61fa2e457d1117c7459edda6",
+    "rationale": "Repository setup utility. Creates output directories without changing data; added during packaging."
+  },
+  {
+    "path": "scripts/curate_supplementary.py",
+    "copied_from": null,
+    "source_sha256": null,
+    "release_sha256": "95816484b8c901f68234a4c2219d5f18ecee9f03807f2ad0bdf2362d3e9dd6d1",
+    "rationale": "Assembles the curated supplementary CSV tables from preserved outputs.",
+    "origin": "Data-packaging utility added for the supplementary release; not an original analysis producer."
+  },
+  {
+    "path": "scripts/stage_source_data.py",
+    "copied_from": null,
+    "source_sha256": null,
+    "release_sha256": "2d31bc86187e22ae75f3c843b76ac04c8628b46a655c585d3f77cbcd9f698c7a",
+    "rationale": "Stages preserved outputs at the paths expected by the analysis and figure scripts.",
+    "origin": "Data-packaging utility added for the supplementary release; not an original analysis producer."
+  }
+]

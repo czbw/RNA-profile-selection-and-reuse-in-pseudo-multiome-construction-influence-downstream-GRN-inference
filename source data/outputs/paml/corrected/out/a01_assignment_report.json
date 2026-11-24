@@ -1,0 +1,40 @@
+{
+  "seed": 555,
+  "scope": "malignant Diagnosis + Relapse",
+  "excluded_units": [
+    "AML7_DX"
+  ],
+  "malignant_rna_filter": false,
+  "unassignable_policy": "DROP (no cell-type relaxation)",
+  "constraints": [
+    "within-patient",
+    "within-timepoint",
+    "within-cell-type"
+  ],
+  "stages": {
+    "Diagnosis": {
+      "n_in": 123422,
+      "n_out": 116687,
+      "n_dropped_no_donor": 6735,
+      "pct_dropped": 0.05456887750968223,
+      "achieved_reuse": 1.3788226119014984,
+      "distinct_donors": 84628,
+      "old_reuse": 18.046790466442463,
+      "old_distinct_donors": 6839,
+      "agreement_with_old_link": 0.002382441917265848,
+      "file": "cell_data_Diagnosis.repaired.csv"
+    },
+    "Relapse": {
+      "n_in": 77614,
+      "n_out": 74640,
+      "n_dropped_no_donor": 2974,
+      "pct_dropped": 0.03831782925760816,
+      "achieved_reuse": 1.4393428081069093,
+      "distinct_donors": 51857,
+      "old_reuse": 17.216947648624668,
+      "old_distinct_donors": 4508,
+      "agreement_with_old_link": 0.001942658092175777,
+      "file": "cell_data_Relapse.repaired.csv"
+    }
+  }
+}

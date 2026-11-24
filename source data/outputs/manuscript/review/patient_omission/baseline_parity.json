@@ -1,0 +1,108 @@
+[
+  {
+    "check": "ax1_directional",
+    "passed": true
+  },
+  {
+    "check": "ax2_selective",
+    "passed": true
+  },
+  {
+    "check": "ax3_celltype_robust",
+    "passed": true
+  },
+  {
+    "check": "55-member identity",
+    "passed": true
+  },
+  {
+    "check": "E2 beta Diagnosis",
+    "passed": true,
+    "max_abs_difference": 1.0061396160665481e-16
+  },
+  {
+    "check": "beta_malignant_Diagnosis",
+    "passed": true,
+    "max_abs_difference": 1.0234868508263162e-16
+  },
+  {
+    "check": "beta_healthy_Diagnosis",
+    "passed": true,
+    "max_abs_difference": 1.0018028073766061e-16
+  },
+  {
+    "check": "cell-type signs Diagnosis",
+    "passed": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "check": "stored orientation Diagnosis",
+    "passed": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "check": "external patient deltas Diagnosis",
+    "passed": true,
+    "max_abs_difference": 1.3877787807814457e-16
+  },
+  {
+    "check": "pediatric total Diagnosis",
+    "passed": true,
+    "max_abs_difference": 9.194034422677078e-17
+  },
+  {
+    "check": "pediatric within_type Diagnosis",
+    "passed": true,
+    "max_abs_difference": 9.540979117872439e-17
+  },
+  {
+    "check": "pediatric composition Diagnosis",
+    "passed": true,
+    "max_abs_difference": 9.194034422677078e-17
+  },
+  {
+    "check": "E2 beta Relapse",
+    "passed": true,
+    "max_abs_difference": 1.0148132334464322e-16
+  },
+  {
+    "check": "beta_malignant_Relapse",
+    "passed": true,
+    "max_abs_difference": 1.0115606269289756e-16
+  },
+  {
+    "check": "beta_healthy_Relapse",
+    "passed": true,
+    "max_abs_difference": 9.963817965141786e-17
+  },
+  {
+    "check": "cell-type signs Relapse",
+    "passed": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "check": "stored orientation Relapse",
+    "passed": true,
+    "max_abs_difference": 0.0
+  },
+  {
+    "check": "external patient deltas Relapse",
+    "passed": true,
+    "max_abs_difference": 1.2836953722228372e-16
+  },
+  {
+    "check": "pediatric total Relapse",
+    "passed": true,
+    "max_abs_difference": 8.586881206085195e-17
+  },
+  {
+    "check": "pediatric within_type Relapse",
+    "passed": true,
+    "max_abs_difference": 9.64939933512099e-17
+  },
+  {
+    "check": "pediatric composition Relapse",
+    "passed": true,
+    "max_abs_difference": 9.324138683375338e-17
+  }
+]

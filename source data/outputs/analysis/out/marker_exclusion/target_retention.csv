@@ -1,0 +1,5 @@
+axis,vocabulary,n_axis_unique_present,n_axis_positive_entries,n_axis_negative_entries,n_module_union_total,n_module_union_present,n_overlap_unique_present,n_module_regulons_affected,min_retained_targets_module,min_retained_targets_background,n_module_below5,n_module_below10,n_background_below5,n_background_below10,median_module_target_fraction_removed,max_module_target_fraction_removed
+A1_lambo_HSC_minus_Monocyte,Diagnosis,59,29,30,3362,3144,45,44,6,6,0,1,0,4,0.03875968992248062,0.44
+A1_lambo_HSC_minus_Monocyte,Relapse,59,29,30,3444,3210,45,43,10,10,0,0,0,0,0.028169014084507043,0.21052631578947367
+A2_lambo_HSCProg_minus_MonoGMP,Diagnosis,105,58,60,3362,3144,81,48,6,6,0,1,0,4,0.0625,0.44
+A2_lambo_HSCProg_minus_MonoGMP,Relapse,105,58,60,3444,3210,82,53,9,9,0,1,0,1,0.057692307692307696,0.26666666666666666

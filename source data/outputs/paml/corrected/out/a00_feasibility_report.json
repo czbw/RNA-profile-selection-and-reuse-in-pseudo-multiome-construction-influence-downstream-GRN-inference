@@ -1,0 +1,18 @@
+{
+  "scope": "malignant Diagnosis + Relapse",
+  "excluded_units": [
+    "AML7_DX"
+  ],
+  "n_strata": 561,
+  "n_strata_short": 345,
+  "atac_total": 201036,
+  "atac_in_short_strata": 130802,
+  "pct_atac_in_short_strata": 0.650639686424322,
+  "atac_unassignable": 9709,
+  "minimum_forced_global_reuse": 1.3881375607632591,
+  "lambo_link_reuse": 21.783075089392135,
+  "lambo_link_distinct_donors": 9229,
+  "malignant_rna_pool": 220147,
+  "pct_rna_pool_used_by_link": 0.04192198848950928,
+  "pct_links_within_timepoint": 0.8394923748062155
+}

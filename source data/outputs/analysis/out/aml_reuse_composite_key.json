@@ -1,0 +1,42 @@
+{
+  "definition": "distinct RNA profile = Linked_scRNA_Sample plus Linked_scRNA_barcode",
+  "stages": {
+    "Diagnosis": {
+      "old_reuse": 15.880339680905816,
+      "old_distinct_donors": 7772,
+      "n_in": 123422,
+      "achieved_reuse": 1.362481463750686,
+      "distinct_donors": 85643,
+      "n_out": 116687,
+      "old_reuse_barcode_only": 18.046790466442463,
+      "old_distinct_donors_barcode_only": 6839,
+      "achieved_reuse_barcode_only": 1.3788226119014984,
+      "distinct_donors_barcode_only": 84628,
+      "scarcity_floor": 1.362481463750686
+    },
+    "Relapse": {
+      "old_reuse": 14.301455684540262,
+      "old_distinct_donors": 5427,
+      "n_in": 77614,
+      "achieved_reuse": 1.4302412478203383,
+      "distinct_donors": 52187,
+      "n_out": 74640,
+      "old_reuse_barcode_only": 17.216947648624668,
+      "old_distinct_donors_barcode_only": 4508,
+      "achieved_reuse_barcode_only": 1.4393428081069093,
+      "distinct_donors_barcode_only": 51857,
+      "scarcity_floor": 1.4302412478203383
+    }
+  },
+  "checks": {
+    "Diagnosis_corrected_reuse_equals_floor": true,
+    "Relapse_corrected_reuse_equals_floor": true
+  },
+  "published_pooled": {
+    "lambo_link_reuse": 18.441977800201816,
+    "lambo_link_distinct_donors": 10901,
+    "n": 201036,
+    "lambo_link_reuse_barcode_only": 21.783075089392135,
+    "lambo_link_distinct_donors_barcode_only": 9229
+  }
+}

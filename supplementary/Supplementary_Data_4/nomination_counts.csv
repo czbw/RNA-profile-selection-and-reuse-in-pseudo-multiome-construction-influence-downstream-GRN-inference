@@ -1,0 +1,9 @@
+construction,cumulative_criterion,n_regulons,n_TFs
+corrected,Shared signed identity,201,109
+corrected,Consistent direction,160,92
+corrected,Malignant-versus-healthy selectivity,73,46
+corrected,Cell-type agreement,55,31
+published link,Shared signed identity,431,209
+published link,Consistent direction,299,163
+published link,Malignant-versus-healthy selectivity,165,107
+published link,Cell-type agreement,98,68

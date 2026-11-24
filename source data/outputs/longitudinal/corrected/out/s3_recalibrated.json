@@ -1,0 +1,110 @@
+{
+  "seed": 555,
+  "status": "POST-HOC \u2014 triggered by the C2 calibration failure",
+  "predeclared_primary_result_stands": "0 regulons CONFIRMED (s3_results.json)",
+  "calibration": {
+    "E1_random_intercept": {
+      "Diagnosis": {
+        "n_fits": 1310,
+        "frac_p_below_05": 0.06870229007633588,
+        "frac_p_below_01": 0.009923664122137405,
+        "median_p": 0.484865901954892,
+        "ks_uniform_p": 0.13492206295228204
+      },
+      "Relapse": {
+        "n_fits": 1623,
+        "frac_p_below_05": 0.07578558225508318,
+        "frac_p_below_01": 0.016019716574245224,
+        "median_p": 0.4328318673692122,
+        "ks_uniform_p": 3.066972347256393e-09
+      }
+    },
+    "E2_paired_wilcoxon": {
+      "Diagnosis": {
+        "n_fits": 2000,
+        "frac_p_below_05": 0.043,
+        "frac_p_below_01": 0.006,
+        "median_p": 0.5152778625488281,
+        "ks_uniform_p": 0.0030148737147480354
+      },
+      "Relapse": {
+        "n_fits": 2000,
+        "frac_p_below_05": 0.0535,
+        "frac_p_below_01": 0.011,
+        "median_p": 0.48996734619140625,
+        "ks_uniform_p": 0.11654561509107608
+      }
+    }
+  },
+  "readable": {
+    "E1_random_intercept": true,
+    "E2_paired_wilcoxon": true
+  },
+  "results": {
+    "E1_random_intercept": {
+      "read": true,
+      "per_vocabulary": {
+        "Diagnosis": {
+          "fitted": 249,
+          "q05": 104,
+          "min_q": 4.528806818947887e-08
+        },
+        "Relapse": {
+          "fitted": 281,
+          "q05": 55,
+          "min_q": 2.28442073175109e-11
+        }
+      },
+      "n_shared": 136,
+      "sign_agreement": 0.7352941176470589,
+      "confirmed": 26,
+      "confirmed_regulons": [
+        "BCL11A_direct_+/+",
+        "BCL11A_direct_+/-",
+        "CEBPA_direct_-/-",
+        "CEBPD_direct_-/+",
+        "CEBPD_direct_-/-",
+        "ERG_direct_-/-",
+        "FOSB_direct_+/+",
+        "FOSB_direct_+/-",
+        "FOS_direct_+/+",
+        "JUNB_direct_-/+",
+        "JUNB_direct_-/-",
+        "KLF2_direct_+/+",
+        "KLF2_direct_+/-",
+        "KLF4_direct_-/+",
+        "KLF4_direct_-/-",
+        "KLF6_direct_+/+",
+        "KLF6_direct_+/-",
+        "KLF6_direct_-/+",
+        "KLF6_direct_-/-",
+        "KLF9_direct_+/+",
+        "NFATC3_direct_+/-",
+        "NFIL3_direct_-/+",
+        "POU4F1_direct_+/+",
+        "TCF3_direct_+/+",
+        "TFDP2_direct_+/+",
+        "ZEB2_direct_-/+"
+      ]
+    },
+    "E2_paired_wilcoxon": {
+      "read": true,
+      "per_vocabulary": {
+        "Diagnosis": {
+          "fitted": 332,
+          "q05": 10,
+          "min_q": 0.02089691162109375
+        },
+        "Relapse": {
+          "fitted": 352,
+          "q05": 1,
+          "min_q": 0.018798828125
+        }
+      },
+      "n_shared": 201,
+      "sign_agreement": 0.7960199004975125,
+      "confirmed": 0,
+      "confirmed_regulons": []
+    }
+  }
+}

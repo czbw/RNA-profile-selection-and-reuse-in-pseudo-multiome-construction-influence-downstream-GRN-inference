@@ -1,0 +1,690 @@
+[
+  {
+    "table": "Supplementary_Data_1/membership.csv",
+    "description": "TF and signed eRegulon membership (Figure 1C).",
+    "source_files": "outputs/analysis/out/f1_set_members.csv",
+    "selection": "Members present in published link or metacell networks.",
+    "rows": 2328,
+    "sha256": "f38eecf578c16b7b4d302107b4733336909a5aaf693aacc6f94af2bb4ba6fb59"
+  },
+  {
+    "table": "Supplementary_Data_1/shared_regulon_agreement.csv",
+    "description": "Activity and target agreement for the same shared eRegulons (Figure 1D).",
+    "source_files": "outputs/analysis/out/f1_activity_vs_target.csv",
+    "selection": "All records.",
+    "rows": 401,
+    "sha256": "4ca9fb9b6579697c0839893a2962f9eb30979d1032055b95ef1549b8b0c149bf"
+  },
+  {
+    "table": "Supplementary_Data_1/shared_tf_targets.csv",
+    "description": "Target overlap after pooling signed eRegulons within each TF.",
+    "source_files": "outputs/analysis/out/f1_shared_tf_jaccard.csv",
+    "selection": "Published link versus metacell only.",
+    "rows": 261,
+    "sha256": "6c71d53be0f6818183e667a1d8dc9ebd00a68e279031af4fd4c06ddfab3b0f85"
+  },
+  {
+    "table": "Supplementary_Data_1/network_counts.csv",
+    "description": "Network sizes underlying Figure 1C.",
+    "source_files": "outputs/analysis/out/f1_sets_and_targets.json",
+    "selection": "inputs: published link and metacell at each stage.",
+    "rows": 4,
+    "sha256": "286cd9e0580956f2c58b44cc9d0655ff8d02a16b7a5ac4d0b91b1fcd99577914"
+  },
+  {
+    "table": "Supplementary_Data_2/random_gene_controls.csv",
+    "description": "Expression- and size-matched random gene controls for Figure 1.",
+    "source_files": "outputs/analysis/out/f1_random_geneset_control.csv",
+    "selection": "All records.",
+    "rows": 401,
+    "sha256": "c5951f3cca38a6563dbf71091081bf16a9345e79ecb02ce2392c408a65c452b7"
+  },
+  {
+    "table": "Supplementary_Data_2/random_control_summary.csv",
+    "description": "Summary of the random gene controls cited in Results.",
+    "source_files": "outputs/analysis/out/f1_random_geneset_control.json",
+    "selection": "stages/*; N1 uses the full eligible gene universe.",
+    "rows": 2,
+    "sha256": "d1c981032defcc4fbf2927c1010bd1e8c53fac7320120e95627d7ea8b082b807"
+  },
+  {
+    "table": "Supplementary_Data_2/pbmc_network_agreement.csv",
+    "description": "PBMC native-reference network comparisons (Figure 2A,B).",
+    "source_files": "outputs/benchmarks/pbmc/out/trackb_rungs_pbmc10k_all.json",
+    "selection": "All completed arms; undefined or uncomputed metrics remain blank.",
+    "rows": 7,
+    "sha256": "cbb43391f1ffa468b5e2ea648432b66faa194e9c58c6637c6d66bc2ce17badf0"
+  },
+  {
+    "table": "Supplementary_Data_2/pbmc_network_details.csv",
+    "description": "Counts and additional network metrics for PBMC.",
+    "source_files": "outputs/benchmarks/pbmc/out/trackb_rungs_pbmc10k_all.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 470,
+    "sha256": "79e78192929d9f8b563ae9acba22ebabd14406790665e149513b775a9e4577ca"
+  },
+  {
+    "table": "Supplementary_Data_2/bmmc_network_agreement.csv",
+    "description": "BMMC native-reference network comparisons (Figure 2A,B).",
+    "source_files": "outputs/benchmarks/bmmc/out/trackb_rungs_bmmc_all.json",
+    "selection": "All completed arms; undefined or uncomputed metrics remain blank.",
+    "rows": 11,
+    "sha256": "9067235871b4f9a6d8991721f73a1e67ee713ecb4b171d7d545dbb2b8c69dcd4"
+  },
+  {
+    "table": "Supplementary_Data_2/bmmc_network_details.csv",
+    "description": "Counts and additional network metrics for BMMC.",
+    "source_files": "outputs/benchmarks/bmmc/out/trackb_rungs_bmmc_all.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 706,
+    "sha256": "5e9e476022a79af8acb24fa0d4e7701e397f24b00558eb3a12bdfa8f5430bc97"
+  },
+  {
+    "table": "Supplementary_Data_2/pbmc_cell_activity.csv",
+    "description": "Per-cell activity agreement (Figure 2C).",
+    "source_files": "outputs/benchmarks/pbmc/out/trackA_L6_10k.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 91,
+    "sha256": "ebce92b12948034c82620f65738230d5847b7fdf78986ade7840c8faaa555c3d"
+  },
+  {
+    "table": "Supplementary_Data_2/pbmc_stratified_cell_activity.csv",
+    "description": "Per-cell activity agreement (Figure 2C).",
+    "source_files": "outputs/benchmarks/pbmc/out/trackA_L6_10k_subcluster_arm.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 52,
+    "sha256": "d01ffab256d0ecf64e9a9f0282ab110d5f1792fad3aae42340968eac185614d8"
+  },
+  {
+    "table": "Supplementary_Data_2/bmmc_cell_activity.csv",
+    "description": "Per-cell activity agreement (Figure 2C).",
+    "source_files": "outputs/benchmarks/bmmc/out/b06_trackA_L6_bmmc.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 165,
+    "sha256": "4f92905f337a1c01bbed88d0623911bb3a26cafde20dcb64b5380e6ebaabb243"
+  },
+  {
+    "table": "Supplementary_Data_2/bmmc_assignment_accuracy.csv",
+    "description": "Assignment accuracy and label agreement in BMMC.",
+    "source_files": "outputs/benchmarks/bmmc/out/b05_pairing_error_bmmc.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 96,
+    "sha256": "bb15a20e7222e19b1bdb369cbeee23c74567c73732d1348bdd0d92e8639cd68b"
+  },
+  {
+    "table": "Supplementary_Data_2/rna_neighbor_comparator.csv",
+    "description": "RNA nearest-neighbor comparator (Figure 2C).",
+    "source_files": "outputs/analysis/out/l6_ceiling_test.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 40,
+    "sha256": "da09c1d7eab5dc9b6d027e08576c23fc1bb3e3b74fecd21696a7b239c0afac05"
+  },
+  {
+    "table": "Supplementary_Data_2/bmmc_cell_type_activity.csv",
+    "description": "Underlying cell-type or regulon activity comparisons.",
+    "source_files": "outputs/benchmarks/bmmc/out/b06_trackA_L6_per_celltype_bmmc.csv",
+    "selection": "All records.",
+    "rows": 242,
+    "sha256": "8e0d6d7b8a2f1814bdbe32efe6efc7c8c450bed8bd5b321700d1a12d6b760590"
+  },
+  {
+    "table": "Supplementary_Data_2/bmmc_regulon_activity.csv",
+    "description": "Underlying cell-type or regulon activity comparisons.",
+    "source_files": "outputs/benchmarks/bmmc/out/b06_trackA_L6_per_regulon_bmmc.csv",
+    "selection": "All records.",
+    "rows": 2431,
+    "sha256": "a43126b43562824421a16f740428d75d65b691d209986f3a4bdb9a9b2ba89893"
+  },
+  {
+    "table": "Supplementary_Data_2/bmmc_group_mean_activity.csv",
+    "description": "Underlying cell-type or regulon activity comparisons.",
+    "source_files": "outputs/benchmarks/bmmc/out/b07_stat3_per_regulon_bmmc.csv",
+    "selection": "All records.",
+    "rows": 1326,
+    "sha256": "e89dbec48ee311f743d317ddac622290ccb5fc09eb405887de60bb415190e0c7"
+  },
+  {
+    "table": "Supplementary_Data_3/matched_reuse_summary.csv",
+    "description": "Assignment counts and activity variance for all six matched-reuse arms (Figure 3A,D).",
+    "source_files": "outputs/benchmarks/bmmc/out/b04e_cap14_pair_verify.json",
+    "selection": "arms: all six entries. Ratios use the native-pairing value as denominator.",
+    "rows": 6,
+    "sha256": "11f1d03d30d448b0e766b65fc0829656d34ac2f0e9a28d482c7dd1a326a7e670"
+  },
+  {
+    "table": "Supplementary_Data_3/multiplicity_checks.csv",
+    "description": "Per-stratum equality checks for the two reuse-matched comparisons.",
+    "source_files": "outputs/benchmarks/bmmc/out/b02_matched_cap14_report.json; outputs/benchmarks/bmmc/out_matched/b02_arm_report.json",
+    "selection": "All 190 strata per reused level. Reuse 1.000 assigns every RNA profile once by construction.",
+    "rows": 380,
+    "sha256": "2d42bce5824ed565d7fd8c37f0a0a0ea8fe12683dd9cdb5786d27683d06bcdcc"
+  },
+  {
+    "table": "Supplementary_Data_3/stratum_census.csv",
+    "description": "The 190 donor-cell-type strata used in matched-reuse comparisons.",
+    "source_files": "outputs/benchmarks/bmmc/out/b00_stratum_census.csv",
+    "selection": "definition == celltype_x_donor.",
+    "rows": 190,
+    "sha256": "51d797e98d5479f12359c2a70e90e8dd97e371ab23de1d405817f42678bd0961"
+  },
+  {
+    "table": "Supplementary_Data_3/donor_activity_summary.csv",
+    "description": "Donor-stratum mean activity agreement (Figure 3C), with eligibility sensitivity results.",
+    "source_files": "outputs/analysis/out/stratum_activity/f3_stratum_mean_summary.csv",
+    "selection": "All records.",
+    "rows": 6,
+    "sha256": "3f45e8ab475fc5bd33b783ce5a1f761a657ca4fc980497725c0c5f1d99067b5f"
+  },
+  {
+    "table": "Supplementary_Data_3/donor_activity_by_regulon.csv",
+    "description": "Per-cell-type-regulon donor-stratum correlations for the primary eligibility rule.",
+    "source_files": "outputs/analysis/out/stratum_activity/f3_stratum_mean_grid.csv",
+    "selection": "All records.",
+    "rows": 25194,
+    "sha256": "7bab2aaf2fae77ff7ee7c7b7de58d5f6eb91261b4c19828577e0ead38f8eb4da"
+  },
+  {
+    "table": "Supplementary_Data_3/capacity_sweep.csv",
+    "description": "Capacity sweep used to choose the intermediate reuse level.",
+    "source_files": "outputs/benchmarks/bmmc/out/b04d_capacity_sweep.json",
+    "selection": "All sweep points. The source report was assembled from two runs; no new matching was performed.",
+    "rows": 8,
+    "sha256": "a2409596360bd586fff76c0f7142b44f56be2febaf02b7ca06b59903474d35a9"
+  },
+  {
+    "table": "Supplementary_Data_4/matched_reuse_networks.csv",
+    "description": "Absolute agreement with the native network (Figure 3B and Supplementary Figure S3).",
+    "source_files": "outputs/figures/supplementary/figS_reuse_native_agreement.csv",
+    "selection": "All records.",
+    "rows": 42,
+    "sha256": "91dbdaa162c363d5257d90e7266f44ce3cc03f77812b45be9a58ecae09491dca"
+  },
+  {
+    "table": "Supplementary_Data_4/paml_reuse.csv",
+    "description": "pAML RNA reuse using sample-plus-barcode identities (Figure 4).",
+    "source_files": "outputs/analysis/out/aml_reuse_composite_key.json",
+    "selection": "stages: composite-key counts only. Stored donor fields count RNA profiles, not patients.",
+    "rows": 4,
+    "sha256": "93fb165c27d179c349b9bc899576c26d986ba4627b698e341d7e36f658b733e2"
+  },
+  {
+    "table": "Supplementary_Data_4/paml_network_counts.csv",
+    "description": "Published link and corrected network sizes (Figure 4).",
+    "source_files": "outputs/analysis/out/f1_sets_and_targets.json",
+    "selection": "inputs: link and repair constructions.",
+    "rows": 4,
+    "sha256": "794c161f9318d1fed13aa88f4a8463f45d33e483ac640666ffcce58b41c4bae1"
+  },
+  {
+    "table": "Supplementary_Data_4/corrected_nomination.csv",
+    "description": "All shared candidates and the three further cumulative nomination criteria (Figure 4).",
+    "source_files": "outputs/longitudinal/corrected/out/nomination_funnel.csv",
+    "selection": "All records.",
+    "rows": 201,
+    "sha256": "61662012c63d240446751d4276712364ea63c0cf3a43b8aac17febdb84f47e85"
+  },
+  {
+    "table": "Supplementary_Data_4/corrected_paired_tests.csv",
+    "description": "pAML patient-cell-type units and longitudinal statistical results.",
+    "source_files": "outputs/longitudinal/corrected/out/e2_paired_wilcoxon_fits.csv",
+    "selection": "All records.",
+    "rows": 684,
+    "sha256": "cb9dbe92b05a57d2ae00b958df55e26e86f55c486f5c2ee0c21e1d12414386b7"
+  },
+  {
+    "table": "Supplementary_Data_4/corrected_mixed_models.csv",
+    "description": "pAML patient-cell-type units and longitudinal statistical results.",
+    "source_files": "outputs/longitudinal/corrected/out/lmm_fits_by_definition.csv",
+    "selection": "All records.",
+    "rows": 682,
+    "sha256": "5bec353e6dcea1389a36e0e8b6d861c7d6e2ad288e8e6b8a961139b0d5899ffe"
+  },
+  {
+    "table": "Supplementary_Data_4/corrected_paired_units.csv",
+    "description": "pAML patient-cell-type units and longitudinal statistical results.",
+    "source_files": "outputs/longitudinal/corrected/out/paired_units.csv",
+    "selection": "All records.",
+    "rows": 94,
+    "sha256": "a1ff8e111fff528c71064f0145162f52343b76de79f5f2b0addac2364f78fb44"
+  },
+  {
+    "table": "Supplementary_Data_4/corrected_calibration.csv",
+    "description": "Mixed-model calibration diagnostics; numeric results only.",
+    "source_files": "outputs/longitudinal/corrected/out/s3_recalibrated.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 43,
+    "sha256": "f39350f809327806652f55d7629a865b030293bea5aa297bc8da3fe965a8a82d"
+  },
+  {
+    "table": "Supplementary_Data_4/published_link_nomination.csv",
+    "description": "All shared candidates and the three further cumulative nomination criteria (Figure 4).",
+    "source_files": "outputs/longitudinal/published/out/nomination_funnel.csv",
+    "selection": "All records.",
+    "rows": 431,
+    "sha256": "2190ca1f6e800871cecac4b87ac8b32a5a48345fe03b1ff57da860c891321f62"
+  },
+  {
+    "table": "Supplementary_Data_4/published_link_paired_tests.csv",
+    "description": "pAML patient-cell-type units and longitudinal statistical results.",
+    "source_files": "outputs/longitudinal/published/out/e2_paired_wilcoxon_fits.csv",
+    "selection": "All records.",
+    "rows": 1479,
+    "sha256": "21fa4d9a21a1c8afd69c79ad3362e6e25592be57ad72cead92ae02c833d226b9"
+  },
+  {
+    "table": "Supplementary_Data_4/published_link_mixed_models.csv",
+    "description": "pAML patient-cell-type units and longitudinal statistical results.",
+    "source_files": "outputs/longitudinal/published/out/lmm_fits_by_definition.csv",
+    "selection": "All records.",
+    "rows": 1276,
+    "sha256": "a3310e997c41a0e81019669089b522ab7eb3d40cd4b8e256c08357c1fdae0e03"
+  },
+  {
+    "table": "Supplementary_Data_4/published_link_paired_units.csv",
+    "description": "pAML patient-cell-type units and longitudinal statistical results.",
+    "source_files": "outputs/longitudinal/published/out/paired_units.csv",
+    "selection": "All records.",
+    "rows": 94,
+    "sha256": "8e99eae27b2da349f11b4c4461fb4c5ba1c78c84959979e6edf90898cea1dcb1"
+  },
+  {
+    "table": "Supplementary_Data_4/published_link_calibration.csv",
+    "description": "Mixed-model calibration diagnostics; numeric results only.",
+    "source_files": "outputs/longitudinal/published/out/s3_recalibrated.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 34,
+    "sha256": "6f2c0708584299dc604128ba28ebbb5663ab9f470d85b6d4f8a437e4ab6595e4"
+  },
+  {
+    "table": "Supplementary_Data_4/nomination_counts.csv",
+    "description": "Cumulative candidate counts (Figure 4).",
+    "source_files": "outputs/longitudinal/corrected/out/nomination_funnel.csv; outputs/longitudinal/published/out/nomination_funnel.csv",
+    "selection": "All shared rows, followed by cumulative intersection of ax1_directional, ax2_selective and ax3_celltype_robust. Distinct TFs are counted within each retained set.",
+    "rows": 8,
+    "sha256": "abcef3a63e50ae089e21329e50b39937126f5c8efd0f6df7490aae9ee9c67bed"
+  },
+  {
+    "table": "Supplementary_Data_4/paml_stratum_census.csv",
+    "description": "pAML eligible RNA and ATAC counts by patient, stage and cell-type.",
+    "source_files": "outputs/paml/corrected/out/a00_stratum_census.csv",
+    "selection": "All records.",
+    "rows": 561,
+    "sha256": "efe933e675bdded6df5ead30c2cf040e39b47f4449591a17ef3c70dbe89d2138"
+  },
+  {
+    "table": "Supplementary_Data_4/paml_stratum_assignment.csv",
+    "description": "pAML eligible RNA and ATAC counts by patient, stage and cell-type.",
+    "source_files": "outputs/paml/corrected/out/a01_per_stratum.csv",
+    "selection": "All records.",
+    "rows": 561,
+    "sha256": "dbd60f3e9ba143a496cf18059959b39cb716f457e6ade483c546932cffd31798"
+  },
+  {
+    "table": "Supplementary_Data_5/adult_module_scores.csv",
+    "description": "Oriented, background-centered adult module changes (Figure 5B), including alternative scoring methods.",
+    "source_files": "outputs/adult/corrected/out/gate5_result_T3_repair.json",
+    "selection": "by_vocabulary: primary AUCell and sensitivities. Missing medians were not stored for alternative scores.",
+    "rows": 6,
+    "sha256": "6c542b45e0b82984eccdeb679b80b41edb0963cbfcce32525a5899cf9c57504d"
+  },
+  {
+    "table": "Supplementary_Data_5/adult_nulls.csv",
+    "description": "Null distributions for the primary adult module score (Figure 5B).",
+    "source_files": "outputs/adult/corrected/out/gate5_result_T3_repair.json",
+    "selection": "by_vocabulary: null A, B and C.",
+    "rows": 6,
+    "sha256": "49969841c4d17acc06606f3ed412e2aa1f6c3cb1b43691e6117e9744b84f91d9"
+  },
+  {
+    "table": "Supplementary_Data_5/adult_patient_changes.csv",
+    "description": "Adult expression-score changes, sample identifiers and target coverage (Figure 5A,B).",
+    "source_files": "outputs/adult/corrected/out/per_patient_deltas_T3_repair.csv",
+    "selection": "All records.",
+    "rows": 118,
+    "sha256": "2b0c5f1119e7de5158499891c1f8842e2c0e05d079ced26c510a9b25a81ef3f2"
+  },
+  {
+    "table": "Supplementary_Data_5/adult_regulons_diagnosis.csv",
+    "description": "Adult expression-score changes, sample identifiers and target coverage (Figure 5A,B).",
+    "source_files": "outputs/adult/corrected/out/per_regulon_external_T3_repair_Diagnosis.csv",
+    "selection": "All records.",
+    "rows": 55,
+    "sha256": "254882a47f0141922959e8ef399eaf9a2bd588195b1890597f214bd3dd9b2813"
+  },
+  {
+    "table": "Supplementary_Data_5/adult_regulons_relapse.csv",
+    "description": "Adult expression-score changes, sample identifiers and target coverage (Figure 5A,B).",
+    "source_files": "outputs/adult/corrected/out/per_regulon_external_T3_repair_Relapse.csv",
+    "selection": "All records.",
+    "rows": 55,
+    "sha256": "d589bd45d215a8ee422cb28feddbbcfd3c9dc8acd0d7bb8d42b0f6239ebf2cdd"
+  },
+  {
+    "table": "Supplementary_Data_5/adult_target_coverage.csv",
+    "description": "Adult expression-score changes, sample identifiers and target coverage (Figure 5A,B).",
+    "source_files": "outputs/adult/corrected/out/target_coverage_T3_repair.csv",
+    "selection": "All records.",
+    "rows": 110,
+    "sha256": "96fe9e0d4426ecd610f0dc0d4d2177ccd23bbf35b9137a3824b85b087a673825"
+  },
+  {
+    "table": "Supplementary_Data_5/adult_samples.csv",
+    "description": "Adult expression-score changes, sample identifiers and target coverage (Figure 5A,B).",
+    "source_files": "outputs/adult/corrected/out/sample_table.csv",
+    "selection": "All records.",
+    "rows": 126,
+    "sha256": "daf314cdc5d72e8bc859ee11b822385c0b762590c62f7f9b8445a0918e8867e4"
+  },
+  {
+    "table": "Supplementary_Data_5/module_membership.csv",
+    "description": "Module membership and pediatric orientations within the 201-regulon background.",
+    "source_files": "outputs/modules/out/corrected_module.json",
+    "selection": "All background regulons under both vocabularies.",
+    "rows": 402,
+    "sha256": "9183c20a4243fcaaeb1ec96a17ea3ab8a2cde66235841ce1dd8a5e272bd99180"
+  },
+  {
+    "table": "Supplementary_Data_5/module_targets.csv",
+    "description": "Target definitions for the module and its centering background.",
+    "source_files": "outputs/modules/out/corrected_module.json",
+    "selection": "All target genes in targets/<vocabulary>/<regulon>.",
+    "rows": 57435,
+    "sha256": "85dc80ce79be0b6052fdbf0d22fe82e64303f6c81bc94432b24f492097ed539b"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_marker_exclusion/summary.csv",
+    "description": "Intact maturity axes compared with original and marker-excluded module scores (Figure 5D).",
+    "source_files": "outputs/analysis/out/marker_exclusion/summary.csv",
+    "selection": "All records.",
+    "rows": 8,
+    "sha256": "700db28489b51ef810e36b011e7583e619425bf049f7e90d67be54e0402d70b8"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_marker_exclusion/target_retention.csv",
+    "description": "Intact maturity axes compared with original and marker-excluded module scores (Figure 5D).",
+    "source_files": "outputs/analysis/out/marker_exclusion/target_retention.csv",
+    "selection": "All records.",
+    "rows": 4,
+    "sha256": "6a8e47048589a2a79b668d8cd3a3d8b004fe9f9faafd1009a50a8f48d72cf3b2"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_marker_exclusion/axis_genes.csv",
+    "description": "Intact maturity axes compared with original and marker-excluded module scores (Figure 5D).",
+    "source_files": "outputs/analysis/out/marker_exclusion/axis_genes.csv",
+    "selection": "All records.",
+    "rows": 167,
+    "sha256": "48c6f0ef8cddd169c8eb7ea460f769d8c8727395af3adb843306fe1efab0220b"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_marker_exclusion/per_patient_changes.csv",
+    "description": "Intact maturity axes compared with original and marker-excluded module scores (Figure 5D).",
+    "source_files": "outputs/analysis/out/marker_exclusion/per_patient_changes.csv",
+    "selection": "All records.",
+    "rows": 236,
+    "sha256": "185944ffb92e9ea7c18cc1d8e5f68f722686cf6f5d91bf3ba6db714b16eed1bf"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_marker_exclusion/per_regulon_target_audit.csv",
+    "description": "Intact maturity axes compared with original and marker-excluded module scores (Figure 5D).",
+    "source_files": "outputs/analysis/out/marker_exclusion/per_regulon_target_audit.csv",
+    "selection": "All records.",
+    "rows": 804,
+    "sha256": "9ea0e00a65575261c40d8e5390f1391c15304f5290371ab7ee4e6793d7682a28"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_marker_exclusion/module_change_comparison.csv",
+    "description": "Intact maturity axes compared with original and marker-excluded module scores (Figure 5D).",
+    "source_files": "outputs/analysis/out/marker_exclusion/module_change_comparison.csv",
+    "selection": "All records.",
+    "rows": 4,
+    "sha256": "665a5b88728ae064bf60ce95ace39be314c39142949371b5d81db4a9a30377b9"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_axis_changes.csv",
+    "description": "Diagnosis-to-relapse change in the intact axes. Larger scores indicate primitive marker expression.",
+    "source_files": "outputs/adult/corrected/out/axis_lambo_T3_repair.json",
+    "selection": "axes/A1 and A2/delta_axis.",
+    "rows": 2,
+    "sha256": "a5d4d446f1d87296e0f6307a638d7c40cdf2716f87b7556617a671a6cd431bc3"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_axes_legacy/axis_target_exclusion.csv",
+    "description": "Earlier sensitivity excluding module targets from the axes, retained for Supplementary Methods S7 only.",
+    "source_files": "outputs/adult/corrected/out/axis_lambo_T3_repair.json",
+    "selection": "axes/A1 and A2/by_vocabulary/*/gene_disjoint; not the source for Figure 5D.",
+    "rows": 4,
+    "sha256": "be420d2fda1d5b2e7b4aeedadeddb942e4514e3accbec8c2072c0a2da9b41628"
+  },
+  {
+    "table": "Supplementary_Data_5/maturity_axis_random_controls.csv",
+    "description": "Size- and detection-matched random-axis controls (Supplementary Methods S7).",
+    "source_files": "outputs/adult/corrected/out/axis_lambo_T3_repair.json",
+    "selection": "axes/A1 and A2/by_vocabulary/*/null_* fields.",
+    "rows": 8,
+    "sha256": "f2c1045f0bbbbf4be2fd5fc7967d810eaa4084257624a012988c29b4f96af015"
+  },
+  {
+    "table": "Supplementary_Data_5/pooled_cell_type_activity.csv",
+    "description": "Secondary pooled raw, uncentered and unoriented activity and six-cell-type shares (Figure 5C).",
+    "source_files": "outputs/analysis/out/f6_fig06_mixture.csv",
+    "selection": "All records.",
+    "rows": 24,
+    "sha256": "c57d932128cb12a3d7ce3974cfee481c7dce02cccd0795412b410059d3cb4a60"
+  },
+  {
+    "table": "Supplementary_Data_5/signed_target_enrichment.csv",
+    "description": "All tested terms for pooled signed target sets, before and after ribosomal depletion (Figure 5E).",
+    "source_files": "outputs/analysis/out/f6_fig06_arm_enrichment.csv",
+    "selection": "All records.",
+    "rows": 24986,
+    "sha256": "43cc5aaf064387759db5531944cb4e8c6e387c8b864205a5d879437a1f0dbb70"
+  },
+  {
+    "table": "Supplementary_Data_5/tf_signed_target_counts.csv",
+    "description": "Target counts after separating each TF by its TF-gene correlation sign (Figure 5F).",
+    "source_files": "outputs/analysis/out/f6_unit_correction_degree.csv",
+    "selection": "unit_kind == per_TF_s1.",
+    "rows": 82,
+    "sha256": "816969290461790e162841a0f73bafca824a7fc4bc97f4465d748999b41915ad"
+  },
+  {
+    "table": "Supplementary_Data_5/tf_signed_enrichment.csv",
+    "description": "All tested terms for signed TF target sets (Figure 5F).",
+    "source_files": "outputs/analysis/out/f6_unit_correction_enrichment.csv",
+    "selection": "unit_kind == per_TF_s1; all terms, including nonsignificant results.",
+    "rows": 257152,
+    "sha256": "03784e68a681c0112796e0338a9d32076e8a4dd21511ac90f633189a0bc3753a"
+  },
+  {
+    "table": "Supplementary_Data_5/ribosomal_genes.csv",
+    "description": "Ribosomal protein genes excluded in the reported depletion sensitivity.",
+    "source_files": "outputs/analysis/out/f6_ribosome_gene_list.csv",
+    "selection": "in_DROP_A == True.",
+    "rows": 167,
+    "sha256": "f11ab2fcecc14be40f2bfebfc07465bc687c58c0e7bc8461d15fe7e4476c766d"
+  },
+  {
+    "table": "Supplementary_Data_5/stagewise_function/enrichment_counts.csv",
+    "description": "Stage-specific functional enrichment and direct stage-exclusive target comparisons (Supplementary Methods S8).",
+    "source_files": "outputs/analysis/out/go_stage_comparison/enrichment_counts.csv",
+    "selection": "All records.",
+    "rows": 12,
+    "sha256": "064b6e28651ffd237304eef7ee8357f7a83e4a05750da7bbd27cf543bfce8548"
+  },
+  {
+    "table": "Supplementary_Data_5/stagewise_function/gene_membership.csv",
+    "description": "Stage-specific functional enrichment and direct stage-exclusive target comparisons (Supplementary Methods S8).",
+    "source_files": "outputs/analysis/out/go_stage_comparison/gene_membership.csv",
+    "selection": "All records.",
+    "rows": 111671,
+    "sha256": "2a7421d3181a16b3d126c5b2199aab96386e3afd73adddbb29d884604b325380"
+  },
+  {
+    "table": "Supplementary_Data_5/stagewise_function/go_enrichment_all_terms.csv",
+    "description": "Stage-specific functional enrichment and direct stage-exclusive target comparisons (Supplementary Methods S8).",
+    "source_files": "outputs/analysis/out/go_stage_comparison/go_enrichment_all_terms.csv",
+    "selection": "All records.",
+    "rows": 49464,
+    "sha256": "fb6746c60a1b98150f27c3b5219083c477da5aa54df85e630f51d4a66700cd27"
+  },
+  {
+    "table": "Supplementary_Data_5/stagewise_function/go_exclusive_target_contrast.csv",
+    "description": "Stage-specific functional enrichment and direct stage-exclusive target comparisons (Supplementary Methods S8).",
+    "source_files": "outputs/analysis/out/go_stage_comparison/go_exclusive_target_contrast.csv",
+    "selection": "All records.",
+    "rows": 13122,
+    "sha256": "84f1f1959201a23498e71fdca423ffd690a71ee926de2d0b4ddb51554b459e62"
+  },
+  {
+    "table": "Supplementary_Data_5/stagewise_function/per_regulon_target_overlap.csv",
+    "description": "Stage-specific functional enrichment and direct stage-exclusive target comparisons (Supplementary Methods S8).",
+    "source_files": "outputs/analysis/out/go_stage_comparison/per_regulon_target_overlap.csv",
+    "selection": "All records.",
+    "rows": 55,
+    "sha256": "662c851c5416ee7bebf77affc4e92d657e8f03046d8c8b96f63d8f351fd7d933"
+  },
+  {
+    "table": "Supplementary_Data_5/stagewise_function/target_coverage.csv",
+    "description": "Stage-specific functional enrichment and direct stage-exclusive target comparisons (Supplementary Methods S8).",
+    "source_files": "outputs/analysis/out/go_stage_comparison/target_coverage.csv",
+    "selection": "All records.",
+    "rows": 24,
+    "sha256": "33d4f48053ed81c94e26bae8f913d228f42609577495f799a79f2e97b84ed490"
+  },
+  {
+    "table": "Supplementary_Data_6/module_decomposition.csv",
+    "description": "Pediatric module decomposition; oriented centered scores are primary (Figure 5C).",
+    "source_files": "outputs/analysis/out/f6_decomposition.json",
+    "selection": "module_decomposition: all three stored scales.",
+    "rows": 6,
+    "sha256": "c2ba17d33518eacf089efe94eb428caef9b3b4de6adf1811263a8df1b9a65754"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_decomposition.csv",
+    "description": "Patient-level total, within-cell-type and composition components.",
+    "source_files": "outputs/analysis/out/f6_decomposition_module_by_patient.csv",
+    "selection": "All records.",
+    "rows": 114,
+    "sha256": "739fa6aa82033f7a29ad88adb38d99c413f85ecc31ace7ca0ba01f9f7f4e8581"
+  },
+  {
+    "table": "Supplementary_Data_6/regulon_decomposition.csv",
+    "description": "Per-regulon pediatric decomposition and statistical comparisons.",
+    "source_files": "outputs/analysis/out/f6_decomposition_set55_per_regulon.csv",
+    "selection": "All records.",
+    "rows": 110,
+    "sha256": "eb1fc53eb5221a042552174007eec83955c1f68b7c7acf4348cae3cd8567c6f2"
+  },
+  {
+    "table": "Supplementary_Data_6/clp_sensitivity_summary.csv",
+    "description": "Seven-cell-type sensitivity including CLP.",
+    "source_files": "outputs/analysis/out/seven_celltypes/sens_clp7_summary.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 168,
+    "sha256": "d7df839604b2a3d227c874b8278a1fdc86399646dd9f9e05866ecd1393344d65"
+  },
+  {
+    "table": "Supplementary_Data_6/clp_candidate_criteria.csv",
+    "description": "CLP sensitivity results.",
+    "source_files": "outputs/analysis/out/seven_celltypes/sens_clp7_funnel_by_regulon.csv",
+    "selection": "All records.",
+    "rows": 201,
+    "sha256": "e198c0580a31c51cab02df2e19716d874de01138f0ef457f7444e9f2b002d092"
+  },
+  {
+    "table": "Supplementary_Data_6/clp_regulon_decomposition.csv",
+    "description": "CLP sensitivity results.",
+    "source_files": "outputs/analysis/out/seven_celltypes/sens_clp7_per_regulon_decomposition.csv",
+    "selection": "All records.",
+    "rows": 112,
+    "sha256": "098309fbc0223dfbcf2de712fe3e31661108648458672491382f274e5fa4928e"
+  },
+  {
+    "table": "Supplementary_Data_6/clp_adult_patient_changes.csv",
+    "description": "CLP sensitivity results.",
+    "source_files": "outputs/analysis/out/seven_celltypes/external/per_patient_deltas_SENS_CLP7_5of7.csv",
+    "selection": "All records.",
+    "rows": 118,
+    "sha256": "f069fbb4d88651f91aad120f0fba281050a254aed2b6213854e42cd86f664ec2"
+  },
+  {
+    "table": "Supplementary_Data_6/clp_adult_scores.csv",
+    "description": "Adult score and null summaries for the CLP sensitivity.",
+    "source_files": "outputs/analysis/out/seven_celltypes/external/gate5_result_SENS_CLP7_5of7.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 52,
+    "sha256": "1a28ab3d616e8e128291d070bf5e5ffef92b8ef6de6259868a8a9ea2d1fc8e4e"
+  },
+  {
+    "table": "Supplementary_Data_6/clp_fixed_module_adult_scores.csv",
+    "description": "Adult score and null summaries for the CLP sensitivity.",
+    "source_files": "outputs/analysis/out/seven_celltypes/external/gate5_result_CTRL55_sens_clp7.json",
+    "selection": "Numeric fields in the listed JSON branches. Text annotations are omitted.",
+    "rows": 52,
+    "sha256": "6068a0436c5902f028655d622239ebc36617f06bed480a3b3f8f9e5629b4523e"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_omission/all_candidate_fold_decisions.csv",
+    "description": "Patient-omission results (Supplementary Figures S1,S2).",
+    "source_files": "outputs/analysis/out/patient_omission/all_candidate_fold_decisions.csv",
+    "selection": "All records.",
+    "rows": 7638,
+    "sha256": "159fe611d5f69867e744d71c4588079e17afb3bedbac176f2710ad84077cfa5f"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_omission/baseline_rebuilt_nomination.csv",
+    "description": "Patient-omission results (Supplementary Figures S1,S2).",
+    "source_files": "outputs/manuscript/review/patient_omission/baseline_rebuilt_nomination.csv",
+    "selection": "All records.",
+    "rows": 201,
+    "sha256": "ab9a7273cf3539ded3ec700fbbc8575470edfad98166d5c5949f09dc6a170977"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_omission/external_sample_pairs.csv",
+    "description": "Patient-omission results (Supplementary Figures S1,S2).",
+    "source_files": "outputs/manuscript/review/patient_omission/external_sample_pairs.csv",
+    "selection": "All records.",
+    "rows": 59,
+    "sha256": "53d14c169590227d4ce4b758c8e58f01d99ffac6c70095f463a58de1420cfa4b"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_omission/fixed_module_patient_deltas.csv",
+    "description": "Patient-omission results (Supplementary Figures S1,S2).",
+    "source_files": "outputs/manuscript/review/patient_omission/fixed_module_patient_deltas.csv",
+    "selection": "All records.",
+    "rows": 270,
+    "sha256": "ee49d240dc8ed14acbe21721836ca333d12e5815eba5d7c08c29094feef238eb"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_omission/fixed_module_patient_influence.csv",
+    "description": "Patient-omission results (Supplementary Figures S1,S2).",
+    "source_files": "outputs/analysis/out/patient_omission/fixed_module_patient_influence.csv",
+    "selection": "All records.",
+    "rows": 280,
+    "sha256": "1a8c57bfd15f01854363fe7ebf017d8c879e6f08436333e85745f5fafdb54720"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_omission/nomination_by_omitted_patient.csv",
+    "description": "Patient-omission results (Supplementary Figures S1,S2).",
+    "source_files": "outputs/analysis/out/patient_omission/nomination_by_omitted_patient.csv",
+    "selection": "All records.",
+    "rows": 38,
+    "sha256": "a3a7c78c60f0d780dfaf204da82e49af047f0edf25fc2d584bf7348a8200a786"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_omission/regulon_selection_frequency.csv",
+    "description": "Patient-omission results (Supplementary Figures S1,S2).",
+    "source_files": "outputs/analysis/out/patient_omission/regulon_selection_frequency.csv",
+    "selection": "All records.",
+    "rows": 402,
+    "sha256": "034a65307b42796505726edff043df9cda65e888c076d175f54c4b8b941e0cb2"
+  },
+  {
+    "table": "Supplementary_Data_6/patient_omission/reselected_module_scores.csv",
+    "description": "Patient-omission results (Supplementary Figures S1,S2).",
+    "source_files": "outputs/manuscript/review/patient_omission/reselected_module_scores.csv",
+    "selection": "All records.",
+    "rows": 38,
+    "sha256": "822bc628ac70ac6e2a5ce8167098acc2947efd3c7388ad4ef701371411e75476"
+  }
+]

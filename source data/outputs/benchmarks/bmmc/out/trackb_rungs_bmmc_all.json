@@ -1,0 +1,1132 @@
+{
+  "stage": "bmmc",
+  "reference_arm": "truth",
+  "top_n": 100000,
+  "declared_deviation": "L1 'Jaccard of retained pairs' is degenerate by construction (r2g retains 100% of an identical search space) and is NOT quoted; see module docstring, addendum 4.",
+  "L1_region_to_gene": {
+    "_truth": {
+      "n_pairs": 363742,
+      "top_n": 100000,
+      "median_abs_distance_topN": 42121.0,
+      "median_abs_distance_all": 54814.0
+    },
+    "rand_celltype_1to1": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.8213859348607973,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.962678942186236,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.6165927075502963,
+      "median_abs_distance_topN": 41630.5,
+      "median_abs_distance_all": 54814.0
+    },
+    "rand_celltype_x_donor_1to1": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.8871476133393575,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.9877809821854702,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.6948147143813502,
+      "median_abs_distance_topN": 41654.0,
+      "median_abs_distance_all": 54814.0
+    },
+    "rand_global": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.4143405484795444,
+      "n_eff_importance": 363742,
+      "spearman_rho": -0.0776981149203128,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.31034121285182664,
+      "median_abs_distance_topN": 47110.0,
+      "median_abs_distance_all": 54814.0
+    },
+    "link": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.7922651853098361,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.9485775031098866,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.5829046299960428,
+      "median_abs_distance_topN": 38800.5,
+      "median_abs_distance_all": 54814.0
+    },
+    "link_1to1": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.8105245106585283,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.9560557032751584,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.6020249595488698,
+      "median_abs_distance_topN": 38912.0,
+      "median_abs_distance_all": 54814.0
+    },
+    "link_x_celltype_donor_1to1": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.9126099687698485,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.9933261172171877,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.7376496550765435,
+      "median_abs_distance_topN": 40681.5,
+      "median_abs_distance_all": 54814.0
+    },
+    "link_x_celltype_donor": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.8668545039766561,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.978278887552567,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.6657088840583332,
+      "median_abs_distance_topN": 39902.0,
+      "median_abs_distance_all": 54814.0
+    },
+    "rand_celltype_donor_matched": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.8748243488362175,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.9827893779685491,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.6737662250713443,
+      "median_abs_distance_topN": 41848.0,
+      "median_abs_distance_all": 54814.0
+    },
+    "link_x_celltype_donor_cap14": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.8987507674464813,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.9881245834908654,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.7118011571775823,
+      "median_abs_distance_topN": 40165.0,
+      "median_abs_distance_all": 54814.0
+    },
+    "rand_celltype_donor_matched_cap14": {
+      "n_pairs": 363742,
+      "paired_vs_truth": true,
+      "pair_set_identical_in_order": true,
+      "n_shared_pairs": 363742,
+      "spearman_importance": 0.8837253838296802,
+      "n_eff_importance": 363742,
+      "spearman_rho": 0.9869925755697281,
+      "n_eff_rho": 363742,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.6904170258802846,
+      "median_abs_distance_topN": 41783.5,
+      "median_abs_distance_all": 54814.0
+    },
+    "pseudomultiome": {
+      "n_pairs": 363742,
+      "paired_vs_truth": false,
+      "pair_set_identical_in_order": null,
+      "note": "metacell arm -- distribution comparison only, never paired (\u00a76b)",
+      "ks_importance": 0.007843471471537522,
+      "ks_rho": 0.19479466215064523,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.6680845385244124,
+      "median_abs_distance_topN": 41588.0,
+      "median_abs_distance_all": 54814.0
+    },
+    "pseudomultiome_k10": {
+      "n_pairs": 363742,
+      "paired_vs_truth": false,
+      "pair_set_identical_in_order": null,
+      "note": "metacell arm -- distribution comparison only, never paired (\u00a76b)",
+      "ks_importance": 0.013583803904965608,
+      "ks_rho": 0.26794541185785525,
+      "n_rho_undefined": 0,
+      "pct_rho_undefined": 0.0,
+      "topN_jaccard_vs_truth": 0.618070612601534,
+      "median_abs_distance_topN": 41227.0,
+      "median_abs_distance_all": 54814.0
+    }
+  },
+  "L2_tf_to_gene": {
+    "_truth": {
+      "n_edges": 902315,
+      "top_n": 100000,
+      "n_TF": 449
+    },
+    "rand_celltype_1to1": {
+      "n_edges": 907098,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 907098,
+        "n_shared": 654504,
+        "recall": 0.7253608772989477,
+        "precision": 0.721536151551431,
+        "jaccard": 0.5667147801255337
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 85820,
+        "recall": 0.8582,
+        "precision": 0.8582,
+        "jaccard": 0.7516202487300753
+      },
+      "topN_fold_enrichment": 9.911429038,
+      "topN_expected_overlap_by_chance": 8658.690857894431,
+      "n_shared_edges": 654504,
+      "spearman_importance_shared": 0.8798489043579527,
+      "n_eff_importance": 654504,
+      "spearman_rho_shared": 0.9999999999353217,
+      "n_eff_rho": 654504
+    },
+    "rand_celltype_x_donor_1to1": {
+      "n_edges": 907725,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 907725,
+        "n_shared": 653537,
+        "recall": 0.7242891894737425,
+        "precision": 0.7199724586190751,
+        "jaccard": 0.5650975397383319
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 85755,
+        "recall": 0.85755,
+        "precision": 0.85755,
+        "jaccard": 0.7506236596787605
+      },
+      "topN_fold_enrichment": 9.9175914765,
+      "topN_expected_overlap_by_chance": 8646.756644816312,
+      "n_shared_edges": 653537,
+      "spearman_importance_shared": 0.8789445283061464,
+      "n_eff_importance": 653537,
+      "spearman_rho_shared": 0.9999999999339689,
+      "n_eff_rho": 653537
+    },
+    "rand_global": {
+      "n_edges": 906160,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 906160,
+        "n_shared": 654602,
+        "recall": 0.725469486820013,
+        "precision": 0.7223911891939613,
+        "jaccard": 0.5673085339547767
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 85866,
+        "recall": 0.85866,
+        "precision": 0.85866,
+        "jaccard": 0.752326213047821
+      },
+      "topN_fold_enrichment": 9.9078459018,
+      "topN_expected_overlap_by_chance": 8666.465026913707,
+      "n_shared_edges": 654602,
+      "spearman_importance_shared": 0.8801455852402505,
+      "n_eff_importance": 654602,
+      "spearman_rho_shared": 0.9999999999312378,
+      "n_eff_rho": 654602
+    },
+    "link": {
+      "n_edges": 1091825,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 1091825,
+        "n_shared": 464321,
+        "recall": 0.5145885860259444,
+        "precision": 0.42527053328143244,
+        "jaccard": 0.3035136836449279
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 51328,
+        "recall": 0.51328,
+        "precision": 0.51328,
+        "jaccard": 0.34524321997417134
+      },
+      "topN_fold_enrichment": 7.852254963200001,
+      "topN_expected_overlap_by_chance": 6536.721010786243,
+      "n_shared_edges": 464321,
+      "spearman_importance_shared": 0.5393388161088922,
+      "n_eff_importance": 464321,
+      "spearman_rho_shared": 0.9465008303441269,
+      "n_eff_rho": 464321
+    },
+    "link_1to1": {
+      "n_edges": 911061,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 911061,
+        "n_shared": 653673,
+        "recall": 0.7244399128907311,
+        "precision": 0.7174854373088081,
+        "jaccard": 0.5636555221466186
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 85608,
+        "recall": 0.85608,
+        "precision": 0.85608,
+        "jaccard": 0.7483740121686832
+      },
+      "topN_fold_enrichment": 9.927985442399999,
+      "topN_expected_overlap_by_chance": 8622.897414251753,
+      "n_shared_edges": 653673,
+      "spearman_importance_shared": 0.8788570912698586,
+      "n_eff_importance": 653673,
+      "spearman_rho_shared": 0.9999999999383017,
+      "n_eff_rho": 653673
+    },
+    "link_x_celltype_donor_1to1": {
+      "n_edges": 914615,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 914615,
+        "n_shared": 656069,
+        "recall": 0.7270953048547347,
+        "precision": 0.7173171225050978,
+        "jaccard": 0.5651572410478085
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 85795,
+        "recall": 0.85795,
+        "precision": 0.85795,
+        "jaccard": 0.7512368109977672
+      },
+      "topN_fold_enrichment": 9.9596069495,
+      "topN_expected_overlap_by_chance": 8614.29576839949,
+      "n_shared_edges": 656069,
+      "spearman_importance_shared": 0.8796716011307519,
+      "n_eff_importance": 656069,
+      "spearman_rho_shared": 0.9999999999325855,
+      "n_eff_rho": 656069
+    },
+    "link_x_celltype_donor": {
+      "n_edges": 1097898,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 1097898,
+        "n_shared": 464716,
+        "recall": 0.5150263488914625,
+        "precision": 0.4232779365660562,
+        "jaccard": 0.3026485886979916
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 51400,
+        "recall": 0.514,
+        "precision": 0.514,
+        "jaccard": 0.34589502018842533
+      },
+      "topN_fold_enrichment": 7.892454580000001,
+      "topN_expected_overlap_by_chance": 6512.549356983439,
+      "n_shared_edges": 464716,
+      "spearman_importance_shared": 0.5443846655004556,
+      "n_eff_importance": 464716,
+      "spearman_rho_shared": 0.9589779126900277,
+      "n_eff_rho": 464716
+    },
+    "rand_celltype_donor_matched": {
+      "n_edges": 1048180,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 1048180,
+        "n_shared": 472168,
+        "recall": 0.5232851055340983,
+        "precision": 0.45046461485622696,
+        "jaccard": 0.31939347654476985
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 56551,
+        "recall": 0.56551,
+        "precision": 0.56551,
+        "jaccard": 0.39422373108212677
+      },
+      "topN_fold_enrichment": 8.3600870177,
+      "topN_expected_overlap_by_chance": 6764.403274782913,
+      "n_shared_edges": 472168,
+      "spearman_importance_shared": 0.5938791150038254,
+      "n_eff_importance": 472168,
+      "spearman_rho_shared": 0.9783321063652861,
+      "n_eff_rho": 472168
+    },
+    "link_x_celltype_donor_cap14": {
+      "n_edges": 953932,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 953932,
+        "n_shared": 550023,
+        "recall": 0.6095687204579332,
+        "precision": 0.5765851234679201,
+        "jaccard": 0.4210786205122552
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 73296,
+        "recall": 0.73296,
+        "precision": 0.73296,
+        "jaccard": 0.5784821315822705
+      },
+      "topN_fold_enrichment": 9.5740994304,
+      "topN_expected_overlap_by_chance": 7655.654772841412,
+      "n_shared_edges": 550023,
+      "spearman_importance_shared": 0.7563481693480822,
+      "n_eff_importance": 550023,
+      "spearman_rho_shared": 0.9932590855887368,
+      "n_eff_rho": 550023
+    },
+    "rand_celltype_donor_matched_cap14": {
+      "n_edges": 952696,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 952696,
+        "n_shared": 552728,
+        "recall": 0.6125665648914181,
+        "precision": 0.5801724789439653,
+        "jaccard": 0.424430020202982
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 74658,
+        "recall": 0.74658,
+        "precision": 0.74658,
+        "jaccard": 0.5956343444336296
+      },
+      "topN_fold_enrichment": 9.722584421399999,
+      "topN_expected_overlap_by_chance": 7678.822498642769,
+      "n_shared_edges": 552728,
+      "spearman_importance_shared": 0.7661894236934915,
+      "n_eff_importance": 552728,
+      "spearman_rho_shared": 0.9963011871571233,
+      "n_eff_rho": 552728
+    },
+    "pseudomultiome": {
+      "n_edges": 980995,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 980995,
+        "n_shared": 483543,
+        "recall": 0.5358915678006018,
+        "precision": 0.49291076916803855,
+        "jaccard": 0.34544534911881764
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 53429,
+        "recall": 0.53429,
+        "precision": 0.53429,
+        "jaccard": 0.36452640699729144
+      },
+      "topN_fold_enrichment": 7.4788151043,
+      "topN_expected_overlap_by_chance": 7144.04611624649,
+      "note": "metacell arm -- shared-edge Spearman not reported as paired (\u00a76b)"
+    },
+    "pseudomultiome_k10": {
+      "n_edges": 1083878,
+      "n_TF": 449,
+      "full_edge_set": {
+        "n_truth": 902315,
+        "n_arm": 1083878,
+        "n_shared": 474545,
+        "recall": 0.5259194405501405,
+        "precision": 0.437821415325341,
+        "jaccard": 0.31392559643514895
+      },
+      "topN": {
+        "n_truth": 100000,
+        "n_arm": 100000,
+        "n_shared": 49960,
+        "recall": 0.4996,
+        "precision": 0.4996,
+        "jaccard": 0.33297787256731537
+      },
+      "topN_fold_enrichment": 7.552193408,
+      "topN_expected_overlap_by_chance": 6615.296682825631,
+      "note": "metacell arm -- shared-edge Spearman not reported as paired (\u00a76b)"
+    }
+  },
+  "L3_L4_L5_eRegulons": {
+    "_truth": {
+      "n_triplets": 177115,
+      "n_eRegulons": 221,
+      "n_TFs": 154,
+      "n_eRegulons_direct": 221,
+      "any_extended_eRegulons": false,
+      "median_target_set_size": 123.0
+    },
+    "rand_celltype_1to1": {
+      "n_triplets": 166585,
+      "L3_target_sets": {
+        "n": 183,
+        "median_jaccard_genes": 0.6274509803921569,
+        "iqr_genes": [
+          0.5023809523809524,
+          0.7275184129246852
+        ],
+        "pct_above_0.5_genes": 0.7486338797814208,
+        "pct_below_0.1_genes": 0.0
+      },
+      "L3_region_sets": {
+        "n": 183,
+        "median_jaccard_regions": 0.5722599418040737,
+        "iqr_regions": [
+          0.44122906079427815,
+          0.666531447736469
+        ],
+        "pct_above_0.5_regions": 0.6612021857923497,
+        "pct_below_0.1_regions": 0.01639344262295082
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 232,
+        "n_shared": 183,
+        "recall": 0.8280542986425339,
+        "precision": 0.7887931034482759,
+        "jaccard": 0.6777777777777778
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 157,
+        "n_shared": 129,
+        "recall": 0.8376623376623377,
+        "precision": 0.821656050955414,
+        "jaccard": 0.7087912087912088
+      }
+    },
+    "rand_celltype_x_donor_1to1": {
+      "n_triplets": 171478,
+      "L3_target_sets": {
+        "n": 187,
+        "median_jaccard_genes": 0.6608695652173913,
+        "iqr_genes": [
+          0.5075445967860828,
+          0.7433925723399408
+        ],
+        "pct_above_0.5_genes": 0.7593582887700535,
+        "pct_below_0.1_genes": 0.0
+      },
+      "L3_region_sets": {
+        "n": 187,
+        "median_jaccard_regions": 0.6442762535477767,
+        "iqr_regions": [
+          0.4747583243823845,
+          0.7135456187301057
+        ],
+        "pct_above_0.5_regions": 0.7219251336898396,
+        "pct_below_0.1_regions": 0.0
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 235,
+        "n_shared": 187,
+        "recall": 0.8461538461538461,
+        "precision": 0.7957446808510639,
+        "jaccard": 0.6951672862453532
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 161,
+        "n_shared": 138,
+        "recall": 0.8961038961038961,
+        "precision": 0.8571428571428571,
+        "jaccard": 0.7796610169491526
+      }
+    },
+    "rand_global": {
+      "status": "eGRN_STRUCTURALLY_IMPOSSIBLE",
+      "evidence": {
+        "tag": "bmmc_rand_global",
+        "verdict": "eGRN_STRUCTURALLY_IMPOSSIBLE",
+        "reason": "SCENIC+ create_emodules dichotomises region-to-gene on rho; an empty positive or negative set makes Groupby raise 'max() arg is an empty sequence'. The pairing destroys RNA-ATAC covariation, so no pair clears the threshold.",
+        "r2g_file": "/cbica/home/zhengbo/AML-GRN/cubic_bmmc_ladder/out/r2g_bmmc_rand_global.tsv",
+        "n_pairs": 363742,
+        "n_rho_nonfinite": 0,
+        "max_rho": 0.0162666541494381,
+        "min_rho": -0.0185017778387823,
+        "mean_abs_rho": 0.003022555948013973,
+        "sd_rho": 0.003784335790045367,
+        "assumed_rho_threshold": 0.05,
+        "n_pos_at_assumed": 0,
+        "n_neg_at_assumed": 0,
+        "counts_by_threshold": {
+          "0.01": {
+            "n_pos": 1311,
+            "n_neg": 1781
+          },
+          "0.03": {
+            "n_pos": 0,
+            "n_neg": 0
+          },
+          "0.05": {
+            "n_pos": 0,
+            "n_neg": 0
+          },
+          "0.1": {
+            "n_pos": 0,
+            "n_neg": 0
+          }
+        },
+        "expected_sd_if_pure_noise": 0.009567297464698797
+      },
+      "L3_target_sets": "does not exist -- no eRegulons were constructible",
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 0,
+        "n_shared": 0,
+        "recall": 0.0,
+        "precision": null,
+        "jaccard": 0.0,
+        "note": "precision is UNDEFINED (empty prediction set), not 0.0"
+      },
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 0,
+        "n_shared": 0,
+        "recall": 0.0,
+        "precision": null,
+        "jaccard": 0.0,
+        "note": "precision is UNDEFINED (empty prediction set), not 0.0"
+      }
+    },
+    "link": {
+      "n_triplets": 145156,
+      "L3_target_sets": {
+        "n": 147,
+        "median_jaccard_genes": 0.438953488372093,
+        "iqr_genes": [
+          0.3065653738504598,
+          0.5418333333333334
+        ],
+        "pct_above_0.5_genes": 0.35374149659863946,
+        "pct_below_0.1_genes": 0.06802721088435375
+      },
+      "L3_region_sets": {
+        "n": 147,
+        "median_jaccard_regions": 0.4270890223921354,
+        "iqr_regions": [
+          0.287593984962406,
+          0.5226007162425605
+        ],
+        "pct_above_0.5_regions": 0.2857142857142857,
+        "pct_below_0.1_regions": 0.07482993197278912
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 180,
+        "n_shared": 147,
+        "recall": 0.665158371040724,
+        "precision": 0.8166666666666667,
+        "jaccard": 0.5787401574803149
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 133,
+        "n_shared": 114,
+        "recall": 0.7402597402597403,
+        "precision": 0.8571428571428571,
+        "jaccard": 0.6589595375722543
+      }
+    },
+    "link_1to1": {
+      "n_triplets": 159157,
+      "L3_target_sets": {
+        "n": 183,
+        "median_jaccard_genes": 0.6157024793388429,
+        "iqr_genes": [
+          0.4923844821130524,
+          0.709261263313778
+        ],
+        "pct_above_0.5_genes": 0.7377049180327869,
+        "pct_below_0.1_genes": 0.0
+      },
+      "L3_region_sets": {
+        "n": 183,
+        "median_jaccard_regions": 0.5625,
+        "iqr_regions": [
+          0.4510868727950579,
+          0.6451620885919327
+        ],
+        "pct_above_0.5_regions": 0.6502732240437158,
+        "pct_below_0.1_regions": 0.0
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 223,
+        "n_shared": 183,
+        "recall": 0.8280542986425339,
+        "precision": 0.820627802690583,
+        "jaccard": 0.7011494252873564
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 148,
+        "n_shared": 132,
+        "recall": 0.8571428571428571,
+        "precision": 0.8918918918918919,
+        "jaccard": 0.7764705882352941
+      }
+    },
+    "link_x_celltype_donor_1to1": {
+      "n_triplets": 179131,
+      "L3_target_sets": {
+        "n": 190,
+        "median_jaccard_genes": 0.6854485967356687,
+        "iqr_genes": [
+          0.5234227217091354,
+          0.7771974149464832
+        ],
+        "pct_above_0.5_genes": 0.7684210526315789,
+        "pct_below_0.1_genes": 0.0
+      },
+      "L3_region_sets": {
+        "n": 190,
+        "median_jaccard_regions": 0.6573961555457357,
+        "iqr_regions": [
+          0.4847470910954362,
+          0.7513111888111889
+        ],
+        "pct_above_0.5_regions": 0.7263157894736842,
+        "pct_below_0.1_regions": 0.0
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 229,
+        "n_shared": 190,
+        "recall": 0.8597285067873304,
+        "precision": 0.8296943231441049,
+        "jaccard": 0.7307692307692307
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 155,
+        "n_shared": 137,
+        "recall": 0.8896103896103896,
+        "precision": 0.8838709677419355,
+        "jaccard": 0.7965116279069767
+      }
+    },
+    "link_x_celltype_donor": {
+      "n_triplets": 142613,
+      "L3_target_sets": {
+        "n": 132,
+        "median_jaccard_genes": 0.4690489531714207,
+        "iqr_genes": [
+          0.3290485824092377,
+          0.571701199563795
+        ],
+        "pct_above_0.5_genes": 0.45454545454545453,
+        "pct_below_0.1_genes": 0.03787878787878788
+      },
+      "L3_region_sets": {
+        "n": 132,
+        "median_jaccard_regions": 0.45921059266056896,
+        "iqr_regions": [
+          0.3287058487389767,
+          0.573338165251605
+        ],
+        "pct_above_0.5_regions": 0.42424242424242425,
+        "pct_below_0.1_regions": 0.03787878787878788
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 156,
+        "n_shared": 132,
+        "recall": 0.5972850678733032,
+        "precision": 0.8461538461538461,
+        "jaccard": 0.5387755102040817
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 111,
+        "n_shared": 93,
+        "recall": 0.6038961038961039,
+        "precision": 0.8378378378378378,
+        "jaccard": 0.5406976744186046
+      }
+    },
+    "rand_celltype_donor_matched": {
+      "n_triplets": 155445,
+      "L3_target_sets": {
+        "n": 146,
+        "median_jaccard_genes": 0.5043859649122807,
+        "iqr_genes": [
+          0.3834252619966906,
+          0.6008303241518307
+        ],
+        "pct_above_0.5_genes": 0.5,
+        "pct_below_0.1_genes": 0.0547945205479452
+      },
+      "L3_region_sets": {
+        "n": 146,
+        "median_jaccard_regions": 0.5160669922846498,
+        "iqr_regions": [
+          0.3695328437372501,
+          0.6068722943722944
+        ],
+        "pct_above_0.5_regions": 0.5273972602739726,
+        "pct_below_0.1_regions": 0.0547945205479452
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 172,
+        "n_shared": 146,
+        "recall": 0.6606334841628959,
+        "precision": 0.8488372093023255,
+        "jaccard": 0.5910931174089069
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 124,
+        "n_shared": 108,
+        "recall": 0.7012987012987013,
+        "precision": 0.8709677419354839,
+        "jaccard": 0.6352941176470588
+      }
+    },
+    "link_x_celltype_donor_cap14": {
+      "n_triplets": 171488,
+      "L3_target_sets": {
+        "n": 182,
+        "median_jaccard_genes": 0.5719189307491068,
+        "iqr_genes": [
+          0.39461185718964953,
+          0.6812121041994161
+        ],
+        "pct_above_0.5_genes": 0.6428571428571429,
+        "pct_below_0.1_genes": 0.03296703296703297
+      },
+      "L3_region_sets": {
+        "n": 182,
+        "median_jaccard_regions": 0.5601519316603115,
+        "iqr_regions": [
+          0.3583528754124288,
+          0.671601347213717
+        ],
+        "pct_above_0.5_regions": 0.6043956043956044,
+        "pct_below_0.1_regions": 0.04945054945054945
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 229,
+        "n_shared": 182,
+        "recall": 0.8235294117647058,
+        "precision": 0.7947598253275109,
+        "jaccard": 0.6791044776119403
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 161,
+        "n_shared": 132,
+        "recall": 0.8571428571428571,
+        "precision": 0.8198757763975155,
+        "jaccard": 0.7213114754098361
+      }
+    },
+    "rand_celltype_donor_matched_cap14": {
+      "n_triplets": 169034,
+      "L3_target_sets": {
+        "n": 167,
+        "median_jaccard_genes": 0.6124469589816125,
+        "iqr_genes": [
+          0.4768615334006908,
+          0.693901392332634
+        ],
+        "pct_above_0.5_genes": 0.718562874251497,
+        "pct_below_0.1_genes": 0.005988023952095809
+      },
+      "L3_region_sets": {
+        "n": 167,
+        "median_jaccard_regions": 0.587378640776699,
+        "iqr_regions": [
+          0.44832135674851736,
+          0.6825998069890289
+        ],
+        "pct_above_0.5_regions": 0.6826347305389222,
+        "pct_below_0.1_regions": 0.011976047904191617
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 199,
+        "n_shared": 167,
+        "recall": 0.755656108597285,
+        "precision": 0.8391959798994975,
+        "jaccard": 0.6600790513833992
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 134,
+        "n_shared": 119,
+        "recall": 0.7727272727272727,
+        "precision": 0.8880597014925373,
+        "jaccard": 0.7041420118343196
+      }
+    },
+    "pseudomultiome": {
+      "n_triplets": 291064,
+      "L3_target_sets": {
+        "n": 177,
+        "median_jaccard_genes": 0.3325892857142857,
+        "iqr_genes": [
+          0.17410714285714285,
+          0.4473798181030749
+        ],
+        "pct_above_0.5_genes": 0.1751412429378531,
+        "pct_below_0.1_genes": 0.14124293785310735
+      },
+      "L3_region_sets": {
+        "n": 177,
+        "median_jaccard_regions": 0.3333333333333333,
+        "iqr_regions": [
+          0.16666666666666666,
+          0.4484536082474227
+        ],
+        "pct_above_0.5_regions": 0.14124293785310735,
+        "pct_below_0.1_regions": 0.1694915254237288
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 340,
+        "n_shared": 177,
+        "recall": 0.8009049773755657,
+        "precision": 0.5205882352941177,
+        "jaccard": 0.4609375
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 206,
+        "n_shared": 136,
+        "recall": 0.8831168831168831,
+        "precision": 0.6601941747572816,
+        "jaccard": 0.6071428571428571
+      }
+    },
+    "pseudomultiome_k10": {
+      "n_triplets": 310721,
+      "L3_target_sets": {
+        "n": 171,
+        "median_jaccard_genes": 0.26994359387590655,
+        "iqr_genes": [
+          0.14125516277939748,
+          0.3805629697806412
+        ],
+        "pct_above_0.5_genes": 0.08771929824561403,
+        "pct_below_0.1_genes": 0.1695906432748538
+      },
+      "L3_region_sets": {
+        "n": 171,
+        "median_jaccard_regions": 0.2732732732732733,
+        "iqr_regions": [
+          0.13394406375908008,
+          0.3873539499224695
+        ],
+        "pct_above_0.5_regions": 0.07602339181286549,
+        "pct_below_0.1_regions": 0.19883040935672514
+      },
+      "L4_eRegulon_recovery": {
+        "n_truth": 221,
+        "n_arm": 414,
+        "n_shared": 171,
+        "recall": 0.7737556561085973,
+        "precision": 0.41304347826086957,
+        "jaccard": 0.36853448275862066
+      },
+      "L4_eRegulon_recovery_direct_only": "NOT APPLICABLE -- no extended eRegulons were called in either arm; identical to L4_eRegulon_recovery by construction",
+      "L5_TF_recovery": {
+        "n_truth": 154,
+        "n_arm": 232,
+        "n_shared": 133,
+        "recall": 0.8636363636363636,
+        "precision": 0.5732758620689655,
+        "jaccard": 0.525691699604743
+      }
+    }
+  },
+  "arms_scored": [
+    "rand_celltype_1to1",
+    "rand_celltype_x_donor_1to1",
+    "rand_global",
+    "link",
+    "link_1to1",
+    "link_x_celltype_donor_1to1",
+    "link_x_celltype_donor",
+    "rand_celltype_donor_matched",
+    "link_x_celltype_donor_cap14",
+    "rand_celltype_donor_matched_cap14",
+    "pseudomultiome",
+    "pseudomultiome_k10"
+  ],
+  "unpaired_arms": [
+    "pseudomultiome",
+    "pseudomultiome_k10"
+  ],
+  "pending_arms": [],
+  "impossible_arms": [
+    "rand_global"
+  ],
+  "provenance": {
+    "script": "b_04_edge_rungs.py",
+    "ported_from": "cubic_pbmc_pairing/scripts/p_13_edge_rungs.py",
+    "out_dir": "cubic_bmmc_ladder\\out",
+    "inputs": {
+      "truth": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_truth.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_truth.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_truth.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "rand_celltype_1to1": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_rand_celltype_1to1.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_rand_celltype_1to1.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_rand_celltype_1to1.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "rand_celltype_x_donor_1to1": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_rand_celltype_x_donor_1to1.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_rand_celltype_x_donor_1to1.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_rand_celltype_x_donor_1to1.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "rand_global": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_rand_global.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_rand_global.tsv",
+        "eRegulons": null,
+        "eGRN_IMPOSSIBLE": "cubic_bmmc_ladder\\out\\eGRN_IMPOSSIBLE_bmmc_rand_global.json"
+      },
+      "link": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_link.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_link.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_link.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "link_1to1": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_link_1to1.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_link_1to1.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_link_1to1.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "link_x_celltype_donor_1to1": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_link_x_celltype_donor_1to1.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_link_x_celltype_donor_1to1.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_link_x_celltype_donor_1to1.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "link_x_celltype_donor": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_link_x_celltype_donor.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_link_x_celltype_donor.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_link_x_celltype_donor.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "rand_celltype_donor_matched": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_rand_celltype_donor_matched.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_rand_celltype_donor_matched.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_rand_celltype_donor_matched.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "link_x_celltype_donor_cap14": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_link_x_celltype_donor_cap14.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_link_x_celltype_donor_cap14.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_link_x_celltype_donor_cap14.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "rand_celltype_donor_matched_cap14": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_rand_celltype_donor_matched_cap14.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_rand_celltype_donor_matched_cap14.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_rand_celltype_donor_matched_cap14.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "pseudomultiome": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_pseudomultiome.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_pseudomultiome.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_pseudomultiome.tsv",
+        "eGRN_IMPOSSIBLE": null
+      },
+      "pseudomultiome_k10": {
+        "r2g": "cubic_bmmc_ladder\\out\\r2g_bmmc_pseudomultiome_k10.tsv",
+        "tf2g": "cubic_bmmc_ladder\\out\\tf2g_bmmc_pseudomultiome_k10.tsv",
+        "eRegulons": "cubic_bmmc_ladder\\out\\eRegulons_bmmc_pseudomultiome_k10.tsv",
+        "eGRN_IMPOSSIBLE": null
+      }
+    },
+    "library_versions": {
+      "python": "3.12.7",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "scipy": "1.13.1"
+    }
+  }
+}

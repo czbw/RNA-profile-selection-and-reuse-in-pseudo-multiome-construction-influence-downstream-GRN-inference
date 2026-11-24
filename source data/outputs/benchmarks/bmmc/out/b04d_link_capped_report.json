@@ -1,0 +1,3525 @@
+{
+ "n_cells": 69249,
+ "n_shared_genes": 11461,
+ "n_hvg": 2000,
+ "n_pcs": 50,
+ "top_singular_value": 5556034.5,
+ "seed": 555,
+ "block_definition": "cell type x donor",
+ "block_columns": [
+  "cell_type",
+  "donor"
+ ],
+ "n_blocks": 190,
+ "block_sizes": {
+  "min": 8,
+  "max": 4089,
+  "median": 148.0,
+  "sum": 69249
+ },
+ "random_within_block_expected_exact_accuracy": 0.0027437219310026137,
+ "reproduction_gate": {
+  "checked_against": "arm_link_seed555.csv",
+  "statistic": "per-cell equality of the UNRESTRICTED greedy nearest neighbour implied by the re-derived space",
+  "n_cells_compared": 69249,
+  "n_disagreements": 0,
+  "passed": true
+ },
+ "graph": {
+  "forward_knn_requested": 100,
+  "reverse_knn": 15,
+  "solver_budget_s": 90.0,
+  "n_blocks": 190,
+  "n_edges_total": 11029222,
+  "n_columns_total": 110803,
+  "n_blocks_not_solved_on_raw_costs": 0,
+  "n_blocks_needing_k_escalation": 0,
+  "solve_seconds": 7.6,
+  "per_block": {
+   "B1 B|donor1": {
+    "n_cells": 688,
+    "n_columns": 1101,
+    "n_cells_with_capacity_2": 413,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 114399,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 482,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "B1 B|donor10": {
+    "n_cells": 127,
+    "n_columns": 203,
+    "n_cells_with_capacity_2": 76,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 20212,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 94,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "B1 B|donor2": {
+    "n_cells": 127,
+    "n_columns": 203,
+    "n_cells_with_capacity_2": 76,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 20299,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 91,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "B1 B|donor3": {
+    "n_cells": 290,
+    "n_columns": 464,
+    "n_cells_with_capacity_2": 174,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 47039,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 205,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "B1 B|donor5": {
+    "n_cells": 123,
+    "n_columns": 197,
+    "n_cells_with_capacity_2": 74,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 19715,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 90,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "B1 B|donor6": {
+    "n_cells": 55,
+    "n_columns": 88,
+    "n_cells_with_capacity_2": 33,
+    "forward_knn_used": 55,
+    "reverse_knn": 15,
+    "n_edges": 4840,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 39,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 55,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "B1 B|donor7": {
+    "n_cells": 56,
+    "n_columns": 90,
+    "n_cells_with_capacity_2": 34,
+    "forward_knn_used": 56,
+    "reverse_knn": 15,
+    "n_edges": 5040,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 41,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 56,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "B1 B|donor8": {
+    "n_cells": 326,
+    "n_columns": 522,
+    "n_cells_with_capacity_2": 196,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 53822,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 221,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "B1 B|donor9": {
+    "n_cells": 98,
+    "n_columns": 157,
+    "n_cells_with_capacity_2": 59,
+    "forward_knn_used": 98,
+    "reverse_knn": 15,
+    "n_edges": 15386,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 68,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 98,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor1": {
+    "n_cells": 3243,
+    "n_columns": 5189,
+    "n_cells_with_capacity_2": 1946,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 524981,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 2369,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor10": {
+    "n_cells": 1603,
+    "n_columns": 2565,
+    "n_cells_with_capacity_2": 962,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 261907,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1130,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor2": {
+    "n_cells": 704,
+    "n_columns": 1126,
+    "n_cells_with_capacity_2": 422,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 115559,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 489,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor3": {
+    "n_cells": 1097,
+    "n_columns": 1755,
+    "n_cells_with_capacity_2": 658,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 176013,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 789,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor4": {
+    "n_cells": 1140,
+    "n_columns": 1824,
+    "n_cells_with_capacity_2": 684,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 184332,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 841,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor5": {
+    "n_cells": 1716,
+    "n_columns": 2746,
+    "n_cells_with_capacity_2": 1030,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 277726,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1229,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor6": {
+    "n_cells": 208,
+    "n_columns": 333,
+    "n_cells_with_capacity_2": 125,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 33522,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 151,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor7": {
+    "n_cells": 674,
+    "n_columns": 1078,
+    "n_cells_with_capacity_2": 404,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 112822,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 458,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD14+ Mono|donor8": {
+    "n_cells": 458,
+    "n_columns": 733,
+    "n_cells_with_capacity_2": 275,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 73315,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 319,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor1": {
+    "n_cells": 526,
+    "n_columns": 842,
+    "n_cells_with_capacity_2": 316,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 86239,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 376,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor10": {
+    "n_cells": 253,
+    "n_columns": 405,
+    "n_cells_with_capacity_2": 152,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 41405,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 187,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor2": {
+    "n_cells": 179,
+    "n_columns": 286,
+    "n_cells_with_capacity_2": 107,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 28773,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 125,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor3": {
+    "n_cells": 67,
+    "n_columns": 107,
+    "n_cells_with_capacity_2": 40,
+    "forward_knn_used": 67,
+    "reverse_knn": 15,
+    "n_edges": 7169,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 45,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 67,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor4": {
+    "n_cells": 177,
+    "n_columns": 283,
+    "n_cells_with_capacity_2": 106,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 28136,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 132,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor5": {
+    "n_cells": 380,
+    "n_columns": 608,
+    "n_cells_with_capacity_2": 228,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 62090,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 272,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor6": {
+    "n_cells": 18,
+    "n_columns": 29,
+    "n_cells_with_capacity_2": 11,
+    "forward_knn_used": 18,
+    "reverse_knn": 15,
+    "n_edges": 522,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 15,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 18,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor7": {
+    "n_cells": 41,
+    "n_columns": 66,
+    "n_cells_with_capacity_2": 25,
+    "forward_knn_used": 41,
+    "reverse_knn": 15,
+    "n_edges": 2706,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 30,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 41,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor8": {
+    "n_cells": 99,
+    "n_columns": 158,
+    "n_cells_with_capacity_2": 59,
+    "forward_knn_used": 99,
+    "reverse_knn": 15,
+    "n_edges": 15642,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 71,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 99,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD16+ Mono|donor9": {
+    "n_cells": 154,
+    "n_columns": 246,
+    "n_cells_with_capacity_2": 92,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 24868,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 108,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor1": {
+    "n_cells": 1901,
+    "n_columns": 3042,
+    "n_cells_with_capacity_2": 1141,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 305268,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1374,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor10": {
+    "n_cells": 207,
+    "n_columns": 331,
+    "n_cells_with_capacity_2": 124,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 33042,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 145,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor2": {
+    "n_cells": 709,
+    "n_columns": 1134,
+    "n_cells_with_capacity_2": 425,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 114190,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 495,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor3": {
+    "n_cells": 620,
+    "n_columns": 992,
+    "n_cells_with_capacity_2": 372,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 100457,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 445,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor4": {
+    "n_cells": 385,
+    "n_columns": 616,
+    "n_cells_with_capacity_2": 231,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 61580,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 285,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor5": {
+    "n_cells": 493,
+    "n_columns": 789,
+    "n_cells_with_capacity_2": 296,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 79079,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 359,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor6": {
+    "n_cells": 276,
+    "n_columns": 442,
+    "n_cells_with_capacity_2": 166,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 44353,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 203,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor7": {
+    "n_cells": 102,
+    "n_columns": 163,
+    "n_cells_with_capacity_2": 61,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 16275,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 72,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor8": {
+    "n_cells": 684,
+    "n_columns": 1094,
+    "n_cells_with_capacity_2": 410,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 108442,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 486,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T activated|donor9": {
+    "n_cells": 149,
+    "n_columns": 238,
+    "n_cells_with_capacity_2": 89,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 23898,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 112,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor1": {
+    "n_cells": 1198,
+    "n_columns": 1917,
+    "n_cells_with_capacity_2": 719,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 193631,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 873,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor10": {
+    "n_cells": 106,
+    "n_columns": 170,
+    "n_cells_with_capacity_2": 64,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 17006,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 79,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor2": {
+    "n_cells": 1289,
+    "n_columns": 2062,
+    "n_cells_with_capacity_2": 773,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 208921,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 911,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor3": {
+    "n_cells": 852,
+    "n_columns": 1363,
+    "n_cells_with_capacity_2": 511,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 138606,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 599,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor4": {
+    "n_cells": 214,
+    "n_columns": 342,
+    "n_cells_with_capacity_2": 128,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 34262,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 158,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor5": {
+    "n_cells": 163,
+    "n_columns": 261,
+    "n_cells_with_capacity_2": 98,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 26219,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 117,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor6": {
+    "n_cells": 58,
+    "n_columns": 93,
+    "n_cells_with_capacity_2": 35,
+    "forward_knn_used": 58,
+    "reverse_knn": 15,
+    "n_edges": 5394,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 42,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 58,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor7": {
+    "n_cells": 98,
+    "n_columns": 157,
+    "n_cells_with_capacity_2": 59,
+    "forward_knn_used": 98,
+    "reverse_knn": 15,
+    "n_edges": 15386,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 69,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 98,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor8": {
+    "n_cells": 299,
+    "n_columns": 478,
+    "n_cells_with_capacity_2": 179,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 49014,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 206,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD4+ T naive|donor9": {
+    "n_cells": 121,
+    "n_columns": 194,
+    "n_cells_with_capacity_2": 73,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 19310,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 86,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T naive|donor10": {
+    "n_cells": 366,
+    "n_columns": 586,
+    "n_cells_with_capacity_2": 220,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 59805,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 259,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T naive|donor3": {
+    "n_cells": 427,
+    "n_columns": 683,
+    "n_cells_with_capacity_2": 256,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 69249,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 301,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T naive|donor9": {
+    "n_cells": 219,
+    "n_columns": 350,
+    "n_cells_with_capacity_2": 131,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 35139,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 157,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor1": {
+    "n_cells": 1653,
+    "n_columns": 2645,
+    "n_cells_with_capacity_2": 992,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 267050,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1202,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor10": {
+    "n_cells": 432,
+    "n_columns": 691,
+    "n_cells_with_capacity_2": 259,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 69732,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 302,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor2": {
+    "n_cells": 1632,
+    "n_columns": 2611,
+    "n_cells_with_capacity_2": 979,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 265333,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1164,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor3": {
+    "n_cells": 1398,
+    "n_columns": 2237,
+    "n_cells_with_capacity_2": 839,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 224641,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1007,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor4": {
+    "n_cells": 230,
+    "n_columns": 368,
+    "n_cells_with_capacity_2": 138,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 36989,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 171,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor5": {
+    "n_cells": 752,
+    "n_columns": 1203,
+    "n_cells_with_capacity_2": 451,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 120381,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 540,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor6": {
+    "n_cells": 488,
+    "n_columns": 781,
+    "n_cells_with_capacity_2": 293,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 78829,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 357,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor7": {
+    "n_cells": 110,
+    "n_columns": 176,
+    "n_cells_with_capacity_2": 66,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 17594,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 81,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor8": {
+    "n_cells": 4089,
+    "n_columns": 6542,
+    "n_cells_with_capacity_2": 2453,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 668768,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 2805,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "CD8+ T|donor9": {
+    "n_cells": 805,
+    "n_columns": 1288,
+    "n_cells_with_capacity_2": 483,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 130015,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 565,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor1": {
+    "n_cells": 1749,
+    "n_columns": 2798,
+    "n_cells_with_capacity_2": 1049,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 287929,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1257,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor10": {
+    "n_cells": 391,
+    "n_columns": 626,
+    "n_cells_with_capacity_2": 235,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 63267,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 279,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor2": {
+    "n_cells": 136,
+    "n_columns": 218,
+    "n_cells_with_capacity_2": 82,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 21786,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 99,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor3": {
+    "n_cells": 620,
+    "n_columns": 992,
+    "n_cells_with_capacity_2": 372,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 100447,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 436,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor4": {
+    "n_cells": 1485,
+    "n_columns": 2376,
+    "n_cells_with_capacity_2": 891,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 242989,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1058,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor5": {
+    "n_cells": 64,
+    "n_columns": 102,
+    "n_cells_with_capacity_2": 38,
+    "forward_knn_used": 64,
+    "reverse_knn": 15,
+    "n_edges": 6528,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 46,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 64,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor6": {
+    "n_cells": 84,
+    "n_columns": 134,
+    "n_cells_with_capacity_2": 50,
+    "forward_knn_used": 84,
+    "reverse_knn": 15,
+    "n_edges": 11256,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 61,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 84,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor7": {
+    "n_cells": 31,
+    "n_columns": 50,
+    "n_cells_with_capacity_2": 19,
+    "forward_knn_used": 31,
+    "reverse_knn": 15,
+    "n_edges": 1550,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 23,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 31,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor8": {
+    "n_cells": 266,
+    "n_columns": 426,
+    "n_cells_with_capacity_2": 160,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 42871,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 193,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Erythroblast|donor9": {
+    "n_cells": 90,
+    "n_columns": 144,
+    "n_cells_with_capacity_2": 54,
+    "forward_knn_used": 90,
+    "reverse_knn": 15,
+    "n_edges": 12960,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 65,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 90,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor1": {
+    "n_cells": 341,
+    "n_columns": 546,
+    "n_cells_with_capacity_2": 205,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 54381,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 241,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor10": {
+    "n_cells": 432,
+    "n_columns": 691,
+    "n_cells_with_capacity_2": 259,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 69507,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 300,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor2": {
+    "n_cells": 27,
+    "n_columns": 43,
+    "n_cells_with_capacity_2": 16,
+    "forward_knn_used": 27,
+    "reverse_knn": 15,
+    "n_edges": 1161,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 20,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 27,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor3": {
+    "n_cells": 32,
+    "n_columns": 51,
+    "n_cells_with_capacity_2": 19,
+    "forward_knn_used": 32,
+    "reverse_knn": 15,
+    "n_edges": 1632,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 23,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 32,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor4": {
+    "n_cells": 92,
+    "n_columns": 147,
+    "n_cells_with_capacity_2": 55,
+    "forward_knn_used": 92,
+    "reverse_knn": 15,
+    "n_edges": 13524,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 69,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 92,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor6": {
+    "n_cells": 119,
+    "n_columns": 190,
+    "n_cells_with_capacity_2": 71,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 18952,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 81,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor7": {
+    "n_cells": 8,
+    "n_columns": 13,
+    "n_cells_with_capacity_2": 5,
+    "forward_knn_used": 8,
+    "reverse_knn": 8,
+    "n_edges": 104,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 6,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 8,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor8": {
+    "n_cells": 66,
+    "n_columns": 106,
+    "n_cells_with_capacity_2": 40,
+    "forward_knn_used": 66,
+    "reverse_knn": 15,
+    "n_edges": 6996,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 48,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 66,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "G/M prog|donor9": {
+    "n_cells": 86,
+    "n_columns": 138,
+    "n_cells_with_capacity_2": 52,
+    "forward_knn_used": 86,
+    "reverse_knn": 15,
+    "n_edges": 11868,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 64,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 86,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor1": {
+    "n_cells": 230,
+    "n_columns": 368,
+    "n_cells_with_capacity_2": 138,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 36954,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 161,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor10": {
+    "n_cells": 291,
+    "n_columns": 466,
+    "n_cells_with_capacity_2": 175,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 47721,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 206,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor2": {
+    "n_cells": 33,
+    "n_columns": 53,
+    "n_cells_with_capacity_2": 20,
+    "forward_knn_used": 33,
+    "reverse_knn": 15,
+    "n_edges": 1749,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 24,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 33,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor3": {
+    "n_cells": 146,
+    "n_columns": 234,
+    "n_cells_with_capacity_2": 88,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 23555,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 101,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor4": {
+    "n_cells": 100,
+    "n_columns": 160,
+    "n_cells_with_capacity_2": 60,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 16000,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 73,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor5": {
+    "n_cells": 20,
+    "n_columns": 32,
+    "n_cells_with_capacity_2": 12,
+    "forward_knn_used": 20,
+    "reverse_knn": 15,
+    "n_edges": 640,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 13,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 20,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor6": {
+    "n_cells": 38,
+    "n_columns": 61,
+    "n_cells_with_capacity_2": 23,
+    "forward_knn_used": 38,
+    "reverse_knn": 15,
+    "n_edges": 2318,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 28,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 38,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor7": {
+    "n_cells": 34,
+    "n_columns": 54,
+    "n_cells_with_capacity_2": 20,
+    "forward_knn_used": 34,
+    "reverse_knn": 15,
+    "n_edges": 1836,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 24,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 34,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor8": {
+    "n_cells": 108,
+    "n_columns": 173,
+    "n_cells_with_capacity_2": 65,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 17326,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 71,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "HSC|donor9": {
+    "n_cells": 72,
+    "n_columns": 115,
+    "n_cells_with_capacity_2": 43,
+    "forward_knn_used": 72,
+    "reverse_knn": 15,
+    "n_edges": 8280,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 51,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 72,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "ID2-hi myeloid prog|donor1": {
+    "n_cells": 67,
+    "n_columns": 107,
+    "n_cells_with_capacity_2": 40,
+    "forward_knn_used": 67,
+    "reverse_knn": 15,
+    "n_edges": 7169,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 46,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 67,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "ID2-hi myeloid prog|donor2": {
+    "n_cells": 41,
+    "n_columns": 66,
+    "n_cells_with_capacity_2": 25,
+    "forward_knn_used": 41,
+    "reverse_knn": 15,
+    "n_edges": 2706,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 26,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 41,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "ILC|donor1": {
+    "n_cells": 120,
+    "n_columns": 192,
+    "n_cells_with_capacity_2": 72,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 19227,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 85,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "ILC|donor10": {
+    "n_cells": 129,
+    "n_columns": 206,
+    "n_cells_with_capacity_2": 77,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 20444,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 96,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "ILC|donor2": {
+    "n_cells": 367,
+    "n_columns": 587,
+    "n_cells_with_capacity_2": 220,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 58274,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 261,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "ILC|donor3": {
+    "n_cells": 124,
+    "n_columns": 198,
+    "n_cells_with_capacity_2": 74,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 19793,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 83,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "ILC|donor5": {
+    "n_cells": 95,
+    "n_columns": 152,
+    "n_cells_with_capacity_2": 57,
+    "forward_knn_used": 95,
+    "reverse_knn": 15,
+    "n_edges": 14440,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 71,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 95,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor1": {
+    "n_cells": 452,
+    "n_columns": 723,
+    "n_cells_with_capacity_2": 271,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 75026,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 320,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor10": {
+    "n_cells": 231,
+    "n_columns": 370,
+    "n_cells_with_capacity_2": 139,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 37695,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 164,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor2": {
+    "n_cells": 28,
+    "n_columns": 45,
+    "n_cells_with_capacity_2": 17,
+    "forward_knn_used": 28,
+    "reverse_knn": 15,
+    "n_edges": 1260,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 20,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 28,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor3": {
+    "n_cells": 134,
+    "n_columns": 214,
+    "n_cells_with_capacity_2": 80,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 21449,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 95,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor4": {
+    "n_cells": 286,
+    "n_columns": 458,
+    "n_cells_with_capacity_2": 172,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 45808,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 204,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor6": {
+    "n_cells": 15,
+    "n_columns": 24,
+    "n_cells_with_capacity_2": 9,
+    "forward_knn_used": 15,
+    "reverse_knn": 15,
+    "n_edges": 360,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 12,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 15,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor7": {
+    "n_cells": 17,
+    "n_columns": 27,
+    "n_cells_with_capacity_2": 10,
+    "forward_knn_used": 17,
+    "reverse_knn": 15,
+    "n_edges": 459,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 12,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 17,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor8": {
+    "n_cells": 327,
+    "n_columns": 523,
+    "n_cells_with_capacity_2": 196,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 53150,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 222,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Lymph prog|donor9": {
+    "n_cells": 289,
+    "n_columns": 462,
+    "n_cells_with_capacity_2": 173,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 47020,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 200,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor1": {
+    "n_cells": 298,
+    "n_columns": 477,
+    "n_cells_with_capacity_2": 179,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 48267,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 206,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor10": {
+    "n_cells": 125,
+    "n_columns": 200,
+    "n_cells_with_capacity_2": 75,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 20093,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 86,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor2": {
+    "n_cells": 71,
+    "n_columns": 114,
+    "n_cells_with_capacity_2": 43,
+    "forward_knn_used": 71,
+    "reverse_knn": 15,
+    "n_edges": 8094,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 51,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 71,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor3": {
+    "n_cells": 95,
+    "n_columns": 152,
+    "n_cells_with_capacity_2": 57,
+    "forward_knn_used": 95,
+    "reverse_knn": 15,
+    "n_edges": 14440,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 66,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 95,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor4": {
+    "n_cells": 33,
+    "n_columns": 53,
+    "n_cells_with_capacity_2": 20,
+    "forward_knn_used": 33,
+    "reverse_knn": 15,
+    "n_edges": 1749,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 23,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 33,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor6": {
+    "n_cells": 48,
+    "n_columns": 77,
+    "n_cells_with_capacity_2": 29,
+    "forward_knn_used": 48,
+    "reverse_knn": 15,
+    "n_edges": 3696,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 33,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 48,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor7": {
+    "n_cells": 14,
+    "n_columns": 22,
+    "n_cells_with_capacity_2": 8,
+    "forward_knn_used": 14,
+    "reverse_knn": 14,
+    "n_edges": 308,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 10,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 14,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor8": {
+    "n_cells": 120,
+    "n_columns": 192,
+    "n_cells_with_capacity_2": 72,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 19473,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 79,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "MK/E prog|donor9": {
+    "n_cells": 80,
+    "n_columns": 128,
+    "n_cells_with_capacity_2": 48,
+    "forward_knn_used": 80,
+    "reverse_knn": 15,
+    "n_edges": 10240,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 58,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 80,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor1": {
+    "n_cells": 1984,
+    "n_columns": 3174,
+    "n_cells_with_capacity_2": 1190,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 318467,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 1429,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor10": {
+    "n_cells": 545,
+    "n_columns": 872,
+    "n_cells_with_capacity_2": 327,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 87538,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 383,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor2": {
+    "n_cells": 982,
+    "n_columns": 1571,
+    "n_cells_with_capacity_2": 589,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 157338,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 705,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor3": {
+    "n_cells": 1173,
+    "n_columns": 1877,
+    "n_cells_with_capacity_2": 704,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 189120,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 825,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor4": {
+    "n_cells": 136,
+    "n_columns": 218,
+    "n_cells_with_capacity_2": 82,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 21825,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 99,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor5": {
+    "n_cells": 848,
+    "n_columns": 1357,
+    "n_cells_with_capacity_2": 509,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 136808,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 620,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor6": {
+    "n_cells": 126,
+    "n_columns": 202,
+    "n_cells_with_capacity_2": 76,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 20221,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 90,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor7": {
+    "n_cells": 256,
+    "n_columns": 410,
+    "n_cells_with_capacity_2": 154,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 40433,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 178,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor8": {
+    "n_cells": 421,
+    "n_columns": 674,
+    "n_cells_with_capacity_2": 253,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 67645,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 300,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "NK|donor9": {
+    "n_cells": 458,
+    "n_columns": 733,
+    "n_cells_with_capacity_2": 275,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 73546,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 330,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor1": {
+    "n_cells": 1301,
+    "n_columns": 2082,
+    "n_cells_with_capacity_2": 781,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 208179,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 952,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor10": {
+    "n_cells": 421,
+    "n_columns": 674,
+    "n_cells_with_capacity_2": 253,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 67886,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 301,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor2": {
+    "n_cells": 121,
+    "n_columns": 194,
+    "n_cells_with_capacity_2": 73,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 19327,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 84,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor3": {
+    "n_cells": 526,
+    "n_columns": 842,
+    "n_cells_with_capacity_2": 316,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 85389,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 370,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor4": {
+    "n_cells": 590,
+    "n_columns": 944,
+    "n_cells_with_capacity_2": 354,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 94998,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 431,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor5": {
+    "n_cells": 105,
+    "n_columns": 168,
+    "n_cells_with_capacity_2": 63,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 16778,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 79,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor6": {
+    "n_cells": 18,
+    "n_columns": 29,
+    "n_cells_with_capacity_2": 11,
+    "forward_knn_used": 18,
+    "reverse_knn": 15,
+    "n_edges": 522,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 15,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 18,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor7": {
+    "n_cells": 190,
+    "n_columns": 304,
+    "n_cells_with_capacity_2": 114,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 30435,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 131,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor8": {
+    "n_cells": 883,
+    "n_columns": 1413,
+    "n_cells_with_capacity_2": 530,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 144900,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 597,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Naive CD20+ B|donor9": {
+    "n_cells": 897,
+    "n_columns": 1435,
+    "n_cells_with_capacity_2": 538,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 143571,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 647,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor1": {
+    "n_cells": 630,
+    "n_columns": 1008,
+    "n_cells_with_capacity_2": 378,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 104466,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 446,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor10": {
+    "n_cells": 129,
+    "n_columns": 206,
+    "n_cells_with_capacity_2": 77,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 20439,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 91,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor2": {
+    "n_cells": 69,
+    "n_columns": 110,
+    "n_cells_with_capacity_2": 41,
+    "forward_knn_used": 69,
+    "reverse_knn": 15,
+    "n_edges": 7590,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 50,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 69,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor3": {
+    "n_cells": 147,
+    "n_columns": 235,
+    "n_cells_with_capacity_2": 88,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 23584,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 97,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor4": {
+    "n_cells": 641,
+    "n_columns": 1026,
+    "n_cells_with_capacity_2": 385,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 108144,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 452,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor5": {
+    "n_cells": 17,
+    "n_columns": 27,
+    "n_cells_with_capacity_2": 10,
+    "forward_knn_used": 17,
+    "reverse_knn": 15,
+    "n_edges": 459,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 12,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 17,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor6": {
+    "n_cells": 18,
+    "n_columns": 29,
+    "n_cells_with_capacity_2": 11,
+    "forward_knn_used": 18,
+    "reverse_knn": 15,
+    "n_edges": 522,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 13,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 18,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor7": {
+    "n_cells": 9,
+    "n_columns": 14,
+    "n_cells_with_capacity_2": 5,
+    "forward_knn_used": 9,
+    "reverse_knn": 9,
+    "n_edges": 126,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 7,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 9,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor8": {
+    "n_cells": 90,
+    "n_columns": 144,
+    "n_cells_with_capacity_2": 54,
+    "forward_knn_used": 90,
+    "reverse_knn": 15,
+    "n_edges": 12960,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 63,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 90,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Normoblast|donor9": {
+    "n_cells": 30,
+    "n_columns": 48,
+    "n_cells_with_capacity_2": 18,
+    "forward_knn_used": 30,
+    "reverse_knn": 15,
+    "n_edges": 1440,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 22,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 30,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Plasma cell|donor1": {
+    "n_cells": 286,
+    "n_columns": 458,
+    "n_cells_with_capacity_2": 172,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 48336,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 200,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Plasma cell|donor10": {
+    "n_cells": 13,
+    "n_columns": 21,
+    "n_cells_with_capacity_2": 8,
+    "forward_knn_used": 13,
+    "reverse_knn": 13,
+    "n_edges": 273,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 9,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 13,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Plasma cell|donor2": {
+    "n_cells": 13,
+    "n_columns": 21,
+    "n_cells_with_capacity_2": 8,
+    "forward_knn_used": 13,
+    "reverse_knn": 13,
+    "n_edges": 273,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 10,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 13,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Plasma cell|donor3": {
+    "n_cells": 25,
+    "n_columns": 40,
+    "n_cells_with_capacity_2": 15,
+    "forward_knn_used": 25,
+    "reverse_knn": 15,
+    "n_edges": 1000,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 19,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 25,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Plasma cell|donor5": {
+    "n_cells": 16,
+    "n_columns": 26,
+    "n_cells_with_capacity_2": 10,
+    "forward_knn_used": 16,
+    "reverse_knn": 15,
+    "n_edges": 416,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 13,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 16,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Plasma cell|donor8": {
+    "n_cells": 26,
+    "n_columns": 42,
+    "n_cells_with_capacity_2": 16,
+    "forward_knn_used": 26,
+    "reverse_knn": 15,
+    "n_edges": 1092,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 18,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 26,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor1": {
+    "n_cells": 472,
+    "n_columns": 755,
+    "n_cells_with_capacity_2": 283,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 77752,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 328,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor10": {
+    "n_cells": 111,
+    "n_columns": 178,
+    "n_cells_with_capacity_2": 67,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 17801,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 76,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor2": {
+    "n_cells": 30,
+    "n_columns": 48,
+    "n_cells_with_capacity_2": 18,
+    "forward_knn_used": 30,
+    "reverse_knn": 15,
+    "n_edges": 1440,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 21,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 30,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor3": {
+    "n_cells": 313,
+    "n_columns": 501,
+    "n_cells_with_capacity_2": 188,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 50579,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 216,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor4": {
+    "n_cells": 316,
+    "n_columns": 506,
+    "n_cells_with_capacity_2": 190,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 51444,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 220,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor5": {
+    "n_cells": 18,
+    "n_columns": 29,
+    "n_cells_with_capacity_2": 11,
+    "forward_knn_used": 18,
+    "reverse_knn": 15,
+    "n_edges": 522,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 14,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 18,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor6": {
+    "n_cells": 27,
+    "n_columns": 43,
+    "n_cells_with_capacity_2": 16,
+    "forward_knn_used": 27,
+    "reverse_knn": 15,
+    "n_edges": 1161,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 19,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 27,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor7": {
+    "n_cells": 21,
+    "n_columns": 34,
+    "n_cells_with_capacity_2": 13,
+    "forward_knn_used": 21,
+    "reverse_knn": 15,
+    "n_edges": 714,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 15,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 21,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor8": {
+    "n_cells": 800,
+    "n_columns": 1280,
+    "n_cells_with_capacity_2": 480,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 134392,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 543,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Proerythroblast|donor9": {
+    "n_cells": 192,
+    "n_columns": 307,
+    "n_cells_with_capacity_2": 115,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 30819,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 136,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor1": {
+    "n_cells": 809,
+    "n_columns": 1294,
+    "n_cells_with_capacity_2": 485,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 130504,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 575,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor10": {
+    "n_cells": 359,
+    "n_columns": 574,
+    "n_cells_with_capacity_2": 215,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 57789,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 260,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor2": {
+    "n_cells": 40,
+    "n_columns": 64,
+    "n_cells_with_capacity_2": 24,
+    "forward_knn_used": 40,
+    "reverse_knn": 15,
+    "n_edges": 2560,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 29,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 40,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor3": {
+    "n_cells": 197,
+    "n_columns": 315,
+    "n_cells_with_capacity_2": 118,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 31786,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 137,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor4": {
+    "n_cells": 185,
+    "n_columns": 296,
+    "n_cells_with_capacity_2": 111,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 29507,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 138,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor6": {
+    "n_cells": 18,
+    "n_columns": 29,
+    "n_cells_with_capacity_2": 11,
+    "forward_knn_used": 18,
+    "reverse_knn": 15,
+    "n_edges": 522,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 13,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 18,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor7": {
+    "n_cells": 30,
+    "n_columns": 48,
+    "n_cells_with_capacity_2": 18,
+    "forward_knn_used": 30,
+    "reverse_knn": 15,
+    "n_edges": 1440,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 21,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 30,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor8": {
+    "n_cells": 630,
+    "n_columns": 1008,
+    "n_cells_with_capacity_2": 378,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 102579,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 434,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "Transitional B|donor9": {
+    "n_cells": 542,
+    "n_columns": 867,
+    "n_cells_with_capacity_2": 325,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 88125,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 381,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor1": {
+    "n_cells": 181,
+    "n_columns": 290,
+    "n_cells_with_capacity_2": 109,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 29101,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 124,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor10": {
+    "n_cells": 83,
+    "n_columns": 133,
+    "n_cells_with_capacity_2": 50,
+    "forward_knn_used": 83,
+    "reverse_knn": 15,
+    "n_edges": 11039,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 58,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 83,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor2": {
+    "n_cells": 89,
+    "n_columns": 142,
+    "n_cells_with_capacity_2": 53,
+    "forward_knn_used": 89,
+    "reverse_knn": 15,
+    "n_edges": 12638,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 64,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 89,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor3": {
+    "n_cells": 188,
+    "n_columns": 301,
+    "n_cells_with_capacity_2": 113,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 30280,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 132,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor4": {
+    "n_cells": 53,
+    "n_columns": 85,
+    "n_cells_with_capacity_2": 32,
+    "forward_knn_used": 53,
+    "reverse_knn": 15,
+    "n_edges": 4505,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 38,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 53,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor5": {
+    "n_cells": 30,
+    "n_columns": 48,
+    "n_cells_with_capacity_2": 18,
+    "forward_knn_used": 30,
+    "reverse_knn": 15,
+    "n_edges": 1440,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 23,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 30,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor6": {
+    "n_cells": 26,
+    "n_columns": 42,
+    "n_cells_with_capacity_2": 16,
+    "forward_knn_used": 26,
+    "reverse_knn": 15,
+    "n_edges": 1092,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 19,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 26,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor7": {
+    "n_cells": 25,
+    "n_columns": 40,
+    "n_cells_with_capacity_2": 15,
+    "forward_knn_used": 25,
+    "reverse_knn": 15,
+    "n_edges": 1000,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 17,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 25,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor8": {
+    "n_cells": 160,
+    "n_columns": 256,
+    "n_cells_with_capacity_2": 96,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 26135,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 113,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "cDC2|donor9": {
+    "n_cells": 24,
+    "n_columns": 38,
+    "n_cells_with_capacity_2": 14,
+    "forward_knn_used": 24,
+    "reverse_knn": 15,
+    "n_edges": 912,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 18,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 24,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor1": {
+    "n_cells": 338,
+    "n_columns": 541,
+    "n_cells_with_capacity_2": 203,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 56777,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 243,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor10": {
+    "n_cells": 427,
+    "n_columns": 683,
+    "n_cells_with_capacity_2": 256,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 70871,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 300,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor2": {
+    "n_cells": 53,
+    "n_columns": 85,
+    "n_cells_with_capacity_2": 32,
+    "forward_knn_used": 53,
+    "reverse_knn": 15,
+    "n_edges": 4505,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 37,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 53,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor3": {
+    "n_cells": 133,
+    "n_columns": 213,
+    "n_cells_with_capacity_2": 80,
+    "forward_knn_used": 100,
+    "reverse_knn": 15,
+    "n_edges": 21105,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 94,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 100,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor4": {
+    "n_cells": 48,
+    "n_columns": 77,
+    "n_cells_with_capacity_2": 29,
+    "forward_knn_used": 48,
+    "reverse_knn": 15,
+    "n_edges": 3696,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 34,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 48,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor5": {
+    "n_cells": 55,
+    "n_columns": 88,
+    "n_cells_with_capacity_2": 33,
+    "forward_knn_used": 55,
+    "reverse_knn": 15,
+    "n_edges": 4840,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 41,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 55,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor6": {
+    "n_cells": 39,
+    "n_columns": 62,
+    "n_cells_with_capacity_2": 23,
+    "forward_knn_used": 39,
+    "reverse_knn": 15,
+    "n_edges": 2418,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 31,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 39,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor7": {
+    "n_cells": 55,
+    "n_columns": 88,
+    "n_cells_with_capacity_2": 33,
+    "forward_knn_used": 55,
+    "reverse_knn": 15,
+    "n_edges": 4840,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 37,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 55,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor8": {
+    "n_cells": 24,
+    "n_columns": 38,
+    "n_cells_with_capacity_2": 14,
+    "forward_knn_used": 24,
+    "reverse_knn": 15,
+    "n_edges": 912,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 17,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 24,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   },
+   "pDC|donor9": {
+    "n_cells": 19,
+    "n_columns": 30,
+    "n_cells_with_capacity_2": 11,
+    "forward_knn_used": 19,
+    "reverse_knn": 15,
+    "n_edges": 570,
+    "cost_form": "raw",
+    "distinct_rna_cells_used": 14,
+    "reuse_max": 2,
+    "solver_attempts": [
+     {
+      "k": 19,
+      "cost_form": "raw",
+      "outcome": "ok"
+     }
+    ]
+   }
+  }
+ },
+ "capacity_mechanism": "node duplication: RNA cell j is replicated into c_j columns carrying identical costs, and the arm is a minimum-cost FULL ROW matching of the m x C matrix computed by the same scipy min_weight_full_bipartite_matching prep_04b uses. The estimator is the same routine on a larger graph.",
+ "capacity_scheme": "c_j = 2 for the first round(frac*m) cells of a fixed per-block permutation seeded by (seed, block label), 1 for the rest; nested in frac, independent of the CCA space",
+ "method": "prep_04b_link_restricted.py's within-block CCA linkage with a per-RNA-cell capacity imposed by node duplication; see module docstring",
+ "cap": 2,
+ "cap_frac": 0.6,
+ "n_cells_with_capacity_2": 41554,
+ "reuse_band_required": [
+  1.35,
+  1.45
+ ],
+ "arm": {
+  "token": "link_x_celltype_donor_cap14",
+  "file": "arm_link_x_celltype_donor_cap14_seed555.csv",
+  "row_unit": "one row per ATAC cell",
+  "n_assignments": 69249,
+  "reuse_mean_per_used_rna_cell": 1.405728553448906,
+  "reuse_mean_per_assignment": 1.5772502129994657,
+  "reuse_max": 2,
+  "reuse_distribution": {
+   "1": 29275,
+   "2": 19987
+  },
+  "share_of_assignments_on_a_reused_cell": 0.5772502129994657,
+  "distinct_rna_cells": 49262,
+  "pct_pool_used": 0.7113748935002672,
+  "self_hits": 1060,
+  "exact_cell_accuracy": 0.01530708024664616,
+  "random_within_block_expected_self_hits": 190,
+  "random_within_block_expected_exact_accuracy": 0.0027437219310026137,
+  "cross_donor_rate": 0.0,
+  "cross_site_rate": 0.17294112550361737,
+  "cross_cell_type_rate": 0.0
+ },
+ "reference_arms_from_b04b": {
+  "link_x_celltype_donor": {
+   "block_definition": "cell type x donor",
+   "reuse_mean_per_used_rna_cell": 2.0079157967988865,
+   "reuse_max": 80,
+   "distinct_rna_cells": 34488,
+   "pct_pool_used": 0.49802885240220074,
+   "exact_cell_accuracy": 0.014180710190760877,
+   "cross_donor_rate": 0.0,
+   "cross_site_rate": 0.17824084102297505,
+   "cross_cell_type_rate": 0.0,
+   "random_within_block_expected_exact_accuracy": 0.0027437219310026137,
+   "file": "arm_link_x_celltype_donor_seed555.csv",
+   "row_unit": "one row per ATAC cell"
+  },
+  "link_x_celltype_donor_1to1": {
+   "block_definition": "cell type x donor",
+   "reuse_mean_per_used_rna_cell": 1.0,
+   "reuse_max": 1,
+   "distinct_rna_cells": 69249,
+   "pct_pool_used": 1.0,
+   "exact_cell_accuracy": 0.015509249231035827,
+   "cross_donor_rate": 0.0,
+   "cross_site_rate": 0.17211800892431658,
+   "cross_cell_type_rate": 0.0,
+   "random_within_block_expected_exact_accuracy": 0.0027437219310026137,
+   "file": "arm_link_x_celltype_donor_1to1_seed555.csv",
+   "row_unit": "one row per ATAC cell"
+  }
+ },
+ "runtime_s": 74.4
+}

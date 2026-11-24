@@ -1,0 +1,9 @@
+{
+ "seed": 555,
+ "auc_threshold": 0.05,
+ "total_genes": 23250,
+ "n_pool_per_slot": 200,
+ "min_detect_frac": 0.1,
+ "nullB_universe_size": 20054,
+ "ranking_convention": "pyscenic: shuffle gene order, rank descending method='first', 0-based; ties among undetected genes broken by the shuffle"
+}

@@ -1,0 +1,28 @@
+name: scenicplus
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11           # pinned: Python 3.13 breaks pycisTopic / pycistarget / h5py
+  - scenicplus            # bioconda 1.0a2
+  - pycistopic            # bioconda 2.0a  (not pulled in transitively by scenicplus; listed explicitly)
+  - pyscenic              # bioconda 0.12.1 (listed explicitly)
+  - 'setuptools<81'       # required: setuptools>=81 removed pkg_resources, which scenicplus/pycisTopic still import
+  - mudata                # required by the scenicplus CLI (omitted from the bioconda recipe)
+  - importlib_resources   # required by the scenicplus CLI (omitted from the bioconda recipe)
+  - pytables              # required to write motif-enrichment HDF5 (omitted from the bioconda recipe)
+  # lda is installed with pip (below): conda-forge has no build compatible with Python 3.11.
+  - macs2                 # peak calling
+  - bedtools
+  - samtools
+  - htslib                # bgzip + tabix (fragment hygiene)
+  - openjdk               # Mallet topic modelling (optional)
+  - pip
+  - pip:
+      - lda               # topic modeling (pycisTopic lda_models); from PyPI, see note above
+      - polars==0.20.13   # required: pycisTopic 2.0a's CLI uses polars `has_header`,
+                          # which was removed in polars>=1
+# Verified import set (WSL2, 2026-06-22): scenicplus 1.0a2, pycisTopic 2.0a0, pycistarget 1.1,
+# pyscenic 0.12.1, python 3.11.8, numpy 1.26.4, pandas 1.5.3, setuptools 80.10.2, polars 0.20.13,
+# mudata 0.3.8, importlib_resources 7.1.0. `pycistopic tss get_tss` produces hg38 TSS.
+  - gseapy                # required by eGRN (GSEA); omitted from the bioconda recipe

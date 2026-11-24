@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "n_regressions_checked": 8,
+  "all_804_regulon_exclusion_records_verified": true,
+  "centering_and_orientation_rebuilt_from_saved_201_regulon_scores": true,
+  "checks": [
+    {
+      "axis": "A1_lambo_HSC_minus_Monocyte",
+      "vocabulary": "Diagnosis",
+      "construction": "original_module_intact_axis",
+      "saved_scores_and_59_patient_pairs_verified": true,
+      "independent_numpy_ols_and_t_test_verified": true
+    },
+    {
+      "axis": "A1_lambo_HSC_minus_Monocyte",
+      "vocabulary": "Diagnosis",
+      "construction": "marker_excluded_module_intact_axis",
+      "saved_scores_and_59_patient_pairs_verified": true,
+      "independent_numpy_ols_and_t_test_verified": true
+    },
+    {
+      "axis": "A1_lambo_HSC_minus_Monocyte",
+      "vocabulary": "Relapse",
+      "construction": "original_module_intact_axis",
+      "saved_scores_and_59_patient_pairs_verified": true,
+      "independent_numpy_ols_and_t_test_verified": true
+    },
+    {
+      "axis": "A1_lambo_HSC_minus_Monocyte",
+      "vocabulary": "Relapse",
+      "construction": "marker_excluded_module_intact_axis",
+      "saved_scores_and_59_patient_pairs_verified": true,
+      "independent_numpy_ols_and_t_test_verified": true
+    },
+    {
+      "axis": "A2_lambo_HSCProg_minus_MonoGMP",
+      "vocabulary": "Diagnosis",
+      "construction": "original_module_intact_axis",
+      "saved_scores_and_59_patient_pairs_verified": true,
+      "independent_numpy_ols_and_t_test_verified": true
+    },
+    {
+      "axis": "A2_lambo_HSCProg_minus_MonoGMP",
+      "vocabulary": "Diagnosis",
+      "construction": "marker_excluded_module_intact_axis",
+      "saved_scores_and_59_patient_pairs_verified": true,
+      "independent_numpy_ols_and_t_test_verified": true
+    },
+    {
+      "axis": "A2_lambo_HSCProg_minus_MonoGMP",
+      "vocabulary": "Relapse",
+      "construction": "original_module_intact_axis",
+      "saved_scores_and_59_patient_pairs_verified": true,
+      "independent_numpy_ols_and_t_test_verified": true
+    },
+    {
+      "axis": "A2_lambo_HSCProg_minus_MonoGMP",
+      "vocabulary": "Relapse",
+      "construction": "marker_excluded_module_intact_axis",
+      "saved_scores_and_59_patient_pairs_verified": true,
+      "independent_numpy_ols_and_t_test_verified": true
+    }
+  ]
+}

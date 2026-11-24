@@ -1,0 +1,126 @@
+genome: hg38                # BMMC is GRCh38 -> reuses the AML run's cisTarget feathers as-is
+seed: 555                   # run_bmmc.sh's AMLGRN_SEED default; keep them equal
+
+stages: [bmmc]              # single stage. run_bmmc.sh defaults AMLGRN_STAGE=bmmc and every
+                            # artifact name is <thing>_bmmc[.<arm>].<ext>
+
+# ---- the dataset, as measured by the census step (out/b00_feasibility.json) ----------------
+# Recorded here so any consumer can assert against it instead of re-deriving it. These are
+# measured counts, not targets: a script that reads a different number from the h5ad should
+# fail loudly rather than proceed.
+dataset:
+  accession:      GSE194122
+  description:    NeurIPS 2021 10x Multiome, bone marrow mononuclear cells
+  species:        human
+  assembly:       GRCh38
+  n_cells:        69249
+  n_gex_features: 13431
+  n_atac_peaks:   116490
+  n_batches:      13
+  n_donors:       10
+  n_sites:        4
+  n_cell_types:   22
+  # The deposit stores peak names with '-'; pycisTopic parses only ':'. Rewrite the first
+  # delimiter only. This is a data fact, not a tunable.
+  peak_name_deposited: "chr1-9776-10668"
+  peak_name_required:  "chr1:9776-10668"
+  # 13 batches from 10 donors: donor1 and donor3 are each replicated across sites, so donor is
+  # separable from site and a pairing x batch interaction is estimable. Keying on donor alone
+  # silently merges batches; aggregate on batch and roll up to donor deliberately.
+
+# ---- compute ----------------------------------------------------------------
+# Copied from both reference configs. These steps hold matrix data PER WORKER, so peak RAM
+# ~ (workers x per-worker size); they are I/O-bound, so the speed cost of keeping them well
+# below n_cpu is small compared with an OOM three hours in.
+n_cpu: 16
+pseudobulk_n_cpu: 4         # unused on this bundle's path: there is no pseudobulk and no MACS
+                            # step (peak-matrix route, see `pseudobulk:` below). Kept only so a
+                            # script copied from the AML bundle does not raise KeyError.
+topic_n_cpu: 9              # = number of topic models run concurrently (one per n_topics value)
+
+paths:
+  h5ad:      data/multiome_BMMC.h5ad   # decompressed on CUBIC from the GSE194122 .h5ad.gz
+  uploads:   uploads                   # b00_cell_metadata.csv + one arm_*.csv per constructed arm
+  databases: ../databases              # reused from the AML run (hg38); do not re-stage. On CUBIC this
+                                       # is $ROOT/databases. submit_bmmc.sh also exports AMLGRN_DB to
+                                       # the same place, and the environment variable wins in run_grn_bmmc.sh.
+  work:      work
+  out:       out
+# No `atac_fragments:` key: nothing in the container reads a fragment file. The chromatin chain is
+# the pycisTopic peak-matrix route (create_cistopic_object over the deposited 116,490 x 69,249
+# integer peak count matrix). Fragments are an input to the local ArchR link construction only
+# (see scripts/fetch_fragments.sh) and must not be uploaded.
+
+pairings: [truth, rand_celltype_1to1, rand_celltype_x_donor_1to1, rand_global]
+
+pairing_params:
+  truth:
+    multiome_mode: true
+    use_real_barcodes: true      # ground truth: cell i's RNA is cell i's ATAC
+  # Every rand_* arm is multiome-mode like truth and differs only in which RNA cell sits under
+  # each ATAC cell.
+  rand_celltype_1to1:
+    multiome_mode: true
+  rand_celltype_x_donor_1to1:
+    multiome_mode: true
+  rand_global:
+    multiome_mode: true
+  # Metacell arms are not in the default set, but run_bmmc.sh and run_grn_bmmc.sh both resolve
+  # them, so their parameters are carried here at the reference values.
+  pseudomultiome:                # SCENIC+'s own construction for unpaired data
+    multiome_mode: false
+    group_by: Classified_Celltype
+    nr_cells_per_metacell: 5     # must match run_grn_bmmc.sh's --nr_cells_per_metacells
+    nr_metacells: null
+    modality_correlation_min: 0.2
+    min_cells_per_celltype: 25   # a cell type with 3-4 cells crashes SCENIC+ metacell sampling ("Sample larger than population")
+
+# Rebuilding a pairing here is a permutation within a stratum. BMMC is a true multiome, so
+# n_ATAC == n_RNA identically, a bijection is always feasible, and there is no scarcity floor
+# (unlike the AML cohort, where RNA and ATAC were separate experiments). If any arm reports
+# dropped cells, the assignment table is wrong.
+
+# Must be Classified_Celltype. run_grn_bmmc.sh passes --key_to_group_by Classified_Celltype for
+# metacell arms, and the AML chain scripts hardcode the same name. The census step emits the label
+# as `cell_type`; the arm builder must copy it into Classified_Celltype.
+pseudobulk:
+  group_by:  Classified_Celltype
+  min_cells: 50
+# `pseudobulk:` is a name key here, not a step. There is no export_pseudobulk and no MACS peak
+# calling on this bundle's path: the NeurIPS consensus peak set is fixed, sorted, non-overlapping
+# and GRCh38, and is used as shipped. No `macs_path:` key for the same reason.
+
+# region_sets OOM guard. The DAR branch builds a dense cells x regions matrix and find_diff_features
+# then copies it, which has caused out-of-memory kills on larger datasets. At 69,249 cells x 116,490
+# peaks a dense float32 copy is ~32 GB, against the 1200 G submit_bmmc.sh requests, so the stratified
+# cap should never fire and every cell should reach the DAR step. The budget below is the PBMC value;
+# the AML value of 64 is a fallback for a smaller node at AML's far larger 121,053 x 624,963 shape
+# and is not the right ceiling here. env AMLGRN_IMPUTE_BUDGET_GB still wins if run on a smaller node.
+region_sets:
+  impute_mem_budget_gb: 200
+  min_cells_per_group: 100    # per-cell-type floor, so rare types keep their DAR (both refs agree)
+
+topic_model:
+  backend:  lda
+  n_topics: [2, 5, 10, 15, 20, 25, 30, 40, 50]   # same ladder as the AML and PBMC runs, for comparability
+  n_iter:   500
+                    # n_iter: the reference configs differ (AML / full-scale: 500; PBMC: 150). 500 is
+                    # used here. It changes the topic model and therefore the frozen chain, so it
+                    # cannot be revised after `AMLGRN_STOP_AFTER=chain` has run without invalidating every arm.
+  alpha:    50      # AML values; the PBMC config does not override them
+  eta:      0.1
+
+cell_id_sep: "___"  # cisTopic's cell-name convention; a separator mismatch silently matches zero cells
+
+scenicplus:
+  species:    hsapiens
+  assembly:   hg38
+  upstream:   [1000, 150000]
+  downstream: [1000, 150000]
+
+# No `qc:` block: the GSE194122 deposit is already filtered and annotated by the NeurIPS organisers,
+# and nothing on this bundle's path re-runs cell QC. The PBMC config's qc: block reproduces the
+# SCENIC+ paper's treatment of that dataset and would apply thresholds chosen for other data.
+#
+# X vs layers/counts: X in this deposit is library-size-normalised + log1p and must never be
+# summed. Every consumer reads layers/counts. Both share indices/indptr, so the swap is free.

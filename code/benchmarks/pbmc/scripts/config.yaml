@@ -1,0 +1,87 @@
+genome: hg38                # 10x PBMC multiome is GRCh38 -> reuses the AML cisTarget feathers
+
+# ---- compute ---------------------------------------------------------------
+# Memory guards, as in the AML runs. These steps hold fragment/matrix data per worker, so peak RAM
+# scales with (workers x per-worker size); keep them well below n_cpu. They are I/O-bound, so the
+# speed cost is small.
+n_cpu: 16
+pseudobulk_n_cpu: 4         # export_pseudobulk + cisTopic-from-fragments
+topic_n_cpu: 9              # number of models run concurrently
+                            # wall time is bounded by the largest single model (collapsed Gibbs is
+                            # sequential per model and the `lda` backend is single-threaded).
+seed: 555
+
+# ---- dataset ---------------------------------------------------------------
+# Set by run_all.sh from its first argument: 3k (pilot) or 10k (full).
+dataset: 3k
+datasets:
+  3k:
+    matrix_h5:  data/pbmc_granulocyte_sorted_3k_filtered_feature_bc_matrix.h5
+    fragments:  data/pbmc_granulocyte_sorted_3k_atac_fragments.tsv.gz
+    n_cells_expected: 2714
+  10k:
+    matrix_h5:  data/pbmc_granulocyte_sorted_10k_filtered_feature_bc_matrix.h5
+    fragments:  data/pbmc_granulocyte_sorted_10k_atac_fragments.tsv.gz
+    n_cells_expected: 11909
+
+paths:
+  databases: ../databases                   # shared with the AML runs (hg38 cisTarget databases); not re-staged
+  atac_fragments: work/fragments            # dir of {sample}.tsv.gz + .tbi (p_03 populates)
+  work: work
+  out:  out
+stages: [pbmc10k]
+
+pseudobulk:
+  # Must be Classified_Celltype, not annotated_celltype: atac_chain.py and run_grn.sh also use that
+  # column name directly. p_01 emits `annotated_celltype`; p_03 copies it into `Classified_Celltype`
+  # when it writes cell_data, and downstream steps use that name.
+  group_by:  Classified_Celltype
+  min_cells: 50
+
+region_sets:
+  impute_mem_budget_gb: 200
+  min_cells_per_group: 100
+
+topic_model:
+  n_topics: [2, 5, 10, 15, 20, 25, 30, 40, 50]   # same ladder as the AML runs, for comparability
+  n_iter: 150
+
+# atac_fragments must point at a DIRECTORY of {sample}.tsv.gz + .tbi (pycisTopic convention).
+# p_03 symlinks the 10x fragments into it under the pseudo-stage name.
+
+pairings: [truth, pseudomultiome, link]
+
+pairing_params:
+  truth:
+    multiome_mode: true
+    use_real_barcodes: true      # the ground truth: cell i's RNA is cell i's ATAC
+  pseudomultiome:                # SCENIC+'s own construction for unpaired data
+    multiome_mode: false
+    group_by: Classified_Celltype # p_01 emits annotated_celltype; p_03 copies it to this name
+                                 # -- run_grn.sh passes --key_to_group_by Classified_Celltype
+    nr_cells_per_metacell: 5     # must match run_grn.sh's --nr_cells_per_metacells
+    nr_metacells: null
+    modality_correlation_min: 0.2
+    # A cell type with only 3-4 cells makes SCENIC+ metacell sampling fail ("Sample larger than
+    # population"). 25 = five metacells' worth.
+    min_cells_per_celltype: 25
+  link:                          # ArchR/Seurat-style integration link; true barcodes discarded
+    multiome_mode: true
+    method: archr_addGeneIntegrationMatrix   # the ArchR method itself, not a reimplementation, for comparability
+    min_confidence: 0.5
+
+cell_id_sep: "___"            # cisTopic's convention (do not use "-")
+
+macs_path: macs3              # overridden at runtime by run_all.sh (AMLGRN_MACS -> macs3env)
+
+qc:
+  min_genes_per_cell: 200
+  max_genes_per_cell: 6000
+  max_pct_mito: 30
+  min_cells_per_gene: 3
+  scrublet_threshold: 0.17
+
+split_half:
+  enabled: false              # pilot: off. Turn on for the 10k run.
+  seed: 555
+  n_replicates: 1

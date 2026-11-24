@@ -1,0 +1,321 @@
+{
+  "status": "EXPLORATORY hypothesis-ranking \u2014 NOT a significance test, NOT FDR-controlled",
+  "criteria": {
+    "cell_type_bar_of_6": 4,
+    "chip_reference": "ENCODE K562, link pairing, TSS+/-5kb, margin>0 both stages",
+    "rank_statistic": "min(|beta_Dx|, |beta_Rel|) \u2014 the conservative reading"
+  },
+  "funnel": [
+    {
+      "step": "all shared-name regulons",
+      "n_regulons": 431,
+      "n_TFs": 209
+    },
+    {
+      "step": "1. directional under both vocabularies",
+      "n_regulons": 299,
+      "n_TFs": 163
+    },
+    {
+      "step": "2. + selective vs the patient's own healthy cells",
+      "n_regulons": 165,
+      "n_TFs": 107
+    },
+    {
+      "step": "3. + direction holds in >=4 of 6 cell types",
+      "n_regulons": 98,
+      "n_TFs": 68
+    },
+    {
+      "step": "4. + tier 1 (both pairings, both stages)",
+      "n_regulons": 26,
+      "n_TFs": 14
+    },
+    {
+      "step": "5. + TF ChIP-seq supported at both stages",
+      "n_regulons": 10,
+      "n_TFs": 4
+    }
+  ],
+  "alternative_depths": {
+    "drop_chip_axis (tier-1 core)": {
+      "n_regulons": 26,
+      "n_TFs": 14,
+      "TFs": [
+        "CEBPD",
+        "ERG",
+        "FOS",
+        "GATA2",
+        "HDAC2",
+        "HMGA1",
+        "IRF1",
+        "IRF8",
+        "MAFB",
+        "MBD2",
+        "SPI1",
+        "TCF4",
+        "TFDP2",
+        "ZBTB20"
+      ]
+    },
+    "drop_tier_axis (chip-supported, any tier)": {
+      "n_regulons": 35,
+      "n_TFs": 23,
+      "TFs": [
+        "BCLAF1",
+        "DDIT3",
+        "GATA2",
+        "GATAD2A",
+        "HDAC2",
+        "IRF1",
+        "IRF9",
+        "MAFF",
+        "MAX",
+        "MYC",
+        "NFATC3",
+        "RB1",
+        "RUNX1",
+        "SIN3A",
+        "SMAD4",
+        "SP1",
+        "SPI1",
+        "SREBF1",
+        "TBL1XR1",
+        "VEZF1",
+        "YY1",
+        "ZNF316",
+        "ZNF511"
+      ]
+    }
+  },
+  "all_five_axes": {
+    "n_regulons": 10,
+    "n_TFs": 4,
+    "up_at_relapse": 4,
+    "down_at_relapse": 6,
+    "regulons": [
+      {
+        "regulon": "HDAC2_direct_-/+",
+        "TF": "HDAC2",
+        "direction": "down at relapse",
+        "beta_mal_Dx": -0.0081090085398061,
+        "beta_mal_Rel": -0.0057517004375029,
+        "beta_healthy_Dx": 0.002427328971827,
+        "did_min_abs": 0.0052589361022795,
+        "celltypes_same_sign": [
+          6,
+          6
+        ],
+        "K562_margin": [
+          0.0414705882352941,
+          0.02140708915145
+        ]
+      },
+      {
+        "regulon": "SPI1_direct_-/-",
+        "TF": "SPI1",
+        "direction": "up at relapse",
+        "beta_mal_Dx": 0.0062471138568835,
+        "beta_mal_Rel": 0.0051376077515993,
+        "beta_healthy_Dx": -0.0001293307881789,
+        "did_min_abs": 0.0056285631363894,
+        "celltypes_same_sign": [
+          4,
+          4
+        ],
+        "K562_margin": [
+          0.0114628180039138,
+          0.0496157450796626
+        ]
+      },
+      {
+        "regulon": "SPI1_direct_-/+",
+        "TF": "SPI1",
+        "direction": "up at relapse",
+        "beta_mal_Dx": 0.0060132015625471,
+        "beta_mal_Rel": 0.0050941656200693,
+        "beta_healthy_Dx": 0.0002112378281595,
+        "did_min_abs": 0.005618262219929,
+        "celltypes_same_sign": [
+          4,
+          4
+        ],
+        "K562_margin": [
+          0.0114628180039138,
+          0.0496157450796626
+        ]
+      },
+      {
+        "regulon": "SPI1_direct_+/-",
+        "TF": "SPI1",
+        "direction": "down at relapse",
+        "beta_mal_Dx": -0.0044976964747375,
+        "beta_mal_Rel": -0.0044115185340561,
+        "beta_healthy_Dx": 0.0004401430559629,
+        "did_min_abs": 0.0046143717080017,
+        "celltypes_same_sign": [
+          5,
+          5
+        ],
+        "K562_margin": [
+          0.0114628180039138,
+          0.0496157450796626
+        ]
+      },
+      {
+        "regulon": "SPI1_direct_+/+",
+        "TF": "SPI1",
+        "direction": "down at relapse",
+        "beta_mal_Dx": -0.0045316564643541,
+        "beta_mal_Rel": -0.0041476982213232,
+        "beta_healthy_Dx": 0.0003029483932725,
+        "did_min_abs": 0.0043101319720425,
+        "celltypes_same_sign": [
+          5,
+          5
+        ],
+        "K562_margin": [
+          0.0114628180039138,
+          0.0496157450796626
+        ]
+      },
+      {
+        "regulon": "GATA2_direct_-/+",
+        "TF": "GATA2",
+        "direction": "down at relapse",
+        "beta_mal_Dx": -0.0070277534559929,
+        "beta_mal_Rel": -0.0031055958579546,
+        "beta_healthy_Dx": 0.0035138853982929,
+        "did_min_abs": 0.0046361970554522,
+        "celltypes_same_sign": [
+          5,
+          5
+        ],
+        "K562_margin": [
+          0.0740231362467866,
+          0.0394402985074626
+        ]
+      },
+      {
+        "regulon": "GATA2_direct_+/+",
+        "TF": "GATA2",
+        "direction": "up at relapse",
+        "beta_mal_Dx": 0.004230447946327,
+        "beta_mal_Rel": 0.0028344805932786,
+        "beta_healthy_Dx": -0.0007471367719087,
+        "did_min_abs": 0.0038470192052526,
+        "celltypes_same_sign": [
+          5,
+          5
+        ],
+        "K562_margin": [
+          0.0740231362467866,
+          0.0394402985074626
+        ]
+      },
+      {
+        "regulon": "GATA2_direct_-/-",
+        "TF": "GATA2",
+        "direction": "down at relapse",
+        "beta_mal_Dx": -0.0071460385609532,
+        "beta_mal_Rel": -0.0025440209502761,
+        "beta_healthy_Dx": 0.0031947313898732,
+        "did_min_abs": 0.0045123869988922,
+        "celltypes_same_sign": [
+          5,
+          4
+        ],
+        "K562_margin": [
+          0.0740231362467866,
+          0.0394402985074626
+        ]
+      },
+      {
+        "regulon": "HDAC2_direct_+/-",
+        "TF": "HDAC2",
+        "direction": "up at relapse",
+        "beta_mal_Dx": 0.0027629482432718,
+        "beta_mal_Rel": 0.0016381785296112,
+        "beta_healthy_Dx": -0.0002400047384265,
+        "did_min_abs": 0.0011946712894048,
+        "celltypes_same_sign": [
+          5,
+          5
+        ],
+        "K562_margin": [
+          0.0414705882352941,
+          0.02140708915145
+        ]
+      },
+      {
+        "regulon": "IRF1_direct_-/+",
+        "TF": "IRF1",
+        "direction": "down at relapse",
+        "beta_mal_Dx": -0.004511867616192,
+        "beta_mal_Rel": -0.0007912993448227,
+        "beta_healthy_Dx": 0.0024782299729334,
+        "did_min_abs": 0.0012326414679138,
+        "celltypes_same_sign": [
+          5,
+          4
+        ],
+        "K562_margin": [
+          0.0365376984126984,
+          0.0038567073170731
+        ]
+      }
+    ],
+    "per_TF": [
+      {
+        "TF": "GATA2",
+        "n_regulons": 3,
+        "tf_output": "up",
+        "consistent": true,
+        "regulons": [
+          "GATA2_direct_-/+",
+          "GATA2_direct_+/+",
+          "GATA2_direct_-/-"
+        ],
+        "K562_margin_Dx": 0.0740231362467866,
+        "K562_margin_Rel": 0.0394402985074626
+      },
+      {
+        "TF": "HDAC2",
+        "n_regulons": 2,
+        "tf_output": "up",
+        "consistent": true,
+        "regulons": [
+          "HDAC2_direct_-/+",
+          "HDAC2_direct_+/-"
+        ],
+        "K562_margin_Dx": 0.0414705882352941,
+        "K562_margin_Rel": 0.02140708915145
+      },
+      {
+        "TF": "IRF1",
+        "n_regulons": 1,
+        "tf_output": "up",
+        "consistent": true,
+        "regulons": [
+          "IRF1_direct_-/+"
+        ],
+        "K562_margin_Dx": 0.0365376984126984,
+        "K562_margin_Rel": 0.0038567073170731
+      },
+      {
+        "TF": "SPI1",
+        "n_regulons": 4,
+        "tf_output": "down",
+        "consistent": true,
+        "regulons": [
+          "SPI1_direct_-/-",
+          "SPI1_direct_-/+",
+          "SPI1_direct_+/-",
+          "SPI1_direct_+/+"
+        ],
+        "K562_margin_Dx": 0.0114628180039138,
+        "K562_margin_Rel": 0.0496157450796626
+      }
+    ]
+  }
+}

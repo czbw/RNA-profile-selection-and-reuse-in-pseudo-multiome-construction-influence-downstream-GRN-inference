@@ -1,0 +1,177 @@
+{
+ "status": "DESCRIPTIVE / EXPLORATORY",
+ "seed": 555,
+ "draws": 1000,
+ "auc_threshold": 0.05,
+ "n_expression_bins": 20,
+ "gates": {
+  "Diagnosis_G4_max_abs_diff_vs_committed_table": 2.686184608080566e-13,
+  "Diagnosis_G1_metacell_count_mismatches": {
+   "mismatched": {},
+   "logged_but_not_rebuilt": []
+  },
+  "Diagnosis_G2_link": {
+   "median": 0.9983458718411857,
+   "p5": 0.9843536961774499,
+   "n_regulons": 166
+  },
+  "Diagnosis_G2_pseudomultiome": {
+   "median": 0.9999999504001563,
+   "p5": 0.9999991362992429,
+   "n_regulons": 166
+  },
+  "Diagnosis_G3_metacell_unit_spearman_median": 0.9999968113740048,
+  "Relapse_G4_max_abs_diff_vs_committed_table": 1.4099832412739488e-14,
+  "Relapse_G1_metacell_count_mismatches": {
+   "mismatched": {},
+   "logged_but_not_rebuilt": []
+  },
+  "Relapse_G2_link": {
+   "median": 0.9987766697932319,
+   "p5": 0.980855057823068,
+   "n_regulons": 235
+  },
+  "Relapse_G2_pseudomultiome": {
+   "median": 0.9999998217630781,
+   "p5": 0.9999919844727352,
+   "n_regulons": 235
+  },
+  "Relapse_G3_metacell_unit_spearman_median": 0.9999958178104001
+ },
+ "stages": {
+  "Diagnosis": {
+   "n_shared_celltypes": 15,
+   "celltypes": [
+    "B.Cell",
+    "CD16.Monocytes",
+    "CD4.Memory",
+    "CD4.Naive",
+    "CLP",
+    "Early.Basophil",
+    "Early.Erythrocyte",
+    "GMP",
+    "HSC",
+    "Late.Erythrocyte",
+    "Monocytes",
+    "Pre.B.Cell",
+    "Progenitor",
+    "cDC",
+    "pDC"
+   ],
+   "n_shared_eregulons": 166,
+   "observed_stored": {
+    "median": 0.8084097455326922,
+    "q25": 0.7272934129683118,
+    "q75": 0.9216752124038767
+   },
+   "observed_rebuilt_median": 0.8056225823655516,
+   "pooled_null": {
+    "N1": {
+     "median": 0.39447071569304504,
+     "q95": 0.8057163297410129,
+     "q99": 0.8875423289078608,
+     "max": 0.9800960553676891,
+     "n": 166000
+    },
+    "N2": {
+     "median": 0.42071425738512214,
+     "q95": 0.8171872215331243,
+     "q99": 0.8921488411574346,
+     "max": 0.9756382429475112,
+     "n": 166000
+    },
+    "N3": {
+     "median": 0.025185268377755744,
+     "q95": 0.9087824422246701,
+     "q99": 0.9742959304906494,
+     "max": 0.9927726678526451,
+     "n": 27390
+    }
+   },
+   "n_eregulons_above_own_null_q95": {
+    "N1": 111,
+    "N2": 107,
+    "N3": 89
+   },
+   "n_eregulons_BH_q_lt_0.05": {
+    "N1": 101,
+    "N2": 96,
+    "N3": 45
+   },
+   "matching_shortfall_genes": {
+    "N1": 0,
+    "N2": 3
+   }
+  },
+  "Relapse": {
+   "n_shared_celltypes": 14,
+   "celltypes": [
+    "B.Cell",
+    "CD16.Monocytes",
+    "CD4.Naive",
+    "CLP",
+    "Early.Basophil",
+    "Early.Erythrocyte",
+    "GMP",
+    "HSC",
+    "Late.Erythrocyte",
+    "Monocytes",
+    "Pre.B.Cell",
+    "Progenitor",
+    "cDC",
+    "pDC"
+   ],
+   "n_shared_eregulons": 235,
+   "observed_stored": {
+    "median": 0.7200626611053662,
+    "q25": 0.4982573349569396,
+    "q75": 0.837440896166644
+   },
+   "observed_rebuilt_median": 0.7156408724493396,
+   "pooled_null": {
+    "N1": {
+     "median": 0.30642785746591916,
+     "q95": 0.7582125442190247,
+     "q99": 0.8420181407214966,
+     "max": 0.9695786203077331,
+     "n": 235000
+    },
+    "N2": {
+     "median": 0.2984635302812169,
+     "q95": 0.7526093783731584,
+     "q99": 0.8379606066350241,
+     "max": 0.9667830519198395,
+     "n": 235000
+    },
+    "N3": {
+     "median": 0.03819483459292817,
+     "q95": 0.7893955180784551,
+     "q99": 0.9110759893525949,
+     "max": 0.9898987748633328,
+     "n": 54990
+    }
+   },
+   "n_eregulons_above_own_null_q95": {
+    "N1": 124,
+    "N2": 126,
+    "N3": 109
+   },
+   "n_eregulons_BH_q_lt_0.05": {
+    "N1": 100,
+    "N2": 102,
+    "N3": 0
+   },
+   "matching_shortfall_genes": {
+    "N1": 0,
+    "N2": 0
+   }
+  }
+ },
+ "versions": {
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "anndata": "0.12.10",
+  "python": "3.12.7"
+ },
+ "runtime_seconds": 362
+}

@@ -1,0 +1,534 @@
+{
+  "stage": "bmmc",
+  "seed": 555,
+  "track": "A",
+  "rung": "statistic_3_celltype_profile",
+  "arms_scored": [
+    "truth",
+    "rand_celltype_1to1",
+    "rand_celltype_x_donor_1to1",
+    "rand_global",
+    "link_1to1",
+    "link"
+  ],
+  "ladder_arms": [
+    "truth",
+    "rand_celltype_1to1",
+    "rand_celltype_x_donor_1to1",
+    "rand_global"
+  ],
+  "nonladder_arms": [
+    "link_1to1",
+    "link"
+  ],
+  "estimator": {
+    "correlation": "Pearson on cell-type mean-activity profiles",
+    "summary": "median over regulons",
+    "bootstrap": "regulon-clustered",
+    "B": 2000,
+    "bootstrap_seed": 555,
+    "n_points_per_profile": 22
+  },
+  "declarations": {
+    "decision_A_icc_construction_axis": {
+      "question": "p_11's PRIMARY axis is {truth, link}; BMMC's ladder has no link arm.",
+      "declared_before_any_result": true,
+      "primary": [
+        "truth",
+        "rand_celltype_x_donor_1to1"
+      ],
+      "reason": "within the pre-registered four-arm ladder this is the best-informed CONSTRUCTIBLE pairing -- cell-type labels and donor identity are both known at pairing time -- so it occupies link's role as 'what you use when you do not have truth'. rand_celltype_1to1 is the same construction with that knowledge deliberately discarded (a degraded variant, not the default choice); rand_global carries no cell-type signal and is excluded from every ICC axis, as PBMC excluded it, and is shown separately as floor_check so the exclusion is visible.",
+      "also_reported": {
+        "donor_contrast": [
+          "truth",
+          "rand_celltype_1to1",
+          "rand_celltype_x_donor_1to1"
+        ],
+        "primary_link_nonladder": [
+          "truth",
+          "link"
+        ],
+        "sensitivity_ladder": [
+          "truth",
+          "rand_celltype_x_donor_1to1",
+          "rand_celltype_1to1",
+          "link_1to1",
+          "link"
+        ],
+        "floor_check": [
+          "truth",
+          "rand_global"
+        ]
+      },
+      "link_arms_are_scoreable_note": "link and link_1to1 were built for BMMC (prep_04_link.py, out/b04_link_report.json) but never carried into the GRN half. Track A needs only an assignment table, so they are scoreable here; both cover all 69,249 ATAC cells with zero barcodes absent from truth's matrix. Flagged ladder=false wherever they appear."
+    },
+    "decision_B_ksweep_k_list": {
+      "question": "p_10's k-list and k=26 bar were described as PBMC-specific.",
+      "declared_before_any_result": true,
+      "k_list": [
+        1,
+        2,
+        5,
+        10,
+        26,
+        50
+      ],
+      "bar_k": 26,
+      "bar": {
+        "STRONG": ">= 0.50",
+        "WEAK": "0.30 - 0.50",
+        "NOT_RESCUED": "< 0.30"
+      },
+      "verdict": "L7 IS PORTED; the PBMC k-list and bar are carried over UNCHANGED.",
+      "reason": "PIVOT_PREREGISTRATION.md \u00a78b defines the bar at 'k = 26 (the size of the T4 module the AML arm used)'. 26 is an AML-project constant -- the T4 module is 26 regulons / 14 TFs -- not a PBMC-derived one, so SCORING_RUNBOOK.md \u00a74 item 4 is wrong to call it PBMC-specific. Re-deriving a different k would destroy the only comparison the bar exists to support. Retention is checked against BMMC's own structure: BMMC's truth vocabulary is 221 Gene_based eRegulons (measured), so every k is drawable without replacement and the top rung is 50/221 = 22.6% of the vocabulary against PBMC's 50/245 = 20.4%. k=1 is not a free choice either: it is p_10's built-in consistency anchor against L6."
+    },
+    "declared_deviation_shared_draws": "b_08 generates each module draw-set ONCE per k and scores every arm on the identical modules, where p_10 consumed one running RNG and gave each arm different modules. The BMMC headline contrast is a one-variable arm pair; scoring the two arms on different random modules would confound the arm difference with a draw difference. No estimator changes.",
+    "not_ported": "PIVOT_PREREGISTRATION.md \u00a78 L6's third variant -- activity residualised on cell-type one-hot + 5 diffusion components -- is not computed. PBMC's committed p_08 never computed it either, so there is no counterpart to compare against. Outstanding."
+  },
+  "declared_degeneracy": {
+    "statement": "an exact bijection whose same-cell-type rate is 1.000 permutes truth's own RNA rows WITHIN each cell type, and a mean is invariant under permutation, so its cell-type mean profile is identical to truth's. Any statistic computed on cell-type mean profiles therefore returns its maximum by construction and has zero power to separate such arms. The value is an IDENTITY, not a result. PBMC's committed rand_subcluster_1to1 hits the same degeneracy at matched_median = 1.000000 and was not flagged there.",
+    "detected_from_data": true,
+    "degenerate_arms": [
+      "truth",
+      "rand_celltype_1to1",
+      "rand_celltype_x_donor_1to1"
+    ],
+    "informative_arms": [
+      "rand_global",
+      "link_1to1",
+      "link"
+    ],
+    "consequence": "the matched-profile correlation of a degenerate arm is an identity and must not be quoted as a measurement of that arm's fidelity"
+  },
+  "premise": {
+    "h5mu": "D:\\AML-GRN\\cubic_bmmc_ladder\\out\\eRegulon_AUC_bmmc_truth.h5mu",
+    "h5mu_sha256": "6059e27379d0ad73e4f058dd537a3ed4db44c2062a4fb9b33c0732237038c507",
+    "P1_gene_based_modality_present": true,
+    "modalities_in_h5mu": [
+      "Gene_based",
+      "Region_based"
+    ],
+    "region_based_present": true,
+    "region_based_note": "present but deliberately unused: Region_based depends on the ATAC side, which is byte-identical across arms, and the frozen pre-registration uses Gene_based throughout. Not the object of this analysis.",
+    "n_rows_gene_based": 69249,
+    "n_rows_expected": 69249,
+    "n_regulons_gene_based": 221,
+    "P2_rows_equal_expected_cell_count": true,
+    "cell_id_example": "AAACAGCCAAACCTAT-14-s3d10___bmmc",
+    "cell_id_suffixes_observed": [
+      "bmmc"
+    ],
+    "cell_ids_without_suffix": 0,
+    "P3_stripped_row_ids_unique": true,
+    "P4_row_ids_equal_metadata_barcode_set": true,
+    "per_arm": {
+      "truth": {
+        "table": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_truth_bmmc_seed555_full.csv",
+        "table_sha256": "78b9fc074fc43070a2acf6857adaf8da898711416bb54e4eb0b28440a4fff830",
+        "ladder_arm": true,
+        "n_rows": 69249,
+        "n_cells_dropped_unscoreable": 0,
+        "n_distinct_rna_cells_used": 69249,
+        "P6_true_rna_equals_atac": true,
+        "P7_domain_unique": true,
+        "P7_image_unique": true,
+        "P7_image_equals_domain": true,
+        "is_exact_bijection": true
+      },
+      "rand_celltype_1to1": {
+        "table": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_celltype_1to1_bmmc_seed555_full.csv",
+        "table_sha256": "2f8a0ce234f539879ccdd96732dce55ce61b5b268a6aed1218638161a6eec00f",
+        "ladder_arm": true,
+        "n_rows": 69249,
+        "n_cells_dropped_unscoreable": 0,
+        "n_distinct_rna_cells_used": 69249,
+        "P6_true_rna_equals_atac": true,
+        "P7_domain_unique": true,
+        "P7_image_unique": true,
+        "P7_image_equals_domain": true,
+        "is_exact_bijection": true
+      },
+      "rand_celltype_x_donor_1to1": {
+        "table": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_celltype_donor_1to1_bmmc_seed555_full.csv",
+        "table_sha256": "77b990b19d7779dc9868718cd1f38164fbe3605a842cc4d02e6092c15370d844",
+        "ladder_arm": true,
+        "n_rows": 69249,
+        "n_cells_dropped_unscoreable": 0,
+        "n_distinct_rna_cells_used": 69249,
+        "P6_true_rna_equals_atac": true,
+        "P7_domain_unique": true,
+        "P7_image_unique": true,
+        "P7_image_equals_domain": true,
+        "is_exact_bijection": true
+      },
+      "rand_global": {
+        "table": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_global_bmmc_seed555_full.csv",
+        "table_sha256": "ae6118a491370456ff270411898564d7578f65400170fd7d4d359b02caa812bc",
+        "ladder_arm": true,
+        "n_rows": 69249,
+        "n_cells_dropped_unscoreable": 0,
+        "n_distinct_rna_cells_used": 69249,
+        "P6_true_rna_equals_atac": true,
+        "P7_domain_unique": true,
+        "P7_image_unique": true,
+        "P7_image_equals_domain": true,
+        "is_exact_bijection": true
+      },
+      "link_1to1": {
+        "table": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_link_1to1_bmmc_seed555_full.csv",
+        "table_sha256": "813f53df35833097d78a15f5dc23fa5ed43b6bd136b897d0b2e5ad2a9748777d",
+        "ladder_arm": false,
+        "n_rows": 69249,
+        "n_cells_dropped_unscoreable": 0,
+        "n_distinct_rna_cells_used": 69249,
+        "P6_true_rna_equals_atac": true,
+        "P7_domain_unique": true,
+        "P7_image_unique": true,
+        "P7_image_equals_domain": true,
+        "is_exact_bijection": true
+      },
+      "link": {
+        "table": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_link_bmmc_seed555_full.csv",
+        "table_sha256": "d1014c8a7074a6ed3e8ca98bc499264398fcbb55a6a7c3f3909fbed449dbfa4f",
+        "ladder_arm": false,
+        "n_rows": 69249,
+        "n_cells_dropped_unscoreable": 0,
+        "n_distinct_rna_cells_used": 37923,
+        "P6_true_rna_equals_atac": true,
+        "P7_domain_unique": true,
+        "P7_image_unique": false,
+        "P7_image_equals_domain": false,
+        "is_exact_bijection": false
+      }
+    },
+    "P5_total_cells_dropped_unscoreable": 0
+  },
+  "arms": {
+    "truth": {
+      "arm": "truth",
+      "ladder_arm": true,
+      "seed": 555,
+      "same_cell_type_rate": 1.0,
+      "is_exact_bijection": true,
+      "degenerate_by_construction": true,
+      "max_abs_profile_difference_vs_truth": 0.0,
+      "n_regulons_used": 221,
+      "n_regulons_dropped_constant": 0,
+      "n_celltypes": 22,
+      "n_cells": 69249,
+      "matched_median": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "mismatched_null_median": -0.09255185229184104,
+      "null_p95": 0.8425528552673206,
+      "identifiability_median_pct": 100.0,
+      "own_is_rank1_frac": 1.0,
+      "frac_matched_above_0.5": 1.0
+    },
+    "rand_celltype_1to1": {
+      "arm": "rand_celltype_1to1",
+      "ladder_arm": true,
+      "seed": 555,
+      "same_cell_type_rate": 1.0,
+      "is_exact_bijection": true,
+      "degenerate_by_construction": true,
+      "max_abs_profile_difference_vs_truth": 2.581268532253489e-15,
+      "n_regulons_used": 221,
+      "n_regulons_dropped_constant": 0,
+      "n_celltypes": 22,
+      "n_cells": 69249,
+      "matched_median": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "mismatched_null_median": -0.09255185229183979,
+      "null_p95": 0.8425528552673202,
+      "identifiability_median_pct": 100.0,
+      "own_is_rank1_frac": 1.0,
+      "frac_matched_above_0.5": 1.0
+    },
+    "rand_celltype_x_donor_1to1": {
+      "arm": "rand_celltype_x_donor_1to1",
+      "ladder_arm": true,
+      "seed": 555,
+      "same_cell_type_rate": 1.0,
+      "is_exact_bijection": true,
+      "degenerate_by_construction": true,
+      "max_abs_profile_difference_vs_truth": 1.609823385706477e-15,
+      "n_regulons_used": 221,
+      "n_regulons_dropped_constant": 0,
+      "n_celltypes": 22,
+      "n_cells": 69249,
+      "matched_median": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "mismatched_null_median": -0.0925518522918409,
+      "null_p95": 0.84255285526732,
+      "identifiability_median_pct": 100.0,
+      "own_is_rank1_frac": 1.0,
+      "frac_matched_above_0.5": 1.0
+    },
+    "rand_global": {
+      "arm": "rand_global",
+      "ladder_arm": true,
+      "seed": 555,
+      "same_cell_type_rate": 0.09016736703779116,
+      "is_exact_bijection": true,
+      "degenerate_by_construction": false,
+      "max_abs_profile_difference_vs_truth": 0.504206864744962,
+      "n_regulons_used": 221,
+      "n_regulons_dropped_constant": 0,
+      "n_celltypes": 22,
+      "n_cells": 69249,
+      "matched_median": -0.04676651916638775,
+      "ci95": [
+        -0.0692480556803221,
+        -0.02824927935125518
+      ],
+      "mismatched_null_median": -0.006553575500911776,
+      "null_p95": 0.31612463532974616,
+      "identifiability_median_pct": 38.46153846153846,
+      "own_is_rank1_frac": 0.01809954751131222,
+      "frac_matched_above_0.5": 0.013574660633484163
+    },
+    "link_1to1": {
+      "arm": "link_1to1",
+      "ladder_arm": false,
+      "seed": 555,
+      "same_cell_type_rate": 0.581784574506491,
+      "is_exact_bijection": true,
+      "degenerate_by_construction": false,
+      "max_abs_profile_difference_vs_truth": 0.09773381802374986,
+      "n_regulons_used": 221,
+      "n_regulons_dropped_constant": 0,
+      "n_celltypes": 22,
+      "n_cells": 69249,
+      "matched_median": 0.983365240207524,
+      "ci95": [
+        0.9815401277893574,
+        0.9875101818866936
+      ],
+      "mismatched_null_median": -0.09479343047913813,
+      "null_p95": 0.8488261681810626,
+      "identifiability_median_pct": 100.0,
+      "own_is_rank1_frac": 0.8778280542986425,
+      "frac_matched_above_0.5": 1.0
+    },
+    "link": {
+      "arm": "link",
+      "ladder_arm": false,
+      "seed": 555,
+      "same_cell_type_rate": 0.6215541018642868,
+      "is_exact_bijection": false,
+      "degenerate_by_construction": false,
+      "max_abs_profile_difference_vs_truth": 0.10706122783395816,
+      "n_regulons_used": 221,
+      "n_regulons_dropped_constant": 0,
+      "n_celltypes": 22,
+      "n_cells": 69249,
+      "matched_median": 0.9800287894723938,
+      "ci95": [
+        0.9742955026979804,
+        0.9825199485025049
+      ],
+      "mismatched_null_median": -0.09939537202539535,
+      "null_p95": 0.8454911057796656,
+      "identifiability_median_pct": 100.0,
+      "own_is_rank1_frac": 0.8235294117647058,
+      "frac_matched_above_0.5": 1.0
+    }
+  },
+  "donor_axis": {
+    "donor_blind_arm": "rand_celltype_1to1",
+    "donor_aware_arm": "rand_celltype_x_donor_1to1",
+    "contrast_note": "one designed variable (donor-awareness), but donor+site-composite: site is nested under donor for 8 of 10 BMMC donors, so the donor constraint drags site concordance 0.3303 -> 0.7918 with it (SCORING_RUNBOOK \u00a71).",
+    "both_arms_degenerate_by_construction": true,
+    "statistic_can_separate_the_two_arms": false,
+    "degeneracy_note": "an exact bijection whose same-cell-type rate is 1.000 permutes truth's own RNA rows WITHIN each cell type, and a mean is invariant under permutation, so its cell-type mean profile is identical to truth's. Any statistic computed on cell-type mean profiles therefore returns its maximum by construction and has zero power to separate such arms. The value is an IDENTITY, not a result. PBMC's committed rand_subcluster_1to1 hits the same degeneracy at matched_median = 1.000000 and was not flagged there. Both BMMC ladder random-within-cell-type arms are exact within-cell-type bijections, so at THIS resolution the donor delta below is identically zero and is NOT evidence that donor awareness does not matter. It is measured at cell resolution by b_06 (L6) and b_08 (L7).",
+    "delta_matched_median": 0.0,
+    "delta_identifiability_median_pct": 0.0,
+    "delta_own_is_rank1_frac": 0.0,
+    "delta_frac_matched_above_0.5": 0.0,
+    "ci95_overlap": true,
+    "ci95_overlap_note": "the two CIs are regulon-clustered bootstraps of two medians over the SAME regulons on the SAME cells, so non-overlap is suggestive of a difference but is not a paired test of one. No p-value is quoted because none was pre-registered at this rung."
+  },
+  "pbmc_counterpart": {
+    "file": "D:\\AML-GRN\\cubic_pbmc_pairing\\out\\stat3_celltype_profile_10k.json",
+    "read_not_rerun": true,
+    "values_seed555": {
+      "link_1to1": {
+        "arm": "link_1to1",
+        "seed": 555,
+        "n_regulons_used": 245,
+        "n_regulons_dropped_constant": 0,
+        "n_celltypes": 16,
+        "n_cells": 10881,
+        "matched_median": 0.942516019278638,
+        "ci95": [
+          0.9381794589578697,
+          0.9487315576666769
+        ],
+        "mismatched_null_median": -0.02387630366507669,
+        "null_p95": 0.8988124637592039,
+        "identifiability_median_pct": 100.0,
+        "own_is_rank1_frac": 0.6693877551020408,
+        "frac_matched_above_0.5": 1.0
+      },
+      "rand_subcluster_matched": {
+        "arm": "rand_subcluster_matched",
+        "seed": 555,
+        "n_regulons_used": 245,
+        "n_regulons_dropped_constant": 0,
+        "n_celltypes": 16,
+        "n_cells": 10881,
+        "matched_median": 0.9902258256532757,
+        "ci95": [
+          0.9870200790384632,
+          0.992247396128338
+        ],
+        "mismatched_null_median": -0.004870402807627023,
+        "null_p95": 0.944745569276231,
+        "identifiability_median_pct": 100.0,
+        "own_is_rank1_frac": 0.9306122448979591,
+        "frac_matched_above_0.5": 1.0
+      },
+      "rand_subcluster_1to1": {
+        "arm": "rand_subcluster_1to1",
+        "seed": 555,
+        "n_regulons_used": 245,
+        "n_regulons_dropped_constant": 0,
+        "n_celltypes": 16,
+        "n_cells": 10881,
+        "matched_median": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "mismatched_null_median": 0.0005760491806206549,
+        "null_p95": 0.953186202268025,
+        "identifiability_median_pct": 100.0,
+        "own_is_rank1_frac": 1.0,
+        "frac_matched_above_0.5": 1.0
+      },
+      "rand_lineage_matched": {
+        "arm": "rand_lineage_matched",
+        "seed": 555,
+        "n_regulons_used": 245,
+        "n_regulons_dropped_constant": 0,
+        "n_celltypes": 16,
+        "n_cells": 10881,
+        "matched_median": 0.8398731980852255,
+        "ci95": [
+          0.8247585538344424,
+          0.8538274910233336
+        ],
+        "mismatched_null_median": -0.0149523590598495,
+        "null_p95": 0.8522956635379153,
+        "identifiability_median_pct": 97.9591836734694,
+        "own_is_rank1_frac": 0.34285714285714286,
+        "frac_matched_above_0.5": 0.9673469387755103
+      },
+      "rand_compartment_matched": {
+        "arm": "rand_compartment_matched",
+        "seed": 555,
+        "n_regulons_used": 245,
+        "n_regulons_dropped_constant": 0,
+        "n_celltypes": 16,
+        "n_cells": 10881,
+        "matched_median": 0.6936515917505226,
+        "ci95": [
+          0.6727694355438902,
+          0.7188131637126141
+        ],
+        "mismatched_null_median": 0.0014791462358920825,
+        "null_p95": 0.8137612116575392,
+        "identifiability_median_pct": 76.73469387755102,
+        "own_is_rank1_frac": 0.02040816326530612,
+        "frac_matched_above_0.5": 0.7795918367346939
+      },
+      "rand_global": {
+        "arm": "rand_global",
+        "seed": 555,
+        "n_regulons_used": 245,
+        "n_regulons_dropped_constant": 0,
+        "n_celltypes": 16,
+        "n_cells": 10881,
+        "matched_median": 0.027805254832400476,
+        "ci95": [
+          -0.01040215547838123,
+          0.08204311059649926
+        ],
+        "mismatched_null_median": 0.010416278785603701,
+        "null_p95": 0.3617828284994191,
+        "identifiability_median_pct": 48.57142857142857,
+        "own_is_rank1_frac": 0.0326530612244898,
+        "frac_matched_above_0.5": 0.024489795918367346
+      },
+      "link": {
+        "arm": "link",
+        "seed": 555,
+        "n_regulons_used": 245,
+        "n_regulons_dropped_constant": 0,
+        "n_celltypes": 16,
+        "n_cells": 10231,
+        "matched_median": 0.9379227289781213,
+        "ci95": [
+          0.9286609721567289,
+          0.9426641999449004
+        ],
+        "mismatched_null_median": -0.017787060537611647,
+        "null_p95": 0.9026212019459888,
+        "identifiability_median_pct": 99.59183673469389,
+        "own_is_rank1_frac": 0.6326530612244898,
+        "frac_matched_above_0.5": 0.9918367346938776
+      }
+    },
+    "note": "different dataset, different arms, 16 cell types not 22, 245 regulons not 221, 3 seeds not 1. Arm-to-arm pairing across the datasets is an interpretive choice and is not made here."
+  },
+  "aml_comparator_note": "p_09 logs the AML arm's pillar-3 figures (Option A vs Option B, NO ground truth): healthy 0.844 / 0.900 / 0.862, malignant 0.820 / 0.710. Those compare two constructions to each other; everything here compares a construction to KNOWN truth. Not the same quantity -- quoted only as the number this rung exists to put in context.",
+  "provenance": {
+    "script": "b_07_stat3_celltype_profile.py",
+    "ported_from": "cubic_pbmc_pairing/scripts/p_09_stat3_celltype_profile.py",
+    "bundle": "D:\\AML-GRN\\cubic_bmmc_ladder",
+    "inputs": {
+      "truth_auc_h5mu": {
+        "path": "D:\\AML-GRN\\cubic_bmmc_ladder\\out\\eRegulon_AUC_bmmc_truth.h5mu",
+        "sha256": "6059e27379d0ad73e4f058dd537a3ed4db44c2062a4fb9b33c0732237038c507"
+      },
+      "cell_metadata": {
+        "path": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\b00_cell_metadata.csv",
+        "sha256": "ad0bf64489ab5b69db7dd462eae4282ef0128678050a4af363e085d793bafcf7"
+      },
+      "arm_tables": {
+        "truth": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_truth_bmmc_seed555_full.csv",
+        "rand_celltype_1to1": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_celltype_1to1_bmmc_seed555_full.csv",
+        "rand_celltype_x_donor_1to1": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_celltype_donor_1to1_bmmc_seed555_full.csv",
+        "rand_global": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_global_bmmc_seed555_full.csv",
+        "link_1to1": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_link_1to1_bmmc_seed555_full.csv",
+        "link": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_link_bmmc_seed555_full.csv"
+      },
+      "arm_table_sha256": {
+        "truth": "78b9fc074fc43070a2acf6857adaf8da898711416bb54e4eb0b28440a4fff830",
+        "rand_celltype_1to1": "2f8a0ce234f539879ccdd96732dce55ce61b5b268a6aed1218638161a6eec00f",
+        "rand_celltype_x_donor_1to1": "77b990b19d7779dc9868718cd1f38164fbe3605a842cc4d02e6092c15370d844",
+        "rand_global": "ae6118a491370456ff270411898564d7578f65400170fd7d4d359b02caa812bc",
+        "link_1to1": "813f53df35833097d78a15f5dc23fa5ed43b6bd136b897d0b2e5ad2a9748777d",
+        "link": "d1014c8a7074a6ed3e8ca98bc499264398fcbb55a6a7c3f3909fbed449dbfa4f"
+      }
+    },
+    "library_versions": {
+      "python": "3.12.7",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "scipy": "1.13.1",
+      "h5py": "3.11.0"
+    },
+    "peak_rss_bytes": 475754496,
+    "runtime_s": 5.3
+  }
+}

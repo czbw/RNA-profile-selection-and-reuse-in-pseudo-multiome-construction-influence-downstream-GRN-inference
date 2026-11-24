@@ -1,0 +1,182 @@
+{
+ "status": "extraction with provenance; nothing here is a new statistic except the two four-sign-mode lists and the family join",
+ "prespec": "analysis/FIG1_FIG6_PRESPEC.md 4(b), 4(d), 4(e)",
+ "sets": {
+  "corrected_core34": {
+   "n_regulons": 34,
+   "n_TFs": 21,
+   "TFs": [
+    "BACH1",
+    "CEBPD",
+    "EP300",
+    "ERG",
+    "FOSL2",
+    "GATA2",
+    "HMGA1",
+    "ILF2",
+    "IRF8",
+    "KLF10",
+    "KLF11",
+    "KLF4",
+    "MAFB",
+    "RUNX2",
+    "RXRA",
+    "SMC3",
+    "SPI1",
+    "TFDP2",
+    "XBP1",
+    "YBX1",
+    "ZBTB7A"
+   ],
+   "regulons": [
+    "BACH1_direct_+/+",
+    "CEBPD_direct_-/+",
+    "EP300_direct_-/-",
+    "ERG_direct_-/-",
+    "FOSL2_direct_-/+",
+    "FOSL2_direct_-/-",
+    "GATA2_direct_+/+",
+    "HMGA1_direct_+/+",
+    "ILF2_direct_+/-",
+    "IRF8_direct_+/+",
+    "IRF8_direct_-/-",
+    "KLF10_direct_+/+",
+    "KLF11_direct_-/-",
+    "KLF4_direct_+/+",
+    "KLF4_direct_-/-",
+    "MAFB_direct_+/+",
+    "MAFB_direct_+/-",
+    "MAFB_direct_-/-",
+    "RUNX2_direct_-/+",
+    "RXRA_direct_+/+",
+    "RXRA_direct_+/-",
+    "SMC3_direct_+/-",
+    "SPI1_direct_+/+",
+    "SPI1_direct_+/-",
+    "SPI1_direct_-/+",
+    "SPI1_direct_-/-",
+    "TFDP2_direct_+/-",
+    "TFDP2_direct_-/-",
+    "XBP1_direct_+/-",
+    "YBX1_direct_+/-",
+    "ZBTB7A_direct_+/+",
+    "ZBTB7A_direct_+/-",
+    "ZBTB7A_direct_-/+",
+    "ZBTB7A_direct_-/-"
+   ]
+  },
+  "LMM_confirmed26": {
+   "n_regulons": 26,
+   "n_TFs": 17,
+   "TFs": [
+    "BCL11A",
+    "CEBPA",
+    "CEBPD",
+    "ERG",
+    "FOS",
+    "FOSB",
+    "JUNB",
+    "KLF2",
+    "KLF4",
+    "KLF6",
+    "KLF9",
+    "NFATC3",
+    "NFIL3",
+    "POU4F1",
+    "TCF3",
+    "TFDP2",
+    "ZEB2"
+   ],
+   "regulons": [
+    "BCL11A_direct_+/+",
+    "BCL11A_direct_+/-",
+    "CEBPA_direct_-/-",
+    "CEBPD_direct_-/+",
+    "CEBPD_direct_-/-",
+    "ERG_direct_-/-",
+    "FOSB_direct_+/+",
+    "FOSB_direct_+/-",
+    "FOS_direct_+/+",
+    "JUNB_direct_-/+",
+    "JUNB_direct_-/-",
+    "KLF2_direct_+/+",
+    "KLF2_direct_+/-",
+    "KLF4_direct_-/+",
+    "KLF4_direct_-/-",
+    "KLF6_direct_+/+",
+    "KLF6_direct_+/-",
+    "KLF6_direct_-/+",
+    "KLF6_direct_-/-",
+    "KLF9_direct_+/+",
+    "NFATC3_direct_+/-",
+    "NFIL3_direct_-/+",
+    "POU4F1_direct_+/+",
+    "TCF3_direct_+/+",
+    "TFDP2_direct_+/+",
+    "ZEB2_direct_-/+"
+   ]
+  },
+  "intersection": {
+   "n_regulons": 3,
+   "regulons": [
+    "CEBPD_direct_-/+",
+    "ERG_direct_-/-",
+    "KLF4_direct_-/-"
+   ],
+   "n_TFs": 4,
+   "TFs": [
+    "CEBPD",
+    "ERG",
+    "KLF4",
+    "TFDP2"
+   ],
+   "jaccard_regulon": 0.05263157894736842
+  }
+ },
+ "four_sign_mode_survivors": {
+  "within_corrected_core34": [
+   "SPI1",
+   "ZBTB7A"
+  ],
+  "within_repair_universe201": [
+   "ATF3",
+   "CEBPD",
+   "ELF1",
+   "GATA2",
+   "IRF8",
+   "JUNB",
+   "KLF10",
+   "KLF13",
+   "KLF4",
+   "KLF6",
+   "MEF2C",
+   "SPI1",
+   "ZBTB7A"
+  ],
+  "blueprint_DA57_7_says": "SPI1 only",
+  "verdict": "the blueprint statement is INCOMPLETE: SPI1, ZBTB7A both survive in all four sign modes within the corrected core"
+ },
+ "ax5_status": "UNAVAILABLE BY CONSTRUCTION - not a failure (DA57 (3), DA46)",
+ "module_level_artifacts_search": {
+  "files_containing_null_C_or_primary_LOPO_or_selectivity_DiD": {
+   "cubic_aml_repair/out/a04_t1_activity_report.json": {},
+   "stage3_local_analysis/out/s3_module_test.json": {
+    "T4_tier1_core": 26,
+    "T5_chip_annotated_subset": 10
+   },
+   "stage3_local_analysis/out/s3_module_test_T3_link_T4_intersection.json": {
+    "T3_link": 98,
+    "T4_intersection": 13
+   },
+   "stage3_repair_analysis/out/s3_module_test_T3_repair_T4_intersection.json": {
+    "T3_repair": 55,
+    "T4_intersection": 13
+   }
+  }
+ },
+ "IEG_check_on_LMM26": {
+  "n_LMM26_regulons_whose_TF_is_in_the_project_IEG_list": 14,
+  "n_core34_regulons_whose_TF_is_in_the_project_IEG_list": 4,
+  "note": "DA57 (4) warns the 26 are dominated by the family axis 2 exists to remove; this counts it rather than repeating it on trust"
+ }
+}

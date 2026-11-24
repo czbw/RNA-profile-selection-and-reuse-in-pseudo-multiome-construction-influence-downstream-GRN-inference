@@ -1,0 +1,509 @@
+{
+  "dataset": "10k",
+  "seed": 555,
+  "min_stratum_cells_random_arm": 0,
+  "analysis_set_N": 10925,
+  "subclusters_admitted": 18,
+  "subclusters_below_floor": {},
+  "strata_per_rung": {
+    "subcluster": 18,
+    "lineage": 7,
+    "compartment": 3,
+    "global": 1
+  },
+  "arms": {
+    "rand_subcluster_matched": {
+      "rung": "subcluster",
+      "n_strata": 18,
+      "reuse_target": 4.394609814963797,
+      "reuse_achieved": 4.394609814963797,
+      "max_ks_multiplicity": 0.0,
+      "self_hits_observed": 17,
+      "self_hits_expected": 18,
+      "self_hit_rate_observed": 0.0015560640732265446,
+      "self_hit_rate_expected": 0.0016475972540045767,
+      "per_stratum": {
+        "B.1": {
+          "n_s": 74,
+          "d_s_target": 12,
+          "d_s_achieved": 12,
+          "reuse_target": 6.166666666666667,
+          "reuse_achieved": 6.166666666666667,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "B.2": {
+          "n_s": 19,
+          "d_s_target": 6,
+          "d_s_achieved": 6,
+          "reuse_target": 3.1666666666666665,
+          "reuse_achieved": 3.1666666666666665,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "B.3": {
+          "n_s": 849,
+          "d_s_target": 88,
+          "d_s_achieved": 88,
+          "reuse_target": 9.647727272727273,
+          "reuse_achieved": 9.647727272727273,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "CD4.T.1": {
+          "n_s": 1750,
+          "d_s_target": 421,
+          "d_s_achieved": 421,
+          "reuse_target": 4.156769596199525,
+          "reuse_achieved": 4.156769596199525,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "CD4.T.2": {
+          "n_s": 220,
+          "d_s_target": 104,
+          "d_s_achieved": 104,
+          "reuse_target": 2.1153846153846154,
+          "reuse_achieved": 2.1153846153846154,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "CD4.T.3": {
+          "n_s": 64,
+          "d_s_target": 57,
+          "d_s_achieved": 57,
+          "reuse_target": 1.1228070175438596,
+          "reuse_achieved": 1.1228070175438596,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "CD4.T.4": {
+          "n_s": 1462,
+          "d_s_target": 276,
+          "d_s_achieved": 276,
+          "reuse_target": 5.297101449275362,
+          "reuse_achieved": 5.297101449275362,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "CD4.T.5": {
+          "n_s": 1275,
+          "d_s_target": 372,
+          "d_s_achieved": 372,
+          "reuse_target": 3.4274193548387095,
+          "reuse_achieved": 3.4274193548387095,
+          "ks_multiplicity": 0.0,
+          "self_hits": 3
+        },
+        "DC": {
+          "n_s": 178,
+          "d_s_target": 37,
+          "d_s_achieved": 37,
+          "reuse_target": 4.8108108108108105,
+          "reuse_achieved": 4.8108108108108105,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "HSPC": {
+          "n_s": 25,
+          "d_s_target": 6,
+          "d_s_achieved": 6,
+          "reuse_target": 4.166666666666667,
+          "reuse_achieved": 4.166666666666667,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "Monocyte.CD14.1": {
+          "n_s": 1599,
+          "d_s_target": 330,
+          "d_s_achieved": 330,
+          "reuse_target": 4.845454545454546,
+          "reuse_achieved": 4.845454545454546,
+          "ks_multiplicity": 0.0,
+          "self_hits": 2
+        },
+        "Monocyte.CD14.2": {
+          "n_s": 1199,
+          "d_s_target": 325,
+          "d_s_achieved": 325,
+          "reuse_target": 3.689230769230769,
+          "reuse_achieved": 3.689230769230769,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "Monocyte.CD14.3": {
+          "n_s": 381,
+          "d_s_target": 103,
+          "d_s_achieved": 103,
+          "reuse_target": 3.6990291262135924,
+          "reuse_achieved": 3.6990291262135924,
+          "ks_multiplicity": 0.0,
+          "self_hits": 2
+        },
+        "Monocyte.CD16": {
+          "n_s": 422,
+          "d_s_target": 81,
+          "d_s_achieved": 81,
+          "reuse_target": 5.209876543209877,
+          "reuse_achieved": 5.209876543209877,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "NK.1": {
+          "n_s": 180,
+          "d_s_target": 61,
+          "d_s_achieved": 61,
+          "reuse_target": 2.9508196721311477,
+          "reuse_achieved": 2.9508196721311477,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "NK.2": {
+          "n_s": 671,
+          "d_s_target": 132,
+          "d_s_achieved": 132,
+          "reuse_target": 5.083333333333333,
+          "reuse_achieved": 5.083333333333333,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "NK.3": {
+          "n_s": 445,
+          "d_s_target": 65,
+          "d_s_achieved": 65,
+          "reuse_target": 6.846153846153846,
+          "reuse_achieved": 6.846153846153846,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "pDC": {
+          "n_s": 112,
+          "d_s_target": 10,
+          "d_s_achieved": 10,
+          "reuse_target": 11.2,
+          "reuse_achieved": 11.2,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        }
+      }
+    },
+    "rand_subcluster_1to1": {
+      "rung": "subcluster",
+      "n_strata": 18,
+      "reuse_target": 1.0,
+      "reuse_achieved": 1.0,
+      "max_ks_multiplicity": 0.0,
+      "self_hits_observed": 21,
+      "self_hits_expected": 18,
+      "self_hit_rate_observed": 0.0019221967963386727,
+      "self_hit_rate_expected": 0.0016475972540045767,
+      "per_stratum": {
+        "B.1": {
+          "n_s": 74,
+          "d_s_target": 74,
+          "d_s_achieved": 74,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "B.2": {
+          "n_s": 19,
+          "d_s_target": 19,
+          "d_s_achieved": 19,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "B.3": {
+          "n_s": 849,
+          "d_s_target": 849,
+          "d_s_achieved": 849,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "CD4.T.1": {
+          "n_s": 1750,
+          "d_s_target": 1750,
+          "d_s_achieved": 1750,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "CD4.T.2": {
+          "n_s": 220,
+          "d_s_target": 220,
+          "d_s_achieved": 220,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 2
+        },
+        "CD4.T.3": {
+          "n_s": 64,
+          "d_s_target": 64,
+          "d_s_achieved": 64,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "CD4.T.4": {
+          "n_s": 1462,
+          "d_s_target": 1462,
+          "d_s_achieved": 1462,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 3
+        },
+        "CD4.T.5": {
+          "n_s": 1275,
+          "d_s_target": 1275,
+          "d_s_achieved": 1275,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "DC": {
+          "n_s": 178,
+          "d_s_target": 178,
+          "d_s_achieved": 178,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 2
+        },
+        "HSPC": {
+          "n_s": 25,
+          "d_s_target": 25,
+          "d_s_achieved": 25,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "Monocyte.CD14.1": {
+          "n_s": 1599,
+          "d_s_target": 1599,
+          "d_s_achieved": 1599,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "Monocyte.CD14.2": {
+          "n_s": 1199,
+          "d_s_target": 1199,
+          "d_s_achieved": 1199,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "Monocyte.CD14.3": {
+          "n_s": 381,
+          "d_s_target": 381,
+          "d_s_achieved": 381,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "Monocyte.CD16": {
+          "n_s": 422,
+          "d_s_target": 422,
+          "d_s_achieved": 422,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 3
+        },
+        "NK.1": {
+          "n_s": 180,
+          "d_s_target": 180,
+          "d_s_achieved": 180,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 2
+        },
+        "NK.2": {
+          "n_s": 671,
+          "d_s_target": 671,
+          "d_s_achieved": 671,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 2
+        },
+        "NK.3": {
+          "n_s": 445,
+          "d_s_target": 445,
+          "d_s_achieved": 445,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "pDC": {
+          "n_s": 112,
+          "d_s_target": 112,
+          "d_s_achieved": 112,
+          "reuse_target": 1.0,
+          "reuse_achieved": 1.0,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        }
+      }
+    },
+    "rand_lineage_matched": {
+      "rung": "lineage",
+      "n_strata": 7,
+      "reuse_target": 5.75,
+      "reuse_achieved": 5.75,
+      "max_ks_multiplicity": 0.0,
+      "self_hits_observed": 14,
+      "self_hits_expected": 7,
+      "self_hit_rate_observed": 0.0012814645308924484,
+      "self_hit_rate_expected": 0.0006407322654462242,
+      "per_stratum": {
+        "B": {
+          "n_s": 942,
+          "d_s_target": 104,
+          "d_s_achieved": 104,
+          "reuse_target": 9.057692307692308,
+          "reuse_achieved": 9.057692307692308,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "CD4": {
+          "n_s": 4771,
+          "d_s_target": 917,
+          "d_s_achieved": 917,
+          "reuse_target": 5.202835332606325,
+          "reuse_achieved": 5.202835332606325,
+          "ks_multiplicity": 0.0,
+          "self_hits": 1
+        },
+        "DC": {
+          "n_s": 178,
+          "d_s_target": 37,
+          "d_s_achieved": 37,
+          "reuse_target": 4.8108108108108105,
+          "reuse_achieved": 4.8108108108108105,
+          "ks_multiplicity": 0.0,
+          "self_hits": 2
+        },
+        "HSPC": {
+          "n_s": 25,
+          "d_s_target": 6,
+          "d_s_achieved": 6,
+          "reuse_target": 4.166666666666667,
+          "reuse_achieved": 4.166666666666667,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "Monocyte": {
+          "n_s": 3601,
+          "d_s_target": 622,
+          "d_s_achieved": 622,
+          "reuse_target": 5.789389067524116,
+          "reuse_achieved": 5.789389067524116,
+          "ks_multiplicity": 0.0,
+          "self_hits": 4
+        },
+        "NK": {
+          "n_s": 1296,
+          "d_s_target": 204,
+          "d_s_achieved": 204,
+          "reuse_target": 6.352941176470588,
+          "reuse_achieved": 6.352941176470588,
+          "ks_multiplicity": 0.0,
+          "self_hits": 7
+        },
+        "pDC": {
+          "n_s": 112,
+          "d_s_target": 10,
+          "d_s_achieved": 10,
+          "reuse_target": 11.2,
+          "reuse_achieved": 11.2,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        }
+      }
+    },
+    "rand_compartment_matched": {
+      "rung": "compartment",
+      "n_strata": 3,
+      "reuse_target": 6.006047278724574,
+      "reuse_achieved": 6.006047278724574,
+      "max_ks_multiplicity": 0.0,
+      "self_hits_observed": 2,
+      "self_hits_expected": 3,
+      "self_hit_rate_observed": 0.00018306636155606407,
+      "self_hit_rate_expected": 0.00027459954233409613,
+      "per_stratum": {
+        "HSPC": {
+          "n_s": 25,
+          "d_s_target": 6,
+          "d_s_achieved": 6,
+          "reuse_target": 4.166666666666667,
+          "reuse_achieved": 4.166666666666667,
+          "ks_multiplicity": 0.0,
+          "self_hits": 2
+        },
+        "lymphoid": {
+          "n_s": 7009,
+          "d_s_target": 1161,
+          "d_s_achieved": 1161,
+          "reuse_target": 6.037037037037037,
+          "reuse_achieved": 6.037037037037037,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        },
+        "myeloid": {
+          "n_s": 3891,
+          "d_s_target": 652,
+          "d_s_achieved": 652,
+          "reuse_target": 5.967791411042945,
+          "reuse_achieved": 5.967791411042945,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        }
+      }
+    },
+    "rand_global": {
+      "rung": "global",
+      "n_strata": 1,
+      "reuse_target": 6.089743589743589,
+      "reuse_achieved": 6.089743589743589,
+      "max_ks_multiplicity": 0.0,
+      "self_hits_observed": 0,
+      "self_hits_expected": 1,
+      "self_hit_rate_observed": 0.0,
+      "self_hit_rate_expected": 9.153318077803204e-05,
+      "per_stratum": {
+        "all": {
+          "n_s": 10925,
+          "d_s_target": 1794,
+          "d_s_achieved": 1794,
+          "reuse_target": 6.089743589743589,
+          "reuse_achieved": 6.089743589743589,
+          "ks_multiplicity": 0.0,
+          "self_hits": 0
+        }
+      }
+    }
+  },
+  "link_on_analysis_set": {
+    "self_hits": 47,
+    "self_hit_rate": 0.0043020594965675054,
+    "vs_subcluster_oracle_expectation": 2.611111111111111
+  }
+}

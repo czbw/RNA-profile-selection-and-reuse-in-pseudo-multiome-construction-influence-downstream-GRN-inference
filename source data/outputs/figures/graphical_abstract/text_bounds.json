@@ -1,0 +1,254 @@
+[
+  {
+    "text": "RNA reuse shapes inferred networks and relapse-associated candidates",
+    "left": 175.23046875,
+    "right": 724.76953125,
+    "top": 11,
+    "bottom": 30
+  },
+  {
+    "text": "1",
+    "left": 27.6630859375,
+    "right": 34.3369140625,
+    "top": 58,
+    "bottom": 73
+  },
+  {
+    "text": "Pairing changes networks",
+    "left": 48,
+    "right": 221.49609375,
+    "top": 57,
+    "bottom": 74
+  },
+  {
+    "text": "2",
+    "left": 326.6630859375,
+    "right": 333.3369140625,
+    "top": 58,
+    "bottom": 73
+  },
+  {
+    "text": "Test pairing under control",
+    "left": 347,
+    "right": 520.455078125,
+    "top": 57,
+    "bottom": 74
+  },
+  {
+    "text": "3",
+    "left": 627.6630859375,
+    "right": 634.3369140625,
+    "top": 58,
+    "bottom": 73
+  },
+  {
+    "text": "Apply lower-reuse pairing",
+    "left": 648,
+    "right": 819.923828125,
+    "top": 57,
+    "bottom": 74
+  },
+  {
+    "text": "Separately profiled pediatric AML",
+    "left": 61.6201171875,
+    "right": 238.3798828125,
+    "top": 82,
+    "bottom": 97
+  },
+  {
+    "text": "RNA",
+    "left": 75.0009765625,
+    "right": 100.9990234375,
+    "top": 107,
+    "bottom": 122
+  },
+  {
+    "text": "ATAC",
+    "left": 193.3359375,
+    "right": 226.6640625,
+    "top": 107,
+    "bottom": 122
+  },
+  {
+    "text": "Published link",
+    "left": 44.3271484375,
+    "right": 125.6728515625,
+    "top": 179,
+    "bottom": 194
+  },
+  {
+    "text": "Metacell",
+    "left": 198.322265625,
+    "right": 245.677734375,
+    "top": 179,
+    "bottom": 194
+  },
+  {
+    "text": "Similar activity profiles",
+    "left": 85.707763671875,
+    "right": 214.292236328125,
+    "top": 260,
+    "bottom": 276
+  },
+  {
+    "text": "Different target sets",
+    "left": 83.87255859375,
+    "right": 216.12744140625,
+    "top": 278,
+    "bottom": 295
+  },
+  {
+    "text": "Same-cell blood and marrow benchmarks",
+    "left": 340.2841796875,
+    "right": 561.7158203125,
+    "top": 82,
+    "bottom": 97
+  },
+  {
+    "text": "RNA",
+    "left": 346.0009765625,
+    "right": 371.9990234375,
+    "top": 103,
+    "bottom": 118
+  },
+  {
+    "text": "ATAC",
+    "left": 396.3359375,
+    "right": 429.6640625,
+    "top": 103,
+    "bottom": 118
+  },
+  {
+    "text": "RNA",
+    "left": 480.0009765625,
+    "right": 505.9990234375,
+    "top": 103,
+    "bottom": 118
+  },
+  {
+    "text": "ATAC",
+    "left": 530.3359375,
+    "right": 563.6640625,
+    "top": 103,
+    "bottom": 118
+  },
+  {
+    "text": "Partner choice",
+    "left": 405.8427734375,
+    "right": 496.1572265625,
+    "top": 172,
+    "bottom": 188
+  },
+  {
+    "text": "RNA",
+    "left": 346.0009765625,
+    "right": 371.9990234375,
+    "top": 206,
+    "bottom": 221
+  },
+  {
+    "text": "ATAC",
+    "left": 396.3359375,
+    "right": 429.6640625,
+    "top": 206,
+    "bottom": 221
+  },
+  {
+    "text": "RNA",
+    "left": 480.0009765625,
+    "right": 505.9990234375,
+    "top": 206,
+    "bottom": 221
+  },
+  {
+    "text": "ATAC",
+    "left": 530.3359375,
+    "right": 563.6640625,
+    "top": 206,
+    "bottom": 221
+  },
+  {
+    "text": "Reuse ratio",
+    "left": 415.59912109375,
+    "right": 486.40087890625,
+    "top": 275,
+    "bottom": 291
+  },
+  {
+    "text": "SCENIC+ held fixed",
+    "left": 397.474609375,
+    "right": 504.525390625,
+    "top": 297,
+    "bottom": 312
+  },
+  {
+    "text": "Longitudinal pediatric AML",
+    "left": 679.2890625,
+    "right": 820.7109375,
+    "top": 82,
+    "bottom": 97
+  },
+  {
+    "text": "Published link",
+    "left": 641.3271484375,
+    "right": 722.6728515625,
+    "top": 104,
+    "bottom": 119
+  },
+  {
+    "text": "Inferred / high reuse",
+    "left": 628.3017578125,
+    "right": 735.6982421875,
+    "top": 121,
+    "bottom": 136
+  },
+  {
+    "text": "Corrected",
+    "left": 795.658203125,
+    "right": 852.341796875,
+    "top": 104,
+    "bottom": 119
+  },
+  {
+    "text": "Random / low reuse",
+    "left": 770.6416015625,
+    "right": 877.3583984375,
+    "top": 121,
+    "bottom": 136
+  },
+  {
+    "text": "55 relapse-associated",
+    "left": 672.037353515625,
+    "right": 827.962646484375,
+    "top": 227,
+    "bottom": 245
+  },
+  {
+    "text": "candidate regulons",
+    "left": 685.82080078125,
+    "right": 814.17919921875,
+    "top": 246,
+    "bottom": 263
+  },
+  {
+    "text": "Directionally concordant module",
+    "left": 664.623046875,
+    "right": 835.376953125,
+    "top": 276,
+    "bottom": 291
+  },
+  {
+    "text": "activity changes in adult AML",
+    "left": 672.29296875,
+    "right": 827.70703125,
+    "top": 294,
+    "bottom": 309
+  },
+  {
+    "text": "More accurate cell matching does not guarantee better network agreement.",
+    "left": 182.010498046875,
+    "right": 717.989501953125,
+    "top": 328,
+    "bottom": 346
+  }
+]

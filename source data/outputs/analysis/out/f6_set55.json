@@ -1,0 +1,386 @@
+{
+ "_provenance": {
+  "definition": "ax1_directional & ax2_selective & ax3_celltype_robust, corrected arm",
+  "note": "ax4_tier1 dropped; see analysis/T4_DEFINITION_STRESS_TEST.md",
+  "funnel": "stage3_repair_analysis/out/nomination_funnel.csv",
+  "family_source": "analysis/out/f1_family_assignment.csv (Lambert DBD level A, project family level B, project IEG list level C)",
+  "external": "replication_repair/out/per_regulon_external_T3_repair_{vocab}.csv",
+  "celltype": "analysis/out/f1_celltype_profile.csv (arm == repair)"
+ },
+ "set55": {
+  "n_regulons": 55,
+  "n_TFs": 31,
+  "regulons": [
+   "BACH1_direct_+/+",
+   "CEBPA_direct_+/-",
+   "CEBPA_direct_-/+",
+   "CEBPD_direct_-/+",
+   "EP300_direct_-/+",
+   "EP300_direct_-/-",
+   "ERG_direct_-/-",
+   "FOSL2_direct_-/+",
+   "FOSL2_direct_-/-",
+   "GABPB1_direct_-/+",
+   "GATA2_direct_+/+",
+   "HMGA1_direct_+/+",
+   "ILF2_direct_+/-",
+   "IRF5_direct_+/+",
+   "IRF8_direct_+/+",
+   "IRF8_direct_+/-",
+   "IRF8_direct_-/+",
+   "IRF8_direct_-/-",
+   "KLF10_direct_+/+",
+   "KLF10_direct_+/-",
+   "KLF10_direct_-/+",
+   "KLF10_direct_-/-",
+   "KLF11_direct_+/+",
+   "KLF11_direct_-/-",
+   "KLF3_direct_+/+",
+   "KLF4_direct_+/+",
+   "KLF4_direct_+/-",
+   "KLF4_direct_-/-",
+   "MAFB_direct_+/+",
+   "MAFB_direct_+/-",
+   "MAFB_direct_-/-",
+   "MAFF_direct_+/-",
+   "MBD2_direct_+/-",
+   "PBX3_direct_-/+",
+   "RUNX2_direct_-/+",
+   "RXRA_direct_+/+",
+   "RXRA_direct_+/-",
+   "SMC3_direct_+/-",
+   "SPI1_direct_+/+",
+   "SPI1_direct_+/-",
+   "SPI1_direct_-/+",
+   "SPI1_direct_-/-",
+   "STAT5A_direct_+/+",
+   "STAT5A_direct_-/+",
+   "STAT6_direct_+/+",
+   "TFDP2_direct_+/-",
+   "TFDP2_direct_-/-",
+   "WT1_direct_+/+",
+   "XBP1_direct_+/-",
+   "YBX1_direct_+/+",
+   "YBX1_direct_+/-",
+   "ZBTB7A_direct_+/+",
+   "ZBTB7A_direct_+/-",
+   "ZBTB7A_direct_-/+",
+   "ZBTB7A_direct_-/-"
+  ],
+  "TFs": [
+   "BACH1",
+   "CEBPA",
+   "CEBPD",
+   "EP300",
+   "ERG",
+   "FOSL2",
+   "GABPB1",
+   "GATA2",
+   "HMGA1",
+   "ILF2",
+   "IRF5",
+   "IRF8",
+   "KLF10",
+   "KLF11",
+   "KLF3",
+   "KLF4",
+   "MAFB",
+   "MAFF",
+   "MBD2",
+   "PBX3",
+   "RUNX2",
+   "RXRA",
+   "SMC3",
+   "SPI1",
+   "STAT5A",
+   "STAT6",
+   "TFDP2",
+   "WT1",
+   "XBP1",
+   "YBX1",
+   "ZBTB7A"
+  ]
+ },
+ "vs_LMM26": {
+  "n_intersection_regulons": 3,
+  "intersection_regulons": [
+   "CEBPD_direct_-/+",
+   "ERG_direct_-/-",
+   "KLF4_direct_-/-"
+  ],
+  "n_intersection_TFs": 5,
+  "intersection_TFs": [
+   "CEBPA",
+   "CEBPD",
+   "ERG",
+   "KLF4",
+   "TFDP2"
+  ],
+  "jaccard_regulon": 0.038461538461538464,
+  "jaccard_TF": 0.11627906976744186
+ },
+ "ieg": {
+  "n_in_set55": 5,
+  "frac_in_set55": 0.09090909090909091,
+  "n_in_LMM26": 14,
+  "frac_in_LMM26": 0.5384615384615384,
+  "ieg_list_size": 19
+ },
+ "ax4_counterfactual": {
+  "n_would_be_removed": 21,
+  "removed_regulons": [
+   "CEBPA_direct_+/-",
+   "CEBPA_direct_-/+",
+   "EP300_direct_-/+",
+   "GABPB1_direct_-/+",
+   "IRF5_direct_+/+",
+   "IRF8_direct_+/-",
+   "IRF8_direct_-/+",
+   "KLF10_direct_+/-",
+   "KLF10_direct_-/+",
+   "KLF10_direct_-/-",
+   "KLF11_direct_+/+",
+   "KLF3_direct_+/+",
+   "KLF4_direct_+/-",
+   "MAFF_direct_+/-",
+   "MBD2_direct_+/-",
+   "PBX3_direct_-/+",
+   "STAT5A_direct_+/+",
+   "STAT5A_direct_-/+",
+   "STAT6_direct_+/+",
+   "WT1_direct_+/+",
+   "YBX1_direct_+/+"
+  ],
+  "median_abs_beta_kept": 0.0090617003882894,
+  "median_abs_beta_removed": 0.0097880524934
+ },
+ "sign_modes": {
+  "all_four_within_set55": [
+   "IRF8",
+   "KLF10",
+   "SPI1",
+   "ZBTB7A"
+  ],
+  "all_four_within_repair_universe201": [
+   "ATF3",
+   "CEBPD",
+   "ELF1",
+   "GATA2",
+   "IRF8",
+   "JUNB",
+   "KLF10",
+   "KLF13",
+   "KLF4",
+   "KLF6",
+   "MEF2C",
+   "SPI1",
+   "ZBTB7A"
+  ]
+ },
+ "family_composition_level_B": {
+  "KLF/SP": 10,
+  "Ets": 5,
+  "C2H2-other": 5,
+  "MAF/NFE2/BACH": 5,
+  "IRF": 5,
+  "not-in-Lambert (co-factor/chromatin per Lambert)": 4,
+  "C/EBP": 3,
+  "STAT": 3,
+  "AP-1": 2,
+  "E2F": 2,
+  "Nuclear receptor": 2,
+  "CSD": 2,
+  "ATF/CREB/XBP": 1,
+  "not-in-Lambert": 1,
+  "AT hook": 1,
+  "Runt": 1,
+  "GATA": 1,
+  "MBD": 1,
+  "Homeodomain": 1
+ },
+ "family_composition_TF_level": {
+  "KLF/SP": 4,
+  "not-in-Lambert (co-factor/chromatin per Lambert)": 3,
+  "MAF/NFE2/BACH": 3,
+  "C/EBP": 2,
+  "STAT": 2,
+  "IRF": 2,
+  "Ets": 2,
+  "C2H2-other": 2,
+  "ATF/CREB/XBP": 1,
+  "AP-1": 1,
+  "E2F": 1,
+  "Nuclear receptor": 1,
+  "CSD": 1,
+  "not-in-Lambert": 1,
+  "AT hook": 1,
+  "Runt": 1,
+  "GATA": 1,
+  "MBD": 1,
+  "Homeodomain": 1
+ },
+ "celltype_summary": [
+  {
+   "stage": "Diagnosis",
+   "celltype": "B.Cell",
+   "n_regulons": 55,
+   "mean_AUC": 0.19451985221341384
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "CD16.Monocytes",
+   "n_regulons": 55,
+   "mean_AUC": 0.25237090986674066
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "CD4.Memory",
+   "n_regulons": 55,
+   "mean_AUC": 0.21297351652875313
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "CD4.Naive",
+   "n_regulons": 55,
+   "mean_AUC": 0.18694836802498702
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "CD8.Effector",
+   "n_regulons": 55,
+   "mean_AUC": 0.17778901471738426
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "CLP",
+   "n_regulons": 55,
+   "mean_AUC": 0.220386585697783
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "Early.Basophil",
+   "n_regulons": 55,
+   "mean_AUC": 0.20098148749782344
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "Early.Erythrocyte",
+   "n_regulons": 55,
+   "mean_AUC": 0.21496976043330626
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "GMP",
+   "n_regulons": 55,
+   "mean_AUC": 0.23874462739527794
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "HSC",
+   "n_regulons": 55,
+   "mean_AUC": 0.23304317359404236
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "Monocytes",
+   "n_regulons": 55,
+   "mean_AUC": 0.24435031772066465
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "Pre.B.Cell",
+   "n_regulons": 55,
+   "mean_AUC": 0.23035017373308478
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "Progenitor",
+   "n_regulons": 55,
+   "mean_AUC": 0.23103891586391107
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "cDC",
+   "n_regulons": 55,
+   "mean_AUC": 0.25047837202452056
+  },
+  {
+   "stage": "Diagnosis",
+   "celltype": "pDC",
+   "n_regulons": 55,
+   "mean_AUC": 0.21198051164695214
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "CD16.Monocytes",
+   "n_regulons": 55,
+   "mean_AUC": 0.1950081369533335
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "CLP",
+   "n_regulons": 55,
+   "mean_AUC": 0.19266362814938165
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "Early.Basophil",
+   "n_regulons": 55,
+   "mean_AUC": 0.15650573202739315
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "Early.Erythrocyte",
+   "n_regulons": 55,
+   "mean_AUC": 0.18231100636641237
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "GMP",
+   "n_regulons": 55,
+   "mean_AUC": 0.20411954870368076
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "HSC",
+   "n_regulons": 55,
+   "mean_AUC": 0.2043634189794266
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "Late.Erythrocyte",
+   "n_regulons": 55,
+   "mean_AUC": 0.1550333196635233
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "Monocytes",
+   "n_regulons": 55,
+   "mean_AUC": 0.19233252871241732
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "Pre.B.Cell",
+   "n_regulons": 55,
+   "mean_AUC": 0.1831251543621975
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "Progenitor",
+   "n_regulons": 55,
+   "mean_AUC": 0.19352159543881992
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "cDC",
+   "n_regulons": 55,
+   "mean_AUC": 0.2029818496405263
+  },
+  {
+   "stage": "Relapse",
+   "celltype": "pDC",
+   "n_regulons": 55,
+   "mean_AUC": 0.17230387184515616
+  }
+ ]
+}

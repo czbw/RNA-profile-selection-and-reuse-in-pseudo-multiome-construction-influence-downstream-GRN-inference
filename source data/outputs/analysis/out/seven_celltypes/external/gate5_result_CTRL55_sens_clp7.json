@@ -1,0 +1,184 @@
+{
+  "provenance": {
+    "module_name": "T3_repair",
+    "module_file": "D:\\AML-GRN\\modules\\out\\module_definition_T3_repair.json",
+    "arm_vocabulary_used": "repair",
+    "arm_keyed_module": false,
+    "arm_selection_note": "single-arm module; scored under its own (repair) vocabulary only",
+    "n_regulons": 55,
+    "n_TFs": 31,
+    "n_background_regulons": 201,
+    "module_frozen": "2026-08-20, frozen before any downstream statistic (replication scoring, external-cohort scoring, figures, manuscript numbers) was recomputed under the retired-ax4 redefinition. Supersedes the 2026-08-06 freeze of replication_repair/out/module_definition.json ('T4_tier1_core', 34r/21TF), which is retired as a module but retained unmodified for audit.",
+    "scores_source": "committed scores_{method}_{vocab}.csv \u2014 membership-INDEPENDENT (columns are the arm's full background; values depend only on the per-regulon target sets, which the new definitions carry over verbatim)",
+    "nullB_pool": "nullB_pool_T3_repair_<vocab>.npz"
+  },
+  "seed": 555,
+  "n_draws": 2000,
+  "n_paired_patients": 59,
+  "preregistered_decision_rule": "PREREGISTRATION.md \u00a77, verbatim: 'GATE 5 PASSES if, under both vocabularies: 1. the per-patient delta is positive (agrees with the internal direction), and 2. the paired Wilcoxon reaches p < 0.05, and 3. it clears NULL A at p < 0.05.' 'Clearing NULL C additionally is recorded as the strong form of the result. Failing null C while passing 1-3 means the module moves but is not distinguishable from an arbitrary internal regulon set - reported as such, not as a pass.'",
+  "decision_rule": "delta>0 AND wilcoxon p<0.05 AND nullA p<0.05, under BOTH vocabularies",
+  "primary_scale": "offset-centred",
+  "primary_estimator": "aucell",
+  "nulls_used": {
+    "Diagnosis": {
+      "nullA_label_permutation": {
+        "n_draws": 2000,
+        "seed": 555,
+        "unit": "sign flip of each of 59 patient deltas"
+      },
+      "nullB_random_gene_sets": {
+        "n_draws": 2000,
+        "seed": 556,
+        "n_slots": 55,
+        "sets_per_slot": 200,
+        "n_random_gene_sets_scored": 11000,
+        "slot_sizes_min": 9,
+        "slot_sizes_max": 681,
+        "slot_sizes_median": 104.0,
+        "size_matched_to": "55-regulon module T3_repair"
+      },
+      "nullC_random_regulon_modules": {
+        "n_draws": 2000,
+        "seed": 557,
+        "module_size_drawn": 55,
+        "background_pool": 201
+      }
+    },
+    "Relapse": {
+      "nullA_label_permutation": {
+        "n_draws": 2000,
+        "seed": 555,
+        "unit": "sign flip of each of 59 patient deltas"
+      },
+      "nullB_random_gene_sets": {
+        "n_draws": 2000,
+        "seed": 556,
+        "n_slots": 55,
+        "sets_per_slot": 200,
+        "n_random_gene_sets_scored": 11000,
+        "slot_sizes_min": 10,
+        "slot_sizes_max": 568,
+        "slot_sizes_median": 119.0,
+        "size_matched_to": "55-regulon module T3_repair"
+      },
+      "nullC_random_regulon_modules": {
+        "n_draws": 2000,
+        "seed": 557,
+        "module_size_drawn": 55,
+        "background_pool": 201
+      }
+    }
+  },
+  "by_vocabulary": {
+    "Diagnosis": {
+      "mean_delta": 0.034374809276298886,
+      "median_delta": 0.026395323130837325,
+      "frac_patients_positive": 0.8305084745762712,
+      "p_wilcoxon": 9.093413505288667e-08,
+      "nullA_label_permutation": {
+        "mean": -0.00017325819545213218,
+        "sd": 0.007284523909479432,
+        "p_empirical": 0.0004997501249375312
+      },
+      "nullB_random_gene_sets": {
+        "mean": 0.0007608577656217727,
+        "sd": 0.0004077303545486322,
+        "p_empirical": 0.0004997501249375312
+      },
+      "nullC_random_regulon_modules": {
+        "mean": 0.025039455784481,
+        "sd": 0.0024400135919723236,
+        "p_empirical": 0.0004997501249375312,
+        "percentile_of_observed": 100.0
+      },
+      "sensitivities": {
+        "singscore": {
+          "mean_delta": 0.020280710334153344,
+          "frac_positive": 0.7966101694915254,
+          "p_wilcoxon": 6.235993952637875e-08,
+          "same_sign_as_primary": true
+        },
+        "meanz": {
+          "mean_delta": 0.2283074469794246,
+          "frac_positive": 0.847457627118644,
+          "p_wilcoxon": 6.554599620017377e-07,
+          "same_sign_as_primary": true
+        }
+      },
+      "raw_scale": {
+        "mean_delta": 0.03359940796922206,
+        "frac_positive": 0.7966101694915254,
+        "p_wilcoxon": 1.2668130262448944e-07
+      },
+      "passes_primary_criteria": true
+    },
+    "Relapse": {
+      "mean_delta": 0.02551643483830314,
+      "median_delta": 0.021437202643737642,
+      "frac_patients_positive": 0.7966101694915254,
+      "p_wilcoxon": 3.778566300383567e-07,
+      "nullA_label_permutation": {
+        "mean": -0.0001295569363377958,
+        "sd": 0.005704840015116603,
+        "p_empirical": 0.0004997501249375312
+      },
+      "nullB_random_gene_sets": {
+        "mean": 0.0006122909576053474,
+        "sd": 0.0004228629522533812,
+        "p_empirical": 0.0004997501249375312
+      },
+      "nullC_random_regulon_modules": {
+        "mean": 0.01641440070284831,
+        "sd": 0.002216576257623575,
+        "p_empirical": 0.0004997501249375312,
+        "percentile_of_observed": 100.0
+      },
+      "sensitivities": {
+        "singscore": {
+          "mean_delta": 0.018084611494152133,
+          "frac_positive": 0.7457627118644068,
+          "p_wilcoxon": 2.5326898994058e-07,
+          "same_sign_as_primary": true
+        },
+        "meanz": {
+          "mean_delta": 0.1899705629357773,
+          "frac_positive": 0.8135593220338984,
+          "p_wilcoxon": 4.783320477576753e-06,
+          "same_sign_as_primary": true
+        }
+      },
+      "raw_scale": {
+        "mean_delta": 0.024901253134765832,
+        "frac_positive": 0.7966101694915254,
+        "p_wilcoxon": 8.272422920359721e-07
+      },
+      "passes_primary_criteria": true
+    }
+  },
+  "GATE5": {
+    "both_positive": true,
+    "both_wilcoxon_sig": true,
+    "both_clear_nullA": true,
+    "both_clear_nullB": true,
+    "both_clear_nullC": true,
+    "PASS": true,
+    "PASS_strong_form": true
+  },
+  "descriptive_vs_normal_marrow": {
+    "Diagnosis": {
+      "NBM_mean": 0.06700276215343887,
+      "Dx_mean": 0.012719938172598224,
+      "Rel_mean": 0.04709474744889712,
+      "p_NBM_vs_Dx": 0.0005040379883509556,
+      "p_NBM_vs_Rel": 0.10737504683809647
+    },
+    "Relapse": {
+      "NBM_mean": 0.043505353045820594,
+      "Dx_mean": 0.0051401485749044675,
+      "Rel_mean": 0.0306565834132076,
+      "p_NBM_vs_Dx": 0.0017224650759777877,
+      "p_NBM_vs_Rel": 0.2891277808892275
+    }
+  },
+  "descriptive_note": "NBM are SEPARATE normal-marrow donors, not each patient's own healthy compartment \u2014 this is NOT a replication of Pillar 2 and is reported descriptively only (PREREGISTRATION \u00a78)."
+}

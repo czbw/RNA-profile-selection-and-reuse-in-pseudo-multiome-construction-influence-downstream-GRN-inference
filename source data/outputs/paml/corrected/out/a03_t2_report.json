@@ -1,0 +1,100 @@
+{
+ "framing": "de novo primary; overlap reported as construction dependence",
+ "prereg": {
+  "pass": 0.5,
+  "qualified": 0.25,
+  "calibration": {
+   "pbmc_link_1to1_vs_truth_L4": 0.67,
+   "pbmc_link_vs_truth_L4": 0.337
+  }
+ },
+ "t4_tfs": [
+  "CEBPD",
+  "ERG",
+  "FOS",
+  "GATA2",
+  "HDAC2",
+  "HMGA1",
+  "IRF1",
+  "IRF8",
+  "MAFB",
+  "MBD2",
+  "SPI1",
+  "TCF4",
+  "TFDP2",
+  "ZBTB20"
+ ],
+ "stages": {
+  "Diagnosis": {
+   "published_n_regulons": 686,
+   "published_n_tfs": 296,
+   "corrected_n_regulons": 332,
+   "corrected_n_tfs": 158,
+   "t4_reconstruction_exact": true,
+   "t4_n_regulons_reconstructed": 26,
+   "t4_regulons_recovered": 23,
+   "t4_fraction_recovered": 0.8846153846153846,
+   "t4_jaccard_within_t4_tfs": 1.0,
+   "t4_tfs_recovered": [
+    "CEBPD",
+    "ERG",
+    "FOS",
+    "GATA2",
+    "HDAC2",
+    "HMGA1",
+    "IRF1",
+    "IRF8",
+    "MAFB",
+    "MBD2",
+    "SPI1",
+    "TCF4",
+    "TFDP2",
+    "ZBTB20"
+   ],
+   "t4_tfs_lost": [],
+   "prereg_verdict": "PASS",
+   "network_regulon_jaccard": 0.30848329048843187,
+   "network_tf_jaccard": 0.48366013071895425,
+   "n_shared_regulons": 240,
+   "median_target_set_jaccard_shared": 0.14500029736534306,
+   "corrected_only_regulons": 92,
+   "published_only_regulons": 446
+  },
+  "Relapse": {
+   "published_n_regulons": 793,
+   "published_n_tfs": 337,
+   "corrected_n_regulons": 352,
+   "corrected_n_tfs": 169,
+   "t4_reconstruction_exact": true,
+   "t4_n_regulons_reconstructed": 26,
+   "t4_regulons_recovered": 20,
+   "t4_fraction_recovered": 0.7692307692307693,
+   "t4_jaccard_within_t4_tfs": 1.0,
+   "t4_tfs_recovered": [
+    "CEBPD",
+    "ERG",
+    "FOS",
+    "GATA2",
+    "HDAC2",
+    "HMGA1",
+    "IRF1",
+    "IRF8",
+    "MAFB",
+    "MBD2",
+    "SPI1",
+    "TCF4",
+    "TFDP2"
+   ],
+   "t4_tfs_lost": [
+    "ZBTB20"
+   ],
+   "prereg_verdict": "PASS",
+   "network_regulon_jaccard": 0.29671574178935445,
+   "network_tf_jaccard": 0.4624277456647399,
+   "n_shared_regulons": 262,
+   "median_target_set_jaccard_shared": 0.1028061224489796,
+   "corrected_only_regulons": 90,
+   "published_only_regulons": 531
+  }
+ }
+}

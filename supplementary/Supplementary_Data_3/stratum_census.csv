@@ -1,0 +1,191 @@
+definition,stratum,n_cells,source_row
+celltype_x_donor,B1 B|donor1,688,24
+celltype_x_donor,B1 B|donor10,127,25
+celltype_x_donor,B1 B|donor2,127,26
+celltype_x_donor,B1 B|donor3,290,27
+celltype_x_donor,B1 B|donor5,123,28
+celltype_x_donor,B1 B|donor6,55,29
+celltype_x_donor,B1 B|donor7,56,30
+celltype_x_donor,B1 B|donor8,326,31
+celltype_x_donor,B1 B|donor9,98,32
+celltype_x_donor,CD14+ Mono|donor1,3243,33
+celltype_x_donor,CD14+ Mono|donor10,1603,34
+celltype_x_donor,CD14+ Mono|donor2,704,35
+celltype_x_donor,CD14+ Mono|donor3,1097,36
+celltype_x_donor,CD14+ Mono|donor4,1140,37
+celltype_x_donor,CD14+ Mono|donor5,1716,38
+celltype_x_donor,CD14+ Mono|donor6,208,39
+celltype_x_donor,CD14+ Mono|donor7,674,40
+celltype_x_donor,CD14+ Mono|donor8,458,41
+celltype_x_donor,CD16+ Mono|donor1,526,42
+celltype_x_donor,CD16+ Mono|donor10,253,43
+celltype_x_donor,CD16+ Mono|donor2,179,44
+celltype_x_donor,CD16+ Mono|donor3,67,45
+celltype_x_donor,CD16+ Mono|donor4,177,46
+celltype_x_donor,CD16+ Mono|donor5,380,47
+celltype_x_donor,CD16+ Mono|donor6,18,48
+celltype_x_donor,CD16+ Mono|donor7,41,49
+celltype_x_donor,CD16+ Mono|donor8,99,50
+celltype_x_donor,CD16+ Mono|donor9,154,51
+celltype_x_donor,CD4+ T activated|donor1,1901,52
+celltype_x_donor,CD4+ T activated|donor10,207,53
+celltype_x_donor,CD4+ T activated|donor2,709,54
+celltype_x_donor,CD4+ T activated|donor3,620,55
+celltype_x_donor,CD4+ T activated|donor4,385,56
+celltype_x_donor,CD4+ T activated|donor5,493,57
+celltype_x_donor,CD4+ T activated|donor6,276,58
+celltype_x_donor,CD4+ T activated|donor7,102,59
+celltype_x_donor,CD4+ T activated|donor8,684,60
+celltype_x_donor,CD4+ T activated|donor9,149,61
+celltype_x_donor,CD4+ T naive|donor1,1198,62
+celltype_x_donor,CD4+ T naive|donor10,106,63
+celltype_x_donor,CD4+ T naive|donor2,1289,64
+celltype_x_donor,CD4+ T naive|donor3,852,65
+celltype_x_donor,CD4+ T naive|donor4,214,66
+celltype_x_donor,CD4+ T naive|donor5,163,67
+celltype_x_donor,CD4+ T naive|donor6,58,68
+celltype_x_donor,CD4+ T naive|donor7,98,69
+celltype_x_donor,CD4+ T naive|donor8,299,70
+celltype_x_donor,CD4+ T naive|donor9,121,71
+celltype_x_donor,CD8+ T naive|donor10,366,72
+celltype_x_donor,CD8+ T naive|donor3,427,73
+celltype_x_donor,CD8+ T naive|donor9,219,74
+celltype_x_donor,CD8+ T|donor1,1653,75
+celltype_x_donor,CD8+ T|donor10,432,76
+celltype_x_donor,CD8+ T|donor2,1632,77
+celltype_x_donor,CD8+ T|donor3,1398,78
+celltype_x_donor,CD8+ T|donor4,230,79
+celltype_x_donor,CD8+ T|donor5,752,80
+celltype_x_donor,CD8+ T|donor6,488,81
+celltype_x_donor,CD8+ T|donor7,110,82
+celltype_x_donor,CD8+ T|donor8,4089,83
+celltype_x_donor,CD8+ T|donor9,805,84
+celltype_x_donor,Erythroblast|donor1,1749,85
+celltype_x_donor,Erythroblast|donor10,391,86
+celltype_x_donor,Erythroblast|donor2,136,87
+celltype_x_donor,Erythroblast|donor3,620,88
+celltype_x_donor,Erythroblast|donor4,1485,89
+celltype_x_donor,Erythroblast|donor5,64,90
+celltype_x_donor,Erythroblast|donor6,84,91
+celltype_x_donor,Erythroblast|donor7,31,92
+celltype_x_donor,Erythroblast|donor8,266,93
+celltype_x_donor,Erythroblast|donor9,90,94
+celltype_x_donor,G/M prog|donor1,341,95
+celltype_x_donor,G/M prog|donor10,432,96
+celltype_x_donor,G/M prog|donor2,27,97
+celltype_x_donor,G/M prog|donor3,32,98
+celltype_x_donor,G/M prog|donor4,92,99
+celltype_x_donor,G/M prog|donor6,119,100
+celltype_x_donor,G/M prog|donor7,8,101
+celltype_x_donor,G/M prog|donor8,66,102
+celltype_x_donor,G/M prog|donor9,86,103
+celltype_x_donor,HSC|donor1,230,104
+celltype_x_donor,HSC|donor10,291,105
+celltype_x_donor,HSC|donor2,33,106
+celltype_x_donor,HSC|donor3,146,107
+celltype_x_donor,HSC|donor4,100,108
+celltype_x_donor,HSC|donor5,20,109
+celltype_x_donor,HSC|donor6,38,110
+celltype_x_donor,HSC|donor7,34,111
+celltype_x_donor,HSC|donor8,108,112
+celltype_x_donor,HSC|donor9,72,113
+celltype_x_donor,ID2-hi myeloid prog|donor1,67,114
+celltype_x_donor,ID2-hi myeloid prog|donor2,41,115
+celltype_x_donor,ILC|donor1,120,116
+celltype_x_donor,ILC|donor10,129,117
+celltype_x_donor,ILC|donor2,367,118
+celltype_x_donor,ILC|donor3,124,119
+celltype_x_donor,ILC|donor5,95,120
+celltype_x_donor,Lymph prog|donor1,452,121
+celltype_x_donor,Lymph prog|donor10,231,122
+celltype_x_donor,Lymph prog|donor2,28,123
+celltype_x_donor,Lymph prog|donor3,134,124
+celltype_x_donor,Lymph prog|donor4,286,125
+celltype_x_donor,Lymph prog|donor6,15,126
+celltype_x_donor,Lymph prog|donor7,17,127
+celltype_x_donor,Lymph prog|donor8,327,128
+celltype_x_donor,Lymph prog|donor9,289,129
+celltype_x_donor,MK/E prog|donor1,298,130
+celltype_x_donor,MK/E prog|donor10,125,131
+celltype_x_donor,MK/E prog|donor2,71,132
+celltype_x_donor,MK/E prog|donor3,95,133
+celltype_x_donor,MK/E prog|donor4,33,134
+celltype_x_donor,MK/E prog|donor6,48,135
+celltype_x_donor,MK/E prog|donor7,14,136
+celltype_x_donor,MK/E prog|donor8,120,137
+celltype_x_donor,MK/E prog|donor9,80,138
+celltype_x_donor,NK|donor1,1984,139
+celltype_x_donor,NK|donor10,545,140
+celltype_x_donor,NK|donor2,982,141
+celltype_x_donor,NK|donor3,1173,142
+celltype_x_donor,NK|donor4,136,143
+celltype_x_donor,NK|donor5,848,144
+celltype_x_donor,NK|donor6,126,145
+celltype_x_donor,NK|donor7,256,146
+celltype_x_donor,NK|donor8,421,147
+celltype_x_donor,NK|donor9,458,148
+celltype_x_donor,Naive CD20+ B|donor1,1301,149
+celltype_x_donor,Naive CD20+ B|donor10,421,150
+celltype_x_donor,Naive CD20+ B|donor2,121,151
+celltype_x_donor,Naive CD20+ B|donor3,526,152
+celltype_x_donor,Naive CD20+ B|donor4,590,153
+celltype_x_donor,Naive CD20+ B|donor5,105,154
+celltype_x_donor,Naive CD20+ B|donor6,18,155
+celltype_x_donor,Naive CD20+ B|donor7,190,156
+celltype_x_donor,Naive CD20+ B|donor8,883,157
+celltype_x_donor,Naive CD20+ B|donor9,897,158
+celltype_x_donor,Normoblast|donor1,630,159
+celltype_x_donor,Normoblast|donor10,129,160
+celltype_x_donor,Normoblast|donor2,69,161
+celltype_x_donor,Normoblast|donor3,147,162
+celltype_x_donor,Normoblast|donor4,641,163
+celltype_x_donor,Normoblast|donor5,17,164
+celltype_x_donor,Normoblast|donor6,18,165
+celltype_x_donor,Normoblast|donor7,9,166
+celltype_x_donor,Normoblast|donor8,90,167
+celltype_x_donor,Normoblast|donor9,30,168
+celltype_x_donor,Plasma cell|donor1,286,169
+celltype_x_donor,Plasma cell|donor10,13,170
+celltype_x_donor,Plasma cell|donor2,13,171
+celltype_x_donor,Plasma cell|donor3,25,172
+celltype_x_donor,Plasma cell|donor5,16,173
+celltype_x_donor,Plasma cell|donor8,26,174
+celltype_x_donor,Proerythroblast|donor1,472,175
+celltype_x_donor,Proerythroblast|donor10,111,176
+celltype_x_donor,Proerythroblast|donor2,30,177
+celltype_x_donor,Proerythroblast|donor3,313,178
+celltype_x_donor,Proerythroblast|donor4,316,179
+celltype_x_donor,Proerythroblast|donor5,18,180
+celltype_x_donor,Proerythroblast|donor6,27,181
+celltype_x_donor,Proerythroblast|donor7,21,182
+celltype_x_donor,Proerythroblast|donor8,800,183
+celltype_x_donor,Proerythroblast|donor9,192,184
+celltype_x_donor,Transitional B|donor1,809,185
+celltype_x_donor,Transitional B|donor10,359,186
+celltype_x_donor,Transitional B|donor2,40,187
+celltype_x_donor,Transitional B|donor3,197,188
+celltype_x_donor,Transitional B|donor4,185,189
+celltype_x_donor,Transitional B|donor6,18,190
+celltype_x_donor,Transitional B|donor7,30,191
+celltype_x_donor,Transitional B|donor8,630,192
+celltype_x_donor,Transitional B|donor9,542,193
+celltype_x_donor,cDC2|donor1,181,194
+celltype_x_donor,cDC2|donor10,83,195
+celltype_x_donor,cDC2|donor2,89,196
+celltype_x_donor,cDC2|donor3,188,197
+celltype_x_donor,cDC2|donor4,53,198
+celltype_x_donor,cDC2|donor5,30,199
+celltype_x_donor,cDC2|donor6,26,200
+celltype_x_donor,cDC2|donor7,25,201
+celltype_x_donor,cDC2|donor8,160,202
+celltype_x_donor,cDC2|donor9,24,203
+celltype_x_donor,pDC|donor1,338,204
+celltype_x_donor,pDC|donor10,427,205
+celltype_x_donor,pDC|donor2,53,206
+celltype_x_donor,pDC|donor3,133,207
+celltype_x_donor,pDC|donor4,48,208
+celltype_x_donor,pDC|donor5,55,209
+celltype_x_donor,pDC|donor6,39,210
+celltype_x_donor,pDC|donor7,55,211
+celltype_x_donor,pDC|donor8,24,212
+celltype_x_donor,pDC|donor9,19,213

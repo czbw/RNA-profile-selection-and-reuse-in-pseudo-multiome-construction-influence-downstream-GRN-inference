@@ -1,0 +1,36 @@
+{
+  "provenance": {
+    "module_name": "T3_repair",
+    "module_file": "..\\..\\modules\\out\\module_definition_T3_repair.json",
+    "arm_vocabulary_used": "repair",
+    "arm_keyed_module": false,
+    "arm_selection_note": "single-arm module; scored under its own (repair) vocabulary only",
+    "n_regulons": 55,
+    "n_TFs": 31,
+    "n_background_regulons": 201,
+    "module_frozen": "2026-08-20, frozen before any downstream statistic (replication scoring, external-cohort scoring, figures, manuscript numbers) was recomputed under the retired-ax4 redefinition. Supersedes the 2026-08-06 freeze of replication_repair/out/module_definition.json ('T4_tier1_core', 34r/21TF), which is retired as a module but retained unmodified for audit."
+  },
+  "seed": 555,
+  "n_pool_per_slot": 200,
+  "min_detect_frac": 0.1,
+  "nullB_universe_size": 20054,
+  "auc_threshold": 0.05,
+  "by_vocabulary": {
+    "Diagnosis": {
+      "n_slots": 55,
+      "slot_sizes_min": 9,
+      "slot_sizes_max": 681,
+      "slot_sizes_median": 104.0,
+      "n_random_gene_sets": 11000,
+      "file": "nullB_pool_T3_repair_Diagnosis.npz"
+    },
+    "Relapse": {
+      "n_slots": 55,
+      "slot_sizes_min": 10,
+      "slot_sizes_max": 568,
+      "slot_sizes_median": 119.0,
+      "n_random_gene_sets": 11000,
+      "file": "nullB_pool_T3_repair_Relapse.npz"
+    }
+  }
+}

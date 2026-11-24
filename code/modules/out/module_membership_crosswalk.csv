@@ -1,0 +1,141 @@
+regulon,TF,sign_mode,sign_mode_lead,in_universe_link,in_universe_repair,tier_link,tier_repair,catalogue_tier_raw,direction_link,direction_repair,in_old_T4_link_26,in_old_core_repair_34,in_T3_link_98,in_T3_repair_55,in_T4_new_13
+BACH1_direct_+/+,BACH1,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,False,True,False,True,False
+BCL11A_direct_-/+,BCL11A,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+BCL11A_direct_-/-,BCL11A,-/-,-,True,False,T2,,"T2 both pairings, one stage",down at relapse,,False,False,True,False,False
+BCLAF1_direct_+/-,BCLAF1,+/-,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+BPTF_direct_+/+,BPTF,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+BPTF_direct_+/-,BPTF,+/-,+,True,False,T2,,"T2 both pairings, one stage",up at relapse,,False,False,True,False,False
+BPTF_direct_-/+,BPTF,-/+,-,True,True,T3,T3,T3 single pairing,down at relapse,down at relapse,False,False,True,False,False
+CCNT2_direct_-/-,CCNT2,-/-,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+CEBPA_direct_+/+,CEBPA,+/+,+,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+CEBPA_direct_+/-,CEBPA,+/-,+,False,True,,T3,T3 single pairing,,down at relapse,False,False,False,True,False
+CEBPA_direct_-/+,CEBPA,-/+,-,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,False,True,False
+CEBPD_direct_+/+,CEBPD,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,False,True,False,False
+CEBPD_direct_+/-,CEBPD,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,False,True,False,False
+CEBPD_direct_-/+,CEBPD,-/+,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+CEBPD_direct_-/-,CEBPD,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,False,True,False,False
+DDIT3_direct_+/-,DDIT3,+/-,+,True,False,T2,,"T2 both pairings, one stage",up at relapse,,False,False,True,False,False
+ELK1_direct_+/-,ELK1,+/-,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+EP300_direct_-/+,EP300,-/+,-,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,False,True,False
+EP300_direct_-/-,EP300,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+ERG_direct_-/+,ERG,-/+,-,True,False,T1,,"T1 both pairings, both stages",down at relapse,,True,False,True,False,False
+ERG_direct_-/-,ERG,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,True,True,True,True
+ETS1_direct_-/+,ETS1,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+ETV5_direct_-/+,ETV5,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+ETV6_direct_-/+,ETV6,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+ETV6_direct_-/-,ETV6,-/-,-,True,False,T2,,"T2 both pairings, one stage",down at relapse,,False,False,True,False,False
+FOSL2_direct_-/+,FOSL2,-/+,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+FOSL2_direct_-/-,FOSL2,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+FOS_direct_-/-,FOS,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,False,True,False,False
+GABPB1_direct_-/+,GABPB1,-/+,-,True,True,T2,T2,"T2 both pairings, one stage",down at relapse,down at relapse,False,False,False,True,False
+GATA2_direct_+/+,GATA2,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,True,True,True,True
+GATA2_direct_-/+,GATA2,-/+,-,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,False,True,False,False
+GATA2_direct_-/-,GATA2,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,False,True,False,False
+GATAD1_direct_+/+,GATAD1,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+GATAD1_direct_+/-,GATAD1,+/-,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+GATAD1_direct_-/-,GATAD1,-/-,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+GATAD2A_direct_+/+,GATAD2A,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+HDAC2_direct_+/-,HDAC2,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,False,True,False,False
+HDAC2_direct_-/+,HDAC2,-/+,-,True,False,T1,,"T1 both pairings, both stages",down at relapse,,True,False,True,False,False
+HDAC2_direct_-/-,HDAC2,-/-,-,True,False,T2,,"T2 both pairings, one stage",down at relapse,,False,False,True,False,False
+HMGA1_direct_+/+,HMGA1,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,True,True,True,True
+HMGXB3_direct_+/-,HMGXB3,+/-,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+HMGXB3_direct_-/+,HMGXB3,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+HTATIP2_direct_-/+,HTATIP2,-/+,-,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+HTATIP2_direct_-/-,HTATIP2,-/-,-,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+ILF2_direct_+/-,ILF2,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+IRF1_direct_+/+,IRF1,+/+,+,True,False,T2,,"T2 both pairings, one stage",up at relapse,,False,False,True,False,False
+IRF1_direct_+/-,IRF1,+/-,+,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,True,False,False
+IRF1_direct_-/+,IRF1,-/+,-,True,False,T1,,"T1 both pairings, both stages",down at relapse,,True,False,True,False,False
+IRF5_direct_+/+,IRF5,+/+,+,False,True,,T3,T3 single pairing,,down at relapse,False,False,False,True,False
+IRF7_direct_-/-,IRF7,-/-,-,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+IRF8_direct_+/+,IRF8,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,True,True,True,True
+IRF8_direct_+/-,IRF8,+/-,+,True,True,T2,T2,"T2 both pairings, one stage",down at relapse,down at relapse,False,False,True,True,True
+IRF8_direct_-/+,IRF8,-/+,-,False,True,,T2,"T2 both pairings, one stage",,up at relapse,False,False,False,True,False
+IRF8_direct_-/-,IRF8,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+IRF9_direct_-/+,IRF9,-/+,-,True,False,T2,,"T2 both pairings, one stage",down at relapse,,False,False,True,False,False
+KAT7_direct_-/-,KAT7,-/-,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+KLF10_direct_+/+,KLF10,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,down at relapse,False,True,False,True,False
+KLF10_direct_+/-,KLF10,+/-,+,True,True,T2,T2,"T2 both pairings, one stage",down at relapse,down at relapse,False,False,False,True,False
+KLF10_direct_-/+,KLF10,-/+,-,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,True,True,True
+KLF10_direct_-/-,KLF10,-/-,-,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,False,True,False
+KLF11_direct_+/+,KLF11,+/+,+,False,True,,T2,"T2 both pairings, one stage",,down at relapse,False,False,False,True,False
+KLF11_direct_-/-,KLF11,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+KLF3_direct_+/+,KLF3,+/+,+,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,False,True,False
+KLF4_direct_+/+,KLF4,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,False,True,False,True,False
+KLF4_direct_+/-,KLF4,+/-,+,False,True,,T2,"T2 both pairings, one stage",,down at relapse,False,False,False,True,False
+KLF4_direct_-/-,KLF4,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+MAFB_direct_+/+,MAFB,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,False,True,False,True,False
+MAFB_direct_+/-,MAFB,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,True,True,True,True
+MAFB_direct_-/-,MAFB,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,True,True,True,True
+MAFF_direct_+/+,MAFF,+/+,+,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,True,False,False
+MAFF_direct_+/-,MAFF,+/-,+,False,True,,T3,T3 single pairing,,up at relapse,False,False,False,True,False
+MAFF_direct_-/+,MAFF,-/+,-,True,False,T2,,"T2 both pairings, one stage",down at relapse,,False,False,True,False,False
+MAFK_direct_+/+,MAFK,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+MAX_direct_+/+,MAX,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+MBD2_direct_+/-,MBD2,+/-,+,False,True,,T2,"T2 both pairings, one stage",,down at relapse,False,False,False,True,False
+MBD2_direct_-/+,MBD2,-/+,-,True,False,T1,,"T1 both pairings, both stages",up at relapse,,True,False,True,False,False
+MECP2_direct_+/+,MECP2,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+MEF2C_direct_-/-,MEF2C,-/-,-,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,True,False,False
+MEIS1_direct_-/+,MEIS1,-/+,-,True,True,T2,T2,"T2 both pairings, one stage",down at relapse,up at relapse,False,False,True,False,False
+MYCN_direct_+/+,MYCN,+/+,+,True,False,T2,,"T2 both pairings, one stage",up at relapse,,False,False,True,False,False
+MYC_direct_+/-,MYC,+/-,+,True,False,T2,,"T2 both pairings, one stage",up at relapse,,False,False,True,False,False
+NFATC3_direct_-/-,NFATC3,-/-,-,True,False,T2,,"T2 both pairings, one stage",down at relapse,,False,False,True,False,False
+PATZ1_direct_-/+,PATZ1,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+PBX3_direct_-/+,PBX3,-/+,-,False,True,,T3,T3 single pairing,,up at relapse,False,False,False,True,False
+PURA_direct_-/-,PURA,-/-,-,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+RB1_direct_+/+,RB1,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+RELB_direct_+/+,RELB,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+RELB_direct_+/-,RELB,+/-,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+RUNX1_direct_+/+,RUNX1,+/+,+,True,True,T2,T2,"T2 both pairings, one stage",up at relapse,up at relapse,False,False,True,False,False
+RUNX2_direct_-/+,RUNX2,-/+,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+RXRA_direct_+/+,RXRA,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,False,True,False,True,False
+RXRA_direct_+/-,RXRA,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,False,True,False,True,False
+SATB1_direct_+/+,SATB1,+/+,+,True,True,T3,T3,T3 single pairing,up at relapse,up at relapse,False,False,True,False,False
+SF1_direct_+/-,SF1,+/-,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+SIN3A_direct_+/+,SIN3A,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+SIN3A_direct_+/-,SIN3A,+/-,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+SMAD4_direct_+/+,SMAD4,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+SMAD5_direct_-/-,SMAD5,-/-,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+SMARCC1_direct_-/+,SMARCC1,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+SMC3_direct_+/-,SMC3,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+SP1_direct_-/+,SP1,-/+,-,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+SPI1_direct_+/+,SPI1,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,True,True,True,True
+SPI1_direct_+/-,SPI1,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,True,True,True,True
+SPI1_direct_-/+,SPI1,-/+,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,True,True,True,True
+SPI1_direct_-/-,SPI1,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,True,True,True,True
+SREBF1_direct_+/+,SREBF1,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+STAT5A_direct_+/+,STAT5A,+/+,+,False,True,,T2,"T2 both pairings, one stage",,up at relapse,False,False,False,True,False
+STAT5A_direct_-/+,STAT5A,-/+,-,False,True,,T3,T3 single pairing,,down at relapse,False,False,False,True,False
+STAT6_direct_+/+,STAT6,+/+,+,False,True,,T3,T3 single pairing,,down at relapse,False,False,False,True,False
+TBL1XR1_direct_-/+,TBL1XR1,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+TCF4_direct_+/-,TCF4,+/-,+,True,False,T1,,"T1 both pairings, both stages",up at relapse,,True,False,True,False,False
+TFDP2_direct_+/+,TFDP2,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,True,False,True,False,False
+TFDP2_direct_+/-,TFDP2,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+TFDP2_direct_-/+,TFDP2,-/+,-,True,False,T1,,"T1 both pairings, both stages",down at relapse,,True,False,True,False,False
+TFDP2_direct_-/-,TFDP2,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,True,True,True,True,True
+VEZF1_direct_+/+,VEZF1,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+WT1_direct_+/+,WT1,+/+,+,False,True,,none,not in catalogue,,up at relapse,False,False,False,True,False
+WT1_direct_-/-,WT1,-/-,-,True,False,T2,,"T2 both pairings, one stage",down at relapse,,False,False,True,False,False
+XBP1_direct_+/-,XBP1,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+XBP1_direct_-/+,XBP1,-/+,-,True,False,T2,,"T2 both pairings, one stage",down at relapse,,False,False,True,False,False
+YBX1_direct_+/+,YBX1,+/+,+,True,True,T3,T3,T3 single pairing,down at relapse,up at relapse,False,False,False,True,False
+YBX1_direct_+/-,YBX1,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,up at relapse,False,True,False,True,False
+YY1_direct_-/+,YY1,-/+,-,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+YY1_direct_-/-,YY1,-/-,-,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+ZBTB20_direct_-/-,ZBTB20,-/-,-,True,False,T1,,"T1 both pairings, both stages",down at relapse,,True,False,True,False,False
+ZBTB7A_direct_+/+,ZBTB7A,+/+,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,False,True,False,True,False
+ZBTB7A_direct_+/-,ZBTB7A,+/-,+,True,True,T1,T1,"T1 both pairings, both stages",down at relapse,down at relapse,False,True,False,True,False
+ZBTB7A_direct_-/+,ZBTB7A,-/+,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+ZBTB7A_direct_-/-,ZBTB7A,-/-,-,True,True,T1,T1,"T1 both pairings, both stages",up at relapse,up at relapse,False,True,False,True,False
+ZBTB8A_direct_+/+,ZBTB8A,+/+,+,True,False,T2,,"T2 both pairings, one stage",up at relapse,,False,False,True,False,False
+ZNF316_direct_+/+,ZNF316,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+ZNF37A_direct_+/+,ZNF37A,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+ZNF511_direct_-/+,ZNF511,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+ZNF518A_direct_+/-,ZNF518A,+/-,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+ZNF639_direct_-/+,ZNF639,-/+,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+ZNF639_direct_-/-,ZNF639,-/-,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+ZNF692_direct_+/+,ZNF692,+/+,+,True,False,T3,,T3 single pairing,up at relapse,,False,False,True,False,False
+ZNF770_direct_-/-,ZNF770,-/-,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False
+ZNF880_direct_+/-,ZNF880,+/-,+,True,False,T2,,"T2 both pairings, one stage",up at relapse,,False,False,True,False,False
+ZNF880_direct_-/-,ZNF880,-/-,-,True,False,T3,,T3 single pairing,down at relapse,,False,False,True,False,False

@@ -1,0 +1,872 @@
+>> bigmem: 20 CPUs / 1200 G, impute budget 250 GB
+>> launching run_all.sh inside /cbica/home/zhengbo/AML-GRN/miniforge.sif  (stage arg: 'Relapse')
+>> AMLGRN_ROOT=/cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant  ncpu=20  macs3=/cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3  (STAGE 2 / malignant)
+>>>> [0] fragments: reusing shared data/fragments (64 samples indexed) — skip
+>>>> [1] cell_data per stage (MALIGNANT filter)
+[stage2] cell_data present for both stages — skip
+>>>> [2] GEX builds (A paired + B native)
+[stage2] GEX h5ads present for both stages (paired + native) — skip
+>>>> [3/Relapse] ATAC chain (pseudobulk->macs3->consensus->cisTopic->topics)
+[stage2] Relapse: dropped 2 'Unknown' cells -> 77,612 remain
+[stage2] Relapse: 77,612 malignant cells | 21 samples | celltypes ['B.Cell', 'CD16.Monocytes', 'CD4.Memory', 'CD4.Naive', 'CD8.Effector', 'CD8.Memory', 'CD8.Naive', 'CLP', 'Early.Basophil', 'Early.Erythrocyte', 'GMP', 'HSC', 'Late.Erythrocyte', 'Monocytes', 'NK', 'Plasma', 'Pre.B.Cell', 'Progenitor', 'cDC', 'pDC']
+[stage2] Relapse/pseudobulk: reusing 20 BEDs
+[36m(macs_call_peak_ray pid=295251)[0m 2026-07-29 19:42:33,592 cisTopic     INFO     Calling peaks for B.Cell with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/B.Cell.fragments.tsv.gz --name B.Cell  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295252)[0m 2026-07-29 19:42:33,591 cisTopic     INFO     Calling peaks for CD16.Monocytes with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/CD16.Monocytes.fragments.tsv.gz --name CD16.Monocytes  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295256)[0m 2026-07-29 19:42:33,579 cisTopic     INFO     Calling peaks for CLP with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/CLP.fragments.tsv.gz --name CLP  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295261)[0m 2026-07-29 19:42:33,580 cisTopic     INFO     Calling peaks for Early.Basophil with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/Early.Basophil.fragments.tsv.gz --name Early.Basophil  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295260)[0m 2026-07-29 19:42:33,592 cisTopic     INFO     Calling peaks for Early.Erythrocyte with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/Early.Erythrocyte.fragments.tsv.gz --name Early.Erythrocyte  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295266)[0m 2026-07-29 19:42:33,592 cisTopic     INFO     Calling peaks for Monocytes with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/Monocytes.fragments.tsv.gz --name Monocytes  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295264)[0m 2026-07-29 19:42:33,579 cisTopic     INFO     Calling peaks for HSC with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/HSC.fragments.tsv.gz --name HSC  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295263)[0m 2026-07-29 19:42:33,593 cisTopic     INFO     Calling peaks for GMP with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/GMP.fragments.tsv.gz --name GMP  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295262)[0m 2026-07-29 19:42:33,595 cisTopic     INFO     Calling peaks for Late.Erythrocyte with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/Late.Erythrocyte.fragments.tsv.gz --name Late.Erythrocyte  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295268)[0m 2026-07-29 19:42:33,591 cisTopic     INFO     Calling peaks for Plasma with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/Plasma.fragments.tsv.gz --name Plasma  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295267)[0m 2026-07-29 19:42:33,579 cisTopic     INFO     Calling peaks for NK with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/NK.fragments.tsv.gz --name NK  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295268)[0m 2026-07-29 19:42:42,940 cisTopic     INFO     Plasma done!
+[36m(macs_call_peak_ray pid=295259)[0m 2026-07-29 19:42:33,596 cisTopic     INFO     Calling peaks for CD8.Memory with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/CD8.Memory.fragments.tsv.gz --name CD8.Memory  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda[32m [repeated 5x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(macs_call_peak_ray pid=295268)[0m 2026-07-29 19:42:42,949 cisTopic     INFO     Calling peaks for Pre.B.Cell with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/Pre.B.Cell.fragments.tsv.gz --name Pre.B.Cell  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295255)[0m 2026-07-29 19:42:43,983 cisTopic     INFO     CD8.Effector done!
+[36m(macs_call_peak_ray pid=295255)[0m 2026-07-29 19:42:43,993 cisTopic     INFO     Calling peaks for Progenitor with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/Progenitor.fragments.tsv.gz --name Progenitor  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295258)[0m 2026-07-29 19:42:48,651 cisTopic     INFO     Calling peaks for cDC with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/cDC.fragments.tsv.gz --name cDC  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295267)[0m 2026-07-29 19:43:22,917 cisTopic     INFO     NK done!
+[36m(macs_call_peak_ray pid=295258)[0m 2026-07-29 19:42:48,637 cisTopic     INFO     CD8.Naive done!
+[36m(macs_call_peak_ray pid=295267)[0m 2026-07-29 19:43:22,944 cisTopic     INFO     Calling peaks for pDC with /cbica/home/zhengbo/AML-GRN/envs/macs3env/bin/macs3 callpeak --treatment /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/pb_bed_Relapse/pDC.fragments.tsv.gz --name pDC  --outdir /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/macs_Relapse --format BEDPE --gsize hs --qvalue 0.05 --nomodel --shift 73 --extsize 146 --keep-dup all --call-summits --nolambda
+[36m(macs_call_peak_ray pid=295253)[0m 2026-07-29 19:43:37,618 cisTopic     INFO     CD4.Memory done!
+[36m(macs_call_peak_ray pid=295259)[0m 2026-07-29 19:43:45,951 cisTopic     INFO     CD8.Memory done!
+[36m(macs_call_peak_ray pid=295254)[0m 2026-07-29 19:44:06,501 cisTopic     INFO     CD4.Naive done!
+[36m(macs_call_peak_ray pid=295251)[0m 2026-07-29 19:44:36,597 cisTopic     INFO     B.Cell done!
+[36m(macs_call_peak_ray pid=295262)[0m 2026-07-29 19:44:38,955 cisTopic     INFO     Late.Erythrocyte done!
+[36m(macs_call_peak_ray pid=295252)[0m 2026-07-29 19:44:43,364 cisTopic     INFO     CD16.Monocytes done!
+[36m(macs_call_peak_ray pid=295268)[0m 2026-07-29 19:44:53,048 cisTopic     INFO     Pre.B.Cell done!
+[36m(macs_call_peak_ray pid=295258)[0m 2026-07-29 19:45:07,326 cisTopic     INFO     cDC done!
+[36m(macs_call_peak_ray pid=295267)[0m 2026-07-29 19:45:23,912 cisTopic     INFO     pDC done!
+[36m(macs_call_peak_ray pid=295261)[0m 2026-07-29 19:45:38,082 cisTopic     INFO     Early.Basophil done!
+[36m(macs_call_peak_ray pid=295256)[0m 2026-07-29 19:48:02,027 cisTopic     INFO     CLP done!
+[36m(macs_call_peak_ray pid=295260)[0m 2026-07-29 19:48:06,378 cisTopic     INFO     Early.Erythrocyte done!
+[36m(macs_call_peak_ray pid=295266)[0m 2026-07-29 19:48:49,368 cisTopic     INFO     Monocytes done!
+[36m(macs_call_peak_ray pid=295263)[0m 2026-07-29 19:52:54,606 cisTopic     INFO     GMP done!
+[36m(macs_call_peak_ray pid=295264)[0m 2026-07-29 19:59:27,114 cisTopic     INFO     HSC done!
+[36m(macs_call_peak_ray pid=295255)[0m 2026-07-29 19:59:59,919 cisTopic     INFO     Progenitor done!
+[stage2] [Relapse/peak_calling] 1086.7s
+2026-07-29 20:00:03,234 cisTopic     INFO     Extending and merging peaks per class
+2026-07-29 20:04:39,450 cisTopic     INFO     Normalizing peak scores
+2026-07-29 20:04:41,199 cisTopic     INFO     Merging peaks
+2026-07-29 20:07:10,015 cisTopic     INFO     Done!
+[stage2] [Relapse/consensus_peaks] 430.2s
+[stage2] Relapse: consensus peaks 587,940 -> /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/consensus_peaks_Relapse.bed
+2026-07-29 20:07:13,464 cisTopic     INFO     Reading data for GSM7498709_AML16_REL
+2026-07-29 20:08:04,098 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:08:08,562 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:08:21,592 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:09:14,439 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:10:04,338 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:10:20,676 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:10:22,782 cisTopic     INFO     Done!
+2026-07-29 20:10:22,864 cisTopic     INFO     Reading data for GSM7498712_AML6_REL
+2026-07-29 20:11:24,084 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:11:29,777 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:11:47,093 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:12:27,263 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:13:40,258 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:14:02,892 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:14:05,615 cisTopic     INFO     Done!
+2026-07-29 20:14:05,720 cisTopic     INFO     Reading data for GSM7498714_AML2_REL
+2026-07-29 20:14:51,431 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:14:55,578 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:15:07,817 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:15:40,263 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:16:22,807 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:16:35,053 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:16:37,098 cisTopic     INFO     Done!
+2026-07-29 20:16:37,163 cisTopic     INFO     Reading data for GSM7498717_AML15_REL
+2026-07-29 20:17:45,004 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:17:50,809 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:18:07,606 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:18:49,041 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:20:15,742 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:20:39,891 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:20:45,077 cisTopic     INFO     Done!
+2026-07-29 20:20:45,220 cisTopic     INFO     Reading data for GSM7498722_AML7_REL
+2026-07-29 20:21:02,780 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:21:03,729 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:21:06,218 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:21:21,494 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:21:34,980 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:21:40,655 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:21:41,482 cisTopic     INFO     Done!
+2026-07-29 20:21:41,531 cisTopic     INFO     Reading data for GSM7498725_AML8_REL
+2026-07-29 20:22:33,906 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:22:38,351 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:22:52,781 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:23:27,286 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:24:20,948 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:24:33,919 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:24:36,104 cisTopic     INFO     Done!
+2026-07-29 20:24:36,171 cisTopic     INFO     Reading data for GSM7498730_AML5_REL
+2026-07-29 20:25:10,792 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:25:12,931 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:25:19,164 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:25:38,941 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:26:05,249 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:26:16,296 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:26:17,412 cisTopic     INFO     Done!
+2026-07-29 20:26:17,477 cisTopic     INFO     Reading data for GSM7498733_AML17_REL
+2026-07-29 20:27:03,343 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:27:06,724 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:27:13,146 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:27:36,126 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:28:01,202 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:28:10,371 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:28:11,804 cisTopic     INFO     Done!
+2026-07-29 20:28:11,862 cisTopic     INFO     Reading data for GSM7498737_AML27_REL
+2026-07-29 20:28:22,665 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:28:23,445 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:28:25,459 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:28:40,138 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:28:50,835 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:28:56,306 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:28:57,030 cisTopic     INFO     Done!
+2026-07-29 20:28:57,076 cisTopic     INFO     Reading data for GSM7498740_AML10_REL
+2026-07-29 20:29:46,105 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:29:50,691 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:30:05,179 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:30:40,357 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:31:28,863 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:31:43,299 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:31:45,509 cisTopic     INFO     Done!
+2026-07-29 20:31:45,586 cisTopic     INFO     Reading data for GSM7498743_AML11_REL
+2026-07-29 20:32:31,440 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:32:32,949 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:32:32,993 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:32:44,670 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:32:44,932 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:32:44,969 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:32:45,116 cisTopic     INFO     Done!
+2026-07-29 20:32:45,127 cisTopic     INFO     Reading data for GSM7498746_AML4_REL
+2026-07-29 20:33:35,335 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:33:39,395 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:33:49,393 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:34:19,312 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:35:00,162 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:35:10,581 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:35:12,386 cisTopic     INFO     Done!
+2026-07-29 20:35:12,448 cisTopic     INFO     Reading data for GSM7498748_AML22_REL
+2026-07-29 20:36:06,641 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:36:11,496 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:36:25,934 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:37:02,069 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:37:56,158 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:38:09,215 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:38:11,489 cisTopic     INFO     Done!
+2026-07-29 20:38:11,556 cisTopic     INFO     Reading data for GSM7498751_AML21_REL
+2026-07-29 20:39:19,688 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:39:25,574 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:39:42,348 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:40:22,570 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:41:22,730 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:41:35,923 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:41:38,413 cisTopic     INFO     Done!
+2026-07-29 20:41:38,480 cisTopic     INFO     Reading data for GSM7498754_AML24_REL
+2026-07-29 20:42:13,660 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:42:16,039 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:42:19,614 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:42:38,368 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:42:51,362 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:42:56,076 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:42:56,953 cisTopic     INFO     Done!
+2026-07-29 20:42:56,989 cisTopic     INFO     Reading data for GSM7498759_AML25_REL
+2026-07-29 20:43:13,772 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:43:14,873 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:43:17,870 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:43:34,323 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:43:44,968 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:43:49,611 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:43:50,344 cisTopic     INFO     Done!
+2026-07-29 20:43:50,383 cisTopic     INFO     Reading data for GSM7498762_AML26_REL
+2026-07-29 20:44:26,139 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:44:28,800 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:44:37,626 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:45:01,625 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:45:34,671 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:45:47,546 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:45:48,911 cisTopic     INFO     Done!
+2026-07-29 20:45:48,982 cisTopic     INFO     Reading data for GSM7498765_AML19_REL
+2026-07-29 20:46:52,384 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:46:57,471 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:47:11,438 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:47:46,809 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:48:34,707 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:48:48,678 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:48:54,262 cisTopic     INFO     Done!
+2026-07-29 20:48:54,334 cisTopic     INFO     Reading data for GSM7498767_AML18_REL
+2026-07-29 20:49:11,606 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:49:12,642 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:49:15,902 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:49:32,754 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:49:42,813 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:49:46,554 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:49:47,294 cisTopic     INFO     Done!
+2026-07-29 20:49:47,330 cisTopic     INFO     Reading data for GSM7498769_AML12_REL
+2026-07-29 20:50:44,166 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:50:48,477 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:51:03,477 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:51:40,073 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:52:42,100 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:52:58,447 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:53:00,456 cisTopic     INFO     Done!
+2026-07-29 20:53:00,537 cisTopic     INFO     Reading data for GSM7498771_AML13_REL
+2026-07-29 20:53:56,575 cisTopic     INFO     valid_bc provided, selecting barcodes!
+2026-07-29 20:54:00,671 cisTopic     INFO     Counting number of unique fragments (Unique_nr_frag)
+2026-07-29 20:54:15,035 cisTopic     INFO     Counting fragments in regions
+2026-07-29 20:54:48,937 cisTopic     INFO     Creating fragment matrix
+2026-07-29 20:55:56,718 cisTopic     INFO     Converting fragment matrix to sparse matrix
+2026-07-29 20:56:18,411 cisTopic     INFO     Creating CistopicObject
+2026-07-29 20:56:20,359 cisTopic     INFO     Done!
+2026-07-29 20:56:27,899 cisTopic     INFO     cisTopic object 1 merged
+2026-07-29 20:56:37,925 cisTopic     INFO     cisTopic object 2 merged
+2026-07-29 20:56:50,809 cisTopic     INFO     cisTopic object 3 merged
+2026-07-29 20:57:04,056 cisTopic     INFO     cisTopic object 4 merged
+2026-07-29 20:57:19,121 cisTopic     INFO     cisTopic object 5 merged
+2026-07-29 20:57:34,827 cisTopic     INFO     cisTopic object 6 merged
+2026-07-29 20:57:52,258 cisTopic     INFO     cisTopic object 7 merged
+2026-07-29 20:58:12,250 cisTopic     INFO     cisTopic object 8 merged
+2026-07-29 20:58:33,020 cisTopic     INFO     cisTopic object 9 merged
+2026-07-29 20:58:54,250 cisTopic     INFO     cisTopic object 10 merged
+2026-07-29 20:59:16,719 cisTopic     INFO     cisTopic object 11 merged
+2026-07-29 20:59:42,508 cisTopic     INFO     cisTopic object 12 merged
+2026-07-29 21:00:09,567 cisTopic     INFO     cisTopic object 13 merged
+2026-07-29 21:00:35,611 cisTopic     INFO     cisTopic object 14 merged
+2026-07-29 21:01:03,830 cisTopic     INFO     cisTopic object 15 merged
+2026-07-29 21:01:31,991 cisTopic     INFO     cisTopic object 16 merged
+2026-07-29 21:02:00,724 cisTopic     INFO     cisTopic object 17 merged
+2026-07-29 21:02:30,857 cisTopic     INFO     cisTopic object 18 merged
+2026-07-29 21:03:02,580 cisTopic     INFO     cisTopic object 19 merged
+2026-07-29 21:03:40,761 cisTopic     INFO     cisTopic object 20 merged
+[stage2] Relapse: cisTopic 77,612 cells x 587,940 regions | overlap 100.0%
+Columns ['barcode', 'sample_id'] will be overwritten
+[stage2] [Relapse/cistopic_object] 3400.5s
+[36m(run_cgs_model pid=364140)[0m 2026-07-29 21:04:43,408 cisTopic     INFO     Running model with 2 topics
+[36m(run_cgs_model pid=364140)[0m 2026-07-30 06:45:59,447 cisTopic     INFO     Model with 2 topics done!
+[36m(run_cgs_model pid=364140)[0m 2026-07-30 06:45:59,448 cisTopic     INFO     Saving model with 2 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[36m(run_cgs_model pid=364148)[0m 2026-07-29 21:04:43,412 cisTopic     INFO     Running model with 50 topics[32m [repeated 8x across cluster][0m
+[36m(run_cgs_model pid=364141)[0m 2026-07-30 12:11:28,848 cisTopic     INFO     Model with 5 topics done!
+[36m(run_cgs_model pid=364141)[0m 2026-07-30 12:11:28,848 cisTopic     INFO     Saving model with 5 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[36m(run_cgs_model pid=364143)[0m 2026-07-30 20:05:07,780 cisTopic     INFO     Model with 10 topics done!
+[36m(run_cgs_model pid=364143)[0m 2026-07-30 20:05:07,780 cisTopic     INFO     Saving model with 10 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[36m(run_cgs_model pid=364144)[0m 2026-07-31 03:38:52,636 cisTopic     INFO     Model with 15 topics done!
+[36m(run_cgs_model pid=364144)[0m 2026-07-31 03:38:52,636 cisTopic     INFO     Saving model with 15 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[36m(run_cgs_model pid=364145)[0m 2026-07-31 10:49:18,512 cisTopic     INFO     Model with 20 topics done!
+[36m(run_cgs_model pid=364145)[0m 2026-07-31 10:49:18,512 cisTopic     INFO     Saving model with 20 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[36m(run_cgs_model pid=364146)[0m 2026-07-31 14:55:28,934 cisTopic     INFO     Model with 25 topics done!
+[36m(run_cgs_model pid=364146)[0m 2026-07-31 14:55:28,935 cisTopic     INFO     Saving model with 25 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[36m(run_cgs_model pid=364142)[0m 2026-07-31 22:13:07,650 cisTopic     INFO     Model with 30 topics done!
+[36m(run_cgs_model pid=364142)[0m 2026-07-31 22:13:07,651 cisTopic     INFO     Saving model with 30 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[36m(run_cgs_model pid=364147)[0m 2026-08-01 10:34:18,016 cisTopic     INFO     Model with 40 topics done!
+[36m(run_cgs_model pid=364147)[0m 2026-08-01 10:34:18,017 cisTopic     INFO     Saving model with 40 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[36m(run_cgs_model pid=364148)[0m 2026-08-01 19:56:39,471 cisTopic     INFO     Model with 50 topics done!
+[36m(run_cgs_model pid=364148)[0m 2026-08-01 19:56:39,472 cisTopic     INFO     Saving model with 50 topics at /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/models_Relapse
+[stage2] [Relapse/topic_model] 255169.6s
+[stage2] === Relapse ATAC timings (s): {'pseudobulk': 0.0, 'peak_calling': 1086.7, 'consensus_peaks': 430.2, 'cistopic_object': 3400.5, 'topic_model': 255169.6} ===
+[stage2] Relapse: cisTopic object -> /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/cistopic_obj_Relapse.pkl
+>>>> [4/Relapse] region sets
+[stage2] Relapse: loading cisTarget DB region universe from hg38_screen_v10_clust.regions_vs_motifs.rankings.feather
+[stage2] Relapse: DB universe = 1,837,304 regions (1,837,304 on primary chroms)
+[stage2] Relapse: cisTopic 77612 cells x 587940 regions
+[stage2] Relapse: dense impute = 183 GB for all cells; budget 250 GB -> cap 106,303 cells
+2026-08-01 19:58:11,227 cisTopic     INFO     Imputing region accessibility
+2026-08-01 19:58:11,227 cisTopic     INFO     Impute region accessibility for regions 0-20000
+2026-08-01 19:58:24,010 cisTopic     INFO     Impute region accessibility for regions 20000-40000
+2026-08-01 19:58:36,624 cisTopic     INFO     Impute region accessibility for regions 40000-60000
+2026-08-01 19:58:49,240 cisTopic     INFO     Impute region accessibility for regions 60000-80000
+2026-08-01 19:59:01,865 cisTopic     INFO     Impute region accessibility for regions 80000-100000
+2026-08-01 19:59:14,517 cisTopic     INFO     Impute region accessibility for regions 100000-120000
+2026-08-01 19:59:27,216 cisTopic     INFO     Impute region accessibility for regions 120000-140000
+2026-08-01 19:59:39,819 cisTopic     INFO     Impute region accessibility for regions 140000-160000
+2026-08-01 19:59:52,393 cisTopic     INFO     Impute region accessibility for regions 160000-180000
+2026-08-01 20:00:05,046 cisTopic     INFO     Impute region accessibility for regions 180000-200000
+2026-08-01 20:00:17,651 cisTopic     INFO     Impute region accessibility for regions 200000-220000
+2026-08-01 20:00:30,217 cisTopic     INFO     Impute region accessibility for regions 220000-240000
+2026-08-01 20:00:42,815 cisTopic     INFO     Impute region accessibility for regions 240000-260000
+2026-08-01 20:00:55,390 cisTopic     INFO     Impute region accessibility for regions 260000-280000
+2026-08-01 20:01:08,016 cisTopic     INFO     Impute region accessibility for regions 280000-300000
+2026-08-01 20:01:20,690 cisTopic     INFO     Impute region accessibility for regions 300000-320000
+2026-08-01 20:01:33,294 cisTopic     INFO     Impute region accessibility for regions 320000-340000
+2026-08-01 20:01:45,918 cisTopic     INFO     Impute region accessibility for regions 340000-360000
+2026-08-01 20:01:58,508 cisTopic     INFO     Impute region accessibility for regions 360000-380000
+2026-08-01 20:02:11,123 cisTopic     INFO     Impute region accessibility for regions 380000-400000
+2026-08-01 20:02:23,721 cisTopic     INFO     Impute region accessibility for regions 400000-420000
+2026-08-01 20:02:36,323 cisTopic     INFO     Impute region accessibility for regions 420000-440000
+2026-08-01 20:02:48,914 cisTopic     INFO     Impute region accessibility for regions 440000-460000
+2026-08-01 20:03:01,509 cisTopic     INFO     Impute region accessibility for regions 460000-480000
+2026-08-01 20:03:14,115 cisTopic     INFO     Impute region accessibility for regions 480000-500000
+2026-08-01 20:03:26,713 cisTopic     INFO     Impute region accessibility for regions 500000-520000
+2026-08-01 20:03:39,315 cisTopic     INFO     Impute region accessibility for regions 520000-540000
+2026-08-01 20:03:51,905 cisTopic     INFO     Impute region accessibility for regions 540000-560000
+2026-08-01 20:04:04,495 cisTopic     INFO     Impute region accessibility for regions 560000-580000
+2026-08-01 20:04:17,080 cisTopic     INFO     Impute region accessibility for regions 580000-600000
+2026-08-01 20:04:22,085 cisTopic     INFO     Done!
+2026-08-01 20:07:12,774 cisTopic     INFO     Subsetting data for B.Cell (1287 of 77612)
+2026-08-01 20:07:37,090 cisTopic     INFO     Computing p-value for B.Cell
+2026-08-01 20:29:53,902 cisTopic     INFO     Computing log2FC for B.Cell
+2026-08-01 20:29:59,878 cisTopic     INFO     B.Cell done!
+2026-08-01 20:29:59,939 cisTopic     INFO     Subsetting data for CD16.Monocytes (945 of 77612)
+2026-08-01 20:30:19,678 cisTopic     INFO     Computing p-value for CD16.Monocytes
+2026-08-01 20:53:18,853 cisTopic     INFO     Computing log2FC for CD16.Monocytes
+2026-08-01 20:53:23,460 cisTopic     INFO     CD16.Monocytes done!
+2026-08-01 20:53:24,119 cisTopic     INFO     Subsetting data for CD4.Memory (273 of 77612)
+2026-08-01 20:53:40,741 cisTopic     INFO     Computing p-value for CD4.Memory
+2026-08-01 21:15:59,066 cisTopic     INFO     Computing log2FC for CD4.Memory
+2026-08-01 21:16:04,079 cisTopic     INFO     CD4.Memory done!
+2026-08-01 21:16:04,730 cisTopic     INFO     Subsetting data for CD4.Naive (319 of 77612)
+2026-08-01 21:16:21,237 cisTopic     INFO     Computing p-value for CD4.Naive
+2026-08-01 21:38:14,828 cisTopic     INFO     Computing log2FC for CD4.Naive
+2026-08-01 21:38:20,672 cisTopic     INFO     CD4.Naive done!
+2026-08-01 21:38:21,519 cisTopic     INFO     Subsetting data for CD8.Effector (29 of 77612)
+2026-08-01 21:38:37,955 cisTopic     INFO     Computing p-value for CD8.Effector
+2026-08-01 22:00:35,104 cisTopic     INFO     Computing log2FC for CD8.Effector
+2026-08-01 22:00:40,273 cisTopic     INFO     CD8.Effector done!
+2026-08-01 22:00:41,133 cisTopic     INFO     Subsetting data for CD8.Memory (215 of 77612)
+2026-08-01 22:00:56,895 cisTopic     INFO     Computing p-value for CD8.Memory
+2026-08-01 22:22:50,082 cisTopic     INFO     Computing log2FC for CD8.Memory
+2026-08-01 22:22:55,257 cisTopic     INFO     CD8.Memory done!
+2026-08-01 22:22:56,121 cisTopic     INFO     Subsetting data for CD8.Naive (32 of 77612)
+2026-08-01 22:23:11,476 cisTopic     INFO     Computing p-value for CD8.Naive
+2026-08-01 22:45:31,727 cisTopic     INFO     Computing log2FC for CD8.Naive
+2026-08-01 22:45:36,884 cisTopic     INFO     CD8.Naive done!
+2026-08-01 22:45:37,735 cisTopic     INFO     Subsetting data for CLP (4816 of 77612)
+2026-08-01 22:45:55,789 cisTopic     INFO     Computing p-value for CLP
+2026-08-01 23:08:09,405 cisTopic     INFO     Computing log2FC for CLP
+2026-08-01 23:08:13,600 cisTopic     INFO     CLP done!
+2026-08-01 23:08:14,467 cisTopic     INFO     Subsetting data for Early.Basophil (2776 of 77612)
+2026-08-01 23:08:32,239 cisTopic     INFO     Computing p-value for Early.Basophil
+2026-08-01 23:30:22,389 cisTopic     INFO     Computing log2FC for Early.Basophil
+2026-08-01 23:30:27,575 cisTopic     INFO     Early.Basophil done!
+2026-08-01 23:30:28,436 cisTopic     INFO     Subsetting data for Early.Erythrocyte (5209 of 77612)
+2026-08-01 23:30:47,108 cisTopic     INFO     Computing p-value for Early.Erythrocyte
+2026-08-01 23:52:39,656 cisTopic     INFO     Computing log2FC for Early.Erythrocyte
+2026-08-01 23:52:44,491 cisTopic     INFO     Early.Erythrocyte done!
+2026-08-01 23:52:45,362 cisTopic     INFO     Subsetting data for GMP (9860 of 77612)
+2026-08-01 23:53:06,180 cisTopic     INFO     Computing p-value for GMP
+2026-08-02 00:15:27,729 cisTopic     INFO     Computing log2FC for GMP
+2026-08-02 00:15:32,769 cisTopic     INFO     GMP done!
+2026-08-02 00:15:33,633 cisTopic     INFO     Subsetting data for HSC (19879 of 77612)
+2026-08-02 00:15:55,025 cisTopic     INFO     Computing p-value for HSC
+2026-08-02 00:37:49,354 cisTopic     INFO     Computing log2FC for HSC
+2026-08-02 00:37:54,334 cisTopic     INFO     HSC done!
+2026-08-02 00:37:55,207 cisTopic     INFO     Subsetting data for Late.Erythrocyte (1047 of 77612)
+2026-08-02 00:38:13,321 cisTopic     INFO     Computing p-value for Late.Erythrocyte
+2026-08-02 01:00:03,785 cisTopic     INFO     Computing log2FC for Late.Erythrocyte
+2026-08-02 01:00:08,874 cisTopic     INFO     Late.Erythrocyte done!
+2026-08-02 01:00:09,715 cisTopic     INFO     Subsetting data for Monocytes (6199 of 77612)
+2026-08-02 01:00:28,850 cisTopic     INFO     Computing p-value for Monocytes
+2026-08-02 01:22:20,735 cisTopic     INFO     Computing log2FC for Monocytes
+2026-08-02 01:22:25,901 cisTopic     INFO     Monocytes done!
+2026-08-02 01:22:26,762 cisTopic     INFO     Subsetting data for NK (217 of 77612)
+2026-08-02 01:22:42,759 cisTopic     INFO     Computing p-value for NK
+2026-08-02 01:44:37,081 cisTopic     INFO     Computing log2FC for NK
+2026-08-02 01:44:41,754 cisTopic     INFO     NK done!
+2026-08-02 01:44:42,598 cisTopic     INFO     Subsetting data for Plasma (19 of 77612)
+2026-08-02 01:44:58,482 cisTopic     INFO     Computing p-value for Plasma
+2026-08-02 02:06:52,069 cisTopic     INFO     Computing log2FC for Plasma
+2026-08-02 02:06:57,632 cisTopic     INFO     Plasma done!
+2026-08-02 02:06:58,493 cisTopic     INFO     Subsetting data for Pre.B.Cell (825 of 77612)
+2026-08-02 02:07:14,544 cisTopic     INFO     Computing p-value for Pre.B.Cell
+2026-08-02 02:29:18,239 cisTopic     INFO     Computing log2FC for Pre.B.Cell
+2026-08-02 02:29:23,870 cisTopic     INFO     Pre.B.Cell done!
+2026-08-02 02:29:24,710 cisTopic     INFO     Subsetting data for Progenitor (21522 of 77612)
+2026-08-02 02:29:46,492 cisTopic     INFO     Computing p-value for Progenitor
+2026-08-02 02:51:39,960 cisTopic     INFO     Computing log2FC for Progenitor
+2026-08-02 02:51:45,128 cisTopic     INFO     Progenitor done!
+2026-08-02 02:51:45,979 cisTopic     INFO     Subsetting data for cDC (940 of 77612)
+2026-08-02 02:52:03,775 cisTopic     INFO     Computing p-value for cDC
+2026-08-02 03:13:58,591 cisTopic     INFO     Computing log2FC for cDC
+2026-08-02 03:14:03,955 cisTopic     INFO     cDC done!
+2026-08-02 03:14:04,822 cisTopic     INFO     Subsetting data for pDC (1203 of 77612)
+2026-08-02 03:14:21,882 cisTopic     INFO     Computing p-value for pDC
+2026-08-02 03:36:11,299 cisTopic     INFO     Computing log2FC for pDC
+2026-08-02 03:36:16,474 cisTopic     INFO     pDC done!
+[stage2] Relapse: cached DAR/topic computation -> region_raw_Relapse.pkl
+[stage2] Relapse: wrote 49 topic region sets (1 dropped: <20 DB-overlapping regions)
+[stage2] Relapse: wrote 20 DAR region sets (0 dropped) -> /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/region_sets_Relapse
+>>>> [5/Relapse/link] GRN half
+===== [Relapse_link] motif_enrichment_cistarget (DB) =====
+2026-08-02 03:37:38,058 SCENIC+      INFO     Reading region sets from: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/region_sets_Relapse
+2026-08-02 03:37:38,061 SCENIC+      INFO     Reading all .bed files in: DARs
+2026-08-02 03:37:38,607 SCENIC+      INFO     Reading all .bed files in: Topics_otsu
+2026-08-02 03:37:39,042 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:38:50,426 cisTarget    INFO     Running cisTarget for DARs_CD8.Naive which has 55266 regions
+2026-08-02 03:39:25,896 cisTarget    INFO     Annotating motifs for DARs_CD8.Naive
+2026-08-02 03:39:29,690 cisTarget    INFO     Getting cistromes for DARs_CD8.Naive
+2026-08-02 03:39:31,819 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:40:29,866 cisTarget    INFO     Running cisTarget for DARs_CD4.Memory which has 58957 regions
+2026-08-02 03:41:00,772 cisTarget    INFO     Annotating motifs for DARs_CD4.Memory
+2026-08-02 03:41:03,941 cisTarget    INFO     Getting cistromes for DARs_CD4.Memory
+2026-08-02 03:41:05,330 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:42:00,841 cisTarget    INFO     Running cisTarget for DARs_CD4.Naive which has 55763 regions
+2026-08-02 03:42:27,850 cisTarget    INFO     Annotating motifs for DARs_CD4.Naive
+2026-08-02 03:42:31,308 cisTarget    INFO     Getting cistromes for DARs_CD4.Naive
+2026-08-02 03:42:32,917 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:43:32,245 cisTarget    INFO     Running cisTarget for DARs_CD8.Effector which has 42150 regions
+2026-08-02 03:43:55,544 cisTarget    INFO     Annotating motifs for DARs_CD8.Effector
+2026-08-02 03:43:59,039 cisTarget    INFO     Getting cistromes for DARs_CD8.Effector
+2026-08-02 03:44:00,703 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:44:58,026 cisTarget    INFO     Running cisTarget for DARs_Late.Erythrocyte which has 28783 regions
+2026-08-02 03:45:21,033 cisTarget    INFO     Annotating motifs for DARs_Late.Erythrocyte
+2026-08-02 03:45:24,379 cisTarget    INFO     Getting cistromes for DARs_Late.Erythrocyte
+2026-08-02 03:45:25,369 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:46:25,486 cisTarget    INFO     Running cisTarget for DARs_Pre.B.Cell which has 72302 regions
+2026-08-02 03:46:54,496 cisTarget    INFO     Annotating motifs for DARs_Pre.B.Cell
+2026-08-02 03:46:58,053 cisTarget    INFO     Getting cistromes for DARs_Pre.B.Cell
+2026-08-02 03:46:59,176 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:48:01,756 cisTarget    INFO     Running cisTarget for DARs_Early.Basophil which has 89265 regions
+2026-08-02 03:48:45,918 cisTarget    INFO     Annotating motifs for DARs_Early.Basophil
+2026-08-02 03:48:52,628 cisTarget    INFO     Getting cistromes for DARs_Early.Basophil
+2026-08-02 03:48:55,040 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:50:04,380 cisTarget    INFO     Running cisTarget for DARs_CD16.Monocytes which has 85423 regions
+2026-08-02 03:50:46,330 cisTarget    INFO     Annotating motifs for DARs_CD16.Monocytes
+2026-08-02 03:50:53,455 cisTarget    INFO     Getting cistromes for DARs_CD16.Monocytes
+2026-08-02 03:51:01,426 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:52:08,855 cisTarget    INFO     Running cisTarget for DARs_CLP which has 66463 regions
+2026-08-02 03:52:45,070 cisTarget    INFO     Annotating motifs for DARs_CLP
+2026-08-02 03:52:49,994 cisTarget    INFO     Getting cistromes for DARs_CLP
+2026-08-02 03:52:52,212 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:53:57,150 cisTarget    INFO     Running cisTarget for DARs_GMP which has 71904 regions
+2026-08-02 03:54:30,534 cisTarget    INFO     Annotating motifs for DARs_GMP
+2026-08-02 03:54:34,583 cisTarget    INFO     Getting cistromes for DARs_GMP
+2026-08-02 03:54:36,165 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:55:42,348 cisTarget    INFO     Running cisTarget for DARs_HSC which has 38961 regions
+2026-08-02 03:56:04,615 cisTarget    INFO     Annotating motifs for DARs_HSC
+2026-08-02 03:56:07,043 cisTarget    INFO     Getting cistromes for DARs_HSC
+2026-08-02 03:56:07,374 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:57:16,075 cisTarget    INFO     Running cisTarget for DARs_NK which has 73111 regions
+2026-08-02 03:57:48,497 cisTarget    INFO     Annotating motifs for DARs_NK
+2026-08-02 03:57:51,755 cisTarget    INFO     Getting cistromes for DARs_NK
+2026-08-02 03:57:52,709 cisTarget    INFO     Reading cisTarget database
+2026-08-02 03:59:03,690 cisTarget    INFO     Running cisTarget for DARs_CD8.Memory which has 64746 regions
+2026-08-02 03:59:32,481 cisTarget    INFO     Annotating motifs for DARs_CD8.Memory
+2026-08-02 03:59:36,397 cisTarget    INFO     Getting cistromes for DARs_CD8.Memory
+2026-08-02 03:59:38,675 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:00:46,639 cisTarget    INFO     Running cisTarget for DARs_Progenitor which has 51191 regions
+2026-08-02 04:01:14,579 cisTarget    INFO     Annotating motifs for DARs_Progenitor
+2026-08-02 04:01:17,949 cisTarget    INFO     Getting cistromes for DARs_Progenitor
+2026-08-02 04:01:19,954 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:02:28,999 cisTarget    INFO     Running cisTarget for DARs_Early.Erythrocyte which has 56761 regions
+2026-08-02 04:02:58,119 cisTarget    INFO     Annotating motifs for DARs_Early.Erythrocyte
+2026-08-02 04:03:02,291 cisTarget    INFO     Getting cistromes for DARs_Early.Erythrocyte
+2026-08-02 04:03:03,909 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:04:18,107 cisTarget    INFO     Running cisTarget for DARs_cDC which has 96330 regions
+2026-08-02 04:05:06,824 cisTarget    INFO     Annotating motifs for DARs_cDC
+2026-08-02 04:05:15,292 cisTarget    INFO     Getting cistromes for DARs_cDC
+2026-08-02 04:05:26,635 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:06:41,667 cisTarget    INFO     Running cisTarget for DARs_B.Cell which has 65645 regions
+2026-08-02 04:07:19,523 cisTarget    INFO     Annotating motifs for DARs_B.Cell
+2026-08-02 04:07:23,715 cisTarget    INFO     Getting cistromes for DARs_B.Cell
+2026-08-02 04:07:26,185 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:08:39,188 cisTarget    INFO     Running cisTarget for DARs_Plasma which has 46725 regions
+2026-08-02 04:09:04,110 cisTarget    INFO     Annotating motifs for DARs_Plasma
+2026-08-02 04:09:07,220 cisTarget    INFO     Getting cistromes for DARs_Plasma
+2026-08-02 04:09:08,571 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:10:24,415 cisTarget    INFO     Running cisTarget for DARs_Monocytes which has 100882 regions
+2026-08-02 04:11:09,476 cisTarget    INFO     Annotating motifs for DARs_Monocytes
+2026-08-02 04:11:16,588 cisTarget    INFO     Getting cistromes for DARs_Monocytes
+2026-08-02 04:11:21,656 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:13:01,587 cisTarget    INFO     Running cisTarget for DARs_pDC which has 160672 regions
+2026-08-02 04:14:16,079 cisTarget    INFO     Annotating motifs for DARs_pDC
+2026-08-02 04:14:22,817 cisTarget    INFO     Getting cistromes for DARs_pDC
+2026-08-02 04:14:25,196 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:15:37,515 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic40 which has 16110 regions
+2026-08-02 04:15:55,411 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic40
+2026-08-02 04:15:57,926 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic40
+2026-08-02 04:15:58,639 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:17:09,636 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic5 which has 22117 regions
+2026-08-02 04:17:28,490 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic5
+2026-08-02 04:17:30,624 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic5
+2026-08-02 04:17:31,396 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:18:33,107 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic14 which has 20421 regions
+2026-08-02 04:18:52,059 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic14
+2026-08-02 04:18:54,755 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic14
+2026-08-02 04:18:55,780 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:20:12,261 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic30 which has 8719 regions
+2026-08-02 04:20:28,928 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic30
+2026-08-02 04:20:31,299 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic30
+2026-08-02 04:20:31,686 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:21:36,078 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic27 which has 16638 regions
+2026-08-02 04:21:54,355 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic27
+2026-08-02 04:21:57,573 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic27
+2026-08-02 04:21:59,218 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:23:20,243 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic35 which has 21150 regions
+2026-08-02 04:23:48,816 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic35
+2026-08-02 04:23:52,434 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic35
+2026-08-02 04:23:54,284 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:25:21,240 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic6 which has 51726 regions
+2026-08-02 04:25:46,919 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic6
+2026-08-02 04:25:49,641 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic6
+2026-08-02 04:25:49,949 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:27:03,100 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic34 which has 14654 regions
+2026-08-02 04:27:20,166 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic34
+2026-08-02 04:27:23,347 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic34
+2026-08-02 04:27:24,496 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:28:31,696 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic36 which has 23118 regions
+2026-08-02 04:28:50,270 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic36
+2026-08-02 04:28:53,188 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic36
+2026-08-02 04:28:54,195 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:30:20,529 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic46 which has 14394 regions
+2026-08-02 04:30:39,512 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic46
+2026-08-02 04:30:42,351 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic46
+2026-08-02 04:30:43,459 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:31:52,167 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic28 which has 16396 regions
+2026-08-02 04:32:13,080 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic28
+2026-08-02 04:32:16,230 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic28
+2026-08-02 04:32:17,569 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:33:22,546 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic37 which has 22921 regions
+2026-08-02 04:33:48,500 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic37
+2026-08-02 04:33:51,987 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic37
+2026-08-02 04:33:53,360 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:35:08,172 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic2 which has 7226 regions
+2026-08-02 04:35:22,161 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic2
+2026-08-02 04:35:24,430 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic2
+2026-08-02 04:35:25,006 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:36:43,517 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic3 which has 10816 regions
+2026-08-02 04:36:58,487 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic3
+2026-08-02 04:37:00,789 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic3
+2026-08-02 04:37:01,491 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:38:29,543 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic15 which has 7570 regions
+2026-08-02 04:38:50,839 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic15
+2026-08-02 04:38:53,619 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic15
+2026-08-02 04:38:54,404 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:40:01,146 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic32 which has 15599 regions
+2026-08-02 04:40:25,472 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic32
+2026-08-02 04:40:28,420 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic32
+2026-08-02 04:40:29,252 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:41:33,250 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic42 which has 12601 regions
+2026-08-02 04:41:51,524 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic42
+2026-08-02 04:41:54,216 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic42
+2026-08-02 04:41:56,158 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:43:03,179 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic21 which has 11377 regions
+2026-08-02 04:43:20,829 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic21
+2026-08-02 04:43:23,405 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic21
+2026-08-02 04:43:24,502 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:44:27,574 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic39 which has 12826 regions
+2026-08-02 04:44:43,836 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic39
+2026-08-02 04:44:46,736 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic39
+2026-08-02 04:44:47,594 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:46:08,959 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic23 which has 13976 regions
+2026-08-02 04:46:25,339 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic23
+2026-08-02 04:46:27,930 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic23
+2026-08-02 04:46:29,095 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:47:32,524 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic41 which has 42188 regions
+2026-08-02 04:47:58,698 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic41
+2026-08-02 04:48:02,368 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic41
+2026-08-02 04:48:03,989 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:49:20,033 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic7 which has 13020 regions
+2026-08-02 04:49:34,086 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic7
+2026-08-02 04:49:36,155 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic7
+2026-08-02 04:49:36,795 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:51:09,275 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic48 which has 21111 regions
+2026-08-02 04:51:28,592 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic48
+2026-08-02 04:51:31,932 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic48
+2026-08-02 04:51:34,945 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:52:56,202 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic17 which has 21399 regions
+2026-08-02 04:53:16,654 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic17
+2026-08-02 04:53:20,219 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic17
+2026-08-02 04:53:21,085 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:54:27,192 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic44 which has 7316 regions
+2026-08-02 04:54:44,419 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic44
+2026-08-02 04:54:47,096 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic44
+2026-08-02 04:54:47,925 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:55:56,787 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic18 which has 24166 regions
+2026-08-02 04:56:29,902 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic18
+2026-08-02 04:56:33,093 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic18
+2026-08-02 04:56:34,295 cisTarget    INFO     Reading cisTarget database
+2026-08-02 04:57:44,740 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic1 which has 13333 regions
+2026-08-02 04:58:05,703 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic1
+2026-08-02 04:58:08,239 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic1
+2026-08-02 04:58:09,256 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:00:02,461 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic33 which has 20387 regions
+2026-08-02 05:00:21,634 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic33
+2026-08-02 05:00:25,906 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic33
+2026-08-02 05:00:27,424 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:01:30,105 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic4 which has 5133 regions
+2026-08-02 05:01:49,275 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic4
+2026-08-02 05:01:51,582 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic4
+2026-08-02 05:01:52,504 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:03:09,546 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic13 which has 14450 regions
+2026-08-02 05:03:29,026 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic13
+2026-08-02 05:03:31,989 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic13
+2026-08-02 05:03:33,273 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:04:42,795 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic12 which has 13780 regions
+2026-08-02 05:05:01,287 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic12
+2026-08-02 05:05:04,460 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic12
+2026-08-02 05:05:05,173 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:06:24,032 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic19 which has 17434 regions
+2026-08-02 05:07:00,684 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic19
+2026-08-02 05:07:03,518 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic19
+2026-08-02 05:07:04,741 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:08:08,571 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic8 which has 4887 regions
+2026-08-02 05:08:21,558 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic8
+2026-08-02 05:08:23,525 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic8
+2026-08-02 05:08:24,096 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:09:28,079 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic49 which has 24855 regions
+2026-08-02 05:09:46,998 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic49
+2026-08-02 05:09:49,997 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic49
+2026-08-02 05:09:51,214 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:10:57,784 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic26 which has 14110 regions
+2026-08-02 05:11:13,177 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic26
+2026-08-02 05:11:15,612 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic26
+2026-08-02 05:11:16,606 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:12:22,132 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic29 which has 20839 regions
+2026-08-02 05:12:42,140 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic29
+2026-08-02 05:12:45,401 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic29
+2026-08-02 05:12:46,624 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:14:37,952 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic24 which has 48105 regions
+2026-08-02 05:15:01,729 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic24
+2026-08-02 05:15:04,588 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic24
+2026-08-02 05:15:05,184 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:16:11,710 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic31 which has 17283 regions
+2026-08-02 05:16:29,009 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic31
+2026-08-02 05:16:31,402 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic31
+2026-08-02 05:16:32,344 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:18:06,844 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic38 which has 20100 regions
+2026-08-02 05:18:27,480 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic38
+2026-08-02 05:18:31,343 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic38
+2026-08-02 05:18:32,524 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:19:41,940 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic20 which has 18419 regions
+2026-08-02 05:19:58,496 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic20
+2026-08-02 05:20:00,973 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic20
+2026-08-02 05:20:01,967 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:21:09,294 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic45 which has 16720 regions
+2026-08-02 05:21:29,923 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic45
+2026-08-02 05:21:32,926 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic45
+2026-08-02 05:21:34,923 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:22:41,957 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic50 which has 21198 regions
+2026-08-02 05:23:02,443 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic50
+2026-08-02 05:23:06,246 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic50
+2026-08-02 05:23:07,297 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:24:35,968 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic16 which has 12916 regions
+2026-08-02 05:24:54,281 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic16
+2026-08-02 05:24:57,336 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic16
+2026-08-02 05:24:59,266 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:26:08,368 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic43 which has 13936 regions
+2026-08-02 05:26:24,192 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic43
+2026-08-02 05:26:27,058 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic43
+2026-08-02 05:26:28,226 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:27:36,314 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic22 which has 27619 regions
+2026-08-02 05:27:54,392 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic22
+2026-08-02 05:27:57,051 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic22
+2026-08-02 05:27:57,768 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:29:01,973 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic47 which has 20213 regions
+2026-08-02 05:29:20,030 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic47
+2026-08-02 05:29:23,047 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic47
+2026-08-02 05:29:24,247 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:30:56,767 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic25 which has 21265 regions
+2026-08-02 05:31:15,000 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic25
+2026-08-02 05:31:18,223 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic25
+2026-08-02 05:31:19,856 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:32:26,609 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic10 which has 15078 regions
+2026-08-02 05:32:42,175 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic10
+2026-08-02 05:32:44,974 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic10
+2026-08-02 05:32:46,047 cisTarget    INFO     Reading cisTarget database
+2026-08-02 05:33:50,758 cisTarget    INFO     Running cisTarget for Topics_otsu_Topic11 which has 20211 regions
+2026-08-02 05:34:08,700 cisTarget    INFO     Annotating motifs for Topics_otsu_Topic11
+2026-08-02 05:34:12,017 cisTarget    INFO     Getting cistromes for Topics_otsu_Topic11
+2026-08-02 05:34:14,329 SCENIC+      INFO     Writing output to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/menr_cistarget_Relapse.part.hdf5
+===== [Relapse_link] prepare_GEX_ACC (link) =====
+2026-08-02 05:41:14,259 SCENIC+      INFO     Reading cisTopic object.
+2026-08-02 05:41:28,806 SCENIC+      INFO     Reading gene expression AnnData.
+2026-08-02 05:41:32,228 Ingesting multiome data INFO     Found 64251 multiome cells.
+2026-08-02 05:41:32,835 cisTopic     INFO     Imputing region accessibility
+2026-08-02 05:41:32,835 cisTopic     INFO     Impute region accessibility for regions 0-20000
+2026-08-02 05:41:43,378 cisTopic     INFO     Impute region accessibility for regions 20000-40000
+2026-08-02 05:41:53,816 cisTopic     INFO     Impute region accessibility for regions 40000-60000
+2026-08-02 05:42:04,251 cisTopic     INFO     Impute region accessibility for regions 60000-80000
+2026-08-02 05:42:14,707 cisTopic     INFO     Impute region accessibility for regions 80000-100000
+2026-08-02 05:42:25,161 cisTopic     INFO     Impute region accessibility for regions 100000-120000
+2026-08-02 05:42:35,616 cisTopic     INFO     Impute region accessibility for regions 120000-140000
+2026-08-02 05:42:46,063 cisTopic     INFO     Impute region accessibility for regions 140000-160000
+2026-08-02 05:42:56,474 cisTopic     INFO     Impute region accessibility for regions 160000-180000
+2026-08-02 05:43:06,929 cisTopic     INFO     Impute region accessibility for regions 180000-200000
+2026-08-02 05:43:17,454 cisTopic     INFO     Impute region accessibility for regions 200000-220000
+2026-08-02 05:43:29,798 cisTopic     INFO     Impute region accessibility for regions 220000-240000
+2026-08-02 05:43:40,455 cisTopic     INFO     Impute region accessibility for regions 240000-260000
+2026-08-02 05:43:50,995 cisTopic     INFO     Impute region accessibility for regions 260000-280000
+2026-08-02 05:44:01,529 cisTopic     INFO     Impute region accessibility for regions 280000-300000
+2026-08-02 05:44:12,070 cisTopic     INFO     Impute region accessibility for regions 300000-320000
+2026-08-02 05:44:22,597 cisTopic     INFO     Impute region accessibility for regions 320000-340000
+2026-08-02 05:44:33,134 cisTopic     INFO     Impute region accessibility for regions 340000-360000
+2026-08-02 05:44:43,653 cisTopic     INFO     Impute region accessibility for regions 360000-380000
+2026-08-02 05:44:54,190 cisTopic     INFO     Impute region accessibility for regions 380000-400000
+2026-08-02 05:45:05,366 cisTopic     INFO     Impute region accessibility for regions 400000-420000
+2026-08-02 05:45:16,021 cisTopic     INFO     Impute region accessibility for regions 420000-440000
+2026-08-02 05:45:26,532 cisTopic     INFO     Impute region accessibility for regions 440000-460000
+2026-08-02 05:45:37,069 cisTopic     INFO     Impute region accessibility for regions 460000-480000
+2026-08-02 05:45:47,567 cisTopic     INFO     Impute region accessibility for regions 480000-500000
+2026-08-02 05:45:58,109 cisTopic     INFO     Impute region accessibility for regions 500000-520000
+2026-08-02 05:46:08,633 cisTopic     INFO     Impute region accessibility for regions 520000-540000
+2026-08-02 05:46:19,169 cisTopic     INFO     Impute region accessibility for regions 540000-560000
+2026-08-02 05:46:29,681 cisTopic     INFO     Impute region accessibility for regions 560000-580000
+2026-08-02 05:46:40,209 cisTopic     INFO     Impute region accessibility for regions 580000-600000
+2026-08-02 05:46:44,332 cisTopic     INFO     Done!
+===== [Relapse_link] search_spance =====
+2026-08-02 05:59:05,156 SCENIC+      INFO     Reading data
+2026-08-02 06:01:15,784 Get search space INFO     Extending promoter annotation to 10 bp upstream and 10 downstream
+Warning! Start and End columns now have different dtypes: int32 and int64
+Warning! Start and End columns now have different dtypes: int32 and int64
+2026-08-02 06:01:16,035 Get search space INFO     Extending search space to:
+            						150000 bp downstream of the end of the gene.
+            						150000 bp upstream of the start of the gene.
+Warning! Start and End columns now have different dtypes: int32 and int64
+Warning! Start and End columns now have different dtypes: int32 and int64
+2026-08-02 06:01:16,806 Get search space INFO     Intersecting with regions.
+Warning! Start and End columns now have different dtypes: int32 and int64
+2026-08-02 06:01:20,582 Get search space INFO     Calculating distances from region to gene
+2026-08-02 06:03:50,696 Get search space INFO     Imploding multiple entries per region and gene
+2026-08-02 06:08:42,385 SCENIC+      INFO     Writing search space to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/search_space_Relapse_link.part.tsv
+===== [Relapse_link] prepare_menr (reuse /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/menr_cistarget_Relapse.hdf5, re-filter TFs to this GEX) =====
+2026-08-02 06:09:07,278 SCENIC+      INFO     Reading multiome MuData.
+2026-08-02 06:11:15,276 SCENIC+      INFO     Getting cistromes.
+2026-08-02 06:15:57,655 SCENIC+      INFO     Found 715 TFs.
+2026-08-02 06:15:57,655 SCENIC+      INFO     Saving TF names to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/tf_names_Relapse_link.part.txt
+2026-08-02 06:15:57,658 SCENIC+      INFO     Writing direct cistromes to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/cistromes_direct_Relapse_link.part.h5ad
+2026-08-02 06:15:58,228 SCENIC+      INFO     Writing extended cistromes to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/cistromes_extended_Relapse_link.part.h5ad
+===== [Relapse_link] region_to_gene =====
+2026-08-02 06:16:19,424 SCENIC+      INFO     Reading multiome MuData.
+2026-08-02 06:18:28,709 SCENIC+      INFO     Reading search space
+2026-08-02 06:18:31,727 R2G          INFO     Calculating region to gene importances, using GBM method
+2026-08-02 11:09:54,731 R2G          INFO     Calculating region to gene correlation, using SR method
+2026-08-02 11:58:38,087 R2G          INFO     Done!
+2026-08-02 11:58:38,440 SCENIC+      INFO     Saving region to gene adjacencies to /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/r2g_Relapse_link.part.tsv
+===== [Relapse_link] TF_to_gene  (the gate — heaviest for Option A on individual cells) =====
+2026-08-02 12:00:02,791 SCENIC+      INFO     Reading multiome MuData.
+2026-08-02 12:02:12,003 SCENIC+      INFO     Using 716 TFs.
+2026-08-02 12:02:14,442 TF2G         INFO     Calculating TF-to-gene importance
+2026-08-02 16:24:37,938 TF2G         INFO     Adding correlation coefficients to adjacencies.
+2026-08-02 16:29:27,572 TF2G         INFO     Warning: adding TFs as their own target to adjecencies matrix. Importance values will be max + 1e-05
+2026-08-02 16:29:39,848 SCENIC+      INFO     Saving TF to gene adjacencies to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/tf2g_Relapse_link.part.tsv
+===== [Relapse_link] eGRN =====
+2026-08-02 16:30:40,972 SCENIC+      INFO     Loading TF to gene adjacencies.
+2026-08-02 16:30:42,585 SCENIC+      INFO     Loading region to gene adjacencies.
+2026-08-02 16:30:45,841 SCENIC+      INFO     Loading cistromes.
+2026-08-02 16:30:46,376 GSEA         INFO     Thresholding region to gene relationships
+2026-08-02 16:37:01,073 GSEA         INFO     Subsetting TF2G adjacencies for TF with motif.
+2026-08-02 16:37:01,276 GSEA         INFO     Running GSEA...
+2026-08-02 16:37:01,276 GSEA         INFO     Generating rankings...
+2026-08-02 17:01:21,279 GSEA         INFO     Subsetting on adjusted pvalue: 1, minimal NES: 0 and minimal leading edge genes 10
+2026-08-02 17:01:23,263 GSEA         INFO     Merging eRegulons
+2026-08-02 17:01:28,290 SCENIC+      INFO     Formatting eGRN as table.
+2026-08-02 17:01:30,438 SCENIC+      INFO     Calculating triplet ranking.
+2026-08-02 17:01:31,077 cisTarget    INFO     Reading cisTarget database
+2026-08-02 17:03:17,075 SCENIC+      INFO     Saving network to /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/eRegulons_Relapse_link.part.tsv
+===== [Relapse_link] AUCell =====
+2026-08-02 17:04:11,873 SCENIC+      INFO     Reading data.
+2026-08-02 17:06:22,734 SCENIC+      INFO     Calculating enrichment scores.
+2026-08-02 18:50:47,033 SCENIC+      INFO     Writing file to /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/eRegulon_AUC_Relapse_link.part.h5mu
+=== [Relapse_link] GRN COMPLETE ===
+276088 /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/eRegulons_Relapse_link.tsv
+>>>> [5/Relapse/pseudomultiome] GRN half
+[stage2] Relapse: DROP 'CD8.Effector' — RNA=3, ATAC=29 (floor 25: too thin for 5-cell metacells)
+[stage2] Relapse: DROP 'CD8.Memory' — RNA=9, ATAC=215 (floor 25: too thin for 5-cell metacells)
+[stage2] Relapse: DROP 'CD8.Naive' — RNA=1, ATAC=32 (floor 25: too thin for 5-cell metacells)
+[stage2] Relapse: DROP 'NK' — RNA=14, ATAC=217 (floor 25: too thin for 5-cell metacells)
+[stage2] Relapse: DROP 'Plasma' — RNA=12, ATAC=19 (floor 25: too thin for 5-cell metacells)
+[stage2] Relapse: DROP 'Unknown' — RNA=154, ATAC=2 (floor 25: too thin for 5-cell metacells)
+[stage2] Relapse: metacell GEX 84,360 cells x 24,326 genes | kept 15 cell types, dropped 6 -> native_rna_Relapse.metacell.h5ad
+===== [Relapse_pseudomultiome] prepare_GEX_ACC (pseudomultiome) =====
+2026-08-02 18:51:57,872 SCENIC+      INFO     Reading cisTopic object.
+2026-08-02 18:52:12,155 SCENIC+      INFO     Reading gene expression AnnData.
+2026-08-02 18:52:16,868 cisTopic     INFO     Imputing region accessibility
+2026-08-02 18:52:16,868 cisTopic     INFO     Impute region accessibility for regions 0-20000
+2026-08-02 18:52:29,476 cisTopic     INFO     Impute region accessibility for regions 20000-40000
+2026-08-02 18:52:44,647 cisTopic     INFO     Impute region accessibility for regions 40000-60000
+2026-08-02 18:53:00,630 cisTopic     INFO     Impute region accessibility for regions 60000-80000
+2026-08-02 18:53:13,244 cisTopic     INFO     Impute region accessibility for regions 80000-100000
+2026-08-02 18:53:25,866 cisTopic     INFO     Impute region accessibility for regions 100000-120000
+2026-08-02 18:53:38,477 cisTopic     INFO     Impute region accessibility for regions 120000-140000
+2026-08-02 18:53:51,083 cisTopic     INFO     Impute region accessibility for regions 140000-160000
+2026-08-02 18:54:03,694 cisTopic     INFO     Impute region accessibility for regions 160000-180000
+2026-08-02 18:54:16,303 cisTopic     INFO     Impute region accessibility for regions 180000-200000
+2026-08-02 18:54:28,903 cisTopic     INFO     Impute region accessibility for regions 200000-220000
+2026-08-02 18:54:41,513 cisTopic     INFO     Impute region accessibility for regions 220000-240000
+2026-08-02 18:54:54,135 cisTopic     INFO     Impute region accessibility for regions 240000-260000
+2026-08-02 18:55:06,736 cisTopic     INFO     Impute region accessibility for regions 260000-280000
+2026-08-02 18:55:19,363 cisTopic     INFO     Impute region accessibility for regions 280000-300000
+2026-08-02 18:55:31,972 cisTopic     INFO     Impute region accessibility for regions 300000-320000
+2026-08-02 18:55:44,582 cisTopic     INFO     Impute region accessibility for regions 320000-340000
+2026-08-02 18:55:57,195 cisTopic     INFO     Impute region accessibility for regions 340000-360000
+2026-08-02 18:56:09,809 cisTopic     INFO     Impute region accessibility for regions 360000-380000
+2026-08-02 18:56:22,422 cisTopic     INFO     Impute region accessibility for regions 380000-400000
+2026-08-02 18:56:35,139 cisTopic     INFO     Impute region accessibility for regions 400000-420000
+2026-08-02 18:56:47,758 cisTopic     INFO     Impute region accessibility for regions 420000-440000
+2026-08-02 18:57:00,421 cisTopic     INFO     Impute region accessibility for regions 440000-460000
+2026-08-02 18:57:13,184 cisTopic     INFO     Impute region accessibility for regions 460000-480000
+2026-08-02 18:57:25,943 cisTopic     INFO     Impute region accessibility for regions 480000-500000
+2026-08-02 18:57:38,691 cisTopic     INFO     Impute region accessibility for regions 500000-520000
+2026-08-02 18:57:51,450 cisTopic     INFO     Impute region accessibility for regions 520000-540000
+2026-08-02 18:58:04,206 cisTopic     INFO     Impute region accessibility for regions 540000-560000
+2026-08-02 18:58:16,963 cisTopic     INFO     Impute region accessibility for regions 560000-580000
+2026-08-02 18:58:29,727 cisTopic     INFO     Impute region accessibility for regions 580000-600000
+2026-08-02 18:58:34,732 cisTopic     INFO     Done!
+2026-08-02 18:58:34,794 Ingesting non-multiome data INFO     Following annotations were found in both assays under key Classified_Celltype:
+	CD16.Monocytes, Monocytes, CD4.Naive, Early.Basophil, cDC, Progenitor, HSC, pDC, B.Cell, GMP, CLP, CD4.Memory, Early.Erythrocyte, Pre.B.Cell, Late.Erythrocyte.
+Keeping 84360 cells for RNA and 77100 for ATAC.
+2026-08-02 19:14:42,808 Ingesting non-multiome data INFO     Automatically set `nr_metacells` to: B.Cell: 30, CD16.Monocytes: 312, CD4.Memory: 18, CD4.Naive: 60, CLP: 1872, Early.Basophil: 292, Early.Erythrocyte: 1240, GMP: 3750, HSC: 7952, Late.Erythrocyte: 80, Monocytes: 2480, Pre.B.Cell: 330, Progenitor: 8608, cDC: 260, pDC: 482
+2026-08-02 19:14:42,809 Ingesting non-multiome data INFO     Generating pseudo multi-ome data
+===== [Relapse_pseudomultiome] search_spance =====
+2026-08-02 19:48:37,285 SCENIC+      INFO     Reading data
+2026-08-02 19:50:33,842 Get search space INFO     Extending promoter annotation to 10 bp upstream and 10 downstream
+Warning! Start and End columns now have different dtypes: int32 and int64
+Warning! Start and End columns now have different dtypes: int32 and int64
+2026-08-02 19:50:34,054 Get search space INFO     Extending search space to:
+            						150000 bp downstream of the end of the gene.
+            						150000 bp upstream of the start of the gene.
+Warning! Start and End columns now have different dtypes: int32 and int64
+Warning! Start and End columns now have different dtypes: int32 and int64
+2026-08-02 19:50:34,804 Get search space INFO     Intersecting with regions.
+Warning! Start and End columns now have different dtypes: int32 and int64
+2026-08-02 19:50:38,600 Get search space INFO     Calculating distances from region to gene
+2026-08-02 19:53:03,221 Get search space INFO     Imploding multiple entries per region and gene
+2026-08-02 19:57:18,978 SCENIC+      INFO     Writing search space to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/search_space_Relapse_pseudomultiome.part.tsv
+===== [Relapse_pseudomultiome] prepare_menr (reuse /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/menr_cistarget_Relapse.hdf5, re-filter TFs to this GEX) =====
+2026-08-02 19:57:47,722 SCENIC+      INFO     Reading multiome MuData.
+2026-08-02 19:59:42,196 SCENIC+      INFO     Getting cistromes.
+2026-08-02 20:04:00,604 SCENIC+      INFO     Found 715 TFs.
+2026-08-02 20:04:00,605 SCENIC+      INFO     Saving TF names to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/tf_names_Relapse_pseudomultiome.part.txt
+2026-08-02 20:04:00,608 SCENIC+      INFO     Writing direct cistromes to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/cistromes_direct_Relapse_pseudomultiome.part.h5ad
+2026-08-02 20:04:01,043 SCENIC+      INFO     Writing extended cistromes to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/cistromes_extended_Relapse_pseudomultiome.part.h5ad
+===== [Relapse_pseudomultiome] region_to_gene =====
+2026-08-02 20:04:23,122 SCENIC+      INFO     Reading multiome MuData.
+2026-08-02 20:06:18,531 SCENIC+      INFO     Reading search space
+2026-08-02 20:06:19,869 R2G          INFO     Calculating region to gene importances, using GBM method
+2026-08-02 23:08:42,438 R2G          INFO     Calculating region to gene correlation, using SR method
+2026-08-02 23:41:25,047 R2G          INFO     Done!
+2026-08-02 23:41:25,445 SCENIC+      INFO     Saving region to gene adjacencies to /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/r2g_Relapse_pseudomultiome.part.tsv
+===== [Relapse_pseudomultiome] TF_to_gene  (the gate — heaviest for Option A on individual cells) =====
+2026-08-02 23:42:53,339 SCENIC+      INFO     Reading multiome MuData.
+2026-08-02 23:44:50,147 SCENIC+      INFO     Using 716 TFs.
+2026-08-02 23:44:50,700 TF2G         INFO     Calculating TF-to-gene importance
+2026-08-03 03:08:28,808 TF2G         INFO     Adding correlation coefficients to adjacencies.
+2026-08-03 03:11:26,825 TF2G         INFO     Warning: adding TFs as their own target to adjecencies matrix. Importance values will be max + 1e-05
+2026-08-03 03:11:34,429 SCENIC+      INFO     Saving TF to gene adjacencies to: /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/tf2g_Relapse_pseudomultiome.part.tsv
+===== [Relapse_pseudomultiome] eGRN =====
+2026-08-03 03:12:30,987 SCENIC+      INFO     Loading TF to gene adjacencies.
+2026-08-03 03:12:32,086 SCENIC+      INFO     Loading region to gene adjacencies.
+2026-08-03 03:12:35,439 SCENIC+      INFO     Loading cistromes.
+2026-08-03 03:12:35,975 GSEA         INFO     Thresholding region to gene relationships
+2026-08-03 03:17:49,239 GSEA         INFO     Subsetting TF2G adjacencies for TF with motif.
+2026-08-03 03:17:49,403 GSEA         INFO     Running GSEA...
+2026-08-03 03:17:49,404 GSEA         INFO     Generating rankings...
+2026-08-03 03:28:36,351 GSEA         INFO     Subsetting on adjusted pvalue: 1, minimal NES: 0 and minimal leading edge genes 10
+2026-08-03 03:28:37,553 GSEA         INFO     Merging eRegulons
+2026-08-03 03:28:42,734 SCENIC+      INFO     Formatting eGRN as table.
+2026-08-03 03:28:44,396 SCENIC+      INFO     Calculating triplet ranking.
+2026-08-03 03:28:45,135 cisTarget    INFO     Reading cisTarget database
+2026-08-03 03:30:38,144 SCENIC+      INFO     Saving network to /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/eRegulons_Relapse_pseudomultiome.part.tsv
+===== [Relapse_pseudomultiome] AUCell =====
+2026-08-03 03:31:42,129 SCENIC+      INFO     Reading data.
+2026-08-03 03:33:38,713 SCENIC+      INFO     Calculating enrichment scores.
+2026-08-03 04:19:07,036 SCENIC+      INFO     Writing file to /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/eRegulon_AUC_Relapse_pseudomultiome.part.h5mu
+=== [Relapse_pseudomultiome] GRN COMPLETE ===
+206026 /cbica/home/zhengbo/AML-GRN/cubic_stage2_malignant/out/eRegulons_Relapse_pseudomultiome.tsv
+
+==== STAGE 2 (malignant) SUMMARY ====
+  OK      Relapse      link             276087 eRegulon rows
+  OK      Relapse      pseudomultiome   206025 eRegulon rows
+==== STAGE 2 MALIGNANT COMPLETE (Dx + Rel x both pairings) ====

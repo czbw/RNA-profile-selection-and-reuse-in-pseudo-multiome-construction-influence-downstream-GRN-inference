@@ -1,0 +1,267 @@
+{
+  "status": "Exploratory patient-omission analysis conditional on fixed networks and activity matrices",
+  "n_pediatric_folds": 19,
+  "n_external_pairs": 59,
+  "baseline_module_size": 55,
+  "nomination_size_range": [
+    43,
+    60
+  ],
+  "retained_original_range": [
+    39,
+    53
+  ],
+  "jaccard_range": [
+    0.6060606060606061,
+    0.8983050847457628
+  ],
+  "original_members_selected_in_every_fold": 26,
+  "original_members_selected_in_at_least_90pct_folds": 29,
+  "original_members_minimum_selected_folds": 2,
+  "healthy_only_omission_checks": [
+    {
+      "patient": "PAWWCW",
+      "membership_identical": true
+    }
+  ],
+  "design": {
+    "admitted_malignant": [
+      "CLP",
+      "Early.Basophil",
+      "Early.Erythrocyte",
+      "GMP",
+      "HSC",
+      "Monocytes",
+      "Progenitor"
+    ],
+    "admitted_healthy": [
+      "B.Cell",
+      "CD4.Memory",
+      "CD4.Naive",
+      "CD8.Effector",
+      "CD8.Memory",
+      "CD8.Naive",
+      "Late.Erythrocyte",
+      "NK"
+    ],
+    "e2_patients_Diagnosis": [
+      "PAUUWT",
+      "PAUVAT",
+      "PAUXCD",
+      "PAUZRT",
+      "PAVBCV",
+      "PAVBFN",
+      "PAVDYE",
+      "PAVGJG",
+      "PAVJXG",
+      "PAWHFW",
+      "PAWHKK",
+      "PAWMKP",
+      "PAWNPG",
+      "PAWNYX",
+      "PAWTSD",
+      "PAWUAE",
+      "PAWWXU",
+      "PAXGDG",
+      "PAXLEE"
+    ],
+    "compartment_patients_Diagnosis": [
+      "PAUUWT",
+      "PAUVAT",
+      "PAUXCD",
+      "PAUZRT",
+      "PAVBCV",
+      "PAVBFN",
+      "PAVDYE",
+      "PAVGJG",
+      "PAVJXG",
+      "PAWHFW",
+      "PAWHKK",
+      "PAWMKP",
+      "PAWNPG",
+      "PAWNYX",
+      "PAWTSD",
+      "PAWUAE",
+      "PAWWXU",
+      "PAXGDG",
+      "PAXLEE"
+    ],
+    "e2_patients_Relapse": [
+      "PAUUWT",
+      "PAUVAT",
+      "PAUXCD",
+      "PAUZRT",
+      "PAVBCV",
+      "PAVBFN",
+      "PAVDYE",
+      "PAVGJG",
+      "PAVJXG",
+      "PAWHFW",
+      "PAWHKK",
+      "PAWMKP",
+      "PAWNPG",
+      "PAWNYX",
+      "PAWTSD",
+      "PAWUAE",
+      "PAWWXU",
+      "PAXGDG",
+      "PAXLEE"
+    ],
+    "compartment_patients_Relapse": [
+      "PAUUWT",
+      "PAUVAT",
+      "PAUXCD",
+      "PAUZRT",
+      "PAVBCV",
+      "PAVBFN",
+      "PAVDYE",
+      "PAVGJG",
+      "PAVJXG",
+      "PAWHFW",
+      "PAWHKK",
+      "PAWMKP",
+      "PAWNPG",
+      "PAWNYX",
+      "PAWTSD",
+      "PAWUAE",
+      "PAWWXU",
+      "PAXGDG",
+      "PAXLEE"
+    ]
+  },
+  "eligibility_sensitivity_membership_identical": true,
+  "fixed_module_effects": [
+    {
+      "cohort": "external",
+      "metric": "module_delta",
+      "vocabulary": "Diagnosis",
+      "full_mean": 0.034374809276298886,
+      "omitted_mean_min": 0.03214640472222646,
+      "omitted_mean_max": 0.03660954838406662,
+      "max_omitted_p": 1.4949277720931207e-07,
+      "all_omissions_same_mean_sign": true
+    },
+    {
+      "cohort": "external",
+      "metric": "module_delta",
+      "vocabulary": "Relapse",
+      "full_mean": 0.025516434838303133,
+      "omitted_mean_min": 0.023845759966797057,
+      "omitted_mean_max": 0.027309236960168955,
+      "max_omitted_p": 6.28651058767029e-07,
+      "all_omissions_same_mean_sign": true
+    },
+    {
+      "cohort": "pediatric",
+      "metric": "composition",
+      "vocabulary": "Diagnosis",
+      "full_mean": 0.0021399512658017523,
+      "omitted_mean_min": -7.039058873524905e-05,
+      "omitted_mean_max": 0.0041854631281988824,
+      "max_omitted_p": 0.6396942138671875,
+      "all_omissions_same_mean_sign": false
+    },
+    {
+      "cohort": "pediatric",
+      "metric": "composition",
+      "vocabulary": "Relapse",
+      "full_mean": 0.0017165822414907117,
+      "omitted_mean_min": -7.241140413368711e-05,
+      "omitted_mean_max": 0.0034354997033765864,
+      "max_omitted_p": 0.6396942138671875,
+      "all_omissions_same_mean_sign": false
+    },
+    {
+      "cohort": "pediatric",
+      "metric": "equal_celltype_weight",
+      "vocabulary": "Diagnosis",
+      "full_mean": 0.009753514956002718,
+      "omitted_mean_min": 0.008738856243066494,
+      "omitted_mean_max": 0.01097411522920143,
+      "max_omitted_p": 0.00336456298828125,
+      "all_omissions_same_mean_sign": true
+    },
+    {
+      "cohort": "pediatric",
+      "metric": "equal_celltype_weight",
+      "vocabulary": "Relapse",
+      "full_mean": 0.008068891467853475,
+      "omitted_mean_min": 0.006999225263532453,
+      "omitted_mean_max": 0.009029692520434876,
+      "max_omitted_p": 0.0055999755859375,
+      "all_omissions_same_mean_sign": true
+    },
+    {
+      "cohort": "pediatric",
+      "metric": "total",
+      "vocabulary": "Diagnosis",
+      "full_mean": 0.012465331559275266,
+      "omitted_mean_min": 0.010121049404348886,
+      "omitted_mean_max": 0.014852332146922597,
+      "max_omitted_p": 0.030364990234375,
+      "all_omissions_same_mean_sign": true
+    },
+    {
+      "cohort": "pediatric",
+      "metric": "total",
+      "vocabulary": "Relapse",
+      "full_mean": 0.010293492088764775,
+      "omitted_mean_min": 0.009003948233408573,
+      "omitted_mean_max": 0.012526870656339645,
+      "max_omitted_p": 0.0138702392578125,
+      "all_omissions_same_mean_sign": true
+    },
+    {
+      "cohort": "pediatric",
+      "metric": "within_type",
+      "vocabulary": "Diagnosis",
+      "full_mean": 0.010325380293473513,
+      "omitted_mean_min": 0.008805975153418601,
+      "omitted_mean_max": 0.01171174438675389,
+      "max_omitted_p": 0.0023345947265625,
+      "all_omissions_same_mean_sign": true
+    },
+    {
+      "cohort": "pediatric",
+      "metric": "within_type",
+      "vocabulary": "Relapse",
+      "full_mean": 0.008576909847274064,
+      "omitted_mean_min": 0.007542422289888388,
+      "omitted_mean_max": 0.009636727426637438,
+      "max_omitted_p": 0.0028076171875,
+      "all_omissions_same_mean_sign": true
+    }
+  ],
+  "reselected_external_and_heldout": {
+    "Diagnosis": {
+      "external_mean_range": [
+        0.026504138369786916,
+        0.03682432086561987
+      ],
+      "external_max_p": 1.4332138154479478e-07,
+      "heldout_pediatric": {
+        "n": 19,
+        "mean": 0.008522809241971529,
+        "median": 0.0043159606218245985,
+        "fraction_positive": 0.7894736842105263,
+        "p_wilcoxon": 0.00945281982421875
+      },
+      "caveat": "Training-fold membership/orientation only; fixed networks still use all discovery patients."
+    },
+    "Relapse": {
+      "external_mean_range": [
+        0.019726916854037813,
+        0.027798479854664493
+      ],
+      "external_max_p": 2.571349732582364e-06,
+      "heldout_pediatric": {
+        "n": 19,
+        "mean": 0.006420609699008388,
+        "median": 0.006488755523731971,
+        "fraction_positive": 0.7894736842105263,
+        "p_wilcoxon": 0.00823211669921875
+      },
+      "caveat": "Training-fold membership/orientation only; fixed networks still use all discovery patients."
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "all55": {
+    "diagnosis_targets": 3357,
+    "relapse_targets": 3432,
+    "shared": 2229,
+    "diagnosis_only": 1128,
+    "relapse_only": 1203,
+    "union_jaccard": 0.4888157894736842,
+    "exclusive_annotation_contrast_q_lt_005": 0,
+    "exclusive_annotation_contrast_q_all_groups_lt_005": 0,
+    "exclusive_annotation_contrast_depleted_q_lt_005": 0,
+    "leading_exclusive_annotation_contrasts": [
+      {
+        "term": "Establishment of Protein Localization to Plasma Membrane (GO:0061951)",
+        "relapse_only_hits": 1,
+        "relapse_only_total": 1203,
+        "diagnosis_only_hits": 11,
+        "diagnosis_only_total": 1128,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -3.0443615179225807,
+        "p": 0.0025749292617394,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Cytoplasmic Translation (GO:0002181)",
+        "relapse_only_hits": 3,
+        "relapse_only_total": 1203,
+        "diagnosis_only_hits": 13,
+        "diagnosis_only_total": 1128,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -2.0534774700921403,
+        "p": 0.0103687892608181,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Positive Regulation of Canonical Wnt Signaling Pathway (GO:0090263)",
+        "relapse_only_hits": 3,
+        "relapse_only_total": 1203,
+        "diagnosis_only_hits": 13,
+        "diagnosis_only_total": 1128,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -2.0534774700921403,
+        "p": 0.0103687892608181,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Negative Regulation of DNA-binding Transcription Factor Activity (GO:0043433)",
+        "relapse_only_hits": 16,
+        "relapse_only_total": 1203,
+        "diagnosis_only_hits": 4,
+        "diagnosis_only_total": 1128,
+        "log2_odds_ratio_rel_vs_dx_Haldane": 1.7958252655882854,
+        "p": 0.0123064742443907,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Protein N-linked Glycosylation via Asparagine (GO:0018279)",
+        "relapse_only_hits": 0,
+        "relapse_only_total": 1203,
+        "diagnosis_only_hits": 6,
+        "diagnosis_only_total": 1128,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -3.80096041498708,
+        "p": 0.0127530259505107,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Regulation of Phosphorylation (GO:0042325)",
+        "relapse_only_hits": 14,
+        "relapse_only_total": 1203,
+        "diagnosis_only_hits": 3,
+        "diagnosis_only_total": 1128,
+        "log2_odds_ratio_rel_vs_dx_Haldane": 1.970836858098989,
+        "p": 0.0131629263415924,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Positive Regulation of Programmed Cell Death (GO:0043068)",
+        "relapse_only_hits": 14,
+        "relapse_only_total": 1203,
+        "diagnosis_only_hits": 29,
+        "diagnosis_only_total": 1128,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -1.1381697218044358,
+        "p": 0.0133004593055785,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Neurotransmitter Transport (GO:0006836)",
+        "relapse_only_hits": 7,
+        "relapse_only_total": 1203,
+        "diagnosis_only_hits": 0,
+        "diagnosis_only_total": 1128,
+        "log2_odds_ratio_rel_vs_dx_Haldane": 3.822476617261856,
+        "p": 0.0158234353989382,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      }
+    ]
+  },
+  "TF2G_positive": {
+    "diagnosis_targets": 2640,
+    "relapse_targets": 2671,
+    "shared": 1664,
+    "diagnosis_only": 976,
+    "relapse_only": 1007,
+    "union_jaccard": 0.4562654236358651,
+    "exclusive_annotation_contrast_q_lt_005": 0,
+    "exclusive_annotation_contrast_q_all_groups_lt_005": 0,
+    "exclusive_annotation_contrast_depleted_q_lt_005": 0,
+    "leading_exclusive_annotation_contrasts": [
+      {
+        "term": "Small GTPase-mediated Signal Transduction (GO:0007264)",
+        "relapse_only_hits": 7,
+        "relapse_only_total": 1007,
+        "diagnosis_only_hits": 24,
+        "diagnosis_only_total": 976,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -1.7787494180317462,
+        "p": 0.0017097380023664,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Receptor-Mediated Endocytosis (GO:0006898)",
+        "relapse_only_hits": 4,
+        "relapse_only_total": 1007,
+        "diagnosis_only_hits": 17,
+        "diagnosis_only_total": 976,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -2.024043920669891,
+        "p": 0.0036805339582528,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Negative Regulation of Transcription by RNA Polymerase II (GO:0000122)",
+        "relapse_only_hits": 72,
+        "relapse_only_total": 1007,
+        "diagnosis_only_hits": 41,
+        "diagnosis_only_total": 976,
+        "log2_odds_ratio_rel_vs_dx_Haldane": 0.8048696586680096,
+        "p": 0.004874633347798,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Positive Regulation of Programmed Cell Death (GO:0043068)",
+        "relapse_only_hits": 11,
+        "relapse_only_total": 1007,
+        "diagnosis_only_hits": 28,
+        "diagnosis_only_total": 976,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -1.380550089535311,
+        "p": 0.0053912877852463,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Negative Regulation of Cell Cycle (GO:0045786)",
+        "relapse_only_hits": 11,
+        "relapse_only_total": 1007,
+        "diagnosis_only_hits": 1,
+        "diagnosis_only_total": 976,
+        "log2_odds_ratio_rel_vs_dx_Haldane": 2.907871523105825,
+        "p": 0.0062723379200071,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Actin Polymerization or Depolymerization (GO:0008154)",
+        "relapse_only_hits": 0,
+        "relapse_only_total": 1007,
+        "diagnosis_only_hits": 7,
+        "diagnosis_only_total": 976,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -3.962357630917056,
+        "p": 0.0069203598638093,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Positive Regulation of Type II Interferon Production (GO:0032729)",
+        "relapse_only_hits": 0,
+        "relapse_only_total": 1007,
+        "diagnosis_only_hits": 7,
+        "diagnosis_only_total": 976,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -3.962357630917056,
+        "p": 0.0069203598638093,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Rho Protein Signal Transduction (GO:0007266)",
+        "relapse_only_hits": 0,
+        "relapse_only_total": 1007,
+        "diagnosis_only_hits": 7,
+        "diagnosis_only_total": 976,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -3.962357630917056,
+        "p": 0.0069203598638093,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      }
+    ]
+  },
+  "TF2G_negative": {
+    "diagnosis_targets": 1060,
+    "relapse_targets": 1180,
+    "shared": 540,
+    "diagnosis_only": 520,
+    "relapse_only": 640,
+    "union_jaccard": 0.3176470588235294,
+    "exclusive_annotation_contrast_q_lt_005": 0,
+    "exclusive_annotation_contrast_q_all_groups_lt_005": 0,
+    "exclusive_annotation_contrast_depleted_q_lt_005": 0,
+    "leading_exclusive_annotation_contrasts": [
+      {
+        "term": "Translation (GO:0006412)",
+        "relapse_only_hits": 14,
+        "relapse_only_total": 640,
+        "diagnosis_only_hits": 30,
+        "diagnosis_only_total": 520,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -1.425817715537936,
+        "p": 0.0017878254865455,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "DNA-templated Transcription Initiation (GO:0006352)",
+        "relapse_only_hits": 0,
+        "relapse_only_total": 640,
+        "diagnosis_only_hits": 7,
+        "diagnosis_only_total": 520,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -4.22572488963197,
+        "p": 0.0035569854060235,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Macromolecule Biosynthetic Process (GO:0009059)",
+        "relapse_only_hits": 12,
+        "relapse_only_total": 640,
+        "diagnosis_only_hits": 26,
+        "diagnosis_only_total": 520,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -1.4300064884498715,
+        "p": 0.0042251828647515,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Intrinsic Apoptotic Signaling Pathway (GO:0097193)",
+        "relapse_only_hits": 2,
+        "relapse_only_total": 640,
+        "diagnosis_only_hits": 11,
+        "diagnosis_only_total": 520,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -2.5272383347065603,
+        "p": 0.0042361448445336,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Gene Expression (GO:0010467)",
+        "relapse_only_hits": 19,
+        "relapse_only_total": 640,
+        "diagnosis_only_hits": 34,
+        "diagnosis_only_total": 520,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -1.176436824187294,
+        "p": 0.0044563988706329,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Protein Metabolic Process (GO:0019538)",
+        "relapse_only_hits": 25,
+        "relapse_only_total": 640,
+        "diagnosis_only_hits": 41,
+        "diagnosis_only_total": 520,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -1.0628421308417555,
+        "p": 0.0047446171766001,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Transcription Initiation at RNA Polymerase II Promoter (GO:0006367)",
+        "relapse_only_hits": 2,
+        "relapse_only_total": 640,
+        "diagnosis_only_hits": 10,
+        "diagnosis_only_total": 520,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -2.3931649867163203,
+        "p": 0.0081250884167255,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      },
+      {
+        "term": "Intrinsic Apoptotic Signaling Pathway in Response to DNA Damage (GO:0008630)",
+        "relapse_only_hits": 0,
+        "relapse_only_total": 640,
+        "diagnosis_only_hits": 5,
+        "diagnosis_only_total": 520,
+        "log2_odds_ratio_rel_vs_dx_Haldane": -3.772657761610835,
+        "p": 0.0179101625859493,
+        "q": 1.0,
+        "q_all_groups": 1.0
+      }
+    ]
+  }
+}

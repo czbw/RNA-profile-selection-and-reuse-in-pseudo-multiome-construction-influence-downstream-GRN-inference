@@ -1,0 +1,3521 @@
+{
+ "_status": "POST-HOC ROBUSTNESS CHECK, requested after seeing the enrichment",
+ "_prespec_rule_reused": "analysis/F6_NETWORK_PRESPEC.md \u00a71.2, unchanged",
+ "_block_numbering": "1-indexed here; f6_network.json is 0-indexed. block N here = communities[N-1] there",
+ "_seed": 555,
+ "_n_draws": 1000,
+ "_block_map_to_f6_network_json": {
+  "Diagnosis": {
+   "block 1 (here)": "communities[0] (there), n=30",
+   "block 2 (here)": "communities[1] (there), n=25"
+  },
+  "Relapse": {
+   "block 1 (here)": "communities[0] (there), n=28",
+   "block 2 (here)": "communities[1] (there), n=19",
+   "block 3 (here)": "communities[2] (there), n=6",
+   "block 4 (here)": "communities[3] (there), n=2"
+  }
+ },
+ "gene_sets": {
+  "DROP_A": {
+   "rule": "symbol =~ ^RP[LS] excluding ^RPS6K* and RPS19BP1, union symbol =~ ^MRP[LS]",
+   "source": "symbols of analysis/out/f1_universe_{vocab}.csv",
+   "n_cytoplasmic": 88,
+   "n_mitochondrial": 79,
+   "n_total": 167,
+   "excluded_RPS6K": [
+    "RPS6KA1",
+    "RPS6KA2",
+    "RPS6KA3",
+    "RPS6KA4",
+    "RPS6KA5",
+    "RPS6KA6",
+    "RPS6KB1",
+    "RPS6KB2",
+    "RPS6KB2-AS1",
+    "RPS6KC1",
+    "RPS6KL1"
+   ],
+   "excluded_other": [
+    "RPS19BP1"
+   ],
+   "genes": [
+    "MRPL1",
+    "MRPL10",
+    "MRPL11",
+    "MRPL12",
+    "MRPL13",
+    "MRPL14",
+    "MRPL15",
+    "MRPL16",
+    "MRPL17",
+    "MRPL18",
+    "MRPL19",
+    "MRPL2",
+    "MRPL20",
+    "MRPL21",
+    "MRPL22",
+    "MRPL23",
+    "MRPL24",
+    "MRPL27",
+    "MRPL28",
+    "MRPL3",
+    "MRPL30",
+    "MRPL32",
+    "MRPL33",
+    "MRPL34",
+    "MRPL35",
+    "MRPL36",
+    "MRPL37",
+    "MRPL38",
+    "MRPL39",
+    "MRPL4",
+    "MRPL40",
+    "MRPL41",
+    "MRPL42",
+    "MRPL43",
+    "MRPL44",
+    "MRPL45",
+    "MRPL46",
+    "MRPL47",
+    "MRPL48",
+    "MRPL49",
+    "MRPL50",
+    "MRPL51",
+    "MRPL52",
+    "MRPL53",
+    "MRPL54",
+    "MRPL55",
+    "MRPL57",
+    "MRPL58",
+    "MRPL9",
+    "MRPS10",
+    "MRPS11",
+    "MRPS12",
+    "MRPS14",
+    "MRPS15",
+    "MRPS16",
+    "MRPS17",
+    "MRPS18A",
+    "MRPS18B",
+    "MRPS18C",
+    "MRPS2",
+    "MRPS21",
+    "MRPS22",
+    "MRPS23",
+    "MRPS24",
+    "MRPS25",
+    "MRPS26",
+    "MRPS27",
+    "MRPS28",
+    "MRPS30",
+    "MRPS30-DT",
+    "MRPS31",
+    "MRPS33",
+    "MRPS34",
+    "MRPS35",
+    "MRPS36",
+    "MRPS5",
+    "MRPS6",
+    "MRPS7",
+    "MRPS9",
+    "RPL10",
+    "RPL10A",
+    "RPL11",
+    "RPL12",
+    "RPL13",
+    "RPL13A",
+    "RPL14",
+    "RPL15",
+    "RPL17",
+    "RPL17-C18orf32",
+    "RPL18",
+    "RPL18A",
+    "RPL19",
+    "RPL21",
+    "RPL22",
+    "RPL22L1",
+    "RPL23",
+    "RPL23A",
+    "RPL24",
+    "RPL26",
+    "RPL26L1",
+    "RPL27",
+    "RPL27A",
+    "RPL28",
+    "RPL29",
+    "RPL3",
+    "RPL30",
+    "RPL31",
+    "RPL32",
+    "RPL34",
+    "RPL34-AS1",
+    "RPL35",
+    "RPL35A",
+    "RPL36",
+    "RPL36A",
+    "RPL36AL",
+    "RPL37",
+    "RPL37A",
+    "RPL38",
+    "RPL39",
+    "RPL39L",
+    "RPL3L",
+    "RPL4",
+    "RPL41",
+    "RPL5",
+    "RPL6",
+    "RPL7",
+    "RPL7A",
+    "RPL7L1",
+    "RPL8",
+    "RPL9",
+    "RPLP0",
+    "RPLP1",
+    "RPLP2",
+    "RPS10",
+    "RPS10-NUDT3",
+    "RPS11",
+    "RPS12",
+    "RPS13",
+    "RPS14",
+    "RPS15",
+    "RPS15A",
+    "RPS16",
+    "RPS17",
+    "RPS18",
+    "RPS19",
+    "RPS2",
+    "RPS20",
+    "RPS21",
+    "RPS23",
+    "RPS24",
+    "RPS25",
+    "RPS26",
+    "RPS27",
+    "RPS27A",
+    "RPS27L",
+    "RPS28",
+    "RPS29",
+    "RPS3",
+    "RPS3A",
+    "RPS4X",
+    "RPS4Y1",
+    "RPS5",
+    "RPS6",
+    "RPS7",
+    "RPS8",
+    "RPS9",
+    "RPSA"
+   ]
+  },
+  "DROP_B": {
+   "rule": "DROP_A + non-RP-named ribosomal proteins + the two enriched translation term gene sets (the maximally aggressive drop)",
+   "extra_symbols": [
+    "FAU",
+    "RACK1",
+    "UBA52"
+   ],
+   "terms_included": {
+    "REAC:Peptide Chain Elongation": 88,
+    "GOBP:Cytoplasmic Translation (GO:0002181)": 98
+   },
+   "n_total": 191,
+   "genes": [
+    "EEF1A1",
+    "EEF1D",
+    "EEF2",
+    "EIF2B1",
+    "EIF2B2",
+    "EIF2B3",
+    "EIF2B4",
+    "EIF2B5",
+    "EIF2S2",
+    "EIF2S3",
+    "EIF3I",
+    "EIF3M",
+    "EIF4A1",
+    "EIF4A2",
+    "ETF1",
+    "FAU",
+    "FTSJ1",
+    "GTPBP1",
+    "MRPL1",
+    "MRPL10",
+    "MRPL11",
+    "MRPL12",
+    "MRPL13",
+    "MRPL14",
+    "MRPL15",
+    "MRPL16",
+    "MRPL17",
+    "MRPL18",
+    "MRPL19",
+    "MRPL2",
+    "MRPL20",
+    "MRPL21",
+    "MRPL22",
+    "MRPL23",
+    "MRPL24",
+    "MRPL27",
+    "MRPL28",
+    "MRPL3",
+    "MRPL30",
+    "MRPL32",
+    "MRPL33",
+    "MRPL34",
+    "MRPL35",
+    "MRPL36",
+    "MRPL37",
+    "MRPL38",
+    "MRPL39",
+    "MRPL4",
+    "MRPL40",
+    "MRPL41",
+    "MRPL42",
+    "MRPL43",
+    "MRPL44",
+    "MRPL45",
+    "MRPL46",
+    "MRPL47",
+    "MRPL48",
+    "MRPL49",
+    "MRPL50",
+    "MRPL51",
+    "MRPL52",
+    "MRPL53",
+    "MRPL54",
+    "MRPL55",
+    "MRPL57",
+    "MRPL58",
+    "MRPL9",
+    "MRPS10",
+    "MRPS11",
+    "MRPS12",
+    "MRPS14",
+    "MRPS15",
+    "MRPS16",
+    "MRPS17",
+    "MRPS18A",
+    "MRPS18B",
+    "MRPS18C",
+    "MRPS2",
+    "MRPS21",
+    "MRPS22",
+    "MRPS23",
+    "MRPS24",
+    "MRPS25",
+    "MRPS26",
+    "MRPS27",
+    "MRPS28",
+    "MRPS30",
+    "MRPS30-DT",
+    "MRPS31",
+    "MRPS33",
+    "MRPS34",
+    "MRPS35",
+    "MRPS36",
+    "MRPS5",
+    "MRPS6",
+    "MRPS7",
+    "MRPS9",
+    "RACK1",
+    "RPL10",
+    "RPL10A",
+    "RPL11",
+    "RPL12",
+    "RPL13",
+    "RPL13A",
+    "RPL14",
+    "RPL15",
+    "RPL17",
+    "RPL17-C18orf32",
+    "RPL18",
+    "RPL18A",
+    "RPL19",
+    "RPL21",
+    "RPL22",
+    "RPL22L1",
+    "RPL23",
+    "RPL23A",
+    "RPL24",
+    "RPL26",
+    "RPL26L1",
+    "RPL27",
+    "RPL27A",
+    "RPL28",
+    "RPL29",
+    "RPL3",
+    "RPL30",
+    "RPL31",
+    "RPL32",
+    "RPL34",
+    "RPL34-AS1",
+    "RPL35",
+    "RPL35A",
+    "RPL36",
+    "RPL36A",
+    "RPL36AL",
+    "RPL37",
+    "RPL37A",
+    "RPL38",
+    "RPL39",
+    "RPL39L",
+    "RPL3L",
+    "RPL4",
+    "RPL41",
+    "RPL5",
+    "RPL6",
+    "RPL7",
+    "RPL7A",
+    "RPL7L1",
+    "RPL8",
+    "RPL9",
+    "RPLP0",
+    "RPLP1",
+    "RPLP2",
+    "RPS10",
+    "RPS10-NUDT3",
+    "RPS11",
+    "RPS12",
+    "RPS13",
+    "RPS14",
+    "RPS15",
+    "RPS15A",
+    "RPS16",
+    "RPS17",
+    "RPS18",
+    "RPS19",
+    "RPS2",
+    "RPS20",
+    "RPS21",
+    "RPS23",
+    "RPS24",
+    "RPS25",
+    "RPS26",
+    "RPS27",
+    "RPS27A",
+    "RPS27L",
+    "RPS28",
+    "RPS29",
+    "RPS3",
+    "RPS3A",
+    "RPS4X",
+    "RPS4Y1",
+    "RPS5",
+    "RPS6",
+    "RPS7",
+    "RPS8",
+    "RPS9",
+    "RPSA",
+    "RSL24D1",
+    "RWDD1",
+    "UBA52",
+    "VTA1",
+    "ZC3H15"
+   ]
+  }
+ },
+ "S1_composition": {
+  "Diagnosis": {
+   "block1": {
+    "n_regulons": 30,
+    "n_target_union": 1504,
+    "n_ribosomal_in_union": 106,
+    "frac_ribosomal_of_union": 0.07047872340425532,
+    "n_edge_overlap_gene_instances": 4616,
+    "n_ribosomal_edge_overlap_instances": 1721,
+    "frac_ribosomal_of_edge_overlaps": 0.37283362218370886,
+    "n_distinct_overlap_genes": 624,
+    "frac_ribosomal_of_distinct_overlap_genes": 0.1266025641025641
+   },
+   "block2": {
+    "n_regulons": 25,
+    "n_target_union": 1954,
+    "n_ribosomal_in_union": 3,
+    "frac_ribosomal_of_union": 0.0015353121801432957,
+    "n_edge_overlap_gene_instances": 17291,
+    "n_ribosomal_edge_overlap_instances": 11,
+    "frac_ribosomal_of_edge_overlaps": 0.0006361691053149037,
+    "n_distinct_overlap_genes": 1355,
+    "frac_ribosomal_of_distinct_overlap_genes": 0.0014760147601476014
+   },
+   "module_union": {
+    "n": 3362,
+    "n_ribosomal": 108,
+    "frac_ribosomal": 0.032123735871505056
+   }
+  },
+  "Relapse": {
+   "block1": {
+    "n_regulons": 28,
+    "n_target_union": 1601,
+    "n_ribosomal_in_union": 90,
+    "frac_ribosomal_of_union": 0.056214865708931916,
+    "n_edge_overlap_gene_instances": 4385,
+    "n_ribosomal_edge_overlap_instances": 922,
+    "frac_ribosomal_of_edge_overlaps": 0.21026225769669327,
+    "n_distinct_overlap_genes": 640,
+    "frac_ribosomal_of_distinct_overlap_genes": 0.10625
+   },
+   "block2": {
+    "n_regulons": 19,
+    "n_target_union": 1717,
+    "n_ribosomal_in_union": 8,
+    "frac_ribosomal_of_union": 0.004659289458357601,
+    "n_edge_overlap_gene_instances": 10163,
+    "n_ribosomal_edge_overlap_instances": 4,
+    "frac_ribosomal_of_edge_overlaps": 0.0003935845714847978,
+    "n_distinct_overlap_genes": 1140,
+    "frac_ribosomal_of_distinct_overlap_genes": 0.0035087719298245615
+   },
+   "block3": {
+    "n_regulons": 6,
+    "n_target_union": 363,
+    "n_ribosomal_in_union": 2,
+    "frac_ribosomal_of_union": 0.005509641873278237,
+    "n_edge_overlap_gene_instances": 241,
+    "n_ribosomal_edge_overlap_instances": 1,
+    "frac_ribosomal_of_edge_overlaps": 0.004149377593360996,
+    "n_distinct_overlap_genes": 200,
+    "frac_ribosomal_of_distinct_overlap_genes": 0.005
+   },
+   "block4": {
+    "n_regulons": 2,
+    "n_target_union": 87,
+    "n_ribosomal_in_union": 2,
+    "frac_ribosomal_of_union": 0.022988505747126436,
+    "n_edge_overlap_gene_instances": 18,
+    "n_ribosomal_edge_overlap_instances": 0,
+    "frac_ribosomal_of_edge_overlaps": 0.0,
+    "n_distinct_overlap_genes": 18,
+    "frac_ribosomal_of_distinct_overlap_genes": 0.0
+   },
+   "module_union": {
+    "n": 3444,
+    "n_ribosomal": 100,
+    "frac_ribosomal": 0.029036004645760744
+   }
+  }
+ },
+ "_parity_gate": {
+  "rule": "recomputed undepleted Q must equal f6_network.json to 1e-12",
+  "PASS": true,
+  "Q": {
+   "Diagnosis": 0.46303267827817873,
+   "Relapse": 0.4696939549079081
+  }
+ },
+ "S2_drop_test": {
+  "DROP_A": {
+   "Diagnosis": {
+    "n_targets_removed_module_union": 108,
+    "regulons_left_with_no_targets": [],
+    "Q_observed": 0.4341606387782424,
+    "Q_committed_undepleted": 0.46303267827817873,
+    "null_mean": 0.39779621572373286,
+    "null_sd": 0.0335423446210082,
+    "null_p95": 0.45091186796848287,
+    "p_empirical_one_sided": 0.13586413586413587,
+    "percentile_of_observed": 86.5,
+    "n_communities": 2,
+    "n_communities_ge3": 2,
+    "community_sizes": [
+     30,
+     25
+    ],
+    "communities": [
+     [
+      "CEBPA_direct_-/+",
+      "CEBPD_direct_-/+",
+      "EP300_direct_-/+",
+      "EP300_direct_-/-",
+      "FOSL2_direct_-/+",
+      "FOSL2_direct_-/-",
+      "GATA2_direct_+/+",
+      "HMGA1_direct_+/+",
+      "ILF2_direct_+/-",
+      "IRF8_direct_-/+",
+      "IRF8_direct_-/-",
+      "KLF10_direct_-/+",
+      "KLF10_direct_-/-",
+      "KLF11_direct_-/-",
+      "KLF4_direct_-/-",
+      "MAFB_direct_-/-",
+      "MAFF_direct_+/-",
+      "PBX3_direct_-/+",
+      "RUNX2_direct_-/+",
+      "SMC3_direct_+/-",
+      "SPI1_direct_-/+",
+      "SPI1_direct_-/-",
+      "STAT5A_direct_+/+",
+      "TFDP2_direct_+/-",
+      "WT1_direct_+/+",
+      "XBP1_direct_+/-",
+      "YBX1_direct_+/+",
+      "YBX1_direct_+/-",
+      "ZBTB7A_direct_-/+",
+      "ZBTB7A_direct_-/-"
+     ],
+     [
+      "BACH1_direct_+/+",
+      "CEBPA_direct_+/-",
+      "ERG_direct_-/-",
+      "GABPB1_direct_-/+",
+      "IRF5_direct_+/+",
+      "IRF8_direct_+/+",
+      "IRF8_direct_+/-",
+      "KLF10_direct_+/+",
+      "KLF10_direct_+/-",
+      "KLF11_direct_+/+",
+      "KLF3_direct_+/+",
+      "KLF4_direct_+/+",
+      "KLF4_direct_+/-",
+      "MAFB_direct_+/+",
+      "MAFB_direct_+/-",
+      "MBD2_direct_+/-",
+      "RXRA_direct_+/+",
+      "RXRA_direct_+/-",
+      "SPI1_direct_+/+",
+      "SPI1_direct_+/-",
+      "STAT5A_direct_-/+",
+      "STAT6_direct_+/+",
+      "TFDP2_direct_-/-",
+      "ZBTB7A_direct_+/+",
+      "ZBTB7A_direct_+/-"
+     ]
+    ],
+    "old_to_new_block_match": {
+     "1": 1,
+     "2": 2
+    },
+    "n_regulons_changing_block": 0,
+    "regulons_changing_block": [],
+    "VERDICT": "FLAT"
+   },
+   "Relapse": {
+    "n_targets_removed_module_union": 100,
+    "regulons_left_with_no_targets": [],
+    "Q_observed": 0.4676673185267077,
+    "Q_committed_undepleted": 0.4696939549079081,
+    "null_mean": 0.4118389160739347,
+    "null_sd": 0.0336506160924036,
+    "null_p95": 0.46515285145621293,
+    "p_empirical_one_sided": 0.04595404595404595,
+    "percentile_of_observed": 95.5,
+    "n_communities": 4,
+    "n_communities_ge3": 4,
+    "community_sizes": [
+     23,
+     19,
+     10,
+     3
+    ],
+    "communities": [
+     [
+      "CEBPD_direct_-/+",
+      "EP300_direct_-/+",
+      "EP300_direct_-/-",
+      "FOSL2_direct_-/+",
+      "FOSL2_direct_-/-",
+      "GATA2_direct_+/+",
+      "HMGA1_direct_+/+",
+      "ILF2_direct_+/-",
+      "IRF8_direct_-/+",
+      "IRF8_direct_-/-",
+      "KLF4_direct_-/-",
+      "MAFB_direct_-/-",
+      "MAFF_direct_+/-",
+      "RUNX2_direct_-/+",
+      "SMC3_direct_+/-",
+      "SPI1_direct_-/+",
+      "SPI1_direct_-/-",
+      "STAT5A_direct_+/+",
+      "TFDP2_direct_+/-",
+      "WT1_direct_+/+",
+      "XBP1_direct_+/-",
+      "ZBTB7A_direct_-/+",
+      "ZBTB7A_direct_-/-"
+     ],
+     [
+      "BACH1_direct_+/+",
+      "ERG_direct_-/-",
+      "IRF5_direct_+/+",
+      "IRF8_direct_+/+",
+      "IRF8_direct_+/-",
+      "KLF3_direct_+/+",
+      "KLF4_direct_+/+",
+      "KLF4_direct_+/-",
+      "MAFB_direct_+/+",
+      "MAFB_direct_+/-",
+      "MBD2_direct_+/-",
+      "RXRA_direct_+/+",
+      "RXRA_direct_+/-",
+      "SPI1_direct_+/+",
+      "SPI1_direct_+/-",
+      "STAT6_direct_+/+",
+      "TFDP2_direct_-/-",
+      "ZBTB7A_direct_+/+",
+      "ZBTB7A_direct_+/-"
+     ],
+     [
+      "CEBPA_direct_+/-",
+      "CEBPA_direct_-/+",
+      "GABPB1_direct_-/+",
+      "KLF10_direct_+/+",
+      "KLF10_direct_+/-",
+      "KLF11_direct_+/+",
+      "PBX3_direct_-/+",
+      "STAT5A_direct_-/+",
+      "YBX1_direct_+/+",
+      "YBX1_direct_+/-"
+     ],
+     [
+      "KLF10_direct_-/+",
+      "KLF10_direct_-/-",
+      "KLF11_direct_-/-"
+     ]
+    ],
+    "old_to_new_block_match": {
+     "1": 1,
+     "2": 2,
+     "3": 3,
+     "4": 4
+    },
+    "n_regulons_changing_block": 5,
+    "regulons_changing_block": [
+     "GABPB1_direct_-/+",
+     "KLF11_direct_-/-",
+     "PBX3_direct_-/+",
+     "YBX1_direct_+/+",
+     "YBX1_direct_+/-"
+    ],
+    "VERDICT": "BLOCK-STRUCTURED"
+   }
+  },
+  "DROP_B": {
+   "Diagnosis": {
+    "n_targets_removed_module_union": 121,
+    "regulons_left_with_no_targets": [],
+    "Q_observed": 0.43417779879274565,
+    "Q_committed_undepleted": 0.46303267827817873,
+    "null_mean": 0.39808300039871086,
+    "null_sd": 0.03359962994117987,
+    "null_p95": 0.45106165060663866,
+    "p_empirical_one_sided": 0.13586413586413587,
+    "percentile_of_observed": 86.5,
+    "n_communities": 2,
+    "n_communities_ge3": 2,
+    "community_sizes": [
+     30,
+     25
+    ],
+    "communities": [
+     [
+      "CEBPA_direct_-/+",
+      "CEBPD_direct_-/+",
+      "EP300_direct_-/+",
+      "EP300_direct_-/-",
+      "FOSL2_direct_-/+",
+      "FOSL2_direct_-/-",
+      "GATA2_direct_+/+",
+      "HMGA1_direct_+/+",
+      "ILF2_direct_+/-",
+      "IRF8_direct_-/+",
+      "IRF8_direct_-/-",
+      "KLF10_direct_-/+",
+      "KLF10_direct_-/-",
+      "KLF11_direct_-/-",
+      "KLF4_direct_-/-",
+      "MAFB_direct_-/-",
+      "MAFF_direct_+/-",
+      "PBX3_direct_-/+",
+      "RUNX2_direct_-/+",
+      "SMC3_direct_+/-",
+      "SPI1_direct_-/+",
+      "SPI1_direct_-/-",
+      "STAT5A_direct_+/+",
+      "TFDP2_direct_+/-",
+      "WT1_direct_+/+",
+      "XBP1_direct_+/-",
+      "YBX1_direct_+/+",
+      "YBX1_direct_+/-",
+      "ZBTB7A_direct_-/+",
+      "ZBTB7A_direct_-/-"
+     ],
+     [
+      "BACH1_direct_+/+",
+      "CEBPA_direct_+/-",
+      "ERG_direct_-/-",
+      "GABPB1_direct_-/+",
+      "IRF5_direct_+/+",
+      "IRF8_direct_+/+",
+      "IRF8_direct_+/-",
+      "KLF10_direct_+/+",
+      "KLF10_direct_+/-",
+      "KLF11_direct_+/+",
+      "KLF3_direct_+/+",
+      "KLF4_direct_+/+",
+      "KLF4_direct_+/-",
+      "MAFB_direct_+/+",
+      "MAFB_direct_+/-",
+      "MBD2_direct_+/-",
+      "RXRA_direct_+/+",
+      "RXRA_direct_+/-",
+      "SPI1_direct_+/+",
+      "SPI1_direct_+/-",
+      "STAT5A_direct_-/+",
+      "STAT6_direct_+/+",
+      "TFDP2_direct_-/-",
+      "ZBTB7A_direct_+/+",
+      "ZBTB7A_direct_+/-"
+     ]
+    ],
+    "old_to_new_block_match": {
+     "1": 1,
+     "2": 2
+    },
+    "n_regulons_changing_block": 0,
+    "regulons_changing_block": [],
+    "VERDICT": "FLAT"
+   },
+   "Relapse": {
+    "n_targets_removed_module_union": 113,
+    "regulons_left_with_no_targets": [],
+    "Q_observed": 0.46816081860561654,
+    "Q_committed_undepleted": 0.4696939549079081,
+    "null_mean": 0.4124620727277321,
+    "null_sd": 0.03385238229342289,
+    "null_p95": 0.4660559100939018,
+    "p_empirical_one_sided": 0.04795204795204795,
+    "percentile_of_observed": 95.3,
+    "n_communities": 4,
+    "n_communities_ge3": 4,
+    "community_sizes": [
+     23,
+     19,
+     10,
+     3
+    ],
+    "communities": [
+     [
+      "CEBPD_direct_-/+",
+      "EP300_direct_-/+",
+      "EP300_direct_-/-",
+      "FOSL2_direct_-/+",
+      "FOSL2_direct_-/-",
+      "GATA2_direct_+/+",
+      "HMGA1_direct_+/+",
+      "ILF2_direct_+/-",
+      "IRF8_direct_-/+",
+      "IRF8_direct_-/-",
+      "KLF4_direct_-/-",
+      "MAFB_direct_-/-",
+      "MAFF_direct_+/-",
+      "RUNX2_direct_-/+",
+      "SMC3_direct_+/-",
+      "SPI1_direct_-/+",
+      "SPI1_direct_-/-",
+      "STAT5A_direct_+/+",
+      "TFDP2_direct_+/-",
+      "WT1_direct_+/+",
+      "XBP1_direct_+/-",
+      "ZBTB7A_direct_-/+",
+      "ZBTB7A_direct_-/-"
+     ],
+     [
+      "BACH1_direct_+/+",
+      "ERG_direct_-/-",
+      "IRF5_direct_+/+",
+      "IRF8_direct_+/+",
+      "IRF8_direct_+/-",
+      "KLF3_direct_+/+",
+      "KLF4_direct_+/+",
+      "KLF4_direct_+/-",
+      "MAFB_direct_+/+",
+      "MAFB_direct_+/-",
+      "MBD2_direct_+/-",
+      "RXRA_direct_+/+",
+      "RXRA_direct_+/-",
+      "SPI1_direct_+/+",
+      "SPI1_direct_+/-",
+      "STAT6_direct_+/+",
+      "TFDP2_direct_-/-",
+      "ZBTB7A_direct_+/+",
+      "ZBTB7A_direct_+/-"
+     ],
+     [
+      "CEBPA_direct_+/-",
+      "CEBPA_direct_-/+",
+      "GABPB1_direct_-/+",
+      "KLF10_direct_+/+",
+      "KLF10_direct_+/-",
+      "KLF11_direct_+/+",
+      "PBX3_direct_-/+",
+      "STAT5A_direct_-/+",
+      "YBX1_direct_+/+",
+      "YBX1_direct_+/-"
+     ],
+     [
+      "KLF10_direct_-/+",
+      "KLF10_direct_-/-",
+      "KLF11_direct_-/-"
+     ]
+    ],
+    "old_to_new_block_match": {
+     "1": 1,
+     "2": 2,
+     "3": 3,
+     "4": 4
+    },
+    "n_regulons_changing_block": 5,
+    "regulons_changing_block": [
+     "GABPB1_direct_-/+",
+     "KLF11_direct_-/-",
+     "PBX3_direct_-/+",
+     "YBX1_direct_+/+",
+     "YBX1_direct_+/-"
+    ],
+    "VERDICT": "BLOCK-STRUCTURED"
+   }
+  }
+ },
+ "S2b_enrichment_after_drop": {
+  "DROP_A|Diagnosis|block1|GOBP": {
+   "n_regulons": 30,
+   "n_foreground": 1397,
+   "n_background": 5831,
+   "n_terms": 1844,
+   "n_sig_q05": 4,
+   "top_terms": [
+    {
+     "term": "Ribosome Biogenesis (GO:0042254)",
+     "n_overlap": 36,
+     "n_term_in_bg": 72,
+     "odds_ratio": 3.231447465099192,
+     "q": 0.0023614157102314717
+    },
+    {
+     "term": "Formation of Cytoplasmic Translation Initiation Complex (GO:0001732)",
+     "n_overlap": 10,
+     "n_term_in_bg": 12,
+     "odds_ratio": 15.976928622927181,
+     "q": 0.016423201698882468
+    },
+    {
+     "term": "Ribonucleoprotein Complex Biogenesis (GO:0022613)",
+     "n_overlap": 23,
+     "n_term_in_bg": 43,
+     "odds_ratio": 3.694395924308588,
+     "q": 0.016423201698882468
+    },
+    {
+     "term": "protein-RNA Complex Assembly (GO:0022618)",
+     "n_overlap": 34,
+     "n_term_in_bg": 76,
+     "odds_ratio": 2.6085316004611676,
+     "q": 0.023709306059717182
+    },
+    {
+     "term": "Ribosomal Large Subunit Biogenesis (GO:0042273)",
+     "n_overlap": 14,
+     "n_term_in_bg": 23,
+     "odds_ratio": 4.977102916365389,
+     "q": 0.06231369957426448
+    },
+    {
+     "term": "Cytoplasmic Translational Initiation (GO:0002183)",
+     "n_overlap": 15,
+     "n_term_in_bg": 26,
+     "odds_ratio": 4.364228391001184,
+     "q": 0.07012067229687341
+    },
+    {
+     "term": "Purine Nucleotide Metabolic Process (GO:0006163)",
+     "n_overlap": 11,
+     "n_term_in_bg": 17,
+     "odds_ratio": 5.857142857142857,
+     "q": 0.10861175125850518
+    },
+    {
+     "term": "Positive Regulation of Telomere Maintenance via Telomerase (GO:0032212)",
+     "n_overlap": 10,
+     "n_term_in_bg": 15,
+     "odds_ratio": 6.386445565969719,
+     "q": 0.12492794791045607
+    }
+   ]
+  },
+  "DROP_A|Diagnosis|block1|REAC": {
+   "n_regulons": 30,
+   "n_foreground": 1397,
+   "n_background": 5831,
+   "n_terms": 1109,
+   "n_sig_q05": 98,
+   "top_terms": [
+    {
+     "term": "Metabolism of RNA",
+     "n_overlap": 130,
+     "n_term_in_bg": 346,
+     "odds_ratio": 2.0036393931421554,
+     "q": 4.140938737202068e-06
+    },
+    {
+     "term": "Cyclin E Associated Events During G1 S Transition",
+     "n_overlap": 28,
+     "n_term_in_bg": 51,
+     "odds_ratio": 3.9225077015911327,
+     "q": 0.000996254333706638
+    },
+    {
+     "term": "Aerobic Respiration and Respiratory Electron Transport",
+     "n_overlap": 60,
+     "n_term_in_bg": 149,
+     "odds_ratio": 2.1908851781197214,
+     "q": 0.0010615413906930019
+    },
+    {
+     "term": "Cyclin A Cdk2-associated Events at S Phase Entry",
+     "n_overlap": 28,
+     "n_term_in_bg": 52,
+     "odds_ratio": 3.7582176771365963,
+     "q": 0.0010615413906930019
+    },
+    {
+     "term": "Mitotic G2-G2 M Phases",
+     "n_overlap": 45,
+     "n_term_in_bg": 102,
+     "odds_ratio": 2.555862659607599,
+     "q": 0.0010615413906930019
+    },
+    {
+     "term": "Translation",
+     "n_overlap": 34,
+     "n_term_in_bg": 69,
+     "odds_ratio": 3.1352269154176713,
+     "q": 0.0010615413906930019
+    },
+    {
+     "term": "Formation of a Pool of Free 40S Subunits",
+     "n_overlap": 12,
+     "n_term_in_bg": 15,
+     "odds_ratio": 12.797111913357401,
+     "q": 0.0011829635178850272
+    },
+    {
+     "term": "G2 M Transition",
+     "n_overlap": 44,
+     "n_term_in_bg": 101,
+     "odds_ratio": 2.49721865639709,
+     "q": 0.0013588068556484305
+    }
+   ]
+  },
+  "DROP_A|Diagnosis|block1|HALL": {
+   "n_regulons": 30,
+   "n_foreground": 1397,
+   "n_background": 5831,
+   "n_terms": 50,
+   "n_sig_q05": 4,
+   "top_terms": [
+    {
+     "term": "Myc Targets V1",
+     "n_overlap": 85,
+     "n_term_in_bg": 157,
+     "odds_ratio": 3.9249872967479673,
+     "q": 7.607303557532283e-15
+    },
+    {
+     "term": "Oxidative Phosphorylation",
+     "n_overlap": 60,
+     "n_term_in_bg": 149,
+     "odds_ratio": 2.1908851781197214,
+     "q": 0.0001435808914372861
+    },
+    {
+     "term": "Myc Targets V2",
+     "n_overlap": 20,
+     "n_term_in_bg": 35,
+     "odds_ratio": 4.278867102396514,
+     "q": 0.00041575738313896234
+    },
+    {
+     "term": "DNA Repair",
+     "n_overlap": 34,
+     "n_term_in_bg": 92,
+     "odds_ratio": 1.8820553039694385,
+     "q": 0.042159709999244656
+    },
+    {
+     "term": "Fatty Acid Metabolism",
+     "n_overlap": 27,
+     "n_term_in_bg": 78,
+     "odds_ratio": 1.6937312151137827,
+     "q": 0.19917535338009373
+    },
+    {
+     "term": "Reactive Oxygen Species Pathway",
+     "n_overlap": 15,
+     "n_term_in_bg": 38,
+     "odds_ratio": 2.0815767948153274,
+     "q": 0.19917535338009373
+    },
+    {
+     "term": "Estrogen Response Early",
+     "n_overlap": 27,
+     "n_term_in_bg": 88,
+     "odds_ratio": 1.4128395357185592,
+     "q": 0.5552162862023189
+    },
+    {
+     "term": "p53 Pathway",
+     "n_overlap": 36,
+     "n_term_in_bg": 121,
+     "odds_ratio": 1.353364740459005,
+     "q": 0.5552162862023189
+    }
+   ]
+  },
+  "DROP_A|Diagnosis|block2|GOBP": {
+   "n_regulons": 25,
+   "n_foreground": 1951,
+   "n_background": 5831,
+   "n_terms": 1844,
+   "n_sig_q05": 198,
+   "top_terms": [
+    {
+     "term": "Positive Regulation of Canonical NF-kappaB Signal Transduction (GO:0043123)",
+     "n_overlap": 70,
+     "n_term_in_bg": 116,
+     "odds_ratio": 3.101726648637404,
+     "q": 1.8072349721699695e-06
+    },
+    {
+     "term": "Regulation of Canonical NF-kappaB Signal Transduction (GO:0043122)",
+     "n_overlap": 85,
+     "n_term_in_bg": 149,
+     "odds_ratio": 2.7160369774919615,
+     "q": 1.8072349721699695e-06
+    },
+    {
+     "term": "Positive Regulation of Intracellular Signal Transduction (GO:1902533)",
+     "n_overlap": 148,
+     "n_term_in_bg": 299,
+     "odds_ratio": 2.0271291776399156,
+     "q": 1.8299377183198787e-06
+    },
+    {
+     "term": "Intracellular Signaling Cassette (GO:0141124)",
+     "n_overlap": 88,
+     "n_term_in_bg": 164,
+     "odds_ratio": 2.3642681583185015,
+     "q": 2.497288797836094e-05
+    },
+    {
+     "term": "Positive Regulation of Cytokine Production (GO:0001819)",
+     "n_overlap": 91,
+     "n_term_in_bg": 172,
+     "odds_ratio": 2.294630293375813,
+     "q": 2.866130583476849e-05
+    },
+    {
+     "term": "Regulation of Tumor Necrosis Factor Production (GO:0032680)",
+     "n_overlap": 47,
+     "n_term_in_bg": 75,
+     "odds_ratio": 3.3959333733493398,
+     "q": 5.6315879492979026e-05
+    },
+    {
+     "term": "Antigen Processing and Presentation of Exogenous Peptide Antigen (GO:0002478)",
+     "n_overlap": 21,
+     "n_term_in_bg": 25,
+     "odds_ratio": 10.543523316062176,
+     "q": 6.994558076064358e-05
+    },
+    {
+     "term": "Cellular Response to Cytokine Stimulus (GO:0071345)",
+     "n_overlap": 83,
+     "n_term_in_bg": 157,
+     "odds_ratio": 2.285274032062041,
+     "q": 7.032129182956435e-05
+    }
+   ]
+  },
+  "DROP_A|Diagnosis|block2|REAC": {
+   "n_regulons": 25,
+   "n_foreground": 1951,
+   "n_background": 5831,
+   "n_terms": 1109,
+   "n_sig_q05": 129,
+   "top_terms": [
+    {
+     "term": "Neutrophil Degranulation",
+     "n_overlap": 204,
+     "n_term_in_bg": 338,
+     "odds_ratio": 3.2643764577228342,
+     "q": 1.8162627201594364e-22
+    },
+    {
+     "term": "Cytokine Signaling in Immune System",
+     "n_overlap": 211,
+     "n_term_in_bg": 450,
+     "odds_ratio": 1.8473789255999615,
+     "q": 3.0300494243834737e-07
+    },
+    {
+     "term": "Hemostasis",
+     "n_overlap": 146,
+     "n_term_in_bg": 290,
+     "odds_ratio": 2.098553401046476,
+     "q": 3.172100248169131e-07
+    },
+    {
+     "term": "Leishmania Infection",
+     "n_overlap": 68,
+     "n_term_in_bg": 113,
+     "odds_ratio": 3.0775948545465273,
+     "q": 7.300302230937421e-07
+    },
+    {
+     "term": "Parasitic Infection Pathways",
+     "n_overlap": 68,
+     "n_term_in_bg": 113,
+     "odds_ratio": 3.0775948545465273,
+     "q": 7.300302230937421e-07
+    },
+    {
+     "term": "Signaling by GPCR",
+     "n_overlap": 110,
+     "n_term_in_bg": 208,
+     "odds_ratio": 2.305867485505881,
+     "q": 7.300302230937421e-07
+    },
+    {
+     "term": "GPCR Downstream Signalling",
+     "n_overlap": 101,
+     "n_term_in_bg": 190,
+     "odds_ratio": 2.3254843607652598,
+     "q": 1.5511320198104137e-06
+    },
+    {
+     "term": "Toll-like Receptor Cascades",
+     "n_overlap": 62,
+     "n_term_in_bg": 102,
+     "odds_ratio": 3.150873478030704,
+     "q": 1.5511320198104137e-06
+    }
+   ]
+  },
+  "DROP_A|Diagnosis|block2|HALL": {
+   "n_regulons": 25,
+   "n_foreground": 1951,
+   "n_background": 5831,
+   "n_terms": 50,
+   "n_sig_q05": 16,
+   "top_terms": [
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "n_overlap": 97,
+     "n_term_in_bg": 164,
+     "odds_ratio": 2.977515335941651,
+     "q": 3.7189599634169866e-10
+    },
+    {
+     "term": "Complement",
+     "n_overlap": 70,
+     "n_term_in_bg": 109,
+     "odds_ratio": 3.6651262967052443,
+     "q": 8.581724871071996e-10
+    },
+    {
+     "term": "Allograft Rejection",
+     "n_overlap": 67,
+     "n_term_in_bg": 121,
+     "odds_ratio": 2.5196783832664935,
+     "q": 7.754509052025851e-06
+    },
+    {
+     "term": "Interferon Gamma Response",
+     "n_overlap": 73,
+     "n_term_in_bg": 144,
+     "odds_ratio": 2.085354512592059,
+     "q": 0.00014469485386867383
+    },
+    {
+     "term": "Inflammatory Response",
+     "n_overlap": 65,
+     "n_term_in_bg": 128,
+     "odds_ratio": 2.0881095456917302,
+     "q": 0.00027965602930751587
+    },
+    {
+     "term": "UV Response Up",
+     "n_overlap": 48,
+     "n_term_in_bg": 88,
+     "odds_ratio": 2.4214398318444563,
+     "q": 0.00027965602930751587
+    },
+    {
+     "term": "Apoptosis",
+     "n_overlap": 57,
+     "n_term_in_bg": 111,
+     "odds_ratio": 2.1322891000821307,
+     "q": 0.0004670115138089753
+    },
+    {
+     "term": "Apical Junction",
+     "n_overlap": 41,
+     "n_term_in_bg": 81,
+     "odds_ratio": 2.060732984293194,
+     "q": 0.00611234115696445
+    }
+   ]
+  },
+  "DROP_A|Relapse|block1|GOBP": {
+   "n_regulons": 23,
+   "n_foreground": 1423,
+   "n_background": 6626,
+   "n_terms": 2018,
+   "n_sig_q05": 5,
+   "top_terms": [
+    {
+     "term": "protein-RNA Complex Assembly (GO:0022618)",
+     "n_overlap": 38,
+     "n_term_in_bg": 82,
+     "odds_ratio": 3.2169675090252707,
+     "q": 0.0008111493847669765
+    },
+    {
+     "term": "Proton Motive Force-Driven ATP Synthesis (GO:0015986)",
+     "n_overlap": 27,
+     "n_term_in_bg": 55,
+     "odds_ratio": 3.574626483831355,
+     "q": 0.005013877604827143
+    },
+    {
+     "term": "Oxidative Phosphorylation (GO:0006119)",
+     "n_overlap": 27,
+     "n_term_in_bg": 56,
+     "odds_ratio": 3.450696571485031,
+     "q": 0.005148139417421747
+    },
+    {
+     "term": "Proton Motive Force-Driven Mitochondrial ATP Synthesis (GO:0042776)",
+     "n_overlap": 25,
+     "n_term_in_bg": 51,
+     "odds_ratio": 3.5607186090018708,
+     "q": 0.005798031298368514
+    },
+    {
+     "term": "ATP Biosynthetic Process (GO:0006754)",
+     "n_overlap": 12,
+     "n_term_in_bg": 19,
+     "odds_ratio": 6.312848030778577,
+     "q": 0.040951331296664284
+    },
+    {
+     "term": "Cytoplasmic Translational Initiation (GO:0002183)",
+     "n_overlap": 16,
+     "n_term_in_bg": 31,
+     "odds_ratio": 3.9330964226486613,
+     "q": 0.065123523790487
+    },
+    {
+     "term": "Mitochondrial Respiratory Chain Complex Assembly (GO:0033108)",
+     "n_overlap": 22,
+     "n_term_in_bg": 50,
+     "odds_ratio": 2.9022636892015905,
+     "q": 0.065123523790487
+    },
+    {
+     "term": "Mitochondrion Organization (GO:0007005)",
+     "n_overlap": 28,
+     "n_term_in_bg": 70,
+     "odds_ratio": 2.466427718040621,
+     "q": 0.065123523790487
+    }
+   ]
+  },
+  "DROP_A|Relapse|block1|REAC": {
+   "n_regulons": 23,
+   "n_foreground": 1423,
+   "n_background": 6626,
+   "n_terms": 1150,
+   "n_sig_q05": 119,
+   "top_terms": [
+    {
+     "term": "Aerobic Respiration and Respiratory Electron Transport",
+     "n_overlap": 64,
+     "n_term_in_bg": 164,
+     "odds_ratio": 2.40317880794702,
+     "q": 0.0001825188366048568
+    },
+    {
+     "term": "Mitochondrial Protein Import",
+     "n_overlap": 25,
+     "n_term_in_bg": 44,
+     "odds_ratio": 4.879150666365485,
+     "q": 0.0001825188366048568
+    },
+    {
+     "term": "Orc1 Removal From Chromatin",
+     "n_overlap": 25,
+     "n_term_in_bg": 46,
+     "odds_ratio": 4.412766537230056,
+     "q": 0.0003814972359786806
+    },
+    {
+     "term": "Metabolism of Amino Acids and Derivatives",
+     "n_overlap": 44,
+     "n_term_in_bg": 112,
+     "odds_ratio": 2.409461246427505,
+     "q": 0.002234620212409743
+    },
+    {
+     "term": "Proteasome Assembly",
+     "n_overlap": 22,
+     "n_term_in_bg": 42,
+     "odds_ratio": 4.069450392576731,
+     "q": 0.002234620212409743
+    },
+    {
+     "term": "Respiratory Electron Transport",
+     "n_overlap": 43,
+     "n_term_in_bg": 109,
+     "odds_ratio": 2.4252415458937198,
+     "q": 0.002234620212409743
+    },
+    {
+     "term": "Translation",
+     "n_overlap": 34,
+     "n_term_in_bg": 79,
+     "odds_ratio": 2.805727541796656,
+     "q": 0.002234620212409743
+    },
+    {
+     "term": "Cristae Formation",
+     "n_overlap": 15,
+     "n_term_in_bg": 24,
+     "odds_ratio": 6.148200757575758,
+     "q": 0.0022963283673497342
+    }
+   ]
+  },
+  "DROP_A|Relapse|block1|HALL": {
+   "n_regulons": 23,
+   "n_foreground": 1423,
+   "n_background": 6626,
+   "n_terms": 50,
+   "n_sig_q05": 5,
+   "top_terms": [
+    {
+     "term": "Myc Targets V1",
+     "n_overlap": 92,
+     "n_term_in_bg": 165,
+     "odds_ratio": 4.85740456758231,
+     "q": 1.0697426224756833e-20
+    },
+    {
+     "term": "Oxidative Phosphorylation",
+     "n_overlap": 62,
+     "n_term_in_bg": 160,
+     "odds_ratio": 2.373030034938296,
+     "q": 9.404925209880577e-06
+    },
+    {
+     "term": "DNA Repair",
+     "n_overlap": 42,
+     "n_term_in_bg": 102,
+     "odds_ratio": 2.606879073135409,
+     "q": 7.998224772855763e-05
+    },
+    {
+     "term": "E2F Targets",
+     "n_overlap": 50,
+     "n_term_in_bg": 144,
+     "odds_ratio": 1.979281275665959,
+     "q": 0.0018617955235931494
+    },
+    {
+     "term": "Fatty Acid Metabolism",
+     "n_overlap": 30,
+     "n_term_in_bg": 89,
+     "odds_ratio": 1.8776692177594996,
+     "q": 0.049213990487410354
+    },
+    {
+     "term": "Glycolysis",
+     "n_overlap": 29,
+     "n_term_in_bg": 88,
+     "odds_ratio": 1.8137781776621356,
+     "q": 0.0668414479288408
+    },
+    {
+     "term": "Myc Targets V2",
+     "n_overlap": 14,
+     "n_term_in_bg": 36,
+     "odds_ratio": 2.339957416607523,
+     "q": 0.09331394605262897
+    },
+    {
+     "term": "Hypoxia",
+     "n_overlap": 33,
+     "n_term_in_bg": 118,
+     "odds_ratio": 1.4294879390605162,
+     "q": 0.3491089110796804
+    }
+   ]
+  },
+  "DROP_A|Relapse|block2|GOBP": {
+   "n_regulons": 19,
+   "n_foreground": 1705,
+   "n_background": 6626,
+   "n_terms": 2018,
+   "n_sig_q05": 219,
+   "top_terms": [
+    {
+     "term": "Positive Regulation of Intracellular Signal Transduction (GO:1902533)",
+     "n_overlap": 136,
+     "n_term_in_bg": 328,
+     "odds_ratio": 2.1349320161461653,
+     "q": 2.6555272779602164e-07
+    },
+    {
+     "term": "Cytokine-Mediated Signaling Pathway (GO:0019221)",
+     "n_overlap": 69,
+     "n_term_in_bg": 137,
+     "odds_ratio": 3.0100046742413347,
+     "q": 3.889660674619005e-07
+    },
+    {
+     "term": "Regulation of ERK1 and ERK2 Cascade (GO:0070372)",
+     "n_overlap": 53,
+     "n_term_in_bg": 97,
+     "odds_ratio": 3.556034008364517,
+     "q": 6.789028532084442e-07
+    },
+    {
+     "term": "Regulation of Inflammatory Response (GO:0050727)",
+     "n_overlap": 64,
+     "n_term_in_bg": 127,
+     "odds_ratio": 3.0073803236508905,
+     "q": 8.237073186736366e-07
+    },
+    {
+     "term": "Intracellular Signaling Cassette (GO:0141124)",
+     "n_overlap": 86,
+     "n_term_in_bg": 191,
+     "odds_ratio": 2.4364010706197243,
+     "q": 1.5132509161163597e-06
+    },
+    {
+     "term": "Phagocytosis (GO:0006909)",
+     "n_overlap": 30,
+     "n_term_in_bg": 45,
+     "odds_ratio": 5.857910447761194,
+     "q": 2.7314101222292553e-06
+    },
+    {
+     "term": "Regulation of Tumor Necrosis Factor Production (GO:0032680)",
+     "n_overlap": 43,
+     "n_term_in_bg": 76,
+     "odds_ratio": 3.832257593990446,
+     "q": 2.7314101222292553e-06
+    },
+    {
+     "term": "Positive Regulation of MAPK Cascade (GO:0043410)",
+     "n_overlap": 72,
+     "n_term_in_bg": 155,
+     "odds_ratio": 2.5700056810216987,
+     "q": 3.645288052263068e-06
+    }
+   ]
+  },
+  "DROP_A|Relapse|block2|REAC": {
+   "n_regulons": 19,
+   "n_foreground": 1705,
+   "n_background": 6626,
+   "n_terms": 1150,
+   "n_sig_q05": 174,
+   "top_terms": [
+    {
+     "term": "Neutrophil Degranulation",
+     "n_overlap": 159,
+     "n_term_in_bg": 348,
+     "odds_ratio": 2.5749604714675867,
+     "q": 1.2088214935159553e-13
+    },
+    {
+     "term": "Cytokine Signaling in Immune System",
+     "n_overlap": 183,
+     "n_term_in_bg": 464,
+     "odds_ratio": 1.9854003675628153,
+     "q": 7.3436006656165855e-09
+    },
+    {
+     "term": "Signaling by Interleukins",
+     "n_overlap": 120,
+     "n_term_in_bg": 280,
+     "odds_ratio": 2.252839116719243,
+     "q": 5.517089079523707e-08
+    },
+    {
+     "term": "Toll-like Receptor Cascades",
+     "n_overlap": 57,
+     "n_term_in_bg": 111,
+     "odds_ratio": 3.1173476267529665,
+     "q": 1.5133670084775277e-06
+    },
+    {
+     "term": "Signaling by Receptor Tyrosine Kinases",
+     "n_overlap": 117,
+     "n_term_in_bg": 288,
+     "odds_ratio": 2.0465994962216625,
+     "q": 2.6472273974835165e-06
+    },
+    {
+     "term": "Leishmania Infection",
+     "n_overlap": 56,
+     "n_term_in_bg": 111,
+     "odds_ratio": 3.004531672087767,
+     "q": 2.6892490913609363e-06
+    },
+    {
+     "term": "Parasitic Infection Pathways",
+     "n_overlap": 56,
+     "n_term_in_bg": 111,
+     "odds_ratio": 3.004531672087767,
+     "q": 2.6892490913609363e-06
+    },
+    {
+     "term": "Hemostasis",
+     "n_overlap": 124,
+     "n_term_in_bg": 314,
+     "odds_ratio": 1.9529411764705882,
+     "q": 4.348296061490488e-06
+    }
+   ]
+  },
+  "DROP_A|Relapse|block2|HALL": {
+   "n_regulons": 19,
+   "n_foreground": 1705,
+   "n_background": 6626,
+   "n_terms": 50,
+   "n_sig_q05": 17,
+   "top_terms": [
+    {
+     "term": "Complement",
+     "n_overlap": 70,
+     "n_term_in_bg": 117,
+     "odds_ratio": 4.4398464441408025,
+     "q": 2.01056792956586e-13
+    },
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "n_overlap": 86,
+     "n_term_in_bg": 163,
+     "odds_ratio": 3.3416811724409006,
+     "q": 2.101670519024689e-12
+    },
+    {
+     "term": "Inflammatory Response",
+     "n_overlap": 65,
+     "n_term_in_bg": 124,
+     "odds_ratio": 3.2661223646134765,
+     "q": 2.330720752135295e-09
+    },
+    {
+     "term": "Allograft Rejection",
+     "n_overlap": 62,
+     "n_term_in_bg": 126,
+     "odds_ratio": 2.863797169811321,
+     "q": 1.2129699559761447e-07
+    },
+    {
+     "term": "IL-6/JAK/STAT3 Signaling",
+     "n_overlap": 28,
+     "n_term_in_bg": 57,
+     "odds_ratio": 2.8165237595871115,
+     "q": 0.001177625499893867
+    },
+    {
+     "term": "p53 Pathway",
+     "n_overlap": 52,
+     "n_term_in_bg": 128,
+     "odds_ratio": 2.0054446460980038,
+     "q": 0.0011835110656842512
+    },
+    {
+     "term": "Coagulation",
+     "n_overlap": 27,
+     "n_term_in_bg": 59,
+     "odds_ratio": 2.4583395411203814,
+     "q": 0.004699354885350116
+    },
+    {
+     "term": "KRAS Signaling Up",
+     "n_overlap": 43,
+     "n_term_in_bg": 108,
+     "odds_ratio": 1.9328704989354808,
+     "q": 0.005355375330301166
+    }
+   ]
+  },
+  "DROP_A|Relapse|block3|GOBP": {
+   "n_regulons": 10,
+   "n_foreground": 501,
+   "n_background": 6626,
+   "n_terms": 2018,
+   "n_sig_q05": 0,
+   "top_terms": [
+    {
+     "term": "Peptide Antigen Assembly With MHC Protein Complex (GO:0002501)",
+     "n_overlap": 7,
+     "n_term_in_bg": 14,
+     "odds_ratio": 12.384615384615385,
+     "q": 0.058748160423949425
+    },
+    {
+     "term": "Positive Regulation of Immune Response (GO:0050778)",
+     "n_overlap": 13,
+     "n_term_in_bg": 50,
+     "odds_ratio": 4.38325210456358,
+     "q": 0.05995928876391773
+    },
+    {
+     "term": "Positive Regulation of T Cell Mediated Cytotoxicity (GO:0001916)",
+     "n_overlap": 6,
+     "n_term_in_bg": 13,
+     "odds_ratio": 10.593939393939394,
+     "q": 0.09914979479846986
+    },
+    {
+     "term": "Positive Regulation of Response to Stimulus (GO:0048584)",
+     "n_overlap": 11,
+     "n_term_in_bg": 41,
+     "odds_ratio": 4.560884353741496,
+     "q": 0.09914979479846986
+    },
+    {
+     "term": "Macromolecule Modification (GO:0043412)",
+     "n_overlap": 10,
+     "n_term_in_bg": 37,
+     "odds_ratio": 4.5998340499358825,
+     "q": 0.10833124054522121
+    },
+    {
+     "term": "Regulation of T Cell Mediated Cytotoxicity (GO:0001914)",
+     "n_overlap": 6,
+     "n_term_in_bg": 14,
+     "odds_ratio": 9.268181818181818,
+     "q": 0.10833124054522121
+    },
+    {
+     "term": "Antigen Processing and Presentation of Endogenous Peptide Antigen (GO:0002483)",
+     "n_overlap": 5,
+     "n_term_in_bg": 10,
+     "odds_ratio": 12.338709677419354,
+     "q": 0.11185846353073174
+    },
+    {
+     "term": "Membrane Raft Organization (GO:0031579)",
+     "n_overlap": 5,
+     "n_term_in_bg": 10,
+     "odds_ratio": 12.338709677419354,
+     "q": 0.11185846353073174
+    }
+   ]
+  },
+  "DROP_A|Relapse|block3|REAC": {
+   "n_regulons": 10,
+   "n_foreground": 501,
+   "n_background": 6626,
+   "n_terms": 1150,
+   "n_sig_q05": 39,
+   "top_terms": [
+    {
+     "term": "Adaptive Immune System",
+     "n_overlap": 66,
+     "n_term_in_bg": 420,
+     "odds_ratio": 2.473446327683616,
+     "q": 4.581487443071331e-06
+    },
+    {
+     "term": "Antigen processing-Cross Presentation",
+     "n_overlap": 21,
+     "n_term_in_bg": 75,
+     "odds_ratio": 4.918634259259259,
+     "q": 4.758723101790149e-05
+    },
+    {
+     "term": "Neutrophil Degranulation",
+     "n_overlap": 54,
+     "n_term_in_bg": 348,
+     "odds_ratio": 2.3959731543624163,
+     "q": 7.032339807494616e-05
+    },
+    {
+     "term": "Cytokine Signaling in Immune System",
+     "n_overlap": 65,
+     "n_term_in_bg": 464,
+     "odds_ratio": 2.1394656365684854,
+     "q": 0.0001370490335993397
+    },
+    {
+     "term": "ER-Phagosome Pathway",
+     "n_overlap": 16,
+     "n_term_in_bg": 63,
+     "odds_ratio": 4.266198727791182,
+     "q": 0.0026940932674369444
+    },
+    {
+     "term": "Downstream TCR Signaling",
+     "n_overlap": 16,
+     "n_term_in_bg": 64,
+     "odds_ratio": 4.1766323024054985,
+     "q": 0.002788377438146467
+    },
+    {
+     "term": "Class I MHC Mediated Antigen Processing & Presentation",
+     "n_overlap": 32,
+     "n_term_in_bg": 201,
+     "odds_ratio": 2.4046126089754103,
+     "q": 0.006348409873010649
+    },
+    {
+     "term": "RHO GTPases Activate NADPH Oxidases",
+     "n_overlap": 7,
+     "n_term_in_bg": 16,
+     "odds_ratio": 9.629329734592892,
+     "q": 0.011406948069941237
+    }
+   ]
+  },
+  "DROP_A|Relapse|block3|HALL": {
+   "n_regulons": 10,
+   "n_foreground": 501,
+   "n_background": 6626,
+   "n_terms": 50,
+   "n_sig_q05": 11,
+   "top_terms": [
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "n_overlap": 37,
+     "n_term_in_bg": 163,
+     "odds_ratio": 3.7965756704980844,
+     "q": 3.44985510647332e-08
+    },
+    {
+     "term": "Apoptosis",
+     "n_overlap": 21,
+     "n_term_in_bg": 117,
+     "odds_ratio": 2.7475911458333333,
+     "q": 0.0025430680279691846
+    },
+    {
+     "term": "Inflammatory Response",
+     "n_overlap": 22,
+     "n_term_in_bg": 124,
+     "odds_ratio": 2.712063531049163,
+     "q": 0.0025430680279691846
+    },
+    {
+     "term": "UV Response Up",
+     "n_overlap": 17,
+     "n_term_in_bg": 94,
+     "odds_ratio": 2.7588279489105934,
+     "q": 0.0072857439626099465
+    },
+    {
+     "term": "Interferon Gamma Response",
+     "n_overlap": 23,
+     "n_term_in_bg": 151,
+     "odds_ratio": 2.2543638859832638,
+     "q": 0.008899235899621336
+    },
+    {
+     "term": "Apical Junction",
+     "n_overlap": 16,
+     "n_term_in_bg": 91,
+     "odds_ratio": 2.661168384879725,
+     "q": 0.009586652325515931
+    },
+    {
+     "term": "Hypoxia",
+     "n_overlap": 18,
+     "n_term_in_bg": 118,
+     "odds_ratio": 2.2453416149068324,
+     "q": 0.019250252507630978
+    },
+    {
+     "term": "Allograft Rejection",
+     "n_overlap": 19,
+     "n_term_in_bg": 126,
+     "odds_ratio": 2.2170473494396403,
+     "q": 0.019250252507630978
+    }
+   ]
+  },
+  "DROP_A|Relapse|block4|GOBP": {
+   "n_regulons": 3,
+   "n_foreground": 89,
+   "n_background": 6626,
+   "n_terms": 2018,
+   "n_sig_q05": 0,
+   "top_terms": [
+    {
+     "term": "External Encapsulating Structure Organization (GO:0045229)",
+     "n_overlap": 4,
+     "n_term_in_bg": 24,
+     "odds_ratio": 15.334117647058823,
+     "q": 0.31291020419130233
+    },
+    {
+     "term": "Extracellular Structure Organization (GO:0043062)",
+     "n_overlap": 4,
+     "n_term_in_bg": 25,
+     "odds_ratio": 14.601680672268907,
+     "q": 0.31291020419130233
+    },
+    {
+     "term": "Extracellular Matrix Organization (GO:0030198)",
+     "n_overlap": 5,
+     "n_term_in_bg": 53,
+     "odds_ratio": 8.046875,
+     "q": 0.45369532086485376
+    },
+    {
+     "term": "Natural Killer Cell Mediated Immunity (GO:0002228)",
+     "n_overlap": 3,
+     "n_term_in_bg": 18,
+     "odds_ratio": 15.167441860465116,
+     "q": 0.5556283513840679
+    },
+    {
+     "term": "Negative Regulation of Myeloid Cell Differentiation (GO:0045638)",
+     "n_overlap": 3,
+     "n_term_in_bg": 16,
+     "odds_ratio": 17.506261180679786,
+     "q": 0.5556283513840679
+    },
+    {
+     "term": "Regulation of Myeloid Cell Differentiation (GO:0045637)",
+     "n_overlap": 3,
+     "n_term_in_bg": 18,
+     "odds_ratio": 15.167441860465116,
+     "q": 0.5556283513840679
+    },
+    {
+     "term": "'De Novo' Post-Translational Protein Folding (GO:0051084)",
+     "n_overlap": 0,
+     "n_term_in_bg": 27,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "3'-UTR-mediated mRNA Destabilization (GO:0061158)",
+     "n_overlap": 0,
+     "n_term_in_bg": 12,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    }
+   ]
+  },
+  "DROP_A|Relapse|block4|REAC": {
+   "n_regulons": 3,
+   "n_foreground": 89,
+   "n_background": 6626,
+   "n_terms": 1150,
+   "n_sig_q05": 0,
+   "top_terms": [
+    {
+     "term": "ABC Transporter Disorders",
+     "n_overlap": 0,
+     "n_term_in_bg": 44,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "ABC-family Proteins Mediated Transport",
+     "n_overlap": 0,
+     "n_term_in_bg": 56,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "ADORA2B Mediated Anti-Inflammatory Cytokines Production",
+     "n_overlap": 1,
+     "n_term_in_bg": 22,
+     "odds_ratio": 3.5259740259740258,
+     "q": 1.0
+    },
+    {
+     "term": "ADP Signalling Through P2Y Purinoceptor 1",
+     "n_overlap": 0,
+     "n_term_in_bg": 14,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "ADP Signalling Through P2Y Purinoceptor 12",
+     "n_overlap": 0,
+     "n_term_in_bg": 12,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "APC-Cdc20 Mediated Degradation of Nek2A",
+     "n_overlap": 0,
+     "n_term_in_bg": 18,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "APC C-mediated Degradation of Cell Cycle Proteins",
+     "n_overlap": 0,
+     "n_term_in_bg": 58,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "APC C Cdc20 Mediated Degradation of Cyclin B",
+     "n_overlap": 0,
+     "n_term_in_bg": 16,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    }
+   ]
+  },
+  "DROP_A|Relapse|block4|HALL": {
+   "n_regulons": 3,
+   "n_foreground": 89,
+   "n_background": 6626,
+   "n_terms": 50,
+   "n_sig_q05": 0,
+   "top_terms": [
+    {
+     "term": "Epithelial Mesenchymal Transition",
+     "n_overlap": 4,
+     "n_term_in_bg": 85,
+     "odds_ratio": 3.7507625272331153,
+     "q": 0.6752351267672794
+    },
+    {
+     "term": "KRAS Signaling Up",
+     "n_overlap": 5,
+     "n_term_in_bg": 108,
+     "odds_ratio": 3.7182154415164126,
+     "q": 0.6752351267672794
+    },
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "n_overlap": 0,
+     "n_term_in_bg": 163,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "Hypoxia",
+     "n_overlap": 0,
+     "n_term_in_bg": 118,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "Cholesterol Homeostasis",
+     "n_overlap": 0,
+     "n_term_in_bg": 44,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "Mitotic Spindle",
+     "n_overlap": 4,
+     "n_term_in_bg": 133,
+     "odds_ratio": 2.3376196990424076,
+     "q": 1.0
+    },
+    {
+     "term": "Wnt-beta Catenin Signaling",
+     "n_overlap": 0,
+     "n_term_in_bg": 21,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "TGF-beta Signaling",
+     "n_overlap": 0,
+     "n_term_in_bg": 42,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    }
+   ]
+  },
+  "DROP_B|Diagnosis|block1|GOBP": {
+   "n_regulons": 30,
+   "n_foreground": 1388,
+   "n_background": 5812,
+   "n_terms": 1839,
+   "n_sig_q05": 1,
+   "top_terms": [
+    {
+     "term": "Ribosome Biogenesis (GO:0042254)",
+     "n_overlap": 35,
+     "n_term_in_bg": 71,
+     "odds_ratio": 3.1530754701486408,
+     "q": 0.004653267190227672
+    },
+    {
+     "term": "Ribonucleoprotein Complex Biogenesis (GO:0022613)",
+     "n_overlap": 22,
+     "n_term_in_bg": 42,
+     "odds_ratio": 3.5464128843338214,
+     "q": 0.05325504986009348
+    },
+    {
+     "term": "Cytoplasmic Translational Initiation (GO:0002183)",
+     "n_overlap": 12,
+     "n_term_in_bg": 19,
+     "odds_ratio": 5.502906976744186,
+     "q": 0.11791290587177453
+    },
+    {
+     "term": "Formation of Cytoplasmic Translation Initiation Complex (GO:0001732)",
+     "n_overlap": 8,
+     "n_term_in_bg": 10,
+     "odds_ratio": 12.817391304347826,
+     "q": 0.11791290587177453
+    },
+    {
+     "term": "protein-RNA Complex Assembly (GO:0022618)",
+     "n_overlap": 30,
+     "n_term_in_bg": 71,
+     "odds_ratio": 2.3616150005388126,
+     "q": 0.11791290587177453
+    },
+    {
+     "term": "Purine Nucleotide Metabolic Process (GO:0006163)",
+     "n_overlap": 11,
+     "n_term_in_bg": 17,
+     "odds_ratio": 5.882110869038973,
+     "q": 0.11791290587177453
+    },
+    {
+     "term": "Ribosomal Large Subunit Biogenesis (GO:0042273)",
+     "n_overlap": 13,
+     "n_term_in_bg": 22,
+     "odds_ratio": 4.637979797979798,
+     "q": 0.11791290587177453
+    },
+    {
+     "term": "Positive Regulation of Telomere Maintenance via Telomerase (GO:0032212)",
+     "n_overlap": 10,
+     "n_term_in_bg": 15,
+     "odds_ratio": 6.413642960812772,
+     "q": 0.1211777975388282
+    }
+   ]
+  },
+  "DROP_B|Diagnosis|block1|REAC": {
+   "n_regulons": 30,
+   "n_foreground": 1388,
+   "n_background": 5812,
+   "n_terms": 1098,
+   "n_sig_q05": 56,
+   "top_terms": [
+    {
+     "term": "Metabolism of RNA",
+     "n_overlap": 128,
+     "n_term_in_bg": 340,
+     "odds_ratio": 2.0183288409703506,
+     "q": 3.800687425569279e-06
+    },
+    {
+     "term": "Aerobic Respiration and Respiratory Electron Transport",
+     "n_overlap": 59,
+     "n_term_in_bg": 148,
+     "odds_ratio": 2.1623506733964035,
+     "q": 0.0019702260692825123
+    },
+    {
+     "term": "Cyclin A Cdk2-associated Events at S Phase Entry",
+     "n_overlap": 27,
+     "n_term_in_bg": 51,
+     "odds_ratio": 3.6370315944158707,
+     "q": 0.0019702260692825123
+    },
+    {
+     "term": "Cyclin E Associated Events During G1 S Transition",
+     "n_overlap": 27,
+     "n_term_in_bg": 50,
+     "odds_ratio": 3.7960259400057503,
+     "q": 0.0019702260692825123
+    },
+    {
+     "term": "Mitotic G2-G2 M Phases",
+     "n_overlap": 44,
+     "n_term_in_bg": 101,
+     "odds_ratio": 2.508197577276525,
+     "q": 0.0019702260692825123
+    },
+    {
+     "term": "G2 M Transition",
+     "n_overlap": 43,
+     "n_term_in_bg": 100,
+     "odds_ratio": 2.449370638492141,
+     "q": 0.003079996890032899
+    },
+    {
+     "term": "RUNX1 Regulates Transcription of Genes Involved in Differentiation of HSCs",
+     "n_overlap": 23,
+     "n_term_in_bg": 43,
+     "odds_ratio": 3.71032967032967,
+     "q": 0.0039642240974153056
+    },
+    {
+     "term": "Translation",
+     "n_overlap": 27,
+     "n_term_in_bg": 56,
+     "odds_ratio": 3.006536775697383,
+     "q": 0.00801193741920642
+    }
+   ]
+  },
+  "DROP_B|Diagnosis|block1|HALL": {
+   "n_regulons": 30,
+   "n_foreground": 1388,
+   "n_background": 5812,
+   "n_terms": 50,
+   "n_sig_q05": 4,
+   "top_terms": [
+    {
+     "term": "Myc Targets V1",
+     "n_overlap": 84,
+     "n_term_in_bg": 153,
+     "odds_ratio": 4.065750866897839,
+     "q": 3.015478908149149e-15
+    },
+    {
+     "term": "Oxidative Phosphorylation",
+     "n_overlap": 60,
+     "n_term_in_bg": 149,
+     "odds_ratio": 2.200656558819548,
+     "q": 0.00012862558610079935
+    },
+    {
+     "term": "Myc Targets V2",
+     "n_overlap": 20,
+     "n_term_in_bg": 35,
+     "odds_ratio": 4.297270955165692,
+     "q": 0.00039522387329966207
+    },
+    {
+     "term": "DNA Repair",
+     "n_overlap": 34,
+     "n_term_in_bg": 92,
+     "odds_ratio": 1.890235827433403,
+     "q": 0.039882640041304374
+    },
+    {
+     "term": "Fatty Acid Metabolism",
+     "n_overlap": 27,
+     "n_term_in_bg": 78,
+     "odds_ratio": 1.7010416216449842,
+     "q": 0.19369416569530865
+    },
+    {
+     "term": "Reactive Oxygen Species Pathway",
+     "n_overlap": 15,
+     "n_term_in_bg": 38,
+     "odds_ratio": 2.090471515880807,
+     "q": 0.19369416569530865
+    },
+    {
+     "term": "Estrogen Response Early",
+     "n_overlap": 27,
+     "n_term_in_bg": 88,
+     "odds_ratio": 1.4189301502029608,
+     "q": 0.5843432869612877
+    },
+    {
+     "term": "mTORC1 Signaling",
+     "n_overlap": 41,
+     "n_term_in_bg": 143,
+     "odds_ratio": 1.289736087456512,
+     "q": 0.5843432869612877
+    }
+   ]
+  },
+  "DROP_B|Diagnosis|block2|GOBP": {
+   "n_regulons": 25,
+   "n_foreground": 1947,
+   "n_background": 5812,
+   "n_terms": 1839,
+   "n_sig_q05": 201,
+   "top_terms": [
+    {
+     "term": "Positive Regulation of Canonical NF-kappaB Signal Transduction (GO:0043123)",
+     "n_overlap": 70,
+     "n_term_in_bg": 116,
+     "odds_ratio": 3.096175673484515,
+     "q": 1.4888779261178365e-06
+    },
+    {
+     "term": "Positive Regulation of Intracellular Signal Transduction (GO:1902533)",
+     "n_overlap": 148,
+     "n_term_in_bg": 298,
+     "odds_ratio": 2.0375023161015378,
+     "q": 1.4888779261178365e-06
+    },
+    {
+     "term": "Regulation of Canonical NF-kappaB Signal Transduction (GO:0043122)",
+     "n_overlap": 85,
+     "n_term_in_bg": 149,
+     "odds_ratio": 2.711172462406015,
+     "q": 1.4888779261178365e-06
+    },
+    {
+     "term": "Intracellular Signaling Cassette (GO:0141124)",
+     "n_overlap": 88,
+     "n_term_in_bg": 164,
+     "odds_ratio": 2.360012457178449,
+     "q": 2.6500431386666162e-05
+    },
+    {
+     "term": "Positive Regulation of Cytokine Production (GO:0001819)",
+     "n_overlap": 91,
+     "n_term_in_bg": 172,
+     "odds_ratio": 2.2904959557258406,
+     "q": 3.043673779647372e-05
+    },
+    {
+     "term": "Regulation of Tumor Necrosis Factor Production (GO:0032680)",
+     "n_overlap": 47,
+     "n_term_in_bg": 75,
+     "odds_ratio": 3.3898308270676694,
+     "q": 5.848947576304981e-05
+    },
+    {
+     "term": "Antigen Processing and Presentation of Exogenous Peptide Antigen (GO:0002478)",
+     "n_overlap": 21,
+     "n_term_in_bg": 25,
+     "odds_ratio": 10.524532710280374,
+     "q": 7.138679625085759e-05
+    },
+    {
+     "term": "Cellular Response to Cytokine Stimulus (GO:0071345)",
+     "n_overlap": 83,
+     "n_term_in_bg": 157,
+     "odds_ratio": 2.2811521285233733,
+     "q": 7.426565817067254e-05
+    }
+   ]
+  },
+  "DROP_B|Diagnosis|block2|REAC": {
+   "n_regulons": 25,
+   "n_foreground": 1947,
+   "n_background": 5812,
+   "n_terms": 1098,
+   "n_sig_q05": 131,
+   "top_terms": [
+    {
+     "term": "Neutrophil Degranulation",
+     "n_overlap": 204,
+     "n_term_in_bg": 336,
+     "odds_ratio": 3.30991498461378,
+     "q": 7.106478264772216e-23
+    },
+    {
+     "term": "Cytokine Signaling in Immune System",
+     "n_overlap": 208,
+     "n_term_in_bg": 445,
+     "odds_ratio": 1.830976141776034,
+     "q": 4.254845451545848e-07
+    },
+    {
+     "term": "Hemostasis",
+     "n_overlap": 146,
+     "n_term_in_bg": 290,
+     "odds_ratio": 2.094769880930347,
+     "q": 4.254845451545848e-07
+    },
+    {
+     "term": "Leishmania Infection",
+     "n_overlap": 68,
+     "n_term_in_bg": 113,
+     "odds_ratio": 3.0720832594169476,
+     "q": 7.643332649002604e-07
+    },
+    {
+     "term": "Parasitic Infection Pathways",
+     "n_overlap": 68,
+     "n_term_in_bg": 113,
+     "odds_ratio": 3.0720832594169476,
+     "q": 7.643332649002604e-07
+    },
+    {
+     "term": "Signaling by GPCR",
+     "n_overlap": 110,
+     "n_term_in_bg": 208,
+     "odds_ratio": 2.301723084443358,
+     "q": 7.643332649002604e-07
+    },
+    {
+     "term": "Toll-like Receptor Cascades",
+     "n_overlap": 62,
+     "n_term_in_bg": 101,
+     "odds_ratio": 3.226715636264708,
+     "q": 1.069973157180339e-06
+    },
+    {
+     "term": "GPCR Downstream Signalling",
+     "n_overlap": 101,
+     "n_term_in_bg": 190,
+     "odds_ratio": 2.321302056070216,
+     "q": 1.567119356426495e-06
+    }
+   ]
+  },
+  "DROP_B|Diagnosis|block2|HALL": {
+   "n_regulons": 25,
+   "n_foreground": 1947,
+   "n_background": 5812,
+   "n_terms": 50,
+   "n_sig_q05": 16,
+   "top_terms": [
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "n_overlap": 97,
+     "n_term_in_bg": 164,
+     "odds_ratio": 2.9722146026623637,
+     "q": 4.020020559122217e-10
+    },
+    {
+     "term": "Complement",
+     "n_overlap": 70,
+     "n_term_in_bg": 109,
+     "odds_ratio": 3.658593227053536,
+     "q": 9.127381807248029e-10
+    },
+    {
+     "term": "Allograft Rejection",
+     "n_overlap": 67,
+     "n_term_in_bg": 121,
+     "odds_ratio": 2.51513987391647,
+     "q": 8.149060360633358e-06
+    },
+    {
+     "term": "Interferon Gamma Response",
+     "n_overlap": 73,
+     "n_term_in_bg": 144,
+     "odds_ratio": 2.0815759015136712,
+     "q": 0.000151681960128863
+    },
+    {
+     "term": "UV Response Up",
+     "n_overlap": 48,
+     "n_term_in_bg": 87,
+     "odds_ratio": 2.4796856645197876,
+     "q": 0.0002326768877807384
+    },
+    {
+     "term": "Inflammatory Response",
+     "n_overlap": 65,
+     "n_term_in_bg": 128,
+     "odds_ratio": 2.084324342560262,
+     "q": 0.00028119815078229206
+    },
+    {
+     "term": "Apoptosis",
+     "n_overlap": 57,
+     "n_term_in_bg": 110,
+     "odds_ratio": 2.1691524408505543,
+     "q": 0.00034778952863173326
+    },
+    {
+     "term": "Apical Junction",
+     "n_overlap": 41,
+     "n_term_in_bg": 81,
+     "odds_ratio": 2.0569910807974816,
+     "q": 0.0062918118165275465
+    }
+   ]
+  },
+  "DROP_B|Relapse|block1|GOBP": {
+   "n_regulons": 23,
+   "n_foreground": 1414,
+   "n_background": 6608,
+   "n_terms": 2014,
+   "n_sig_q05": 6,
+   "top_terms": [
+    {
+     "term": "protein-RNA Complex Assembly (GO:0022618)",
+     "n_overlap": 35,
+     "n_term_in_bg": 77,
+     "odds_ratio": 3.1133671742808797,
+     "q": 0.0037191914014972054
+    },
+    {
+     "term": "Proton Motive Force-Driven ATP Synthesis (GO:0015986)",
+     "n_overlap": 27,
+     "n_term_in_bg": 55,
+     "odds_ratio": 3.5915645277577504,
+     "q": 0.004652104925669169
+    },
+    {
+     "term": "Oxidative Phosphorylation (GO:0006119)",
+     "n_overlap": 27,
+     "n_term_in_bg": 56,
+     "odds_ratio": 3.4670462173383387,
+     "q": 0.004781102206939695
+    },
+    {
+     "term": "Proton Motive Force-Driven Mitochondrial ATP Synthesis (GO:0042776)",
+     "n_overlap": 25,
+     "n_term_in_bg": 51,
+     "odds_ratio": 3.57755994905023,
+     "q": 0.005409032464729229
+    },
+    {
+     "term": "ATP Biosynthetic Process (GO:0006754)",
+     "n_overlap": 12,
+     "n_term_in_bg": 19,
+     "odds_ratio": 6.3423680456490725,
+     "q": 0.03936416313185136
+    },
+    {
+     "term": "Cytoplasmic Translational Initiation (GO:0002183)",
+     "n_overlap": 13,
+     "n_term_in_bg": 22,
+     "odds_ratio": 5.34578475691966,
+     "q": 0.04410469523187605
+    },
+    {
+     "term": "Mitochondrial Respiratory Chain Complex Assembly (GO:0033108)",
+     "n_overlap": 22,
+     "n_term_in_bg": 50,
+     "odds_ratio": 2.915948275862069,
+     "q": 0.060984060283349795
+    },
+    {
+     "term": "Mitochondrion Organization (GO:0007005)",
+     "n_overlap": 28,
+     "n_term_in_bg": 70,
+     "odds_ratio": 2.478114478114478,
+     "q": 0.060984060283349795
+    }
+   ]
+  },
+  "DROP_B|Relapse|block1|REAC": {
+   "n_regulons": 23,
+   "n_foreground": 1414,
+   "n_background": 6608,
+   "n_terms": 1136,
+   "n_sig_q05": 123,
+   "top_terms": [
+    {
+     "term": "Aerobic Respiration and Respiratory Electron Transport",
+     "n_overlap": 64,
+     "n_term_in_bg": 163,
+     "odds_ratio": 2.4398054620276843,
+     "q": 0.00013602922051377363
+    },
+    {
+     "term": "Mitochondrial Protein Import",
+     "n_overlap": 25,
+     "n_term_in_bg": 44,
+     "odds_ratio": 4.902239399795385,
+     "q": 0.0001674459182866655
+    },
+    {
+     "term": "Orc1 Removal From Chromatin",
+     "n_overlap": 25,
+     "n_term_in_bg": 45,
+     "odds_ratio": 4.656227501799856,
+     "q": 0.00020050474439157543
+    },
+    {
+     "term": "Cristae Formation",
+     "n_overlap": 15,
+     "n_term_in_bg": 24,
+     "odds_ratio": 6.177031212771027,
+     "q": 0.0024500746882869756
+    },
+    {
+     "term": "Cyclin E Associated Events During G1 S Transition",
+     "n_overlap": 25,
+     "n_term_in_bg": 53,
+     "odds_ratio": 3.3207343412526997,
+     "q": 0.0024500746882869756
+    },
+    {
+     "term": "Degradation of GLI2 by the Proteasome",
+     "n_overlap": 19,
+     "n_term_in_bg": 36,
+     "odds_ratio": 4.147712418300654,
+     "q": 0.0024500746882869756
+    },
+    {
+     "term": "FBXL7 Down-Regulates AURKA During Mitotic Entry and in Early Mitosis",
+     "n_overlap": 18,
+     "n_term_in_bg": 33,
+     "odds_ratio": 4.451862464183381,
+     "q": 0.0024500746882869756
+    },
+    {
+     "term": "Formation of ATP by Chemiosmotic Coupling",
+     "n_overlap": 11,
+     "n_term_in_bg": 15,
+     "odds_ratio": 10.172843905915894,
+     "q": 0.0024500746882869756
+    }
+   ]
+  },
+  "DROP_B|Relapse|block1|HALL": {
+   "n_regulons": 23,
+   "n_foreground": 1414,
+   "n_background": 6608,
+   "n_terms": 50,
+   "n_sig_q05": 5,
+   "top_terms": [
+    {
+     "term": "Myc Targets V1",
+     "n_overlap": 92,
+     "n_term_in_bg": 161,
+     "odds_ratio": 5.168935955622794,
+     "q": 7.321011769458655e-22
+    },
+    {
+     "term": "Oxidative Phosphorylation",
+     "n_overlap": 62,
+     "n_term_in_bg": 160,
+     "odds_ratio": 2.3846153846153846,
+     "q": 8.208681811016383e-06
+    },
+    {
+     "term": "DNA Repair",
+     "n_overlap": 42,
+     "n_term_in_bg": 102,
+     "odds_ratio": 2.619387755102041,
+     "q": 7.251995550117445e-05
+    },
+    {
+     "term": "E2F Targets",
+     "n_overlap": 50,
+     "n_term_in_bg": 144,
+     "odds_ratio": 1.9888313471017658,
+     "q": 0.001692540024596995
+    },
+    {
+     "term": "Fatty Acid Metabolism",
+     "n_overlap": 30,
+     "n_term_in_bg": 89,
+     "odds_ratio": 1.8865729401391202,
+     "q": 0.04655324478492805
+    },
+    {
+     "term": "Glycolysis",
+     "n_overlap": 29,
+     "n_term_in_bg": 88,
+     "odds_ratio": 1.8223704338248792,
+     "q": 0.06344858891225387
+    },
+    {
+     "term": "Myc Targets V2",
+     "n_overlap": 14,
+     "n_term_in_bg": 36,
+     "odds_ratio": 2.350909090909091,
+     "q": 0.09039252387635192
+    },
+    {
+     "term": "Hypoxia",
+     "n_overlap": 33,
+     "n_term_in_bg": 118,
+     "odds_ratio": 1.4362737998892534,
+     "q": 0.3342159264971339
+    }
+   ]
+  },
+  "DROP_B|Relapse|block2|GOBP": {
+   "n_regulons": 19,
+   "n_foreground": 1701,
+   "n_background": 6608,
+   "n_terms": 2014,
+   "n_sig_q05": 219,
+   "top_terms": [
+    {
+     "term": "Positive Regulation of Intracellular Signal Transduction (GO:1902533)",
+     "n_overlap": 136,
+     "n_term_in_bg": 327,
+     "odds_ratio": 2.1456802100931704,
+     "q": 2.1081894412451963e-07
+    },
+    {
+     "term": "Cytokine-Mediated Signaling Pathway (GO:0019221)",
+     "n_overlap": 69,
+     "n_term_in_bg": 137,
+     "odds_ratio": 3.0086775519031144,
+     "q": 3.945777800703594e-07
+    },
+    {
+     "term": "Regulation of ERK1 and ERK2 Cascade (GO:0070372)",
+     "n_overlap": 53,
+     "n_term_in_bg": 97,
+     "odds_ratio": 3.554432369814651,
+     "q": 6.86854515233976e-07
+    },
+    {
+     "term": "Regulation of Inflammatory Response (GO:0050727)",
+     "n_overlap": 64,
+     "n_term_in_bg": 127,
+     "odds_ratio": 3.006040860652956,
+     "q": 8.346730783126863e-07
+    },
+    {
+     "term": "Intracellular Signaling Cassette (GO:0141124)",
+     "n_overlap": 86,
+     "n_term_in_bg": 191,
+     "odds_ratio": 2.4353353973168215,
+     "q": 1.537515123248863e-06
+    },
+    {
+     "term": "Phagocytosis (GO:0006909)",
+     "n_overlap": 30,
+     "n_term_in_bg": 45,
+     "odds_ratio": 5.855176540993417,
+     "q": 2.7574741488565965e-06
+    },
+    {
+     "term": "Regulation of Tumor Necrosis Factor Production (GO:0032680)",
+     "n_overlap": 43,
+     "n_term_in_bg": 76,
+     "odds_ratio": 3.83050042036773,
+     "q": 2.7574741488565965e-06
+    },
+    {
+     "term": "Positive Regulation of MAPK Cascade (GO:0043410)",
+     "n_overlap": 72,
+     "n_term_in_bg": 155,
+     "odds_ratio": 2.5688610796778275,
+     "q": 3.695577939996737e-06
+    }
+   ]
+  },
+  "DROP_B|Relapse|block2|REAC": {
+   "n_regulons": 19,
+   "n_foreground": 1701,
+   "n_background": 6608,
+   "n_terms": 1136,
+   "n_sig_q05": 161,
+   "top_terms": [
+    {
+     "term": "Neutrophil Degranulation",
+     "n_overlap": 159,
+     "n_term_in_bg": 346,
+     "odds_ratio": 2.6026342620528933,
+     "q": 6.340530310981778e-14
+    },
+    {
+     "term": "Cytokine Signaling in Immune System",
+     "n_overlap": 180,
+     "n_term_in_bg": 459,
+     "odds_ratio": 1.9630548662806728,
+     "q": 1.9867958456261397e-08
+    },
+    {
+     "term": "Signaling by Interleukins",
+     "n_overlap": 119,
+     "n_term_in_bg": 279,
+     "odds_ratio": 2.2317201327433627,
+     "q": 9.625994512102973e-08
+    },
+    {
+     "term": "Toll-like Receptor Cascades",
+     "n_overlap": 56,
+     "n_term_in_bg": 110,
+     "odds_ratio": 3.059416863672183,
+     "q": 3.0993909222357905e-06
+    },
+    {
+     "term": "Leishmania Infection",
+     "n_overlap": 56,
+     "n_term_in_bg": 111,
+     "odds_ratio": 3.0031721470019344,
+     "q": 3.115467819657743e-06
+    },
+    {
+     "term": "Parasitic Infection Pathways",
+     "n_overlap": 56,
+     "n_term_in_bg": 111,
+     "odds_ratio": 3.0031721470019344,
+     "q": 3.115467819657743e-06
+    },
+    {
+     "term": "Signaling by Receptor Tyrosine Kinases",
+     "n_overlap": 116,
+     "n_term_in_bg": 287,
+     "odds_ratio": 2.0269559282011547,
+     "q": 3.115467819657743e-06
+    },
+    {
+     "term": "Hemostasis",
+     "n_overlap": 124,
+     "n_term_in_bg": 314,
+     "odds_ratio": 1.9521009244735172,
+     "q": 4.387145610317575e-06
+    }
+   ]
+  },
+  "DROP_B|Relapse|block2|HALL": {
+   "n_regulons": 19,
+   "n_foreground": 1701,
+   "n_background": 6608,
+   "n_terms": 50,
+   "n_sig_q05": 17,
+   "top_terms": [
+    {
+     "term": "Complement",
+     "n_overlap": 70,
+     "n_term_in_bg": 117,
+     "odds_ratio": 4.4379508720664775,
+     "q": 2.0488035655304425e-13
+    },
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "n_overlap": 86,
+     "n_term_in_bg": 163,
+     "odds_ratio": 3.3402758232479597,
+     "q": 2.1458271731250452e-12
+    },
+    {
+     "term": "Inflammatory Response",
+     "n_overlap": 65,
+     "n_term_in_bg": 124,
+     "odds_ratio": 3.2646802867680575,
+     "q": 2.3682281598506106e-09
+    },
+    {
+     "term": "Allograft Rejection",
+     "n_overlap": 62,
+     "n_term_in_bg": 126,
+     "odds_ratio": 2.8625114399023794,
+     "q": 1.2306159177448181e-07
+    },
+    {
+     "term": "IL-6/JAK/STAT3 Signaling",
+     "n_overlap": 28,
+     "n_term_in_bg": 57,
+     "odds_ratio": 2.8151781849660944,
+     "q": 0.0009880417581428194
+    },
+    {
+     "term": "p53 Pathway",
+     "n_overlap": 52,
+     "n_term_in_bg": 127,
+     "odds_ratio": 2.0316474631089547,
+     "q": 0.0009880417581428194
+    },
+    {
+     "term": "Coagulation",
+     "n_overlap": 27,
+     "n_term_in_bg": 59,
+     "odds_ratio": 2.457157258064516,
+     "q": 0.00472818315734182
+    },
+    {
+     "term": "KRAS Signaling Up",
+     "n_overlap": 43,
+     "n_term_in_bg": 108,
+     "odds_ratio": 1.9319476663264359,
+     "q": 0.005398132943043272
+    }
+   ]
+  },
+  "DROP_B|Relapse|block3|GOBP": {
+   "n_regulons": 10,
+   "n_foreground": 498,
+   "n_background": 6608,
+   "n_terms": 2014,
+   "n_sig_q05": 0,
+   "top_terms": [
+    {
+     "term": "Peptide Antigen Assembly With MHC Protein Complex (GO:0002501)",
+     "n_overlap": 7,
+     "n_term_in_bg": 14,
+     "odds_ratio": 12.429735234215887,
+     "q": 0.05737804868068282
+    },
+    {
+     "term": "Positive Regulation of Immune Response (GO:0050778)",
+     "n_overlap": 13,
+     "n_term_in_bg": 50,
+     "odds_ratio": 4.399498467539705,
+     "q": 0.057814538378193316
+    },
+    {
+     "term": "Positive Regulation of T Cell Mediated Cytotoxicity (GO:0001916)",
+     "n_overlap": 6,
+     "n_term_in_bg": 13,
+     "odds_ratio": 10.632404181184668,
+     "q": 0.09715898227519729
+    },
+    {
+     "term": "Positive Regulation of Response to Stimulus (GO:0048584)",
+     "n_overlap": 11,
+     "n_term_in_bg": 41,
+     "odds_ratio": 4.577686516084873,
+     "q": 0.09715898227519729
+    },
+    {
+     "term": "Antigen Processing and Presentation of Endogenous Peptide Antigen (GO:0002483)",
+     "n_overlap": 5,
+     "n_term_in_bg": 10,
+     "odds_ratio": 12.383367139959432,
+     "q": 0.12562965301180937
+    },
+    {
+     "term": "Membrane Raft Organization (GO:0031579)",
+     "n_overlap": 5,
+     "n_term_in_bg": 10,
+     "odds_ratio": 12.383367139959432,
+     "q": 0.12562965301180937
+    },
+    {
+     "term": "Regulation of T Cell Mediated Cytotoxicity (GO:0001914)",
+     "n_overlap": 6,
+     "n_term_in_bg": 14,
+     "odds_ratio": 9.301829268292684,
+     "q": 0.12562965301180937
+    },
+    {
+     "term": "Regulation of Immune Response (GO:0050776)",
+     "n_overlap": 12,
+     "n_term_in_bg": 55,
+     "odds_ratio": 3.483778351995406,
+     "q": 0.16229023303602758
+    }
+   ]
+  },
+  "DROP_B|Relapse|block3|REAC": {
+   "n_regulons": 10,
+   "n_foreground": 498,
+   "n_background": 6608,
+   "n_terms": 1136,
+   "n_sig_q05": 22,
+   "top_terms": [
+    {
+     "term": "Adaptive Immune System",
+     "n_overlap": 65,
+     "n_term_in_bg": 419,
+     "odds_ratio": 2.440860635952036,
+     "q": 8.924371283424108e-06
+    },
+    {
+     "term": "Neutrophil Degranulation",
+     "n_overlap": 54,
+     "n_term_in_bg": 346,
+     "odds_ratio": 2.4232691595705296,
+     "q": 7.663153708942563e-05
+    },
+    {
+     "term": "Antigen processing-Cross Presentation",
+     "n_overlap": 20,
+     "n_term_in_bg": 74,
+     "odds_ratio": 4.692391135905781,
+     "q": 0.00011456002874710413
+    },
+    {
+     "term": "Cytokine Signaling in Immune System",
+     "n_overlap": 64,
+     "n_term_in_bg": 459,
+     "odds_ratio": 2.1335822201481656,
+     "q": 0.00017585318409632435
+    },
+    {
+     "term": "ER-Phagosome Pathway",
+     "n_overlap": 15,
+     "n_term_in_bg": 62,
+     "odds_ratio": 4.0062111801242235,
+     "q": 0.008935040984586754
+    },
+    {
+     "term": "Downstream TCR Signaling",
+     "n_overlap": 15,
+     "n_term_in_bg": 63,
+     "odds_ratio": 3.9221014492753623,
+     "q": 0.009108204530948948
+    },
+    {
+     "term": "Class I MHC Mediated Antigen Processing & Presentation",
+     "n_overlap": 31,
+     "n_term_in_bg": 200,
+     "odds_ratio": 2.333552956679295,
+     "q": 0.011799383143451962
+    },
+    {
+     "term": "RHO GTPases Activate NADPH Oxidases",
+     "n_overlap": 7,
+     "n_term_in_bg": 16,
+     "odds_ratio": 9.664403711246889,
+     "q": 0.011799383143451962
+    }
+   ]
+  },
+  "DROP_B|Relapse|block3|HALL": {
+   "n_regulons": 10,
+   "n_foreground": 498,
+   "n_background": 6608,
+   "n_terms": 50,
+   "n_sig_q05": 11,
+   "top_terms": [
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "n_overlap": 37,
+     "n_term_in_bg": 163,
+     "odds_ratio": 3.8117274386254865,
+     "q": 3.136572117516996e-08
+    },
+    {
+     "term": "Apoptosis",
+     "n_overlap": 21,
+     "n_term_in_bg": 116,
+     "odds_ratio": 2.787487586891758,
+     "q": 0.0021381480261632993
+    },
+    {
+     "term": "Inflammatory Response",
+     "n_overlap": 22,
+     "n_term_in_bg": 124,
+     "odds_ratio": 2.7223595320481135,
+     "q": 0.0021381480261632993
+    },
+    {
+     "term": "UV Response Up",
+     "n_overlap": 17,
+     "n_term_in_bg": 93,
+     "odds_ratio": 2.8060509902615167,
+     "q": 0.00616485593060781
+    },
+    {
+     "term": "Interferon Gamma Response",
+     "n_overlap": 23,
+     "n_term_in_bg": 151,
+     "odds_ratio": 2.2629276315789473,
+     "q": 0.008503659838097607
+    },
+    {
+     "term": "Apical Junction",
+     "n_overlap": 16,
+     "n_term_in_bg": 91,
+     "odds_ratio": 2.6710926694329182,
+     "q": 0.009255159576090318
+    },
+    {
+     "term": "Hypoxia",
+     "n_overlap": 18,
+     "n_term_in_bg": 118,
+     "odds_ratio": 2.25375,
+     "q": 0.01857432782720768
+    },
+    {
+     "term": "Allograft Rejection",
+     "n_overlap": 19,
+     "n_term_in_bg": 126,
+     "odds_ratio": 2.225372173336195,
+     "q": 0.01857432782720768
+    }
+   ]
+  },
+  "DROP_B|Relapse|block4|GOBP": {
+   "n_regulons": 3,
+   "n_foreground": 89,
+   "n_background": 6608,
+   "n_terms": 2014,
+   "n_sig_q05": 0,
+   "top_terms": [
+    {
+     "term": "External Encapsulating Structure Organization (GO:0045229)",
+     "n_overlap": 4,
+     "n_term_in_bg": 24,
+     "odds_ratio": 15.291764705882352,
+     "q": 0.31552112441496305
+    },
+    {
+     "term": "Extracellular Structure Organization (GO:0043062)",
+     "n_overlap": 4,
+     "n_term_in_bg": 25,
+     "odds_ratio": 14.561344537815126,
+     "q": 0.31552112441496305
+    },
+    {
+     "term": "Extracellular Matrix Organization (GO:0030198)",
+     "n_overlap": 5,
+     "n_term_in_bg": 53,
+     "odds_ratio": 8.024553571428571,
+     "q": 0.45836328731416814
+    },
+    {
+     "term": "Natural Killer Cell Mediated Immunity (GO:0002228)",
+     "n_overlap": 3,
+     "n_term_in_bg": 18,
+     "odds_ratio": 15.125581395348837,
+     "q": 0.5588486247970607
+    },
+    {
+     "term": "Negative Regulation of Myeloid Cell Differentiation (GO:0045638)",
+     "n_overlap": 3,
+     "n_term_in_bg": 16,
+     "odds_ratio": 17.457960644007155,
+     "q": 0.5588486247970607
+    },
+    {
+     "term": "Regulation of Myeloid Cell Differentiation (GO:0045637)",
+     "n_overlap": 3,
+     "n_term_in_bg": 18,
+     "odds_ratio": 15.125581395348837,
+     "q": 0.5588486247970607
+    },
+    {
+     "term": "'De Novo' Post-Translational Protein Folding (GO:0051084)",
+     "n_overlap": 0,
+     "n_term_in_bg": 27,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "3'-UTR-mediated mRNA Destabilization (GO:0061158)",
+     "n_overlap": 0,
+     "n_term_in_bg": 12,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    }
+   ]
+  },
+  "DROP_B|Relapse|block4|REAC": {
+   "n_regulons": 3,
+   "n_foreground": 89,
+   "n_background": 6608,
+   "n_terms": 1136,
+   "n_sig_q05": 0,
+   "top_terms": [
+    {
+     "term": "ABC Transporter Disorders",
+     "n_overlap": 0,
+     "n_term_in_bg": 43,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "ABC-family Proteins Mediated Transport",
+     "n_overlap": 0,
+     "n_term_in_bg": 53,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "ADORA2B Mediated Anti-Inflammatory Cytokines Production",
+     "n_overlap": 1,
+     "n_term_in_bg": 22,
+     "odds_ratio": 3.5162337662337664,
+     "q": 1.0
+    },
+    {
+     "term": "ADP Signalling Through P2Y Purinoceptor 1",
+     "n_overlap": 0,
+     "n_term_in_bg": 14,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "ADP Signalling Through P2Y Purinoceptor 12",
+     "n_overlap": 0,
+     "n_term_in_bg": 12,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "APC-Cdc20 Mediated Degradation of Nek2A",
+     "n_overlap": 0,
+     "n_term_in_bg": 17,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "APC C-mediated Degradation of Cell Cycle Proteins",
+     "n_overlap": 0,
+     "n_term_in_bg": 57,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "APC C Cdc20 Mediated Degradation of Cyclin B",
+     "n_overlap": 0,
+     "n_term_in_bg": 15,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    }
+   ]
+  },
+  "DROP_B|Relapse|block4|HALL": {
+   "n_regulons": 3,
+   "n_foreground": 89,
+   "n_background": 6608,
+   "n_terms": 50,
+   "n_sig_q05": 0,
+   "top_terms": [
+    {
+     "term": "Epithelial Mesenchymal Transition",
+     "n_overlap": 4,
+     "n_term_in_bg": 85,
+     "odds_ratio": 3.740305010893246,
+     "q": 0.6811075036151352
+    },
+    {
+     "term": "KRAS Signaling Up",
+     "n_overlap": 5,
+     "n_term_in_bg": 108,
+     "odds_ratio": 3.707813222376329,
+     "q": 0.6811075036151352
+    },
+    {
+     "term": "TNF-alpha Signaling via NF-kB",
+     "n_overlap": 0,
+     "n_term_in_bg": 163,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "Hypoxia",
+     "n_overlap": 0,
+     "n_term_in_bg": 118,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "Cholesterol Homeostasis",
+     "n_overlap": 0,
+     "n_term_in_bg": 44,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "Mitotic Spindle",
+     "n_overlap": 4,
+     "n_term_in_bg": 133,
+     "odds_ratio": 2.3310533515731873,
+     "q": 1.0
+    },
+    {
+     "term": "Wnt-beta Catenin Signaling",
+     "n_overlap": 0,
+     "n_term_in_bg": 21,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    },
+    {
+     "term": "TGF-beta Signaling",
+     "n_overlap": 0,
+     "n_term_in_bg": 42,
+     "odds_ratio": 0.0,
+     "q": 1.0
+    }
+   ]
+  }
+ },
+ "MYC_targets_v1": {
+  "DROP_A|Diagnosis|block1": {
+   "q": 7.607303557532283e-15,
+   "odds_ratio": 3.9249872967479673,
+   "n_overlap": 85,
+   "n_term_in_bg": 157,
+   "significant_q05": true
+  },
+  "DROP_A|Diagnosis|block2": {
+   "q": 0.9999999999999534,
+   "odds_ratio": 0.333490741314176,
+   "n_overlap": 23,
+   "n_term_in_bg": 157,
+   "significant_q05": false
+  },
+  "DROP_B|Diagnosis|block1": {
+   "q": 3.015478908149149e-15,
+   "odds_ratio": 4.065750866897839,
+   "n_overlap": 84,
+   "n_term_in_bg": 153,
+   "significant_q05": true
+  },
+  "DROP_B|Diagnosis|block2": {
+   "q": 0.9999999999999564,
+   "odds_ratio": 0.3083522137260455,
+   "n_overlap": 21,
+   "n_term_in_bg": 153,
+   "significant_q05": false
+  },
+  "_overlap_with_DROP_A|Diagnosis": {
+   "n_myc_genes": 200,
+   "n_myc_genes_ribosomal": 14,
+   "frac_myc_genes_ribosomal": 0.07
+  },
+  "DROP_A|Relapse|block1": {
+   "q": 1.0697426224756833e-20,
+   "odds_ratio": 4.85740456758231,
+   "n_overlap": 92,
+   "n_term_in_bg": 165,
+   "significant_q05": true
+  },
+  "DROP_A|Relapse|block2": {
+   "q": 0.9999999955256356,
+   "odds_ratio": 0.36856708753798406,
+   "n_overlap": 19,
+   "n_term_in_bg": 165,
+   "significant_q05": false
+  },
+  "DROP_A|Relapse|block3": {
+   "q": 0.09003186096303757,
+   "odds_ratio": 1.7148182665424045,
+   "n_overlap": 20,
+   "n_term_in_bg": 165,
+   "significant_q05": false
+  },
+  "DROP_A|Relapse|block4": {
+   "q": 1.0,
+   "odds_ratio": 0.8989492983569565,
+   "n_overlap": 2,
+   "n_term_in_bg": 165,
+   "significant_q05": false
+  },
+  "DROP_B|Relapse|block1": {
+   "q": 7.321011769458655e-22,
+   "odds_ratio": 5.168935955622794,
+   "n_overlap": 92,
+   "n_term_in_bg": 161,
+   "significant_q05": true
+  },
+  "DROP_B|Relapse|block2": {
+   "q": 0.9999999955909531,
+   "odds_ratio": 0.3118469252020874,
+   "n_overlap": 16,
+   "n_term_in_bg": 161,
+   "significant_q05": false
+  },
+  "DROP_B|Relapse|block3": {
+   "q": 0.07418303627500784,
+   "odds_ratio": 1.7712691771269178,
+   "n_overlap": 20,
+   "n_term_in_bg": 161,
+   "significant_q05": false
+  },
+  "DROP_B|Relapse|block4": {
+   "q": 1.0,
+   "odds_ratio": 0.9195402298850575,
+   "n_overlap": 2,
+   "n_term_in_bg": 161,
+   "significant_q05": false
+  },
+  "_overlap_with_DROP_A|Relapse": {
+   "n_myc_genes": 200,
+   "n_myc_genes_ribosomal": 14,
+   "frac_myc_genes_ribosomal": 0.07
+  }
+ },
+ "S3_detection": {
+  "Diagnosis": {
+   "_source": "groundtruth_encode/work/gene_detection_malignant_Diagnosis.csv",
+   "_panel_note": "15,615-gene externally fixed panel (Arm B); coverage of the universe is stated per group",
+   "n_universe_covered": 14882,
+   "n_universe_total": 17110,
+   "groups": {
+    "block1": {
+     "n_genes": 1493,
+     "mean_detection_rate": 0.3879205400100416,
+     "median_detection_rate": 0.3162261423640815,
+     "mean_mean_count": 0.5670516302385303,
+     "median_mean_count": 0.2735708448523228
+    },
+    "block2": {
+     "n_genes": 1941,
+     "mean_detection_rate": 0.31530506516167167,
+     "median_detection_rate": 0.2514454703678574,
+     "mean_mean_count": 0.37502395392541,
+     "median_mean_count": 0.2237964102004331
+    },
+    "module_union": {
+     "n_genes": 3338,
+     "mean_detection_rate": 0.34107341980585865,
+     "median_detection_rate": 0.2733082096817015,
+     "mean_mean_count": 0.4484914842918767,
+     "median_mean_count": 0.23877276590316995
+    },
+    "universe": {
+     "n_genes": 14882,
+     "mean_detection_rate": 0.16178208076777426,
+     "median_detection_rate": 0.0817944482138116,
+     "mean_mean_count": 0.17915117538091413,
+     "median_mean_count": 0.0610436641673056
+    },
+    "ribosomal_DROP_A": {
+     "n_genes": 166,
+     "mean_detection_rate": 0.616244810505481,
+     "median_detection_rate": 0.5564397179857813,
+     "mean_mean_count": 1.6653723265375038,
+     "median_mean_count": 0.555994727255622
+    }
+   },
+   "tests": {
+    "block1_vs_block2": {
+     "detection_rate_MW_p": 9.534051143521952e-13,
+     "detection_rate_median_a": 0.3162261423640815,
+     "detection_rate_median_b": 0.2514454703678574,
+     "mean_count_MW_p": 2.5234848262638608e-09,
+     "mean_count_median_a": 0.2735708448523228,
+     "mean_count_median_b": 0.2237964102004331
+    },
+    "block1_vs_universe": {
+     "detection_rate_MW_p": 1.102469758121294e-270,
+     "detection_rate_median_a": 0.3162261423640815,
+     "detection_rate_median_b": 0.0817944482138116,
+     "mean_count_MW_p": 5.868255477735587e-276,
+     "mean_count_median_a": 0.2735708448523228,
+     "mean_count_median_b": 0.0610436641673056
+    },
+    "block2_vs_universe": {
+     "detection_rate_MW_p": 1.501671648919385e-244,
+     "detection_rate_median_a": 0.2514454703678574,
+     "detection_rate_median_b": 0.0817944482138116,
+     "mean_count_MW_p": 5.849439612460651e-268,
+     "mean_count_median_a": 0.2237964102004331,
+     "mean_count_median_b": 0.0610436641673056
+    },
+    "block1_vs_block2_ribosome_removed": {
+     "n_a": 1387,
+     "n_b": 1938,
+     "detection_rate_median_a": 0.2930912416295466,
+     "detection_rate_median_b": 0.2512021003569427,
+     "detection_rate_MW_p": 4.010172721771664e-06,
+     "mean_count_median_a": 0.2565258568156466,
+     "mean_count_median_b": 0.22343382690571215
+    }
+   }
+  },
+  "Relapse": {
+   "_source": "groundtruth_encode/work/gene_detection_malignant_Relapse.csv",
+   "_panel_note": "15,615-gene externally fixed panel (Arm B); coverage of the universe is stated per group",
+   "n_universe_covered": 14928,
+   "n_universe_total": 17198,
+   "groups": {
+    "block1": {
+     "n_genes": 1585,
+     "mean_detection_rate": 0.41055114069718496,
+     "median_detection_rate": 0.3568176173524298,
+     "mean_mean_count": 0.5698673984939968,
+     "median_mean_count": 0.3006933774943312
+    },
+    "block2": {
+     "n_genes": 1705,
+     "mean_detection_rate": 0.2522799196589218,
+     "median_detection_rate": 0.1793904414982318,
+     "mean_mean_count": 0.2772279874111247,
+     "median_mean_count": 0.1479532600306362
+    },
+    "block3": {
+     "n_genes": 361,
+     "mean_detection_rate": 0.372494912384774,
+     "median_detection_rate": 0.3369011152768086,
+     "mean_mean_count": 0.4675488230748868,
+     "median_mean_count": 0.2997373310920467
+    },
+    "block4": {
+     "n_genes": 83,
+     "mean_detection_rate": 0.2202944214500665,
+     "median_detection_rate": 0.1036864451882251,
+     "mean_mean_count": 0.3297279814809885,
+     "median_mean_count": 0.0971419919525533
+    },
+    "module_union": {
+     "n_genes": 3412,
+     "mean_detection_rate": 0.3196866165049831,
+     "median_detection_rate": 0.2519898761723416,
+     "mean_mean_count": 0.40085386764670605,
+     "median_mean_count": 0.2053719847133788
+    },
+    "universe": {
+     "n_genes": 14928,
+     "mean_detection_rate": 0.16121734575708133,
+     "median_detection_rate": 0.08311355008101426,
+     "mean_mean_count": 0.17209540587523128,
+     "median_mean_count": 0.0595628785498659
+    },
+    "ribosomal_DROP_A": {
+     "n_genes": 166,
+     "mean_detection_rate": 0.622257957830399,
+     "median_detection_rate": 0.5281125447943893,
+     "mean_mean_count": 1.7374180488010622,
+     "median_mean_count": 0.5863255985933202
+    }
+   },
+   "tests": {
+    "block1_vs_block2": {
+     "detection_rate_MW_p": 8.337064493658383e-72,
+     "detection_rate_median_a": 0.3568176173524298,
+     "detection_rate_median_b": 0.1793904414982318,
+     "mean_count_MW_p": 3.32687164054821e-61,
+     "mean_count_median_a": 0.3006933774943312,
+     "mean_count_median_b": 0.1479532600306362
+    },
+    "block1_vs_universe": {
+     "detection_rate_MW_p": 0.0,
+     "detection_rate_median_a": 0.3568176173524298,
+     "detection_rate_median_b": 0.08311355008101426,
+     "mean_count_MW_p": 0.0,
+     "mean_count_median_a": 0.3006933774943312,
+     "mean_count_median_b": 0.0595628785498659
+    },
+    "block2_vs_universe": {
+     "detection_rate_MW_p": 5.402454693968874e-103,
+     "detection_rate_median_a": 0.1793904414982318,
+     "detection_rate_median_b": 0.08311355008101426,
+     "mean_count_MW_p": 1.4699287924311182e-127,
+     "mean_count_median_a": 0.1479532600306362,
+     "mean_count_median_b": 0.0595628785498659
+    },
+    "block1_vs_block2_ribosome_removed": {
+     "n_a": 1495,
+     "n_b": 1697,
+     "detection_rate_median_a": 0.3367710193606377,
+     "detection_rate_median_b": 0.1778056367012406,
+     "detection_rate_MW_p": 3.461536464147948e-60,
+     "mean_count_median_a": 0.2859034056857893,
+     "mean_count_median_b": 0.1472352356144748
+    }
+   }
+  }
+ },
+ "S4_generalisation": {
+  "Diagnosis": {
+   "module_union": 3362,
+   "module_ribosomal": 108,
+   "module_frac_ribosomal": 0.032123735871505056,
+   "pool_union": 5972,
+   "pool_ribosomal": 138,
+   "pool_frac_ribosomal": 0.023107836570663093,
+   "pool_minus_module_ribosomal": 30,
+   "pool_minus_module_other": 2580,
+   "fisher_odds_ratio": 2.8543331284572835,
+   "fisher_p_greater": 4.048746406112743e-08,
+   "ENRICHED_IN_MODULE": true
+  },
+  "Relapse": {
+   "module_union": 3444,
+   "module_ribosomal": 100,
+   "module_frac_ribosomal": 0.029036004645760744,
+   "pool_union": 6777,
+   "pool_ribosomal": 141,
+   "pool_frac_ribosomal": 0.02080566622399292,
+   "pool_minus_module_ribosomal": 41,
+   "pool_minus_module_other": 3292,
+   "fisher_odds_ratio": 2.4010969774769517,
+   "fisher_p_greater": 7.474425664552996e-07,
+   "ENRICHED_IN_MODULE": true
+  }
+ }
+}

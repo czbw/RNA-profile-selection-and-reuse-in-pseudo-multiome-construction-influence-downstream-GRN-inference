@@ -1,0 +1,72 @@
+{
+ "_provenance": {
+  "produced_by": "cubic_pbmc_pairing/scripts/p_08_track_a_rescore.py",
+  "invocation": "p_08 with ARMS extended to include link_subcluster_1to1, --seeds 555, --outdir redirected so the committed trackA_L6_10k.json (3 seeds, 6 arms) was not overwritten and no committed row was lost",
+  "note": "link_subcluster_1to1 exists at seed 555 only; the other arms are recomputed here and MUST match trackA_L6_10k.json exactly -- they are the parity check on this run",
+  "written_at": "2026-08-24T16:46:41"
+ },
+ "rand_subcluster_matched|555": {
+  "arm": "rand_subcluster_matched",
+  "seed": 555,
+  "n_cells": 10881,
+  "n_cells_dropped_unscoreable": 0,
+  "n_regulons": 245,
+  "n_celltypes": 16,
+  "rho_all_median": 0.6427037539602862,
+  "rho_within_median": -0.000914391304356288,
+  "rho_within_q25": -0.029433838231732984,
+  "rho_within_q75": 0.02907190949575103,
+  "frac_within_above_0.5": 0.0,
+  "frac_within_below_0.2": 0.9943877551020408,
+  "attenuation": 0.6436181452646426,
+  "self_hit_rate": 0.0011947431302270011
+ },
+ "rand_subcluster_1to1|555": {
+  "arm": "rand_subcluster_1to1",
+  "seed": 555,
+  "n_cells": 10881,
+  "n_cells_dropped_unscoreable": 0,
+  "n_regulons": 245,
+  "n_celltypes": 16,
+  "rho_all_median": 0.6381741926291128,
+  "rho_within_median": 0.0035843067008988466,
+  "rho_within_q25": -0.028737826966407722,
+  "rho_within_q75": 0.032129686878325736,
+  "frac_within_above_0.5": 0.0,
+  "frac_within_below_0.2": 0.9920918367346939,
+  "attenuation": 0.634589885928214,
+  "self_hit_rate": 0.0016542597187758478
+ },
+ "link_subcluster_1to1|555": {
+  "arm": "link_subcluster_1to1",
+  "seed": 555,
+  "n_cells": 10881,
+  "n_cells_dropped_unscoreable": 0,
+  "n_regulons": 245,
+  "n_celltypes": 16,
+  "rho_all_median": 0.6594687639781526,
+  "rho_within_median": 0.05214400354684288,
+  "rho_within_q25": 0.010450992078360984,
+  "rho_within_q75": 0.11604607156897265,
+  "frac_within_above_0.5": 0.0005102040816326531,
+  "frac_within_below_0.2": 0.9099489795918367,
+  "attenuation": 0.6073247604313097,
+  "self_hit_rate": 0.00964984835952578
+ },
+ "link|555": {
+  "arm": "link",
+  "seed": 555,
+  "n_cells": 10231,
+  "n_cells_dropped_unscoreable": 650,
+  "n_regulons": 245,
+  "n_celltypes": 16,
+  "rho_all_median": 0.6231743149635862,
+  "rho_within_median": 0.05866092851752415,
+  "rho_within_q25": 0.004588396636112455,
+  "rho_within_q75": 0.13819898162162056,
+  "frac_within_above_0.5": 0.009948979591836734,
+  "frac_within_below_0.2": 0.8561224489795919,
+  "attenuation": 0.5645133864460621,
+  "self_hit_rate": 0.004496139184830417
+ }
+}

@@ -1,0 +1,729 @@
+{
+  "analysis": "F6 / Q3 decomposition on the module of record",
+  "status": "POST-HOC AND DESCRIPTIVE",
+  "status_note": "The 55-regulon module was itself defined post-hoc (DECISIONS.md DA62, 2026-08-30); this analysis is conditioned on it and is not confirmatory. The pre-declared Stage-3 primary (0 regulons CONFIRMED, s3_results.json) is unchanged by anything here.",
+  "prespec": "analysis/F6_DECOMPOSITION_PRESPEC.md (written before any number below was computed)",
+  "reference_implementation": "stage3_repair_analysis/scripts/s3_21_decomposition.py",
+  "seed": 555,
+  "module": {
+    "file": "modules/out/module_definition_T3_repair.json",
+    "rule": "ax1_directional & ax2_selective & ax3_celltype_robust",
+    "arm": "corrected (repair)",
+    "n_regulons": 55,
+    "n_TFs": 31,
+    "frozen": "2026-08-20",
+    "containment_in_committed_160_asserted": true,
+    "n_missing_from_160": 0
+  },
+  "scale": "offset-centred, orientation-signed (unoriented offset-centred and raw run as sensitivities)",
+  "admitted_celltypes": [
+    "Early.Basophil",
+    "Early.Erythrocyte",
+    "GMP",
+    "HSC",
+    "Monocytes",
+    "Progenitor"
+  ],
+  "admitted_celltypes_source": "stage3_repair_analysis/out/s3_decomposition.json -> admitted_celltypes",
+  "composition_component_is_a_lower_bound": true,
+  "composition_lower_bound_note": "measured over 6 admitted malignant cell types only; the label-level shift spans all 20 types (DA36 Finding 6), so the composition component and its share are LOWER BOUNDS",
+  "substrate": {
+    "Diagnosis": {
+      "file": "stage3_repair_analysis/out/pseudobulk_defDiagnosis.csv",
+      "n_rows_admitted": 160,
+      "n_patients": 19,
+      "n_units": 80,
+      "n_regulon_columns_in_panel": 332,
+      "n_module_regulons_present": 55,
+      "n_orientation_positive": 30
+    },
+    "Relapse": {
+      "file": "stage3_repair_analysis/out/pseudobulk_defRelapse.csv",
+      "n_rows_admitted": 160,
+      "n_patients": 19,
+      "n_units": 80,
+      "n_regulon_columns_in_panel": 352,
+      "n_module_regulons_present": 55,
+      "n_orientation_positive": 30
+    }
+  },
+  "n_permutations_calibration": 2000,
+  "calibration": {
+    "offsetcentred": {
+      "rewiring": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.032,
+          "median_p": 0.5152778625488281,
+          "ks_uniform_p": 0.0010138786405114123
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.1075,
+          "median_p": 0.3524589538574219,
+          "ks_uniform_p": 3.9487937069939143e-50
+        }
+      },
+      "composition": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0465,
+          "median_p": 0.5412178039550781,
+          "ks_uniform_p": 3.354834397801384e-05
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.141,
+          "median_p": 0.2934989929199219,
+          "ks_uniform_p": 7.524915199150087e-80
+        }
+      },
+      "heterogeneity": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.037,
+          "median_p": 0.5202808095175646,
+          "ks_uniform_p": 0.02345109633559681
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0505,
+          "median_p": 0.4586556187373599,
+          "ks_uniform_p": 0.00013565143015151698
+        }
+      }
+    },
+    "raw": {
+      "rewiring": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0585,
+          "median_p": 0.48996734619140625,
+          "ks_uniform_p": 0.020517606258238046
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.074,
+          "median_p": 0.4180412292480469,
+          "ks_uniform_p": 3.5407664406847116e-22
+        }
+      },
+      "composition": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.1195,
+          "median_p": 0.2934989929199219,
+          "ks_uniform_p": 2.7910756256561365e-99
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.205,
+          "median_p": 0.21011734008789062,
+          "ks_uniform_p": 1.4388270234834203e-173
+        }
+      },
+      "heterogeneity": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.062,
+          "median_p": 0.4579682373202509,
+          "ks_uniform_p": 9.819444120009678e-06
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.064,
+          "median_p": 0.4494317356540709,
+          "ks_uniform_p": 5.80840487802003e-07
+        }
+      }
+    },
+    "oriented_offsetcentred": {
+      "rewiring": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0425,
+          "median_p": 0.5412178039550781,
+          "ks_uniform_p": 1.7004518753728374e-05
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0435,
+          "median_p": 0.5152778625488281,
+          "ks_uniform_p": 0.02305893254775312
+        }
+      },
+      "composition": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0375,
+          "median_p": 0.5412178039550781,
+          "ks_uniform_p": 4.0440568536408116e-05
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0435,
+          "median_p": 0.5152778625488281,
+          "ks_uniform_p": 0.003225005058558716
+        }
+      },
+      "heterogeneity": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.038,
+          "median_p": 0.4978773394431119,
+          "ks_uniform_p": 0.3588485868878786
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.039,
+          "median_p": 0.47890421668865085,
+          "ks_uniform_p": 0.03757473135180711
+        }
+      }
+    }
+  },
+  "readable": {
+    "offsetcentred": {
+      "rewiring": false,
+      "composition": false,
+      "heterogeneity": true
+    },
+    "raw": {
+      "rewiring": true,
+      "composition": false,
+      "heterogeneity": true
+    },
+    "oriented_offsetcentred": {
+      "rewiring": true,
+      "composition": true,
+      "heterogeneity": true
+    }
+  },
+  "module_decomposition": {
+    "offsetcentred": {
+      "Diagnosis": {
+        "n_patients": 19,
+        "naive_mean": 0.0005292810673949223,
+        "rewiring_mean": 0.000941801463025639,
+        "composition_mean": -0.00041252039563071643,
+        "p_rewiring": 0.312408447265625,
+        "p_composition": 0.2934989929199219,
+        "composition_share": 0.30459553834565184,
+        "same_sign_naive_vs_rewiring": true,
+        "naive_median": 0.0027821841489164417,
+        "naive_sd": 0.006541422053306851,
+        "naive_iqr_lo": -0.0035595915744371593,
+        "naive_iqr_hi": 0.005730163019179776,
+        "frac_patients_naive_positive": 0.5789473684210527,
+        "rewiring_median": 0.0028866697679715047,
+        "rewiring_sd": 0.005964255081370521,
+        "rewiring_iqr_lo": -0.0023584851229499024,
+        "rewiring_iqr_hi": 0.005318243397672187,
+        "frac_patients_rewiring_positive": 0.5789473684210527,
+        "composition_median": -5.206782389948752e-05,
+        "composition_sd": 0.0016649260544251865,
+        "composition_iqr_lo": -0.0006291139701742792,
+        "composition_iqr_hi": 0.0004371454120409815,
+        "frac_patients_composition_positive": 0.3684210526315789,
+        "frac_patients_abs_composition_gt_abs_rewiring": 0.10526315789473684,
+        "frac_patients_naive_rewiring_same_sign": 1.0,
+        "pearson_naive_rewiring": 0.9687443906329015,
+        "verdict_primary_cut_0.50": "MOSTLY REWIRING",
+        "verdict_decisive_band": "DECISIVELY REWIRING",
+        "p_heterogeneity": 0.6969109103923091,
+        "n_celltypes": 6,
+        "n_celltypes_same_sign": 4,
+        "beta_Early.Basophil": 0.0018635698717677763,
+        "beta_Early.Erythrocyte": 0.0003715127625539886,
+        "beta_GMP": -0.0002753639330717386,
+        "beta_HSC": 0.00213413247419287,
+        "beta_Monocytes": -0.0012228621463333824,
+        "beta_Progenitor": 0.0019284473762801661
+      },
+      "Relapse": {
+        "n_patients": 19,
+        "naive_mean": -3.6649872486270624e-05,
+        "rewiring_mean": 0.00011654564225054707,
+        "composition_mean": -0.00015319551473681788,
+        "p_rewiring": 0.5948867797851562,
+        "p_composition": 0.4653167724609375,
+        "composition_share": 0.5679352622632733,
+        "same_sign_naive_vs_rewiring": false,
+        "naive_median": 0.0018821503460213426,
+        "naive_sd": 0.005560660925929854,
+        "naive_iqr_lo": -0.003242999324747844,
+        "naive_iqr_hi": 0.0040555397239063,
+        "frac_patients_naive_positive": 0.6842105263157895,
+        "rewiring_median": 0.0007874732436310097,
+        "rewiring_sd": 0.00518784891584183,
+        "rewiring_iqr_lo": -0.0018812702196453995,
+        "rewiring_iqr_hi": 0.003881352677990284,
+        "frac_patients_rewiring_positive": 0.5263157894736842,
+        "composition_median": -0.000247617935714076,
+        "composition_sd": 0.0023605498831659713,
+        "composition_iqr_lo": -0.0006365599258632841,
+        "composition_iqr_hi": 0.00046152272588438484,
+        "frac_patients_composition_positive": 0.3684210526315789,
+        "frac_patients_abs_composition_gt_abs_rewiring": 0.3157894736842105,
+        "frac_patients_naive_rewiring_same_sign": 0.8421052631578947,
+        "pearson_naive_rewiring": 0.9058300111870738,
+        "verdict_primary_cut_0.50": "MOSTLY COMPOSITION",
+        "verdict_decisive_band": "MIXED",
+        "p_heterogeneity": 0.3205885586206779,
+        "n_celltypes": 6,
+        "n_celltypes_same_sign": 4,
+        "beta_Early.Basophil": 0.0016897825920663152,
+        "beta_Early.Erythrocyte": -0.0018637516723499967,
+        "beta_GMP": -0.0013060636935918006,
+        "beta_HSC": 0.0011195158498231456,
+        "beta_Monocytes": 0.0005504419910025611,
+        "beta_Progenitor": 0.0015166495196264505
+      }
+    },
+    "raw": {
+      "Diagnosis": {
+        "n_patients": 19,
+        "naive_mean": -0.0021618469081369452,
+        "rewiring_mean": -0.0018862106343443775,
+        "composition_mean": -0.00027563627379256783,
+        "p_rewiring": 0.9529838562011719,
+        "p_composition": 0.6794281005859375,
+        "composition_share": 0.1275003668183461,
+        "same_sign_naive_vs_rewiring": true,
+        "naive_median": 0.003379981277195021,
+        "naive_sd": 0.017129116193531177,
+        "naive_iqr_lo": -0.015422277310108645,
+        "naive_iqr_hi": 0.00844694464825145,
+        "frac_patients_naive_positive": 0.5789473684210527,
+        "rewiring_median": 0.0007775474020682834,
+        "rewiring_sd": 0.015451336426447831,
+        "rewiring_iqr_lo": -0.01054147258415045,
+        "rewiring_iqr_hi": 0.008378808732350682,
+        "frac_patients_rewiring_positive": 0.5263157894736842,
+        "composition_median": -0.00020743808733934138,
+        "composition_sd": 0.004858271987630624,
+        "composition_iqr_lo": -0.0015147273193098507,
+        "composition_iqr_hi": 0.0010087335294544858,
+        "frac_patients_composition_positive": 0.42105263157894735,
+        "frac_patients_abs_composition_gt_abs_rewiring": 0.2631578947368421,
+        "frac_patients_naive_rewiring_same_sign": 0.8421052631578947,
+        "pearson_naive_rewiring": 0.9607283796750865,
+        "verdict_primary_cut_0.50": "MOSTLY REWIRING",
+        "verdict_decisive_band": "DECISIVELY REWIRING",
+        "p_heterogeneity": 0.7799817151238165,
+        "n_celltypes": 6,
+        "n_celltypes_same_sign": 4,
+        "beta_Early.Basophil": 0.005563342337349624,
+        "beta_Early.Erythrocyte": -0.004426839327917159,
+        "beta_GMP": -0.005615805958608219,
+        "beta_HSC": 0.0006312965946685842,
+        "beta_Monocytes": -0.006120680598759229,
+        "beta_Progenitor": -0.00018323271453252678
+      },
+      "Relapse": {
+        "n_patients": 19,
+        "naive_mean": 0.0006887216922051122,
+        "rewiring_mean": 0.0004055405473955844,
+        "composition_mean": 0.00028318114480952735,
+        "p_rewiring": 0.6794281005859375,
+        "p_composition": 1.0,
+        "composition_share": 0.4111691965195017,
+        "same_sign_naive_vs_rewiring": true,
+        "naive_median": 0.00627415003844517,
+        "naive_sd": 0.015369546410555737,
+        "naive_iqr_lo": -0.011613025421815651,
+        "naive_iqr_hi": 0.012115244496087182,
+        "frac_patients_naive_positive": 0.6842105263157895,
+        "rewiring_median": 0.004900270290757616,
+        "rewiring_sd": 0.013660903228513982,
+        "rewiring_iqr_lo": -0.008303070533562683,
+        "rewiring_iqr_hi": 0.008363604323429405,
+        "frac_patients_rewiring_positive": 0.631578947368421,
+        "composition_median": 2.057386873974623e-05,
+        "composition_sd": 0.005578480913371658,
+        "composition_iqr_lo": -0.0016191662746505597,
+        "composition_iqr_hi": 0.0011334378094939607,
+        "frac_patients_composition_positive": 0.5263157894736842,
+        "frac_patients_abs_composition_gt_abs_rewiring": 0.21052631578947367,
+        "frac_patients_naive_rewiring_same_sign": 0.8421052631578947,
+        "pearson_naive_rewiring": 0.9328449837009065,
+        "verdict_primary_cut_0.50": "MOSTLY REWIRING",
+        "verdict_decisive_band": "MIXED",
+        "p_heterogeneity": 0.7823002781720854,
+        "n_celltypes": 6,
+        "n_celltypes_same_sign": 3,
+        "beta_Early.Basophil": 0.007010635139806606,
+        "beta_Early.Erythrocyte": -0.0047673409332332165,
+        "beta_GMP": -0.0035750943253989526,
+        "beta_HSC": 0.0024930012433160794,
+        "beta_Monocytes": -0.002431517676964827,
+        "beta_Progenitor": 0.00240309750035678
+      }
+    },
+    "oriented_offsetcentred": {
+      "Diagnosis": {
+        "n_patients": 19,
+        "naive_mean": 0.012465331559275266,
+        "rewiring_mean": 0.010325380293473513,
+        "composition_mean": 0.0021399512658017523,
+        "p_rewiring": 0.001171112060546875,
+        "p_composition": 0.4180412292480469,
+        "composition_share": 0.1716722299463785,
+        "same_sign_naive_vs_rewiring": true,
+        "naive_median": 0.010359707428991838,
+        "naive_sd": 0.02054572604192899,
+        "naive_iqr_lo": -8.592894665435807e-05,
+        "naive_iqr_hi": 0.02679331007390931,
+        "frac_patients_naive_positive": 0.7368421052631579,
+        "rewiring_median": 0.008406265718924971,
+        "rewiring_sd": 0.011819400903840155,
+        "rewiring_iqr_lo": 0.004076999861585262,
+        "rewiring_iqr_hi": 0.018090265757063254,
+        "frac_patients_rewiring_positive": 0.8421052631578947,
+        "composition_median": 0.0013148461743020257,
+        "composition_sd": 0.015040765565721356,
+        "composition_iqr_lo": -0.002340711089879192,
+        "composition_iqr_hi": 0.0064135403202738635,
+        "frac_patients_composition_positive": 0.5789473684210527,
+        "frac_patients_abs_composition_gt_abs_rewiring": 0.3684210526315789,
+        "frac_patients_naive_rewiring_same_sign": 0.7894736842105263,
+        "pearson_naive_rewiring": 0.6909961136583097,
+        "verdict_primary_cut_0.50": "MOSTLY REWIRING",
+        "verdict_decisive_band": "DECISIVELY REWIRING",
+        "p_heterogeneity": 0.558360830625862,
+        "n_celltypes": 6,
+        "n_celltypes_same_sign": 6,
+        "beta_Early.Basophil": 0.009027831137384463,
+        "beta_Early.Erythrocyte": 0.005066268316329077,
+        "beta_GMP": 0.012529665033479565,
+        "beta_HSC": 0.009397772759616703,
+        "beta_Monocytes": 0.003436609623555258,
+        "beta_Progenitor": 0.011773221283974573
+      },
+      "Relapse": {
+        "n_patients": 19,
+        "naive_mean": 0.010293492088764775,
+        "rewiring_mean": 0.008576909847274064,
+        "composition_mean": 0.0017165822414907117,
+        "p_rewiring": 0.00141143798828125,
+        "p_composition": 0.4180412292480469,
+        "composition_share": 0.16676383745068796,
+        "same_sign_naive_vs_rewiring": true,
+        "naive_median": 0.013184150141597961,
+        "naive_sd": 0.015681524315183475,
+        "naive_iqr_lo": 0.002800012002395807,
+        "naive_iqr_hi": 0.017842632997098692,
+        "frac_patients_naive_positive": 0.7894736842105263,
+        "rewiring_median": 0.008910177261419253,
+        "rewiring_sd": 0.008986527300990973,
+        "rewiring_iqr_lo": 0.004575102555686801,
+        "rewiring_iqr_hi": 0.01085133617357745,
+        "frac_patients_rewiring_positive": 0.7894736842105263,
+        "composition_median": 0.0011839865610450383,
+        "composition_sd": 0.012427964869137775,
+        "composition_iqr_lo": -0.0017221587010611303,
+        "composition_iqr_hi": 0.006225377549538753,
+        "frac_patients_composition_positive": 0.5789473684210527,
+        "frac_patients_abs_composition_gt_abs_rewiring": 0.2631578947368421,
+        "frac_patients_naive_rewiring_same_sign": 0.8947368421052632,
+        "pearson_naive_rewiring": 0.6110224858245674,
+        "verdict_primary_cut_0.50": "MOSTLY REWIRING",
+        "verdict_decisive_band": "DECISIVELY REWIRING",
+        "p_heterogeneity": 0.3831818807290076,
+        "n_celltypes": 6,
+        "n_celltypes_same_sign": 6,
+        "beta_Early.Basophil": 0.00905914428071412,
+        "beta_Early.Erythrocyte": 0.004173215879744119,
+        "beta_GMP": 0.008906534177735376,
+        "beta_HSC": 0.009205875827090515,
+        "beta_Monocytes": 0.0006635155851285261,
+        "beta_Progenitor": 0.011145316516827772
+      }
+    }
+  },
+  "module_verdict": {
+    "offsetcentred": {
+      "per_vocabulary": {
+        "Diagnosis": "MOSTLY REWIRING",
+        "Relapse": "MOSTLY COMPOSITION"
+      },
+      "both_vocabularies_agree": false,
+      "verdict": "NOT CONFIRMED (vocabularies disagree)",
+      "decisive_band_per_vocabulary": {
+        "Diagnosis": "DECISIVELY REWIRING",
+        "Relapse": "MIXED"
+      },
+      "decisive_band_verdict": "NOT CONFIRMED (vocabularies disagree)"
+    },
+    "raw": {
+      "per_vocabulary": {
+        "Diagnosis": "MOSTLY REWIRING",
+        "Relapse": "MOSTLY REWIRING"
+      },
+      "both_vocabularies_agree": true,
+      "verdict": "MOSTLY REWIRING",
+      "decisive_band_per_vocabulary": {
+        "Diagnosis": "DECISIVELY REWIRING",
+        "Relapse": "MIXED"
+      },
+      "decisive_band_verdict": "NOT CONFIRMED (vocabularies disagree)"
+    },
+    "oriented_offsetcentred": {
+      "per_vocabulary": {
+        "Diagnosis": "MOSTLY REWIRING",
+        "Relapse": "MOSTLY REWIRING"
+      },
+      "both_vocabularies_agree": true,
+      "verdict": "MOSTLY REWIRING",
+      "decisive_band_per_vocabulary": {
+        "Diagnosis": "DECISIVELY REWIRING",
+        "Relapse": "DECISIVELY REWIRING"
+      },
+      "decisive_band_verdict": "DECISIVELY REWIRING"
+    }
+  },
+  "per_regulon_bh_status_changes": {
+    "rewiring|Diagnosis": {
+      "n_family": 55,
+      "n_sig_committed_160_wide_q": 4,
+      "n_sig_recomputed_set55_q": 6,
+      "n_became_significant": 2,
+      "n_lost_significance": 0,
+      "n_status_changes": 2
+    },
+    "composition|Diagnosis": {
+      "n_family": 55,
+      "n_sig_committed_160_wide_q": 0,
+      "n_sig_recomputed_set55_q": 0,
+      "n_became_significant": 0,
+      "n_lost_significance": 0,
+      "n_status_changes": 0
+    },
+    "heterogeneity|Diagnosis": {
+      "n_family": 55,
+      "n_sig_committed_160_wide_q": 0,
+      "n_sig_recomputed_set55_q": 0,
+      "n_became_significant": 0,
+      "n_lost_significance": 0,
+      "n_status_changes": 0
+    },
+    "rewiring|Relapse": {
+      "n_family": 55,
+      "n_sig_committed_160_wide_q": 1,
+      "n_sig_recomputed_set55_q": 3,
+      "n_became_significant": 2,
+      "n_lost_significance": 0,
+      "n_status_changes": 2
+    },
+    "composition|Relapse": {
+      "n_family": 55,
+      "n_sig_committed_160_wide_q": 0,
+      "n_sig_recomputed_set55_q": 0,
+      "n_became_significant": 0,
+      "n_lost_significance": 0,
+      "n_status_changes": 0
+    },
+    "heterogeneity|Relapse": {
+      "n_family": 55,
+      "n_sig_committed_160_wide_q": 0,
+      "n_sig_recomputed_set55_q": 0,
+      "n_became_significant": 0,
+      "n_lost_significance": 0,
+      "n_status_changes": 0
+    }
+  },
+  "per_regulon_bh_total_status_changes": 4,
+  "per_regulon_summary_set55": {
+    "Diagnosis": {
+      "n": 55,
+      "median_abs_naive": 0.0107506676827959,
+      "median_abs_rewiring": 0.0086704418587821,
+      "median_abs_composition": 0.0019879862718598,
+      "median_composition_share": 0.1775454249503853,
+      "mean_composition_share": 0.20291238439659193,
+      "iqr_composition_share": [
+        0.12931290401751,
+        0.23627870922282102
+      ],
+      "frac_composition_share_above_50pct": 0.05454545454545454,
+      "n_composition_share_above_50pct": 3,
+      "frac_naive_and_rewiring_same_sign": 1.0,
+      "n_naive_and_rewiring_same_sign": 55,
+      "q05_rewiring_set55": 6,
+      "q05_composition_set55": 0,
+      "q05_heterogeneity_set55": 0,
+      "q05_rewiring_committed_160": 4,
+      "q05_composition_committed_160": 0,
+      "q05_heterogeneity_committed_160": 0,
+      "mean_n_celltypes_same_sign": 5.363636363636363,
+      "n_patients_range": [
+        19,
+        19
+      ],
+      "per_celltype_mean_delta": {
+        "Early.Basophil": 0.0018635698717677748,
+        "Early.Erythrocyte": 0.000371512762553977,
+        "GMP": -0.0002753639330717416,
+        "HSC": 0.002134132474192869,
+        "Monocytes": -0.0012228621463333902,
+        "Progenitor": 0.001928447376280166
+      },
+      "regulons_q05_rewiring_set55": [
+        "MAFB_direct_-/-",
+        "SPI1_direct_-/+",
+        "SPI1_direct_-/-",
+        "TFDP2_direct_+/-",
+        "ZBTB7A_direct_-/+",
+        "ZBTB7A_direct_-/-"
+      ]
+    },
+    "Relapse": {
+      "n": 55,
+      "median_abs_naive": 0.0096572092150006,
+      "median_abs_rewiring": 0.0077722336252179,
+      "median_abs_composition": 0.0018613076895748,
+      "median_composition_share": 0.181446570918598,
+      "mean_composition_share": 0.1954711629782504,
+      "iqr_composition_share": [
+        0.13703976909982465,
+        0.27389206088398177
+      ],
+      "frac_composition_share_above_50pct": 0.0,
+      "n_composition_share_above_50pct": 0,
+      "frac_naive_and_rewiring_same_sign": 1.0,
+      "n_naive_and_rewiring_same_sign": 55,
+      "q05_rewiring_set55": 3,
+      "q05_composition_set55": 0,
+      "q05_heterogeneity_set55": 0,
+      "q05_rewiring_committed_160": 1,
+      "q05_composition_committed_160": 0,
+      "q05_heterogeneity_committed_160": 0,
+      "mean_n_celltypes_same_sign": 4.9818181818181815,
+      "n_patients_range": [
+        19,
+        19
+      ],
+      "per_celltype_mean_delta": {
+        "Early.Basophil": 0.0016897825920663054,
+        "Early.Erythrocyte": -0.0018637516723499937,
+        "GMP": -0.0013060636935917926,
+        "HSC": 0.0011195158498231437,
+        "Monocytes": 0.0005504419910025493,
+        "Progenitor": 0.0015166495196264468
+      },
+      "regulons_q05_rewiring_set55": [
+        "ERG_direct_-/-",
+        "KLF4_direct_+/+",
+        "KLF4_direct_+/-"
+      ]
+    }
+  },
+  "per_regulon_cross_vocabulary_set55": {
+    "n": 55,
+    "rewiring_sign_agree": 53,
+    "composition_sign_agree": 49,
+    "heterogeneous_both_vocabularies": 0,
+    "uniform_both_vocabularies": 55,
+    "rewiring_q05_both_vocabularies": 0,
+    "composition_share_above_50pct_both": 0
+  },
+  "per_regulon_calibration_committed": {
+    "source": "stage3_repair_analysis/out/s3_decomposition.json -> calibration / readable",
+    "note": "governs the per-regulon p-values, which are re-read not re-inferred; NOT re-run here",
+    "calibration": {
+      "rewiring": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0315,
+          "median_p": 0.5152778625488281,
+          "ks_uniform_p": 0.0004890442681951349
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0555,
+          "median_p": 0.48996734619140625,
+          "ks_uniform_p": 0.0107056013388241
+        }
+      },
+      "composition": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0745,
+          "median_p": 0.4413337707519531,
+          "ks_uniform_p": 1.3971172454922055e-08
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.0645,
+          "median_p": 0.4653167724609375,
+          "ks_uniform_p": 1.3041757496995379e-05
+        }
+      },
+      "heterogeneity": {
+        "Diagnosis": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.04,
+          "median_p": 0.5068804164064855,
+          "ks_uniform_p": 0.7792935302932452
+        },
+        "Relapse": {
+          "n_fits": 2000,
+          "frac_p_below_05": 0.037,
+          "median_p": 0.5117604213043068,
+          "ks_uniform_p": 0.08942499213747845
+        }
+      }
+    },
+    "readable": {
+      "rewiring": true,
+      "composition": true,
+      "heterogeneity": true
+    },
+    "directional_set_size": 160
+  },
+  "corroboration_against_committed_module_scores": {
+    "source": "analysis/out/f6_per_patient_module.csv, set == repair_55, aggregation == unweighted",
+    "note": "the committed deltas are unweighted over cell types; this run's rewiring component is Diagnosis-cell-count-weighted, so agreement is expected in sign and magnitude, not exact",
+    "by_vocabulary": {
+      "Diagnosis": {
+        "committed_module_unoriented_delta_mean": 0.0008369902808347316,
+        "this_run_rewiring_mean_offsetcentred": 0.000941801463025639,
+        "committed_module_LOPO_oriented_delta_mean": 0.009495699539588764,
+        "this_run_rewiring_mean_oriented": 0.010325380293473513,
+        "committed_module_mean_raw_AUC_delta_mean": -0.0027120171810844584,
+        "this_run_rewiring_mean_raw": -0.0018862106343443775
+      },
+      "Relapse": {
+        "committed_module_unoriented_delta_mean": 0.00022897846873283669,
+        "this_run_rewiring_mean_offsetcentred": 0.00011654564225054707,
+        "committed_module_LOPO_oriented_delta_mean": 0.007551984198625901,
+        "this_run_rewiring_mean_oriented": 0.008576909847274064,
+        "committed_module_mean_raw_AUC_delta_mean": -0.0002586574143080101,
+        "this_run_rewiring_mean_raw": 0.0004055405473955844
+      }
+    }
+  },
+  "headline": {
+    "question": "Is the module's diagnosis->relapse change regulatory rewiring or a change in the mixture of cell types?",
+    "answer": "REWIRING, not composition \u2014 wherever the module moves at all.",
+    "primary_scale_caveat": "On the PRE-DECLARED PRIMARY score (offset-centred, UNORIENTED mean over the 55) the module barely moves: naive mean +0.000529 (Dx) / -0.000037 (Rel) against per-patient SD 0.006541 / 0.005561. The composition share is therefore a ratio of two near-zero numbers, it is unstable, and the two vocabularies disagree (0.305 vs 0.568) -> NOT CONFIRMED under the D5 both-vocabulary rule. This is a structural property of the module, not a failure of the estimator: the 55 split 31 up / 24 down at relapse (FIG1_FIG6_MASTER.md ADDENDUM, section F6b'), so an unoriented mean cancels by construction. Corroborated by the committed module_unoriented_delta.",
+    "answer_carrying_scale": "On the ORIENTATION-SIGNED score (declared SENSITIVITY, and the object every other module-level result in the project uses) the module moves clearly and the decomposition is unambiguous: composition share 0.1717 (Dx) / 0.1668 (Rel), DECISIVELY REWIRING under both vocabularies, and all three estimators PASS the calibration gate on that scale.",
+    "per_regulon_answer": "Per regulon on the 55, median composition share 0.1775 (Dx) / 0.1814 (Rel); composition exceeds rewiring in 3 of 55 (Dx) and 0 of 55 (Rel), and in 0 of 55 under both vocabularies.",
+    "composition_confounding": "naive and rewiring agree in sign in 55 of 55 regulons under BOTH vocabularies, and in 19/19 (Dx) / 16/19 (Rel) patients at module level on the primary scale. The pseudobulk estimator was never composition-confounded, because its unit is (patient x cell type), so composition differences out by construction.",
+    "lower_bound_caveat": "Every composition number here is a LOWER BOUND (6 of 20 cell types admitted), so a 'mostly rewiring' verdict is the anti-conservative direction of error."
+  },
+  "unspecified_decisions_made": [
+    "Module score construction: the brief said 'mean over the 55 regulons' but not whether to centre before or after averaging, nor which regulons define the offset. Chosen: offset-centre the FULL pseudobulk panel (332 Dx / 352 Rel columns) exactly as the reference script does, then average the 55 columns. This is algebraically the project's own module_mean_offsetcentred_* (f1_03_f6_module_and_activity.py:194-195).",
+    "Orientation: the brief specified an unoriented mean; the module definition carries per-vocabulary orientation signs. Unoriented was made PRIMARY per the brief and orientation-signed was declared in the pre-spec as a SENSITIVITY, before running. It was NOT promoted to primary after the answer was seen.",
+    "Calibration draw count: the reference obtained 2000 calibration fits as 20 permutations x 100 random regulon columns. The module is one column, so the same 2000 fits were obtained as 2000 permutation draws. Declared in the pre-spec (P7).",
+    "Calibration was run separately for each of the three scales, and the gate is applied per (scale x estimator). The reference calibrated on the offset-centred scale only (it builds a raw matrix at line 120 but never fits it).",
+    "Decision threshold: the primary cut was set at composition share 0.50 to match the committed key frac_composition_share_above_50pct, with a stricter 1/3 - 2/3 decisive band. Both declared before running.",
+    "Spread statistics (median, SD, IQR, fraction of patients with |composition| > |rewiring|) are not in the reference script; they were added and declared in the pre-spec (P10).",
+    "A fast vectorised permutation path was written for speed and ASSERTED bit-comparable to the verbatim reference decompose()/heterogeneity() on the unpermuted data before use.",
+    "The composition share reported at module level is computed from the MEAN over patients of each component (reference line 165), not as a mean of per-patient shares."
+  ],
+  "values_that_could_not_be_sourced": [
+    "None. Every value in the report is either read from a committed file (path and key given) or computed here from the committed pseudobulk substrate by the pre-specified estimator.",
+    "Noted, not a gap: the reference script s3_21_decomposition.py declares raw scale as a sensitivity (D2) but never actually fits it, so there is NO committed per-regulon raw-scale decomposition to compare this run's module-level raw sensitivity against."
+  ]
+}

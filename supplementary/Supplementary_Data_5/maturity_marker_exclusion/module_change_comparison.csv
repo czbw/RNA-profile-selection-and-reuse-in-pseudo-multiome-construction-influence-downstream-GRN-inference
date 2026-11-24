@@ -1,0 +1,5 @@
+axis,vocabulary,retained_mean_change_fraction,original_vs_excluded_patient_change_pearson,source_row
+A1_lambo_HSC_minus_Monocyte,Diagnosis,0.8449250559462091,0.9955323521426896,2
+A1_lambo_HSC_minus_Monocyte,Relapse,0.8360478734518052,0.9950850647458397,3
+A2_lambo_HSCProg_minus_MonoGMP,Diagnosis,0.8302780931996405,0.9948908877582557,4
+A2_lambo_HSCProg_minus_MonoGMP,Relapse,0.8123513098544906,0.9924946549562179,5

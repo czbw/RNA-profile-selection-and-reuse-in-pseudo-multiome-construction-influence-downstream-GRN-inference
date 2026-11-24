@@ -1,0 +1,543 @@
+definition,stratum,n_cells
+celltype,B1 B,1890
+celltype,CD14+ Mono,10843
+celltype,CD16+ Mono,1894
+celltype,CD4+ T activated,5526
+celltype,CD4+ T naive,4398
+celltype,CD8+ T,11589
+celltype,CD8+ T naive,1012
+celltype,Erythroblast,4916
+celltype,G/M prog,1203
+celltype,HSC,1072
+celltype,ID2-hi myeloid prog,108
+celltype,ILC,835
+celltype,Lymph prog,1779
+celltype,MK/E prog,884
+celltype,NK,6929
+celltype,Naive CD20+ B,5052
+celltype,Normoblast,1780
+celltype,Plasma cell,379
+celltype,Proerythroblast,2300
+celltype,Transitional B,2810
+celltype,cDC2,859
+celltype,pDC,1191
+celltype_x_donor,B1 B|donor1,688
+celltype_x_donor,B1 B|donor10,127
+celltype_x_donor,B1 B|donor2,127
+celltype_x_donor,B1 B|donor3,290
+celltype_x_donor,B1 B|donor5,123
+celltype_x_donor,B1 B|donor6,55
+celltype_x_donor,B1 B|donor7,56
+celltype_x_donor,B1 B|donor8,326
+celltype_x_donor,B1 B|donor9,98
+celltype_x_donor,CD14+ Mono|donor1,3243
+celltype_x_donor,CD14+ Mono|donor10,1603
+celltype_x_donor,CD14+ Mono|donor2,704
+celltype_x_donor,CD14+ Mono|donor3,1097
+celltype_x_donor,CD14+ Mono|donor4,1140
+celltype_x_donor,CD14+ Mono|donor5,1716
+celltype_x_donor,CD14+ Mono|donor6,208
+celltype_x_donor,CD14+ Mono|donor7,674
+celltype_x_donor,CD14+ Mono|donor8,458
+celltype_x_donor,CD16+ Mono|donor1,526
+celltype_x_donor,CD16+ Mono|donor10,253
+celltype_x_donor,CD16+ Mono|donor2,179
+celltype_x_donor,CD16+ Mono|donor3,67
+celltype_x_donor,CD16+ Mono|donor4,177
+celltype_x_donor,CD16+ Mono|donor5,380
+celltype_x_donor,CD16+ Mono|donor6,18
+celltype_x_donor,CD16+ Mono|donor7,41
+celltype_x_donor,CD16+ Mono|donor8,99
+celltype_x_donor,CD16+ Mono|donor9,154
+celltype_x_donor,CD4+ T activated|donor1,1901
+celltype_x_donor,CD4+ T activated|donor10,207
+celltype_x_donor,CD4+ T activated|donor2,709
+celltype_x_donor,CD4+ T activated|donor3,620
+celltype_x_donor,CD4+ T activated|donor4,385
+celltype_x_donor,CD4+ T activated|donor5,493
+celltype_x_donor,CD4+ T activated|donor6,276
+celltype_x_donor,CD4+ T activated|donor7,102
+celltype_x_donor,CD4+ T activated|donor8,684
+celltype_x_donor,CD4+ T activated|donor9,149
+celltype_x_donor,CD4+ T naive|donor1,1198
+celltype_x_donor,CD4+ T naive|donor10,106
+celltype_x_donor,CD4+ T naive|donor2,1289
+celltype_x_donor,CD4+ T naive|donor3,852
+celltype_x_donor,CD4+ T naive|donor4,214
+celltype_x_donor,CD4+ T naive|donor5,163
+celltype_x_donor,CD4+ T naive|donor6,58
+celltype_x_donor,CD4+ T naive|donor7,98
+celltype_x_donor,CD4+ T naive|donor8,299
+celltype_x_donor,CD4+ T naive|donor9,121
+celltype_x_donor,CD8+ T naive|donor10,366
+celltype_x_donor,CD8+ T naive|donor3,427
+celltype_x_donor,CD8+ T naive|donor9,219
+celltype_x_donor,CD8+ T|donor1,1653
+celltype_x_donor,CD8+ T|donor10,432
+celltype_x_donor,CD8+ T|donor2,1632
+celltype_x_donor,CD8+ T|donor3,1398
+celltype_x_donor,CD8+ T|donor4,230
+celltype_x_donor,CD8+ T|donor5,752
+celltype_x_donor,CD8+ T|donor6,488
+celltype_x_donor,CD8+ T|donor7,110
+celltype_x_donor,CD8+ T|donor8,4089
+celltype_x_donor,CD8+ T|donor9,805
+celltype_x_donor,Erythroblast|donor1,1749
+celltype_x_donor,Erythroblast|donor10,391
+celltype_x_donor,Erythroblast|donor2,136
+celltype_x_donor,Erythroblast|donor3,620
+celltype_x_donor,Erythroblast|donor4,1485
+celltype_x_donor,Erythroblast|donor5,64
+celltype_x_donor,Erythroblast|donor6,84
+celltype_x_donor,Erythroblast|donor7,31
+celltype_x_donor,Erythroblast|donor8,266
+celltype_x_donor,Erythroblast|donor9,90
+celltype_x_donor,G/M prog|donor1,341
+celltype_x_donor,G/M prog|donor10,432
+celltype_x_donor,G/M prog|donor2,27
+celltype_x_donor,G/M prog|donor3,32
+celltype_x_donor,G/M prog|donor4,92
+celltype_x_donor,G/M prog|donor6,119
+celltype_x_donor,G/M prog|donor7,8
+celltype_x_donor,G/M prog|donor8,66
+celltype_x_donor,G/M prog|donor9,86
+celltype_x_donor,HSC|donor1,230
+celltype_x_donor,HSC|donor10,291
+celltype_x_donor,HSC|donor2,33
+celltype_x_donor,HSC|donor3,146
+celltype_x_donor,HSC|donor4,100
+celltype_x_donor,HSC|donor5,20
+celltype_x_donor,HSC|donor6,38
+celltype_x_donor,HSC|donor7,34
+celltype_x_donor,HSC|donor8,108
+celltype_x_donor,HSC|donor9,72
+celltype_x_donor,ID2-hi myeloid prog|donor1,67
+celltype_x_donor,ID2-hi myeloid prog|donor2,41
+celltype_x_donor,ILC|donor1,120
+celltype_x_donor,ILC|donor10,129
+celltype_x_donor,ILC|donor2,367
+celltype_x_donor,ILC|donor3,124
+celltype_x_donor,ILC|donor5,95
+celltype_x_donor,Lymph prog|donor1,452
+celltype_x_donor,Lymph prog|donor10,231
+celltype_x_donor,Lymph prog|donor2,28
+celltype_x_donor,Lymph prog|donor3,134
+celltype_x_donor,Lymph prog|donor4,286
+celltype_x_donor,Lymph prog|donor6,15
+celltype_x_donor,Lymph prog|donor7,17
+celltype_x_donor,Lymph prog|donor8,327
+celltype_x_donor,Lymph prog|donor9,289
+celltype_x_donor,MK/E prog|donor1,298
+celltype_x_donor,MK/E prog|donor10,125
+celltype_x_donor,MK/E prog|donor2,71
+celltype_x_donor,MK/E prog|donor3,95
+celltype_x_donor,MK/E prog|donor4,33
+celltype_x_donor,MK/E prog|donor6,48
+celltype_x_donor,MK/E prog|donor7,14
+celltype_x_donor,MK/E prog|donor8,120
+celltype_x_donor,MK/E prog|donor9,80
+celltype_x_donor,NK|donor1,1984
+celltype_x_donor,NK|donor10,545
+celltype_x_donor,NK|donor2,982
+celltype_x_donor,NK|donor3,1173
+celltype_x_donor,NK|donor4,136
+celltype_x_donor,NK|donor5,848
+celltype_x_donor,NK|donor6,126
+celltype_x_donor,NK|donor7,256
+celltype_x_donor,NK|donor8,421
+celltype_x_donor,NK|donor9,458
+celltype_x_donor,Naive CD20+ B|donor1,1301
+celltype_x_donor,Naive CD20+ B|donor10,421
+celltype_x_donor,Naive CD20+ B|donor2,121
+celltype_x_donor,Naive CD20+ B|donor3,526
+celltype_x_donor,Naive CD20+ B|donor4,590
+celltype_x_donor,Naive CD20+ B|donor5,105
+celltype_x_donor,Naive CD20+ B|donor6,18
+celltype_x_donor,Naive CD20+ B|donor7,190
+celltype_x_donor,Naive CD20+ B|donor8,883
+celltype_x_donor,Naive CD20+ B|donor9,897
+celltype_x_donor,Normoblast|donor1,630
+celltype_x_donor,Normoblast|donor10,129
+celltype_x_donor,Normoblast|donor2,69
+celltype_x_donor,Normoblast|donor3,147
+celltype_x_donor,Normoblast|donor4,641
+celltype_x_donor,Normoblast|donor5,17
+celltype_x_donor,Normoblast|donor6,18
+celltype_x_donor,Normoblast|donor7,9
+celltype_x_donor,Normoblast|donor8,90
+celltype_x_donor,Normoblast|donor9,30
+celltype_x_donor,Plasma cell|donor1,286
+celltype_x_donor,Plasma cell|donor10,13
+celltype_x_donor,Plasma cell|donor2,13
+celltype_x_donor,Plasma cell|donor3,25
+celltype_x_donor,Plasma cell|donor5,16
+celltype_x_donor,Plasma cell|donor8,26
+celltype_x_donor,Proerythroblast|donor1,472
+celltype_x_donor,Proerythroblast|donor10,111
+celltype_x_donor,Proerythroblast|donor2,30
+celltype_x_donor,Proerythroblast|donor3,313
+celltype_x_donor,Proerythroblast|donor4,316
+celltype_x_donor,Proerythroblast|donor5,18
+celltype_x_donor,Proerythroblast|donor6,27
+celltype_x_donor,Proerythroblast|donor7,21
+celltype_x_donor,Proerythroblast|donor8,800
+celltype_x_donor,Proerythroblast|donor9,192
+celltype_x_donor,Transitional B|donor1,809
+celltype_x_donor,Transitional B|donor10,359
+celltype_x_donor,Transitional B|donor2,40
+celltype_x_donor,Transitional B|donor3,197
+celltype_x_donor,Transitional B|donor4,185
+celltype_x_donor,Transitional B|donor6,18
+celltype_x_donor,Transitional B|donor7,30
+celltype_x_donor,Transitional B|donor8,630
+celltype_x_donor,Transitional B|donor9,542
+celltype_x_donor,cDC2|donor1,181
+celltype_x_donor,cDC2|donor10,83
+celltype_x_donor,cDC2|donor2,89
+celltype_x_donor,cDC2|donor3,188
+celltype_x_donor,cDC2|donor4,53
+celltype_x_donor,cDC2|donor5,30
+celltype_x_donor,cDC2|donor6,26
+celltype_x_donor,cDC2|donor7,25
+celltype_x_donor,cDC2|donor8,160
+celltype_x_donor,cDC2|donor9,24
+celltype_x_donor,pDC|donor1,338
+celltype_x_donor,pDC|donor10,427
+celltype_x_donor,pDC|donor2,53
+celltype_x_donor,pDC|donor3,133
+celltype_x_donor,pDC|donor4,48
+celltype_x_donor,pDC|donor5,55
+celltype_x_donor,pDC|donor6,39
+celltype_x_donor,pDC|donor7,55
+celltype_x_donor,pDC|donor8,24
+celltype_x_donor,pDC|donor9,19
+celltype_x_batch,B1 B|s1d1,201
+celltype_x_batch,B1 B|s1d2,127
+celltype_x_batch,B1 B|s1d3,73
+celltype_x_batch,B1 B|s2d1,67
+celltype_x_batch,B1 B|s2d5,123
+celltype_x_batch,B1 B|s3d10,127
+celltype_x_batch,B1 B|s3d3,217
+celltype_x_batch,B1 B|s3d6,55
+celltype_x_batch,B1 B|s3d7,56
+celltype_x_batch,B1 B|s4d1,420
+celltype_x_batch,B1 B|s4d8,326
+celltype_x_batch,B1 B|s4d9,98
+celltype_x_batch,CD14+ Mono|s1d1,921
+celltype_x_batch,CD14+ Mono|s1d2,704
+celltype_x_batch,CD14+ Mono|s1d3,242
+celltype_x_batch,CD14+ Mono|s2d1,1308
+celltype_x_batch,CD14+ Mono|s2d4,1140
+celltype_x_batch,CD14+ Mono|s2d5,1716
+celltype_x_batch,CD14+ Mono|s3d10,1603
+celltype_x_batch,CD14+ Mono|s3d3,855
+celltype_x_batch,CD14+ Mono|s3d6,208
+celltype_x_batch,CD14+ Mono|s3d7,674
+celltype_x_batch,CD14+ Mono|s4d1,1014
+celltype_x_batch,CD14+ Mono|s4d8,458
+celltype_x_batch,CD16+ Mono|s1d1,66
+celltype_x_batch,CD16+ Mono|s1d2,179
+celltype_x_batch,CD16+ Mono|s1d3,26
+celltype_x_batch,CD16+ Mono|s2d1,209
+celltype_x_batch,CD16+ Mono|s2d4,177
+celltype_x_batch,CD16+ Mono|s2d5,380
+celltype_x_batch,CD16+ Mono|s3d10,253
+celltype_x_batch,CD16+ Mono|s3d3,41
+celltype_x_batch,CD16+ Mono|s3d6,18
+celltype_x_batch,CD16+ Mono|s3d7,41
+celltype_x_batch,CD16+ Mono|s4d1,251
+celltype_x_batch,CD16+ Mono|s4d8,99
+celltype_x_batch,CD16+ Mono|s4d9,154
+celltype_x_batch,CD4+ T activated|s1d1,836
+celltype_x_batch,CD4+ T activated|s1d2,709
+celltype_x_batch,CD4+ T activated|s1d3,392
+celltype_x_batch,CD4+ T activated|s2d1,446
+celltype_x_batch,CD4+ T activated|s2d4,385
+celltype_x_batch,CD4+ T activated|s2d5,493
+celltype_x_batch,CD4+ T activated|s3d10,207
+celltype_x_batch,CD4+ T activated|s3d3,228
+celltype_x_batch,CD4+ T activated|s3d6,276
+celltype_x_batch,CD4+ T activated|s3d7,102
+celltype_x_batch,CD4+ T activated|s4d1,619
+celltype_x_batch,CD4+ T activated|s4d8,684
+celltype_x_batch,CD4+ T activated|s4d9,149
+celltype_x_batch,CD4+ T naive|s1d1,543
+celltype_x_batch,CD4+ T naive|s1d2,1289
+celltype_x_batch,CD4+ T naive|s1d3,533
+celltype_x_batch,CD4+ T naive|s2d1,254
+celltype_x_batch,CD4+ T naive|s2d4,214
+celltype_x_batch,CD4+ T naive|s2d5,163
+celltype_x_batch,CD4+ T naive|s3d10,106
+celltype_x_batch,CD4+ T naive|s3d3,319
+celltype_x_batch,CD4+ T naive|s3d6,58
+celltype_x_batch,CD4+ T naive|s3d7,98
+celltype_x_batch,CD4+ T naive|s4d1,401
+celltype_x_batch,CD4+ T naive|s4d8,299
+celltype_x_batch,CD4+ T naive|s4d9,121
+celltype_x_batch,CD8+ T naive|s1d3,199
+celltype_x_batch,CD8+ T naive|s3d10,366
+celltype_x_batch,CD8+ T naive|s3d3,228
+celltype_x_batch,CD8+ T naive|s4d9,219
+celltype_x_batch,CD8+ T|s1d1,725
+celltype_x_batch,CD8+ T|s1d2,1632
+celltype_x_batch,CD8+ T|s1d3,1020
+celltype_x_batch,CD8+ T|s2d1,169
+celltype_x_batch,CD8+ T|s2d4,230
+celltype_x_batch,CD8+ T|s2d5,752
+celltype_x_batch,CD8+ T|s3d10,432
+celltype_x_batch,CD8+ T|s3d3,378
+celltype_x_batch,CD8+ T|s3d6,488
+celltype_x_batch,CD8+ T|s3d7,110
+celltype_x_batch,CD8+ T|s4d1,759
+celltype_x_batch,CD8+ T|s4d8,4089
+celltype_x_batch,CD8+ T|s4d9,805
+celltype_x_batch,Erythroblast|s1d1,797
+celltype_x_batch,Erythroblast|s1d2,136
+celltype_x_batch,Erythroblast|s1d3,374
+celltype_x_batch,Erythroblast|s2d1,478
+celltype_x_batch,Erythroblast|s2d4,1485
+celltype_x_batch,Erythroblast|s2d5,64
+celltype_x_batch,Erythroblast|s3d10,391
+celltype_x_batch,Erythroblast|s3d3,246
+celltype_x_batch,Erythroblast|s3d6,84
+celltype_x_batch,Erythroblast|s3d7,31
+celltype_x_batch,Erythroblast|s4d1,474
+celltype_x_batch,Erythroblast|s4d8,266
+celltype_x_batch,Erythroblast|s4d9,90
+celltype_x_batch,G/M prog|s1d1,110
+celltype_x_batch,G/M prog|s1d2,27
+celltype_x_batch,G/M prog|s2d1,60
+celltype_x_batch,G/M prog|s2d4,92
+celltype_x_batch,G/M prog|s3d10,432
+celltype_x_batch,G/M prog|s3d3,32
+celltype_x_batch,G/M prog|s3d6,119
+celltype_x_batch,G/M prog|s3d7,8
+celltype_x_batch,G/M prog|s4d1,171
+celltype_x_batch,G/M prog|s4d8,66
+celltype_x_batch,G/M prog|s4d9,86
+celltype_x_batch,HSC|s1d1,41
+celltype_x_batch,HSC|s1d2,33
+celltype_x_batch,HSC|s1d3,24
+celltype_x_batch,HSC|s2d1,50
+celltype_x_batch,HSC|s2d4,100
+celltype_x_batch,HSC|s2d5,20
+celltype_x_batch,HSC|s3d10,291
+celltype_x_batch,HSC|s3d3,122
+celltype_x_batch,HSC|s3d6,38
+celltype_x_batch,HSC|s3d7,34
+celltype_x_batch,HSC|s4d1,139
+celltype_x_batch,HSC|s4d8,108
+celltype_x_batch,HSC|s4d9,72
+celltype_x_batch,ID2-hi myeloid prog|s1d1,67
+celltype_x_batch,ID2-hi myeloid prog|s1d2,41
+celltype_x_batch,ILC|s1d1,102
+celltype_x_batch,ILC|s1d2,367
+celltype_x_batch,ILC|s1d3,124
+celltype_x_batch,ILC|s2d1,18
+celltype_x_batch,ILC|s2d5,95
+celltype_x_batch,ILC|s3d10,129
+celltype_x_batch,Lymph prog|s1d1,52
+celltype_x_batch,Lymph prog|s1d2,28
+celltype_x_batch,Lymph prog|s1d3,57
+celltype_x_batch,Lymph prog|s2d1,109
+celltype_x_batch,Lymph prog|s2d4,286
+celltype_x_batch,Lymph prog|s3d10,231
+celltype_x_batch,Lymph prog|s3d3,77
+celltype_x_batch,Lymph prog|s3d6,15
+celltype_x_batch,Lymph prog|s3d7,17
+celltype_x_batch,Lymph prog|s4d1,291
+celltype_x_batch,Lymph prog|s4d8,327
+celltype_x_batch,Lymph prog|s4d9,289
+celltype_x_batch,MK/E prog|s1d1,64
+celltype_x_batch,MK/E prog|s1d2,71
+celltype_x_batch,MK/E prog|s1d3,24
+celltype_x_batch,MK/E prog|s2d1,33
+celltype_x_batch,MK/E prog|s2d4,33
+celltype_x_batch,MK/E prog|s3d10,125
+celltype_x_batch,MK/E prog|s3d3,71
+celltype_x_batch,MK/E prog|s3d6,48
+celltype_x_batch,MK/E prog|s3d7,14
+celltype_x_batch,MK/E prog|s4d1,201
+celltype_x_batch,MK/E prog|s4d8,120
+celltype_x_batch,MK/E prog|s4d9,80
+celltype_x_batch,NK|s1d1,591
+celltype_x_batch,NK|s1d2,982
+celltype_x_batch,NK|s1d3,696
+celltype_x_batch,NK|s2d1,269
+celltype_x_batch,NK|s2d4,136
+celltype_x_batch,NK|s2d5,848
+celltype_x_batch,NK|s3d10,545
+celltype_x_batch,NK|s3d3,477
+celltype_x_batch,NK|s3d6,126
+celltype_x_batch,NK|s3d7,256
+celltype_x_batch,NK|s4d1,1124
+celltype_x_batch,NK|s4d8,421
+celltype_x_batch,NK|s4d9,458
+celltype_x_batch,Naive CD20+ B|s1d1,386
+celltype_x_batch,Naive CD20+ B|s1d2,121
+celltype_x_batch,Naive CD20+ B|s1d3,133
+celltype_x_batch,Naive CD20+ B|s2d1,289
+celltype_x_batch,Naive CD20+ B|s2d4,590
+celltype_x_batch,Naive CD20+ B|s2d5,105
+celltype_x_batch,Naive CD20+ B|s3d10,421
+celltype_x_batch,Naive CD20+ B|s3d3,393
+celltype_x_batch,Naive CD20+ B|s3d6,18
+celltype_x_batch,Naive CD20+ B|s3d7,190
+celltype_x_batch,Naive CD20+ B|s4d1,626
+celltype_x_batch,Naive CD20+ B|s4d8,883
+celltype_x_batch,Naive CD20+ B|s4d9,897
+celltype_x_batch,Normoblast|s1d1,387
+celltype_x_batch,Normoblast|s1d2,69
+celltype_x_batch,Normoblast|s1d3,90
+celltype_x_batch,Normoblast|s2d1,146
+celltype_x_batch,Normoblast|s2d4,641
+celltype_x_batch,Normoblast|s2d5,17
+celltype_x_batch,Normoblast|s3d10,129
+celltype_x_batch,Normoblast|s3d3,57
+celltype_x_batch,Normoblast|s3d6,18
+celltype_x_batch,Normoblast|s3d7,9
+celltype_x_batch,Normoblast|s4d1,97
+celltype_x_batch,Normoblast|s4d8,90
+celltype_x_batch,Normoblast|s4d9,30
+celltype_x_batch,Plasma cell|s1d1,59
+celltype_x_batch,Plasma cell|s1d2,13
+celltype_x_batch,Plasma cell|s2d1,76
+celltype_x_batch,Plasma cell|s2d5,16
+celltype_x_batch,Plasma cell|s3d10,13
+celltype_x_batch,Plasma cell|s3d3,25
+celltype_x_batch,Plasma cell|s4d1,151
+celltype_x_batch,Plasma cell|s4d8,26
+celltype_x_batch,Proerythroblast|s1d1,65
+celltype_x_batch,Proerythroblast|s1d2,30
+celltype_x_batch,Proerythroblast|s1d3,116
+celltype_x_batch,Proerythroblast|s2d1,85
+celltype_x_batch,Proerythroblast|s2d4,316
+celltype_x_batch,Proerythroblast|s2d5,18
+celltype_x_batch,Proerythroblast|s3d10,111
+celltype_x_batch,Proerythroblast|s3d3,197
+celltype_x_batch,Proerythroblast|s3d6,27
+celltype_x_batch,Proerythroblast|s3d7,21
+celltype_x_batch,Proerythroblast|s4d1,322
+celltype_x_batch,Proerythroblast|s4d8,800
+celltype_x_batch,Proerythroblast|s4d9,192
+celltype_x_batch,Transitional B|s1d1,83
+celltype_x_batch,Transitional B|s1d2,40
+celltype_x_batch,Transitional B|s1d3,51
+celltype_x_batch,Transitional B|s2d1,31
+celltype_x_batch,Transitional B|s2d4,185
+celltype_x_batch,Transitional B|s3d10,359
+celltype_x_batch,Transitional B|s3d3,146
+celltype_x_batch,Transitional B|s3d6,18
+celltype_x_batch,Transitional B|s3d7,30
+celltype_x_batch,Transitional B|s4d1,695
+celltype_x_batch,Transitional B|s4d8,630
+celltype_x_batch,Transitional B|s4d9,542
+celltype_x_batch,cDC2|s1d1,36
+celltype_x_batch,cDC2|s1d2,89
+celltype_x_batch,cDC2|s1d3,74
+celltype_x_batch,cDC2|s2d1,34
+celltype_x_batch,cDC2|s2d4,53
+celltype_x_batch,cDC2|s2d5,30
+celltype_x_batch,cDC2|s3d10,83
+celltype_x_batch,cDC2|s3d3,114
+celltype_x_batch,cDC2|s3d6,26
+celltype_x_batch,cDC2|s3d7,25
+celltype_x_batch,cDC2|s4d1,111
+celltype_x_batch,cDC2|s4d8,160
+celltype_x_batch,cDC2|s4d9,24
+celltype_x_batch,pDC|s1d1,92
+celltype_x_batch,pDC|s1d2,53
+celltype_x_batch,pDC|s1d3,31
+celltype_x_batch,pDC|s2d1,89
+celltype_x_batch,pDC|s2d4,48
+celltype_x_batch,pDC|s2d5,55
+celltype_x_batch,pDC|s3d10,427
+celltype_x_batch,pDC|s3d3,102
+celltype_x_batch,pDC|s3d6,39
+celltype_x_batch,pDC|s3d7,55
+celltype_x_batch,pDC|s4d1,157
+celltype_x_batch,pDC|s4d8,24
+celltype_x_batch,pDC|s4d9,19
+celltype_x_site,B1 B|site1,401
+celltype_x_site,B1 B|site2,190
+celltype_x_site,B1 B|site3,455
+celltype_x_site,B1 B|site4,844
+celltype_x_site,CD14+ Mono|site1,1867
+celltype_x_site,CD14+ Mono|site2,4164
+celltype_x_site,CD14+ Mono|site3,3340
+celltype_x_site,CD14+ Mono|site4,1472
+celltype_x_site,CD16+ Mono|site1,271
+celltype_x_site,CD16+ Mono|site2,766
+celltype_x_site,CD16+ Mono|site3,353
+celltype_x_site,CD16+ Mono|site4,504
+celltype_x_site,CD4+ T activated|site1,1937
+celltype_x_site,CD4+ T activated|site2,1324
+celltype_x_site,CD4+ T activated|site3,813
+celltype_x_site,CD4+ T activated|site4,1452
+celltype_x_site,CD4+ T naive|site1,2365
+celltype_x_site,CD4+ T naive|site2,631
+celltype_x_site,CD4+ T naive|site3,581
+celltype_x_site,CD4+ T naive|site4,821
+celltype_x_site,CD8+ T naive|site1,199
+celltype_x_site,CD8+ T naive|site3,594
+celltype_x_site,CD8+ T naive|site4,219
+celltype_x_site,CD8+ T|site1,3377
+celltype_x_site,CD8+ T|site2,1151
+celltype_x_site,CD8+ T|site3,1408
+celltype_x_site,CD8+ T|site4,5653
+celltype_x_site,Erythroblast|site1,1307
+celltype_x_site,Erythroblast|site2,2027
+celltype_x_site,Erythroblast|site3,752
+celltype_x_site,Erythroblast|site4,830
+celltype_x_site,G/M prog|site1,137
+celltype_x_site,G/M prog|site2,152
+celltype_x_site,G/M prog|site3,591
+celltype_x_site,G/M prog|site4,323
+celltype_x_site,HSC|site1,98
+celltype_x_site,HSC|site2,170
+celltype_x_site,HSC|site3,485
+celltype_x_site,HSC|site4,319
+celltype_x_site,ID2-hi myeloid prog|site1,108
+celltype_x_site,ILC|site1,593
+celltype_x_site,ILC|site2,113
+celltype_x_site,ILC|site3,129
+celltype_x_site,Lymph prog|site1,137
+celltype_x_site,Lymph prog|site2,395
+celltype_x_site,Lymph prog|site3,340
+celltype_x_site,Lymph prog|site4,907
+celltype_x_site,MK/E prog|site1,159
+celltype_x_site,MK/E prog|site2,66
+celltype_x_site,MK/E prog|site3,258
+celltype_x_site,MK/E prog|site4,401
+celltype_x_site,NK|site1,2269
+celltype_x_site,NK|site2,1253
+celltype_x_site,NK|site3,1404
+celltype_x_site,NK|site4,2003
+celltype_x_site,Naive CD20+ B|site1,640
+celltype_x_site,Naive CD20+ B|site2,984
+celltype_x_site,Naive CD20+ B|site3,1022
+celltype_x_site,Naive CD20+ B|site4,2406
+celltype_x_site,Normoblast|site1,546
+celltype_x_site,Normoblast|site2,804
+celltype_x_site,Normoblast|site3,213
+celltype_x_site,Normoblast|site4,217
+celltype_x_site,Plasma cell|site1,72
+celltype_x_site,Plasma cell|site2,92
+celltype_x_site,Plasma cell|site3,38
+celltype_x_site,Plasma cell|site4,177
+celltype_x_site,Proerythroblast|site1,211
+celltype_x_site,Proerythroblast|site2,419
+celltype_x_site,Proerythroblast|site3,356
+celltype_x_site,Proerythroblast|site4,1314
+celltype_x_site,Transitional B|site1,174
+celltype_x_site,Transitional B|site2,216
+celltype_x_site,Transitional B|site3,553
+celltype_x_site,Transitional B|site4,1867
+celltype_x_site,cDC2|site1,199
+celltype_x_site,cDC2|site2,117
+celltype_x_site,cDC2|site3,248
+celltype_x_site,cDC2|site4,295
+celltype_x_site,pDC|site1,176
+celltype_x_site,pDC|site2,192
+celltype_x_site,pDC|site3,623
+celltype_x_site,pDC|site4,200

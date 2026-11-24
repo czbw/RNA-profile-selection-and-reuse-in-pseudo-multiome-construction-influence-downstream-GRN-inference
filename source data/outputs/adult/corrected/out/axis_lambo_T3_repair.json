@@ -1,0 +1,784 @@
+{
+  "provenance": {
+    "module_name": "T3_repair",
+    "module_file": "..\\..\\modules\\out\\module_definition_T3_repair.json",
+    "arm_vocabulary_used": "repair",
+    "arm_keyed_module": false,
+    "arm_selection_note": "single-arm module; scored under its own (repair) vocabulary only",
+    "n_regulons": 55,
+    "n_TFs": 31,
+    "n_background_regulons": 201,
+    "module_frozen": "2026-08-20, frozen before any downstream statistic (replication scoring, external-cohort scoring, figures, manuscript numbers) was recomputed under the retired-ax4 redefinition. Supersedes the 2026-08-06 freeze of replication_repair/out/module_definition.json ('T4_tier1_core', 34r/21TF), which is retired as a module but retained unmodified for audit.",
+    "null_draws": "shared, module-independent; drawn once with rng(555) in the r_06 order (A1 size, A1 detect, A2 size, A2 detect, A4 size, A4 detect) and cached at axis_null_draws_shared.npz"
+  },
+  "status": "POST-HOC \u2014 re-run of r_06_axis_lambo.py under the 2026-08-20 module redefinition (ax4_tier1 retired). The gene-disjoint variant is recomputed against THIS module's target union.",
+  "seed": 555,
+  "n_draws": 2000,
+  "n_patients": 59,
+  "auc_threshold": 0.05,
+  "min_detect_frac": 0.1,
+  "expressed_universe": 20054,
+  "lambo_S3_cell_types": {
+    "HSC": 30,
+    "Progenitor": 30,
+    "GMP": 30,
+    "Monocyte": 30,
+    "Erythroid": 30,
+    "B-Lymphoid": 30,
+    "T-Lymphoid": 30
+  },
+  "module_delta": {
+    "Diagnosis": 0.034374809276298886,
+    "Relapse": 0.02551643483830314
+  },
+  "module_target_union": {
+    "Diagnosis": {
+      "n_genes": 3362,
+      "n_present_in_matrix": 3144,
+      "frac_of_matrix": 0.1352258064516129
+    },
+    "Relapse": {
+      "n_genes": 3444,
+      "n_present_in_matrix": 3210,
+      "frac_of_matrix": 0.13806451612903226
+    }
+  },
+  "axes": {
+    "A1_lambo_HSC_minus_Monocyte": {
+      "pos_genes_requested": 30,
+      "pos_genes_used": 29,
+      "neg_genes_requested": 30,
+      "neg_genes_used": 30,
+      "axis_means": {
+        "NBM": 0.005567714206580018,
+        "Dx": -0.230148816020532,
+        "Rel": -0.02751260531815833
+      },
+      "delta_axis": {
+        "mean": 0.20263621070237361,
+        "p_wilcoxon": 6.78388697828817e-08,
+        "frac_positive": 0.8305084745762712
+      },
+      "by_vocabulary": {
+        "Diagnosis": {
+          "primary": {
+            "corr": 0.9161523652820983,
+            "corr_p": 2.675940203054073e-24,
+            "r_squared": 0.8393351564119833,
+            "adjusted_intercept": -0.00027458653458868967,
+            "adjusted_intercept_p": 0.9292390861815748,
+            "slope": 0.170993109724992,
+            "slope_p": 2.6759402030540307e-24,
+            "residualised_mean_delta": -0.00027458653458868734,
+            "residualised_wilcoxon_p": 0.7058772594589169,
+            "survives_adjustment": false
+          },
+          "gene_disjoint": {
+            "corr": -0.11965343408362214,
+            "corr_p": 0.3667065932157687,
+            "r_squared": 0.014316944288003897,
+            "adjusted_intercept": 0.03429042660110707,
+            "adjusted_intercept_p": 1.858259788526657e-07,
+            "slope": -0.0234360850094722,
+            "slope_p": 0.3667065932157695,
+            "residualised_mean_delta": 0.03429042660110709,
+            "residualised_wilcoxon_p": 7.075041899376448e-08,
+            "survives_adjustment": true,
+            "pos_genes_kept": 13,
+            "neg_genes_kept": 1,
+            "pos_genes_dropped": [
+              "AKR1C3",
+              "ANKRD28",
+              "CD164",
+              "CD34",
+              "CYTL1",
+              "EBPL",
+              "EGFL7",
+              "HSP90AB1",
+              "IDS",
+              "MDK",
+              "MSI2",
+              "MSRB3",
+              "NPR3",
+              "PRDX1",
+              "SPINK2",
+              "TSC22D1"
+            ],
+            "neg_genes_dropped": [
+              "CD14",
+              "CD68",
+              "CEBPD",
+              "CLEC7A",
+              "CST3",
+              "CTSS",
+              "CYBB",
+              "FCER1G",
+              "FCN1",
+              "FGL2",
+              "G0S2",
+              "LYZ",
+              "MNDA",
+              "MPEG1",
+              "MS4A6A",
+              "NAMPT",
+              "PLAUR",
+              "S100A11",
+              "S100A12",
+              "S100A4",
+              "S100A6",
+              "S100A8",
+              "S100A9",
+              "SAT1",
+              "SERPINA1",
+              "SLC11A1",
+              "TYMP",
+              "TYROBP",
+              "VCAN"
+            ],
+            "module_target_union_size": 3362
+          },
+          "null_size_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 2000,
+            "n_draws_degenerate_discarded": 0,
+            "median_r2": 0.04846153733482505,
+            "mean_r2": 0.09178244620496807,
+            "p95_r2": 0.32747506660173437,
+            "ci95": [
+              0.00012645770727948106,
+              0.40438674305796324
+            ],
+            "p_empirical": 0.0004997501249375312
+          },
+          "null_detection_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 2000,
+            "n_draws_degenerate_discarded": 0,
+            "median_r2": 0.028851128522020122,
+            "mean_r2": 0.049714586169879324,
+            "p95_r2": 0.17045961922036515,
+            "ci95": [
+              4.877167966655085e-05,
+              0.19810023642179125
+            ],
+            "p_empirical": 0.0004997501249375312
+          }
+        },
+        "Relapse": {
+          "primary": {
+            "corr": 0.9149638941931472,
+            "corr_p": 3.93138884463062e-24,
+            "r_squared": 0.837158927677088,
+            "adjusted_intercept": -0.002475071619741914,
+            "adjusted_intercept_p": 0.3276823081775948,
+            "slope": 0.1381367444694186,
+            "slope_p": 3.9313888446311924e-24,
+            "residualised_mean_delta": -0.0024750716197419194,
+            "residualised_wilcoxon_p": 0.11997392471288951,
+            "survives_adjustment": false
+          },
+          "gene_disjoint": {
+            "corr": -0.005085248271060325,
+            "corr_p": 0.9695082740431792,
+            "r_squared": 2.5859749978707214e-05,
+            "adjusted_intercept": 0.02552327164386534,
+            "adjusted_intercept_p": 1.2715041554169282e-06,
+            "slope": -0.0007990204962688024,
+            "slope_p": 0.9695082740431787,
+            "residualised_mean_delta": 0.02552327164386535,
+            "residualised_wilcoxon_p": 3.6312852999615067e-07,
+            "survives_adjustment": true,
+            "pos_genes_kept": 13,
+            "neg_genes_kept": 1,
+            "pos_genes_dropped": [
+              "AKR1C3",
+              "ANKRD28",
+              "CD34",
+              "CYTL1",
+              "EBPL",
+              "EGFL7",
+              "HSP90AB1",
+              "HTR1F",
+              "LAPTM4B",
+              "MLLT3",
+              "MSI2",
+              "MSRB3",
+              "NPR3",
+              "NRIP1",
+              "PRDX1",
+              "SPINK2"
+            ],
+            "neg_genes_dropped": [
+              "CD14",
+              "CD68",
+              "CEBPD",
+              "CLEC7A",
+              "CST3",
+              "CTSS",
+              "CYBB",
+              "FCER1G",
+              "FCN1",
+              "FGL2",
+              "G0S2",
+              "LYZ",
+              "MNDA",
+              "MPEG1",
+              "MS4A6A",
+              "NAMPT",
+              "PLAUR",
+              "S100A11",
+              "S100A12",
+              "S100A4",
+              "S100A6",
+              "S100A8",
+              "S100A9",
+              "SAT1",
+              "SERPINA1",
+              "SLC11A1",
+              "TYMP",
+              "TYROBP",
+              "VCAN"
+            ],
+            "module_target_union_size": 3444
+          },
+          "null_size_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 2000,
+            "n_draws_degenerate_discarded": 0,
+            "median_r2": 0.0491096268363468,
+            "mean_r2": 0.09208956939129188,
+            "p95_r2": 0.32611888642110604,
+            "ci95": [
+              9.536763723888554e-05,
+              0.40203590689444557
+            ],
+            "p_empirical": 0.0004997501249375312
+          },
+          "null_detection_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 2000,
+            "n_draws_degenerate_discarded": 0,
+            "median_r2": 0.03145704202130456,
+            "mean_r2": 0.054193115120165086,
+            "p95_r2": 0.18488133942748658,
+            "ci95": [
+              5.952349092731581e-05,
+              0.21590166876184907
+            ],
+            "p_empirical": 0.0004997501249375312
+          }
+        }
+      }
+    },
+    "A2_lambo_HSCProg_minus_MonoGMP": {
+      "pos_genes_requested": 60,
+      "pos_genes_used": 58,
+      "neg_genes_requested": 60,
+      "neg_genes_used": 60,
+      "axis_means": {
+        "NBM": -0.030453464102716276,
+        "Dx": -0.1479865525389527,
+        "Rel": -0.013428624743609988
+      },
+      "delta_axis": {
+        "mean": 0.13455792779534267,
+        "p_wilcoxon": 3.3531667363766124e-07,
+        "frac_positive": 0.7796610169491526
+      },
+      "by_vocabulary": {
+        "Diagnosis": {
+          "primary": {
+            "corr": 0.8517890888859149,
+            "corr_p": 1.2174929606635083e-17,
+            "r_squared": 0.7255446519450965,
+            "adjusted_intercept": 0.0037529163971457002,
+            "adjusted_intercept_p": 0.34487324550343135,
+            "slope": 0.2275740521638227,
+            "slope_p": 1.2174929606635353e-17,
+            "residualised_mean_delta": 0.0037529163971456833,
+            "residualised_wilcoxon_p": 0.31908845810705655,
+            "survives_adjustment": false
+          },
+          "gene_disjoint": {
+            "corr": -0.09410812995003134,
+            "corr_p": 0.4783445458809878,
+            "r_squared": 0.008856340122691875,
+            "adjusted_intercept": 0.03544098608328685,
+            "adjusted_intercept_p": 1.9341393932630293e-07,
+            "slope": -0.03280953169184818,
+            "slope_p": 0.47834454588098807,
+            "residualised_mean_delta": 0.035440986083286864,
+            "residualised_wilcoxon_p": 5.7310821091515996e-08,
+            "survives_adjustment": true,
+            "pos_genes_kept": 19,
+            "neg_genes_kept": 7,
+            "pos_genes_dropped": [
+              "AKR1C3",
+              "ANKRD28",
+              "C1QTNF4",
+              "CD164",
+              "CD34",
+              "CDK6",
+              "CYTL1",
+              "DUT",
+              "EBPL",
+              "EGFL7",
+              "FABP5",
+              "HINT1",
+              "HSP90AB1",
+              "HSPD1",
+              "IDS",
+              "IGFBP7",
+              "IGLL1",
+              "IMPDH2",
+              "ITM2C",
+              "MDK",
+              "MGST1",
+              "MSI2",
+              "MSRB3",
+              "NME1",
+              "NPR3",
+              "NUCB2",
+              "PRDX1",
+              "SNRPE",
+              "SPINK2",
+              "TSC22D1",
+              "TUBA1B",
+              "TXN",
+              "TYMS"
+            ],
+            "neg_genes_dropped": [
+              "AZU1",
+              "C12orf75",
+              "CALR",
+              "CD14",
+              "CD68",
+              "CEBPD",
+              "CLEC11A",
+              "CLEC7A",
+              "CST3",
+              "CST7",
+              "CTSG",
+              "CTSS",
+              "CYBB",
+              "DBI",
+              "FABP5",
+              "FCER1G",
+              "FCN1",
+              "FGL2",
+              "G0S2",
+              "HSP90B1",
+              "IRF8",
+              "LGALS1",
+              "LYZ",
+              "MGST1",
+              "MNDA",
+              "MPEG1",
+              "MPO",
+              "MS4A3",
+              "MS4A6A",
+              "NAMPT",
+              "NKG7",
+              "NUCB2",
+              "PLAC8",
+              "PLAUR",
+              "PLD4",
+              "RETN",
+              "RNASE2",
+              "S100A11",
+              "S100A12",
+              "S100A4",
+              "S100A6",
+              "S100A8",
+              "S100A9",
+              "SAT1",
+              "SEC61B",
+              "SERPINA1",
+              "SLC11A1",
+              "SRGN",
+              "TUBA1B",
+              "TYMP",
+              "TYROBP",
+              "VCAN"
+            ],
+            "module_target_union_size": 3362
+          },
+          "null_size_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 2000,
+            "n_draws_degenerate_discarded": 0,
+            "median_r2": 0.04966504563791121,
+            "mean_r2": 0.08986342570034048,
+            "p95_r2": 0.31681674246048264,
+            "ci95": [
+              7.945095989354793e-05,
+              0.38811729537930867
+            ],
+            "p_empirical": 0.0004997501249375312
+          },
+          "null_detection_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 2000,
+            "n_draws_degenerate_discarded": 0,
+            "median_r2": 0.020071264170691563,
+            "mean_r2": 0.05989145412084795,
+            "p95_r2": 0.2627861808106468,
+            "ci95": [
+              4.119954723598837e-05,
+              0.33565608204073505
+            ],
+            "p_empirical": 0.0004997501249375312
+          }
+        },
+        "Relapse": {
+          "primary": {
+            "corr": 0.8565280992635825,
+            "corr_p": 5.15906543208871e-18,
+            "r_squared": 0.7336403848280859,
+            "adjusted_intercept": 0.0006086025988480615,
+            "adjusted_intercept_p": 0.8469949850899672,
+            "slope": 0.18510861936978487,
+            "slope_p": 5.159065432088657e-18,
+            "residualised_mean_delta": 0.0006086025988480513,
+            "residualised_wilcoxon_p": 0.945839937390982,
+            "survives_adjustment": false
+          },
+          "gene_disjoint": {
+            "corr": 0.05032203757188529,
+            "corr_p": 0.7050587424214668,
+            "r_squared": 0.002532307465386352,
+            "adjusted_intercept": 0.02490566862175134,
+            "adjusted_intercept_p": 5.562408330166034e-06,
+            "slope": 0.01538803164695252,
+            "slope_p": 0.7050587424214683,
+            "residualised_mean_delta": 0.02490566862175134,
+            "residualised_wilcoxon_p": 5.183203376236625e-07,
+            "survives_adjustment": true,
+            "pos_genes_kept": 18,
+            "neg_genes_kept": 7,
+            "pos_genes_dropped": [
+              "AKR1C3",
+              "ANKRD28",
+              "C1QTNF4",
+              "CD34",
+              "CDK6",
+              "CYTL1",
+              "DUT",
+              "EBPL",
+              "EGFL7",
+              "FABP5",
+              "HINT1",
+              "HSP90AB1",
+              "HSPD1",
+              "HTR1F",
+              "IGFBP7",
+              "IGLL1",
+              "IMPDH2",
+              "ITM2C",
+              "LAPTM4B",
+              "MGST1",
+              "MLLT3",
+              "MSI2",
+              "MSRB3",
+              "NAP1L1",
+              "NME1",
+              "NPR3",
+              "NRIP1",
+              "NUCB2",
+              "PRDX1",
+              "SNRPE",
+              "SPINK2",
+              "TUBA1B",
+              "TXN",
+              "TYMS"
+            ],
+            "neg_genes_dropped": [
+              "AZU1",
+              "C12orf75",
+              "CALR",
+              "CD14",
+              "CD68",
+              "CEBPD",
+              "CLEC11A",
+              "CLEC7A",
+              "CST3",
+              "CST7",
+              "CTSG",
+              "CTSS",
+              "CYBB",
+              "DBI",
+              "ELANE",
+              "FABP5",
+              "FCER1G",
+              "FCN1",
+              "FGL2",
+              "G0S2",
+              "HSP90B1",
+              "IRF8",
+              "LGALS1",
+              "LYZ",
+              "MGST1",
+              "MNDA",
+              "MPEG1",
+              "MPO",
+              "MS4A3",
+              "MS4A6A",
+              "NAMPT",
+              "NKG7",
+              "NUCB2",
+              "PLAC8",
+              "PLAUR",
+              "RETN",
+              "RNASE2",
+              "S100A11",
+              "S100A12",
+              "S100A4",
+              "S100A6",
+              "S100A8",
+              "S100A9",
+              "SAT1",
+              "SEC61B",
+              "SERPINA1",
+              "SLC11A1",
+              "SRGN",
+              "TUBA1B",
+              "TYMP",
+              "TYROBP",
+              "VCAN"
+            ],
+            "module_target_union_size": 3444
+          },
+          "null_size_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 2000,
+            "n_draws_degenerate_discarded": 0,
+            "median_r2": 0.04961113129802536,
+            "mean_r2": 0.08968089393383676,
+            "p95_r2": 0.31637665355997874,
+            "ci95": [
+              9.219062452332932e-05,
+              0.3807427032962273
+            ],
+            "p_empirical": 0.0004997501249375312
+          },
+          "null_detection_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 2000,
+            "n_draws_degenerate_discarded": 0,
+            "median_r2": 0.020751938527773708,
+            "mean_r2": 0.06007984369547041,
+            "p95_r2": 0.26289618538278814,
+            "ci95": [
+              4.128465271168167e-05,
+              0.33627917597029827
+            ],
+            "p_empirical": 0.0004997501249375312
+          }
+        }
+      }
+    },
+    "A4_r05_handbuilt_reference": {
+      "pos_genes_requested": 10,
+      "pos_genes_used": 10,
+      "neg_genes_requested": 10,
+      "neg_genes_used": 10,
+      "axis_means": {
+        "NBM": -0.008519793459552498,
+        "Dx": -0.22655269990373114,
+        "Rel": -0.0423845503077686
+      },
+      "delta_axis": {
+        "mean": 0.1841681495959625,
+        "p_wilcoxon": 1.1183725155165966e-05,
+        "frac_positive": 0.711864406779661
+      },
+      "by_vocabulary": {
+        "Diagnosis": {
+          "primary": {
+            "corr": 0.8715692060802378,
+            "corr_p": 2.71916345269305e-19,
+            "r_squared": 0.7596328809873352,
+            "adjusted_intercept": 0.008637566516685999,
+            "adjusted_intercept_p": 0.01486184596486758,
+            "slope": 0.13974860917089388,
+            "slope_p": 2.7191634526932866e-19,
+            "residualised_mean_delta": 0.008637566516685999,
+            "residualised_wilcoxon_p": 0.0030883287240153537,
+            "survives_adjustment": true
+          },
+          "gene_disjoint": {
+            "corr": 0.09938079507070849,
+            "corr_p": 0.4539281636574692,
+            "r_squared": 0.009876542428886026,
+            "adjusted_intercept": 0.03489233372967715,
+            "adjusted_intercept_p": 1.5420881698432105e-07,
+            "slope": 0.11007375845307057,
+            "slope_p": 0.45392816365746813,
+            "residualised_mean_delta": 0.034892333729677136,
+            "residualised_wilcoxon_p": 8.022986950499421e-08,
+            "survives_adjustment": true,
+            "pos_genes_kept": 3,
+            "neg_genes_kept": 1,
+            "pos_genes_dropped": [
+              "CD34",
+              "ERG",
+              "FLT3",
+              "GATA2",
+              "HOXA9",
+              "KIT",
+              "PROM1"
+            ],
+            "neg_genes_dropped": [
+              "CD14",
+              "CSF1R",
+              "FCGR3A",
+              "FCN1",
+              "ITGAM",
+              "LYZ",
+              "MNDA",
+              "S100A8",
+              "S100A9"
+            ],
+            "module_target_union_size": 3362
+          },
+          "null_size_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 1990,
+            "n_draws_degenerate_discarded": 10,
+            "median_r2": 0.038727728164374246,
+            "mean_r2": 0.08512931766616014,
+            "p95_r2": 0.32941227796545025,
+            "ci95": [
+              7.222783039733993e-05,
+              0.39810876650982163
+            ],
+            "p_empirical": 0.0005022601707684581
+          },
+          "null_detection_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 1977,
+            "n_draws_degenerate_discarded": 23,
+            "median_r2": 0.025394010817455584,
+            "mean_r2": 0.04304628233491432,
+            "p95_r2": 0.13652543873028974,
+            "ci95": [
+              6.538220354107953e-05,
+              0.17815375968831632
+            ],
+            "p_empirical": 0.0005055611729019212
+          }
+        },
+        "Relapse": {
+          "primary": {
+            "corr": 0.8811947927410484,
+            "corr_p": 3.381466658827675e-20,
+            "r_squared": 0.776504262753939,
+            "adjusted_intercept": 0.004467679496094856,
+            "adjusted_intercept_p": 0.10124647369430526,
+            "slope": 0.11429096392826942,
+            "slope_p": 3.3814666588277274e-20,
+            "residualised_mean_delta": 0.004467679496094855,
+            "residualised_wilcoxon_p": 0.08123192570478906,
+            "survives_adjustment": false
+          },
+          "gene_disjoint": {
+            "corr": 0.101196648624975,
+            "corr_p": 0.445680664312411,
+            "r_squared": 0.010240761692926759,
+            "adjusted_intercept": 0.025942708888229252,
+            "adjusted_intercept_p": 9.362892128337974e-07,
+            "slope": 0.06044363250224454,
+            "slope_p": 0.44568066431241016,
+            "residualised_mean_delta": 0.025942708888229263,
+            "residualised_wilcoxon_p": 3.4895525242615705e-07,
+            "survives_adjustment": true,
+            "pos_genes_kept": 2,
+            "neg_genes_kept": 1,
+            "pos_genes_dropped": [
+              "CD34",
+              "ERG",
+              "FLT3",
+              "GATA2",
+              "HOXA9",
+              "KIT",
+              "MLLT3",
+              "PROM1"
+            ],
+            "neg_genes_dropped": [
+              "CD14",
+              "CSF1R",
+              "FCGR3A",
+              "FCN1",
+              "ITGAM",
+              "LYZ",
+              "MNDA",
+              "S100A8",
+              "S100A9"
+            ],
+            "module_target_union_size": 3444
+          },
+          "null_size_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 1990,
+            "n_draws_degenerate_discarded": 10,
+            "median_r2": 0.03819380680228883,
+            "mean_r2": 0.08477622787923057,
+            "p95_r2": 0.3266185989459125,
+            "ci95": [
+              9.3581666280942e-05,
+              0.3955779747846113
+            ],
+            "p_empirical": 0.0005022601707684581
+          },
+          "null_detection_matched": {
+            "n_draws_requested": 2000,
+            "n_draws_valid": 1977,
+            "n_draws_degenerate_discarded": 23,
+            "median_r2": 0.0274667783725316,
+            "mean_r2": 0.04677408616531516,
+            "p95_r2": 0.15806503290069557,
+            "ci95": [
+              2.1005909728039434e-05,
+              0.19410418277178634
+            ],
+            "p_empirical": 0.0005055611729019212
+          }
+        }
+      }
+    }
+  },
+  "A3_lambo_HSC_alone": {
+    "genes_used": 29,
+    "delta": {
+      "mean": 0.032862685609265155,
+      "p_wilcoxon": 7.411079670049856e-05,
+      "frac_positive": 0.7457627118644068
+    },
+    "by_vocabulary": {
+      "Diagnosis": {
+        "corr": 0.5993540927730197,
+        "corr_p": 5.2872322483676e-07,
+        "r_squared": 0.35922532852376965,
+        "adjusted_intercept": 0.019253720078875828,
+        "adjusted_intercept_p": 0.00070345260610895,
+        "slope": 0.4601294421646378,
+        "slope_p": 5.287232248367577e-07,
+        "residualised_mean_delta": 0.019253720078875842,
+        "residualised_wilcoxon_p": 6.322821893194427e-05,
+        "survives_adjustment": true
+      },
+      "Relapse": {
+        "corr": 0.657428039610338,
+        "corr_p": 1.546555930309427e-08,
+        "r_squared": 0.43221162726589246,
+        "adjusted_intercept": 0.012099843870856615,
+        "adjusted_intercept_p": 0.004509319559704719,
+        "slope": 0.4082621586978241,
+        "slope_p": 1.5465559303094193e-08,
+        "residualised_mean_delta": 0.012099843870856625,
+        "residualised_wilcoxon_p": 0.0007409910106227275,
+        "survives_adjustment": true
+      }
+    }
+  }
+}

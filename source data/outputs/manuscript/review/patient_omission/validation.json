@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-09-29T16:09:09.884598+00:00",
+  "baseline_parity_checks": 22,
+  "all_baseline_checks_passed": true,
+  "patient_omission_unit_tests_passed": 5,
+  "cubic_collector_fixture_tests_passed": 7,
+  "cubic_collector_real_local_trial_files_verified": 627,
+  "cubic_execution_performed": false,
+  "scientific_network_reinference_performed": false,
+  "figure_visual_review": "Both PNG figures inspected; labels readable and no overlaps detected."
+}

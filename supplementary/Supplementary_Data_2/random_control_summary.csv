@@ -1,0 +1,3 @@
+stage,n_shared_regulons,n_cell_types,observed_median_r,random_median_r,n_above_own_random_95th_percentile,random_sets_per_regulon
+Diagnosis,166,15,0.8084097455326922,0.39447071569304504,111,1000
+Relapse,235,14,0.7200626611053662,0.30642785746591916,124,1000

@@ -1,0 +1,5 @@
+stage,construction,n_assignments,distinct_RNA_profiles,reuse_ratio,corrected_scarcity_floor
+Diagnosis,published link,123422,7772,15.880339680905816,
+Diagnosis,corrected,116687,85643,1.362481463750686,1.362481463750686
+Relapse,published link,77614,5427,14.301455684540262,
+Relapse,corrected,74640,52187,1.4302412478203383,1.4302412478203383

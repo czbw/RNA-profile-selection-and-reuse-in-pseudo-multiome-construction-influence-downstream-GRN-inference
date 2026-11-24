@@ -1,0 +1,68 @@
+genome: hg38
+n_cpu: 16
+pseudobulk_n_cpu: 4     # export_pseudobulk + cisTopic-from-fragments (each worker loads fragments)
+topic_n_cpu: 9          # number of models run concurrently (one per n_topics value), not threads per model
+seed: 555
+
+# --- compartment selection ---
+compartment: malignant
+compartment_label: Malignant     # keep cells whose `Malignant` field == this (Stage 1 kept "Normal")
+rna_prefix: malignant            # RNA h5ad filenames: malignant_{diagnosis,relapse}.h5ad
+
+stages: [Diagnosis, Relapse]
+
+paths:
+  atac_tar:           data/GSE235308_RAW.tar     # shared (symlink); fragments already extracted in Stage 1
+  atac_meta:          data/atac_meta             # shared: 64 *_filtered_metadata.tsv.gz
+  atac_fragments_raw: data/fragments_raw         # shared: extracted from the tar (Stage 1)
+  atac_fragments:     data/fragments             # shared: converted 10x fragments + .tbi (Stage 1)
+  rna_h5ad_dir:       data/rna                   # malignant_{diagnosis,relapse}.h5ad (new in Stage 2; staged separately)
+  databases:          databases                  # 2 cisTarget feathers (shared) + small sidecars (in bundle)
+  work:               work                       # Stage-2 LOCAL (does not touch Stage-1 work/)
+  out:                out                        # Stage-2 LOCAL (does not touch Stage-1 out/)
+
+# RNA-ATAC pairing is run both ways to re-test robustness within the malignant compartment
+# (Stage 1 did this on healthy cells).
+pairings: [link, pseudomultiome]
+
+linkage:                                          # Option A: provided per-cell ArchR link
+  rna_sample_field:  Library_ID
+  rna_barcode_field: Cell_Barcode
+  min_confidence:    0.5
+  drop_unmatched_atac: true
+
+pairing_params:
+  link:
+    multiome_mode: true
+  pseudomultiome:                # Option B (non-multiome metacells, per stage)
+    multiome_mode: false
+    group_by: Classified_Celltype
+    nr_cells_per_metacell: 5
+    nr_metacells: null
+    modality_correlation_min: 0.2
+    min_cells_per_celltype: 25   # drop cell types too thin in either modality
+
+cell_id_sep: "___"              # match the cisTopic object's cell-name convention (do not use "-")
+
+macs_path: macs3               # placeholder; run_all.sh exports AMLGRN_MACS = abs path in macs3env
+
+pseudobulk:
+  group_by:  Classified_Celltype   # pooled across drivers (Subgroup/Driver are kept in the metadata)
+  min_cells: 50
+
+region_sets:
+  impute_mem_budget_gb: 64    # dense-matrix budget for the 'long' partition; env AMLGRN_IMPUTE_BUDGET_GB overrides
+  min_cells_per_group: 100    # per-cell-type floor, so rare malignant states keep their DAR
+
+topic_model:
+  backend:  lda
+  n_topics: [2, 5, 10, 15, 20, 25, 30, 40, 50]
+  n_iter:   500
+  alpha:    50
+  eta:      0.1
+
+scenicplus:
+  species:   hsapiens
+  assembly:  hg38
+  upstream:  [1000, 150000]
+  downstream: [1000, 150000]

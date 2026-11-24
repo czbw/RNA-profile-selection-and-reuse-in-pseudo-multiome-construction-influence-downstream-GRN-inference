@@ -1,0 +1,13 @@
+background,gene_set,group,diagnosis_sig,relapse_sig,both_sig,diagnosis_only_sig,relapse_only_sig,source_row
+common_pool,full,all55,61,46,20,41,26,2
+common_pool,full,TF2G_positive,160,145,82,78,63,3
+common_pool,full,TF2G_negative,16,16,13,3,3,4
+common_pool,ribosome_depleted,all55,53,41,16,37,25,5
+common_pool,ribosome_depleted,TF2G_positive,160,146,84,76,62,6
+common_pool,ribosome_depleted,TF2G_negative,0,0,0,0,0,7
+stage_pool,full,all55,17,35,7,10,28,8
+stage_pool,full,TF2G_positive,89,108,47,42,61,9
+stage_pool,full,TF2G_negative,15,14,11,4,3,10
+stage_pool,ribosome_depleted,all55,12,29,5,7,24,11
+stage_pool,ribosome_depleted,TF2G_positive,88,116,48,40,68,12
+stage_pool,ribosome_depleted,TF2G_negative,0,0,0,0,0,13

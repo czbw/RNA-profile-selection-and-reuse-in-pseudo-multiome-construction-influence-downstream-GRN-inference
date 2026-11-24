@@ -1,0 +1,3 @@
+axis,mean,p_wilcoxon,frac_positive,positive_markers,negative_markers
+A1_lambo_HSC_minus_Monocyte,0.20263621070237361,6.78388697828817e-08,0.8305084745762712,29,30
+A2_lambo_HSCProg_minus_MonoGMP,0.13455792779534267,3.3531667363766124e-07,0.7796610169491526,58,60

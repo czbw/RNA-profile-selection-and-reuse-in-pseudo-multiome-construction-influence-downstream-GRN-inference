@@ -1,0 +1,71 @@
+genome: hg38
+n_cpu: 16               # CUBIC node cores; tune to your --cpus-per-task
+# Memory guards: these steps hold fragment/matrix data per worker, so peak RAM scales with the
+# worker count. Keep them well below n_cpu; the steps are I/O-bound, so the speed cost is small.
+pseudobulk_n_cpu: 4     # export_pseudobulk + cisTopic-from-fragments (each worker loads fragments)
+topic_n_cpu: 3          # run_cgs_models: each parallel LDA model holds the full cell x region matrix
+seed: 555
+
+stages: [Diagnosis, Remission, Relapse]
+
+paths:
+  atac_tar:           data/GSE235308_RAW.tar     # staged (large file); see stage_big_files.sh
+  atac_meta:          data/atac_meta             # 64 *_filtered_metadata.tsv.gz (in bundle)
+  atac_fragments_raw: data/fragments_raw         # extracted from the tar on CUBIC (prepare_fragments.sh)
+  atac_fragments:     data/fragments             # converted 10x fragments + .tbi (prepare_fragments.sh)
+  rna_h5ad_dir:       data/rna                   # healthy_{diagnosis,remission,relapse}.h5ad (staged)
+  databases:          databases                  # 2 cisTarget feathers (staged) + small sidecars (in bundle)
+  work:               work
+  out:                out
+
+pairings: [link, pseudomultiome]
+
+linkage:                                          # Option A: provided per-cell ArchR link
+  rna_sample_field:  Library_ID
+  rna_barcode_field: Cell_Barcode
+  min_confidence:    0.5
+  drop_unmatched_atac: true
+
+pairing_params:
+  link:                          # Option A (multiome)
+    multiome_mode: true
+  pseudomultiome:                # Option B (non-multiome metacells, per stage)
+    multiome_mode: false
+    group_by: Classified_Celltype
+    nr_cells_per_metacell: 5     # must match run_grn.sh's --nr_cells_per_metacells
+    nr_metacells: null
+    modality_correlation_min: 0.2
+    # Cell types with fewer than this many cells in EITHER modality are dropped before
+    # prepare_GEX_ACC (filter_gex_for_metacells.py). SCENIC+ fails on a cell type with only 3-4
+    # cells, and a 5-cell metacell drawn from a pool of <25 is a near-duplicate anyway.
+    # Must be >= nr_cells_per_metacell; 25 = 5 metacells' worth of cells.
+    min_cells_per_celltype: 25
+
+# Match the cisTopic object's cell-name convention so paired RNA (Option A) is
+# multiome-compatible without a rename. Do not change to "-".
+cell_id_sep: "___"
+
+macs_path: macs3        # placeholder; run_all.sh exports AMLGRN_MACS = abs path in macs3env
+
+pseudobulk:
+  group_by:  Classified_Celltype
+  min_cells: 50
+
+region_sets:
+  impute_mem_budget_gb: 64    # dense-matrix budget for the 'long' partition; env AMLGRN_IMPUTE_BUDGET_GB overrides
+  min_cells_per_group: 100    # per-cell-type floor, so rare types keep their DAR
+
+topic_model:
+  # Topic modelling is the heaviest step (Remission, ~65k cells). lda (collapsed Gibbs,
+  # run_cgs_models) is the backend used; narrowing the topic sweep reduces cost.
+  backend:  lda
+  n_topics: [2, 5, 10, 15, 20, 25, 30, 40, 50]
+  n_iter:   500
+  alpha:    50
+  eta:      0.1
+
+scenicplus:
+  species:   hsapiens
+  assembly:  hg38
+  upstream:  [1000, 150000]
+  downstream: [1000, 150000]

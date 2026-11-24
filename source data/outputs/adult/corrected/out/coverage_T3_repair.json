@@ -1,0 +1,43 @@
+{
+  "provenance": {
+    "module_name": "T3_repair",
+    "module_file": "..\\..\\modules\\out\\module_definition_T3_repair.json",
+    "arm_vocabulary_used": "repair",
+    "arm_keyed_module": false,
+    "arm_selection_note": "single-arm module; scored under its own (repair) vocabulary only",
+    "n_regulons": 55,
+    "n_TFs": 31,
+    "n_background_regulons": 201,
+    "module_frozen": "2026-08-20, frozen before any downstream statistic (replication scoring, external-cohort scoring, figures, manuscript numbers) was recomputed under the retired-ax4 redefinition. Supersedes the 2026-08-06 freeze of replication_repair/out/module_definition.json ('T4_tier1_core', 34r/21TF), which is retired as a module but retained unmodified for audit."
+  },
+  "coverage_bar": 0.9,
+  "n_genes_in_matrix": 23250,
+  "by_vocabulary": {
+    "Diagnosis": {
+      "n_regulons": 55,
+      "median_coverage": 0.944954128440367,
+      "min_coverage": 0.875,
+      "frac_regulons_below_bar": 0.07272727272727272,
+      "passes_coverage_bar": true,
+      "median_n_targets": 109.0,
+      "target_union_size": 3362,
+      "target_union_present_in_matrix": 3144,
+      "target_union_frac_of_transcriptome": 0.1352258064516129,
+      "module_genes_zero_everywhere": 3,
+      "module_genes_median_detection_rate": 1.0
+    },
+    "Relapse": {
+      "n_regulons": 55,
+      "median_coverage": 0.9460154241645244,
+      "min_coverage": 0.869281045751634,
+      "frac_regulons_below_bar": 0.09090909090909091,
+      "passes_coverage_bar": true,
+      "median_n_targets": 124.0,
+      "target_union_size": 3444,
+      "target_union_present_in_matrix": 3210,
+      "target_union_frac_of_transcriptome": 0.13806451612903226,
+      "module_genes_zero_everywhere": 5,
+      "module_genes_median_detection_rate": 1.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "seed": 555,
+  "status": "POST-HOC \u2014 triggered by the C2 calibration failure",
+  "predeclared_primary_result_stands": "0 regulons CONFIRMED (s3_results.json)",
+  "calibration": {
+    "E1_random_intercept": {
+      "Diagnosis": {
+        "n_fits": 1039,
+        "frac_p_below_05": 0.0,
+        "frac_p_below_01": 0.0,
+        "median_p": 0.6265040570257279,
+        "ks_uniform_p": 2.2080366375821115e-31
+      },
+      "Relapse": {
+        "n_fits": 1094,
+        "frac_p_below_05": 0.010054844606946984,
+        "frac_p_below_01": 0.0009140767824497258,
+        "median_p": 0.572436899703087,
+        "ks_uniform_p": 8.921524681640639e-11
+      }
+    },
+    "E2_paired_wilcoxon": {
+      "Diagnosis": {
+        "n_fits": 2000,
+        "frac_p_below_05": 0.058,
+        "frac_p_below_01": 0.013,
+        "median_p": 0.49800872802734375,
+        "ks_uniform_p": 0.016007084073861477
+      },
+      "Relapse": {
+        "n_fits": 2000,
+        "frac_p_below_05": 0.058,
+        "frac_p_below_01": 0.0115,
+        "median_p": 0.47490501403808594,
+        "ks_uniform_p": 0.0017293943771084824
+      }
+    }
+  },
+  "readable": {
+    "E1_random_intercept": false,
+    "E2_paired_wilcoxon": true
+  },
+  "results": {
+    "E1_random_intercept": {
+      "read": false
+    },
+    "E2_paired_wilcoxon": {
+      "read": true,
+      "per_vocabulary": {
+        "Diagnosis": {
+          "fitted": 686,
+          "q05": 0,
+          "min_q": 0.1823094685872396
+        },
+        "Relapse": {
+          "fitted": 793,
+          "q05": 0,
+          "min_q": 0.38266944885253906
+        }
+      },
+      "n_shared": 431,
+      "sign_agreement": 0.6937354988399071,
+      "confirmed": 0,
+      "confirmed_regulons": []
+    }
+  }
+}

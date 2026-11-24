@@ -1,0 +1,1610 @@
+{
+ "script": "prep_02_arms.py",
+ "dataset": "GSE194122 BMMC 10x Multiome (NeurIPS 2021)",
+ "seed": 555,
+ "metadata_source": "D:\\AML-GRN\\cubic_bmmc_ladder\\out\\b00_cell_metadata.csv",
+ "metacell_oversample": 2.0,
+ "labels": {
+  "n_cells": 69249,
+  "fragment_barcode_unique": false,
+  "n_donor_labels": 10,
+  "n_subjects": 13,
+  "n_sites": 4,
+  "n_batches": 13,
+  "n_cell_types": 22,
+  "donor_label_is_site_local": true,
+  "subject_equals_batch": true,
+  "subject_key": "(site, donor)"
+ },
+ "true_pairing_note": "true multiome: the RNA partner of ATAC cell i IS cell i, so every arm is a permutation (or, for the metacell arms, a resampling) of the identity and the self-hit rate needs no join to compute",
+ "analytic_ceiling_celltype_only": {
+  "donor": 0.8047903512528408,
+  "subject": 0.8047903512528408,
+  "site": 0.6734337785202421,
+  "cell_type": 0.0
+ },
+ "census_reference": {
+  "cross_donor": 0.8047903512528407,
+  "cross_site": 0.6734337785202422,
+  "n_cells": 69249,
+  "file": "b00_feasibility.json"
+ },
+ "reuse_reference": {
+  "supplied": true,
+  "file": "cubic_bmmc_ladder\\out\\arm_link_x_celltype_donor_cap14_seed555.csv",
+  "arm": "arm_link_x_celltype_donor_cap14_seed555",
+  "reference_reuse": 1.405728553448906,
+  "reference_distinct_rna_cells": 49262,
+  "reference_self_hit_rate": 0.01530708024664616
+ },
+ "headline": {
+  "donor_blind_arm": "rand_celltype_1to1",
+  "donor_blind_cross_donor_rate": 0.8026108680269751,
+  "donor_blind_cross_subject_rate": 0.8026108680269751,
+  "donor_blind_cross_site_rate": 0.6696992014325117,
+  "census_predicted_cross_donor_rate": 0.8047903512528407,
+  "census_predicted_cross_site_rate": 0.6734337785202422,
+  "donor_aware_arm": "rand_celltype_donor_1to1",
+  "donor_aware_cross_donor_rate": 0.0,
+  "donor_aware_cross_site_rate": 0.20820517263787203,
+  "interpretation": "the donor-blind arm is the pairing a cell-type-only method builds; the donor-aware arm is the same construction with the batch constraint added. PBMC 10k (one donor) cannot separate these two."
+ },
+ "provenance_note": "Extracted from a prep_02_arms.py run made into a SCRATCH --outdir with --reuse-from out/arm_link_x_celltype_donor_cap14_seed555.csv. --reuse-from is GLOBAL to the run, so that run also rebuilt rand_celltype_matched and rand_celltype_donor_matched against the cap14 reference instead of their own; those tables were DISCARDED and never entered out/ or out_matched/. Only rand_celltype_donor_matched_cap14 is kept, because only it is defined by this reference.",
+ "arms_built": [
+  "rand_celltype_donor_matched_cap14"
+ ],
+ "arms": {
+  "rand_celltype_donor_matched_cap14": {
+   "kind": "matched",
+   "stratum_definition": "cell_type x donor",
+   "n_strata": 190,
+   "row_unit": "one row per ATAC cell",
+   "file": "arm_rand_celltype_donor_matched_cap14_seed555.csv",
+   "n_assignments": 69249,
+   "reuse_mean_per_used_rna_cell": 1.405728553448906,
+   "reuse_mean_per_assignment": 1.5772502129994657,
+   "reuse_max": 2,
+   "reuse_distribution": {
+    "1": 29275,
+    "2": 19987
+   },
+   "share_of_assignments_on_a_reused_cell": 0.5772502129994657,
+   "distinct_rna_cells": 49262,
+   "distinct_rna_share_of_pool": 0.7113748935002672,
+   "self_hits": 194,
+   "self_hit_rate": 0.0028014844979710896,
+   "self_hits_expected": 190.0,
+   "self_hit_rate_expected": 0.0027437219310026137,
+   "cross_donor_rate": 0.0,
+   "cross_donor_rate_expected": 0.0,
+   "cross_subject_rate": 0.0,
+   "cross_subject_rate_expected": 0.0,
+   "cross_site_rate": 0.20959147424511546,
+   "cross_site_rate_expected": 0.20897218171968066,
+   "cross_cell_type_rate": 0.0,
+   "cross_cell_type_rate_expected": 0.0,
+   "per_stratum": {
+    "B1 B|donor1": {
+     "n_s": 688,
+     "d_s_target": 482,
+     "d_s_achieved": 482,
+     "reuse_target": 1.4273858921161826,
+     "reuse_achieved": 1.4273858921161826,
+     "ks_multiplicity": 0.0
+    },
+    "B1 B|donor10": {
+     "n_s": 127,
+     "d_s_target": 94,
+     "d_s_achieved": 94,
+     "reuse_target": 1.351063829787234,
+     "reuse_achieved": 1.351063829787234,
+     "ks_multiplicity": 0.0
+    },
+    "B1 B|donor2": {
+     "n_s": 127,
+     "d_s_target": 91,
+     "d_s_achieved": 91,
+     "reuse_target": 1.3956043956043955,
+     "reuse_achieved": 1.3956043956043955,
+     "ks_multiplicity": 0.0
+    },
+    "B1 B|donor3": {
+     "n_s": 290,
+     "d_s_target": 205,
+     "d_s_achieved": 205,
+     "reuse_target": 1.4146341463414633,
+     "reuse_achieved": 1.4146341463414633,
+     "ks_multiplicity": 0.0
+    },
+    "B1 B|donor5": {
+     "n_s": 123,
+     "d_s_target": 90,
+     "d_s_achieved": 90,
+     "reuse_target": 1.3666666666666667,
+     "reuse_achieved": 1.3666666666666667,
+     "ks_multiplicity": 0.0
+    },
+    "B1 B|donor6": {
+     "n_s": 55,
+     "d_s_target": 39,
+     "d_s_achieved": 39,
+     "reuse_target": 1.4102564102564104,
+     "reuse_achieved": 1.4102564102564104,
+     "ks_multiplicity": 0.0
+    },
+    "B1 B|donor7": {
+     "n_s": 56,
+     "d_s_target": 41,
+     "d_s_achieved": 41,
+     "reuse_target": 1.3658536585365855,
+     "reuse_achieved": 1.3658536585365855,
+     "ks_multiplicity": 0.0
+    },
+    "B1 B|donor8": {
+     "n_s": 326,
+     "d_s_target": 221,
+     "d_s_achieved": 221,
+     "reuse_target": 1.4751131221719458,
+     "reuse_achieved": 1.4751131221719458,
+     "ks_multiplicity": 0.0
+    },
+    "B1 B|donor9": {
+     "n_s": 98,
+     "d_s_target": 68,
+     "d_s_achieved": 68,
+     "reuse_target": 1.4411764705882353,
+     "reuse_achieved": 1.4411764705882353,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor1": {
+     "n_s": 3243,
+     "d_s_target": 2369,
+     "d_s_achieved": 2369,
+     "reuse_target": 1.3689320388349515,
+     "reuse_achieved": 1.3689320388349515,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor10": {
+     "n_s": 1603,
+     "d_s_target": 1130,
+     "d_s_achieved": 1130,
+     "reuse_target": 1.41858407079646,
+     "reuse_achieved": 1.41858407079646,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor2": {
+     "n_s": 704,
+     "d_s_target": 489,
+     "d_s_achieved": 489,
+     "reuse_target": 1.4396728016359919,
+     "reuse_achieved": 1.4396728016359919,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor3": {
+     "n_s": 1097,
+     "d_s_target": 789,
+     "d_s_achieved": 789,
+     "reuse_target": 1.3903675538656528,
+     "reuse_achieved": 1.3903675538656528,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor4": {
+     "n_s": 1140,
+     "d_s_target": 841,
+     "d_s_achieved": 841,
+     "reuse_target": 1.3555291319857312,
+     "reuse_achieved": 1.3555291319857312,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor5": {
+     "n_s": 1716,
+     "d_s_target": 1229,
+     "d_s_achieved": 1229,
+     "reuse_target": 1.3962571196094387,
+     "reuse_achieved": 1.3962571196094387,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor6": {
+     "n_s": 208,
+     "d_s_target": 151,
+     "d_s_achieved": 151,
+     "reuse_target": 1.3774834437086092,
+     "reuse_achieved": 1.3774834437086092,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor7": {
+     "n_s": 674,
+     "d_s_target": 458,
+     "d_s_achieved": 458,
+     "reuse_target": 1.4716157205240175,
+     "reuse_achieved": 1.4716157205240175,
+     "ks_multiplicity": 0.0
+    },
+    "CD14+ Mono|donor8": {
+     "n_s": 458,
+     "d_s_target": 319,
+     "d_s_achieved": 319,
+     "reuse_target": 1.4357366771159874,
+     "reuse_achieved": 1.4357366771159874,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor1": {
+     "n_s": 526,
+     "d_s_target": 376,
+     "d_s_achieved": 376,
+     "reuse_target": 1.398936170212766,
+     "reuse_achieved": 1.398936170212766,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor10": {
+     "n_s": 253,
+     "d_s_target": 187,
+     "d_s_achieved": 187,
+     "reuse_target": 1.3529411764705883,
+     "reuse_achieved": 1.3529411764705883,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor2": {
+     "n_s": 179,
+     "d_s_target": 125,
+     "d_s_achieved": 125,
+     "reuse_target": 1.432,
+     "reuse_achieved": 1.432,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor3": {
+     "n_s": 67,
+     "d_s_target": 45,
+     "d_s_achieved": 45,
+     "reuse_target": 1.488888888888889,
+     "reuse_achieved": 1.488888888888889,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor4": {
+     "n_s": 177,
+     "d_s_target": 132,
+     "d_s_achieved": 132,
+     "reuse_target": 1.3409090909090908,
+     "reuse_achieved": 1.3409090909090908,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor5": {
+     "n_s": 380,
+     "d_s_target": 272,
+     "d_s_achieved": 272,
+     "reuse_target": 1.3970588235294117,
+     "reuse_achieved": 1.3970588235294117,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor6": {
+     "n_s": 18,
+     "d_s_target": 15,
+     "d_s_achieved": 15,
+     "reuse_target": 1.2,
+     "reuse_achieved": 1.2,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor7": {
+     "n_s": 41,
+     "d_s_target": 30,
+     "d_s_achieved": 30,
+     "reuse_target": 1.3666666666666667,
+     "reuse_achieved": 1.3666666666666667,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor8": {
+     "n_s": 99,
+     "d_s_target": 71,
+     "d_s_achieved": 71,
+     "reuse_target": 1.3943661971830985,
+     "reuse_achieved": 1.3943661971830985,
+     "ks_multiplicity": 0.0
+    },
+    "CD16+ Mono|donor9": {
+     "n_s": 154,
+     "d_s_target": 108,
+     "d_s_achieved": 108,
+     "reuse_target": 1.4259259259259258,
+     "reuse_achieved": 1.4259259259259258,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor1": {
+     "n_s": 1901,
+     "d_s_target": 1374,
+     "d_s_achieved": 1374,
+     "reuse_target": 1.3835516739446871,
+     "reuse_achieved": 1.3835516739446871,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor10": {
+     "n_s": 207,
+     "d_s_target": 145,
+     "d_s_achieved": 145,
+     "reuse_target": 1.4275862068965517,
+     "reuse_achieved": 1.4275862068965517,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor2": {
+     "n_s": 709,
+     "d_s_target": 495,
+     "d_s_achieved": 495,
+     "reuse_target": 1.4323232323232322,
+     "reuse_achieved": 1.4323232323232322,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor3": {
+     "n_s": 620,
+     "d_s_target": 445,
+     "d_s_achieved": 445,
+     "reuse_target": 1.3932584269662922,
+     "reuse_achieved": 1.3932584269662922,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor4": {
+     "n_s": 385,
+     "d_s_target": 285,
+     "d_s_achieved": 285,
+     "reuse_target": 1.3508771929824561,
+     "reuse_achieved": 1.3508771929824561,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor5": {
+     "n_s": 493,
+     "d_s_target": 359,
+     "d_s_achieved": 359,
+     "reuse_target": 1.373259052924791,
+     "reuse_achieved": 1.373259052924791,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor6": {
+     "n_s": 276,
+     "d_s_target": 203,
+     "d_s_achieved": 203,
+     "reuse_target": 1.3596059113300492,
+     "reuse_achieved": 1.3596059113300492,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor7": {
+     "n_s": 102,
+     "d_s_target": 72,
+     "d_s_achieved": 72,
+     "reuse_target": 1.4166666666666667,
+     "reuse_achieved": 1.4166666666666667,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor8": {
+     "n_s": 684,
+     "d_s_target": 486,
+     "d_s_achieved": 486,
+     "reuse_target": 1.4074074074074074,
+     "reuse_achieved": 1.4074074074074074,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T activated|donor9": {
+     "n_s": 149,
+     "d_s_target": 112,
+     "d_s_achieved": 112,
+     "reuse_target": 1.3303571428571428,
+     "reuse_achieved": 1.3303571428571428,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor1": {
+     "n_s": 1198,
+     "d_s_target": 873,
+     "d_s_achieved": 873,
+     "reuse_target": 1.3722794959908362,
+     "reuse_achieved": 1.3722794959908362,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor10": {
+     "n_s": 106,
+     "d_s_target": 79,
+     "d_s_achieved": 79,
+     "reuse_target": 1.3417721518987342,
+     "reuse_achieved": 1.3417721518987342,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor2": {
+     "n_s": 1289,
+     "d_s_target": 911,
+     "d_s_achieved": 911,
+     "reuse_target": 1.4149286498353457,
+     "reuse_achieved": 1.4149286498353457,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor3": {
+     "n_s": 852,
+     "d_s_target": 599,
+     "d_s_achieved": 599,
+     "reuse_target": 1.4223706176961604,
+     "reuse_achieved": 1.4223706176961604,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor4": {
+     "n_s": 214,
+     "d_s_target": 158,
+     "d_s_achieved": 158,
+     "reuse_target": 1.3544303797468353,
+     "reuse_achieved": 1.3544303797468353,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor5": {
+     "n_s": 163,
+     "d_s_target": 117,
+     "d_s_achieved": 117,
+     "reuse_target": 1.393162393162393,
+     "reuse_achieved": 1.393162393162393,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor6": {
+     "n_s": 58,
+     "d_s_target": 42,
+     "d_s_achieved": 42,
+     "reuse_target": 1.380952380952381,
+     "reuse_achieved": 1.380952380952381,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor7": {
+     "n_s": 98,
+     "d_s_target": 69,
+     "d_s_achieved": 69,
+     "reuse_target": 1.4202898550724639,
+     "reuse_achieved": 1.4202898550724639,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor8": {
+     "n_s": 299,
+     "d_s_target": 206,
+     "d_s_achieved": 206,
+     "reuse_target": 1.4514563106796117,
+     "reuse_achieved": 1.4514563106796117,
+     "ks_multiplicity": 0.0
+    },
+    "CD4+ T naive|donor9": {
+     "n_s": 121,
+     "d_s_target": 86,
+     "d_s_achieved": 86,
+     "reuse_target": 1.4069767441860466,
+     "reuse_achieved": 1.4069767441860466,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T naive|donor10": {
+     "n_s": 366,
+     "d_s_target": 259,
+     "d_s_achieved": 259,
+     "reuse_target": 1.4131274131274132,
+     "reuse_achieved": 1.4131274131274132,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T naive|donor3": {
+     "n_s": 427,
+     "d_s_target": 301,
+     "d_s_achieved": 301,
+     "reuse_target": 1.4186046511627908,
+     "reuse_achieved": 1.4186046511627908,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T naive|donor9": {
+     "n_s": 219,
+     "d_s_target": 157,
+     "d_s_achieved": 157,
+     "reuse_target": 1.394904458598726,
+     "reuse_achieved": 1.394904458598726,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor1": {
+     "n_s": 1653,
+     "d_s_target": 1202,
+     "d_s_achieved": 1202,
+     "reuse_target": 1.375207986688852,
+     "reuse_achieved": 1.375207986688852,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor10": {
+     "n_s": 432,
+     "d_s_target": 302,
+     "d_s_achieved": 302,
+     "reuse_target": 1.4304635761589404,
+     "reuse_achieved": 1.4304635761589404,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor2": {
+     "n_s": 1632,
+     "d_s_target": 1164,
+     "d_s_achieved": 1164,
+     "reuse_target": 1.402061855670103,
+     "reuse_achieved": 1.402061855670103,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor3": {
+     "n_s": 1398,
+     "d_s_target": 1007,
+     "d_s_achieved": 1007,
+     "reuse_target": 1.3882820258192652,
+     "reuse_achieved": 1.3882820258192652,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor4": {
+     "n_s": 230,
+     "d_s_target": 171,
+     "d_s_achieved": 171,
+     "reuse_target": 1.345029239766082,
+     "reuse_achieved": 1.345029239766082,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor5": {
+     "n_s": 752,
+     "d_s_target": 540,
+     "d_s_achieved": 540,
+     "reuse_target": 1.3925925925925926,
+     "reuse_achieved": 1.3925925925925926,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor6": {
+     "n_s": 488,
+     "d_s_target": 357,
+     "d_s_achieved": 357,
+     "reuse_target": 1.3669467787114846,
+     "reuse_achieved": 1.3669467787114846,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor7": {
+     "n_s": 110,
+     "d_s_target": 81,
+     "d_s_achieved": 81,
+     "reuse_target": 1.3580246913580247,
+     "reuse_achieved": 1.3580246913580247,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor8": {
+     "n_s": 4089,
+     "d_s_target": 2805,
+     "d_s_achieved": 2805,
+     "reuse_target": 1.4577540106951872,
+     "reuse_achieved": 1.4577540106951872,
+     "ks_multiplicity": 0.0
+    },
+    "CD8+ T|donor9": {
+     "n_s": 805,
+     "d_s_target": 565,
+     "d_s_achieved": 565,
+     "reuse_target": 1.424778761061947,
+     "reuse_achieved": 1.424778761061947,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor1": {
+     "n_s": 1749,
+     "d_s_target": 1257,
+     "d_s_achieved": 1257,
+     "reuse_target": 1.3914081145584725,
+     "reuse_achieved": 1.3914081145584725,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor10": {
+     "n_s": 391,
+     "d_s_target": 279,
+     "d_s_achieved": 279,
+     "reuse_target": 1.4014336917562724,
+     "reuse_achieved": 1.4014336917562724,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor2": {
+     "n_s": 136,
+     "d_s_target": 99,
+     "d_s_achieved": 99,
+     "reuse_target": 1.3737373737373737,
+     "reuse_achieved": 1.3737373737373737,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor3": {
+     "n_s": 620,
+     "d_s_target": 436,
+     "d_s_achieved": 436,
+     "reuse_target": 1.4220183486238531,
+     "reuse_achieved": 1.4220183486238531,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor4": {
+     "n_s": 1485,
+     "d_s_target": 1058,
+     "d_s_achieved": 1058,
+     "reuse_target": 1.4035916824196597,
+     "reuse_achieved": 1.4035916824196597,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor5": {
+     "n_s": 64,
+     "d_s_target": 46,
+     "d_s_achieved": 46,
+     "reuse_target": 1.391304347826087,
+     "reuse_achieved": 1.391304347826087,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor6": {
+     "n_s": 84,
+     "d_s_target": 61,
+     "d_s_achieved": 61,
+     "reuse_target": 1.3770491803278688,
+     "reuse_achieved": 1.3770491803278688,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor7": {
+     "n_s": 31,
+     "d_s_target": 23,
+     "d_s_achieved": 23,
+     "reuse_target": 1.3478260869565217,
+     "reuse_achieved": 1.3478260869565217,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor8": {
+     "n_s": 266,
+     "d_s_target": 193,
+     "d_s_achieved": 193,
+     "reuse_target": 1.378238341968912,
+     "reuse_achieved": 1.378238341968912,
+     "ks_multiplicity": 0.0
+    },
+    "Erythroblast|donor9": {
+     "n_s": 90,
+     "d_s_target": 65,
+     "d_s_achieved": 65,
+     "reuse_target": 1.3846153846153846,
+     "reuse_achieved": 1.3846153846153846,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor1": {
+     "n_s": 341,
+     "d_s_target": 241,
+     "d_s_achieved": 241,
+     "reuse_target": 1.4149377593360997,
+     "reuse_achieved": 1.4149377593360997,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor10": {
+     "n_s": 432,
+     "d_s_target": 300,
+     "d_s_achieved": 300,
+     "reuse_target": 1.44,
+     "reuse_achieved": 1.44,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor2": {
+     "n_s": 27,
+     "d_s_target": 20,
+     "d_s_achieved": 20,
+     "reuse_target": 1.35,
+     "reuse_achieved": 1.35,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor3": {
+     "n_s": 32,
+     "d_s_target": 23,
+     "d_s_achieved": 23,
+     "reuse_target": 1.391304347826087,
+     "reuse_achieved": 1.391304347826087,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor4": {
+     "n_s": 92,
+     "d_s_target": 69,
+     "d_s_achieved": 69,
+     "reuse_target": 1.3333333333333333,
+     "reuse_achieved": 1.3333333333333333,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor6": {
+     "n_s": 119,
+     "d_s_target": 81,
+     "d_s_achieved": 81,
+     "reuse_target": 1.4691358024691359,
+     "reuse_achieved": 1.4691358024691359,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor7": {
+     "n_s": 8,
+     "d_s_target": 6,
+     "d_s_achieved": 6,
+     "reuse_target": 1.3333333333333333,
+     "reuse_achieved": 1.3333333333333333,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor8": {
+     "n_s": 66,
+     "d_s_target": 48,
+     "d_s_achieved": 48,
+     "reuse_target": 1.375,
+     "reuse_achieved": 1.375,
+     "ks_multiplicity": 0.0
+    },
+    "G/M prog|donor9": {
+     "n_s": 86,
+     "d_s_target": 64,
+     "d_s_achieved": 64,
+     "reuse_target": 1.34375,
+     "reuse_achieved": 1.34375,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor1": {
+     "n_s": 230,
+     "d_s_target": 161,
+     "d_s_achieved": 161,
+     "reuse_target": 1.4285714285714286,
+     "reuse_achieved": 1.4285714285714286,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor10": {
+     "n_s": 291,
+     "d_s_target": 206,
+     "d_s_achieved": 206,
+     "reuse_target": 1.412621359223301,
+     "reuse_achieved": 1.412621359223301,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor2": {
+     "n_s": 33,
+     "d_s_target": 24,
+     "d_s_achieved": 24,
+     "reuse_target": 1.375,
+     "reuse_achieved": 1.375,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor3": {
+     "n_s": 146,
+     "d_s_target": 101,
+     "d_s_achieved": 101,
+     "reuse_target": 1.4455445544554455,
+     "reuse_achieved": 1.4455445544554455,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor4": {
+     "n_s": 100,
+     "d_s_target": 73,
+     "d_s_achieved": 73,
+     "reuse_target": 1.36986301369863,
+     "reuse_achieved": 1.36986301369863,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor5": {
+     "n_s": 20,
+     "d_s_target": 13,
+     "d_s_achieved": 13,
+     "reuse_target": 1.5384615384615385,
+     "reuse_achieved": 1.5384615384615385,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor6": {
+     "n_s": 38,
+     "d_s_target": 28,
+     "d_s_achieved": 28,
+     "reuse_target": 1.3571428571428572,
+     "reuse_achieved": 1.3571428571428572,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor7": {
+     "n_s": 34,
+     "d_s_target": 24,
+     "d_s_achieved": 24,
+     "reuse_target": 1.4166666666666667,
+     "reuse_achieved": 1.4166666666666667,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor8": {
+     "n_s": 108,
+     "d_s_target": 71,
+     "d_s_achieved": 71,
+     "reuse_target": 1.5211267605633803,
+     "reuse_achieved": 1.5211267605633803,
+     "ks_multiplicity": 0.0
+    },
+    "HSC|donor9": {
+     "n_s": 72,
+     "d_s_target": 51,
+     "d_s_achieved": 51,
+     "reuse_target": 1.411764705882353,
+     "reuse_achieved": 1.411764705882353,
+     "ks_multiplicity": 0.0
+    },
+    "ID2-hi myeloid prog|donor1": {
+     "n_s": 67,
+     "d_s_target": 46,
+     "d_s_achieved": 46,
+     "reuse_target": 1.4565217391304348,
+     "reuse_achieved": 1.4565217391304348,
+     "ks_multiplicity": 0.0
+    },
+    "ID2-hi myeloid prog|donor2": {
+     "n_s": 41,
+     "d_s_target": 26,
+     "d_s_achieved": 26,
+     "reuse_target": 1.5769230769230769,
+     "reuse_achieved": 1.5769230769230769,
+     "ks_multiplicity": 0.0
+    },
+    "ILC|donor1": {
+     "n_s": 120,
+     "d_s_target": 85,
+     "d_s_achieved": 85,
+     "reuse_target": 1.411764705882353,
+     "reuse_achieved": 1.411764705882353,
+     "ks_multiplicity": 0.0
+    },
+    "ILC|donor10": {
+     "n_s": 129,
+     "d_s_target": 96,
+     "d_s_achieved": 96,
+     "reuse_target": 1.34375,
+     "reuse_achieved": 1.34375,
+     "ks_multiplicity": 0.0
+    },
+    "ILC|donor2": {
+     "n_s": 367,
+     "d_s_target": 261,
+     "d_s_achieved": 261,
+     "reuse_target": 1.4061302681992338,
+     "reuse_achieved": 1.4061302681992338,
+     "ks_multiplicity": 0.0
+    },
+    "ILC|donor3": {
+     "n_s": 124,
+     "d_s_target": 83,
+     "d_s_achieved": 83,
+     "reuse_target": 1.4939759036144578,
+     "reuse_achieved": 1.4939759036144578,
+     "ks_multiplicity": 0.0
+    },
+    "ILC|donor5": {
+     "n_s": 95,
+     "d_s_target": 71,
+     "d_s_achieved": 71,
+     "reuse_target": 1.3380281690140845,
+     "reuse_achieved": 1.3380281690140845,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor1": {
+     "n_s": 452,
+     "d_s_target": 320,
+     "d_s_achieved": 320,
+     "reuse_target": 1.4125,
+     "reuse_achieved": 1.4125,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor10": {
+     "n_s": 231,
+     "d_s_target": 164,
+     "d_s_achieved": 164,
+     "reuse_target": 1.4085365853658536,
+     "reuse_achieved": 1.4085365853658536,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor2": {
+     "n_s": 28,
+     "d_s_target": 20,
+     "d_s_achieved": 20,
+     "reuse_target": 1.4,
+     "reuse_achieved": 1.4,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor3": {
+     "n_s": 134,
+     "d_s_target": 95,
+     "d_s_achieved": 95,
+     "reuse_target": 1.4105263157894736,
+     "reuse_achieved": 1.4105263157894736,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor4": {
+     "n_s": 286,
+     "d_s_target": 204,
+     "d_s_achieved": 204,
+     "reuse_target": 1.4019607843137254,
+     "reuse_achieved": 1.4019607843137254,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor6": {
+     "n_s": 15,
+     "d_s_target": 12,
+     "d_s_achieved": 12,
+     "reuse_target": 1.25,
+     "reuse_achieved": 1.25,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor7": {
+     "n_s": 17,
+     "d_s_target": 12,
+     "d_s_achieved": 12,
+     "reuse_target": 1.4166666666666667,
+     "reuse_achieved": 1.4166666666666667,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor8": {
+     "n_s": 327,
+     "d_s_target": 222,
+     "d_s_achieved": 222,
+     "reuse_target": 1.472972972972973,
+     "reuse_achieved": 1.472972972972973,
+     "ks_multiplicity": 0.0
+    },
+    "Lymph prog|donor9": {
+     "n_s": 289,
+     "d_s_target": 200,
+     "d_s_achieved": 200,
+     "reuse_target": 1.445,
+     "reuse_achieved": 1.445,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor1": {
+     "n_s": 298,
+     "d_s_target": 206,
+     "d_s_achieved": 206,
+     "reuse_target": 1.4466019417475728,
+     "reuse_achieved": 1.4466019417475728,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor10": {
+     "n_s": 125,
+     "d_s_target": 86,
+     "d_s_achieved": 86,
+     "reuse_target": 1.4534883720930232,
+     "reuse_achieved": 1.4534883720930232,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor2": {
+     "n_s": 71,
+     "d_s_target": 51,
+     "d_s_achieved": 51,
+     "reuse_target": 1.392156862745098,
+     "reuse_achieved": 1.392156862745098,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor3": {
+     "n_s": 95,
+     "d_s_target": 66,
+     "d_s_achieved": 66,
+     "reuse_target": 1.4393939393939394,
+     "reuse_achieved": 1.4393939393939394,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor4": {
+     "n_s": 33,
+     "d_s_target": 23,
+     "d_s_achieved": 23,
+     "reuse_target": 1.434782608695652,
+     "reuse_achieved": 1.434782608695652,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor6": {
+     "n_s": 48,
+     "d_s_target": 33,
+     "d_s_achieved": 33,
+     "reuse_target": 1.4545454545454546,
+     "reuse_achieved": 1.4545454545454546,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor7": {
+     "n_s": 14,
+     "d_s_target": 10,
+     "d_s_achieved": 10,
+     "reuse_target": 1.4,
+     "reuse_achieved": 1.4,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor8": {
+     "n_s": 120,
+     "d_s_target": 79,
+     "d_s_achieved": 79,
+     "reuse_target": 1.518987341772152,
+     "reuse_achieved": 1.518987341772152,
+     "ks_multiplicity": 0.0
+    },
+    "MK/E prog|donor9": {
+     "n_s": 80,
+     "d_s_target": 58,
+     "d_s_achieved": 58,
+     "reuse_target": 1.3793103448275863,
+     "reuse_achieved": 1.3793103448275863,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor1": {
+     "n_s": 1984,
+     "d_s_target": 1429,
+     "d_s_achieved": 1429,
+     "reuse_target": 1.3883834849545136,
+     "reuse_achieved": 1.3883834849545136,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor10": {
+     "n_s": 545,
+     "d_s_target": 383,
+     "d_s_achieved": 383,
+     "reuse_target": 1.422976501305483,
+     "reuse_achieved": 1.422976501305483,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor2": {
+     "n_s": 982,
+     "d_s_target": 705,
+     "d_s_achieved": 705,
+     "reuse_target": 1.3929078014184397,
+     "reuse_achieved": 1.3929078014184397,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor3": {
+     "n_s": 1173,
+     "d_s_target": 825,
+     "d_s_achieved": 825,
+     "reuse_target": 1.4218181818181819,
+     "reuse_achieved": 1.4218181818181819,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor4": {
+     "n_s": 136,
+     "d_s_target": 99,
+     "d_s_achieved": 99,
+     "reuse_target": 1.3737373737373737,
+     "reuse_achieved": 1.3737373737373737,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor5": {
+     "n_s": 848,
+     "d_s_target": 620,
+     "d_s_achieved": 620,
+     "reuse_target": 1.367741935483871,
+     "reuse_achieved": 1.367741935483871,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor6": {
+     "n_s": 126,
+     "d_s_target": 90,
+     "d_s_achieved": 90,
+     "reuse_target": 1.4,
+     "reuse_achieved": 1.4,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor7": {
+     "n_s": 256,
+     "d_s_target": 178,
+     "d_s_achieved": 178,
+     "reuse_target": 1.4382022471910112,
+     "reuse_achieved": 1.4382022471910112,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor8": {
+     "n_s": 421,
+     "d_s_target": 300,
+     "d_s_achieved": 300,
+     "reuse_target": 1.4033333333333333,
+     "reuse_achieved": 1.4033333333333333,
+     "ks_multiplicity": 0.0
+    },
+    "NK|donor9": {
+     "n_s": 458,
+     "d_s_target": 330,
+     "d_s_achieved": 330,
+     "reuse_target": 1.387878787878788,
+     "reuse_achieved": 1.387878787878788,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor1": {
+     "n_s": 1301,
+     "d_s_target": 952,
+     "d_s_achieved": 952,
+     "reuse_target": 1.3665966386554622,
+     "reuse_achieved": 1.3665966386554622,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor10": {
+     "n_s": 421,
+     "d_s_target": 301,
+     "d_s_achieved": 301,
+     "reuse_target": 1.398671096345515,
+     "reuse_achieved": 1.398671096345515,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor2": {
+     "n_s": 121,
+     "d_s_target": 84,
+     "d_s_achieved": 84,
+     "reuse_target": 1.4404761904761905,
+     "reuse_achieved": 1.4404761904761905,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor3": {
+     "n_s": 526,
+     "d_s_target": 370,
+     "d_s_achieved": 370,
+     "reuse_target": 1.4216216216216215,
+     "reuse_achieved": 1.4216216216216215,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor4": {
+     "n_s": 590,
+     "d_s_target": 431,
+     "d_s_achieved": 431,
+     "reuse_target": 1.368909512761021,
+     "reuse_achieved": 1.368909512761021,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor5": {
+     "n_s": 105,
+     "d_s_target": 79,
+     "d_s_achieved": 79,
+     "reuse_target": 1.3291139240506329,
+     "reuse_achieved": 1.3291139240506329,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor6": {
+     "n_s": 18,
+     "d_s_target": 15,
+     "d_s_achieved": 15,
+     "reuse_target": 1.2,
+     "reuse_achieved": 1.2,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor7": {
+     "n_s": 190,
+     "d_s_target": 131,
+     "d_s_achieved": 131,
+     "reuse_target": 1.450381679389313,
+     "reuse_achieved": 1.450381679389313,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor8": {
+     "n_s": 883,
+     "d_s_target": 597,
+     "d_s_achieved": 597,
+     "reuse_target": 1.4790619765494137,
+     "reuse_achieved": 1.4790619765494137,
+     "ks_multiplicity": 0.0
+    },
+    "Naive CD20+ B|donor9": {
+     "n_s": 897,
+     "d_s_target": 647,
+     "d_s_achieved": 647,
+     "reuse_target": 1.3863987635239567,
+     "reuse_achieved": 1.3863987635239567,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor1": {
+     "n_s": 630,
+     "d_s_target": 446,
+     "d_s_achieved": 446,
+     "reuse_target": 1.4125560538116593,
+     "reuse_achieved": 1.4125560538116593,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor10": {
+     "n_s": 129,
+     "d_s_target": 91,
+     "d_s_achieved": 91,
+     "reuse_target": 1.4175824175824177,
+     "reuse_achieved": 1.4175824175824177,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor2": {
+     "n_s": 69,
+     "d_s_target": 50,
+     "d_s_achieved": 50,
+     "reuse_target": 1.38,
+     "reuse_achieved": 1.38,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor3": {
+     "n_s": 147,
+     "d_s_target": 97,
+     "d_s_achieved": 97,
+     "reuse_target": 1.5154639175257731,
+     "reuse_achieved": 1.5154639175257731,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor4": {
+     "n_s": 641,
+     "d_s_target": 452,
+     "d_s_achieved": 452,
+     "reuse_target": 1.418141592920354,
+     "reuse_achieved": 1.418141592920354,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor5": {
+     "n_s": 17,
+     "d_s_target": 12,
+     "d_s_achieved": 12,
+     "reuse_target": 1.4166666666666667,
+     "reuse_achieved": 1.4166666666666667,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor6": {
+     "n_s": 18,
+     "d_s_target": 13,
+     "d_s_achieved": 13,
+     "reuse_target": 1.3846153846153846,
+     "reuse_achieved": 1.3846153846153846,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor7": {
+     "n_s": 9,
+     "d_s_target": 7,
+     "d_s_achieved": 7,
+     "reuse_target": 1.2857142857142858,
+     "reuse_achieved": 1.2857142857142858,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor8": {
+     "n_s": 90,
+     "d_s_target": 63,
+     "d_s_achieved": 63,
+     "reuse_target": 1.4285714285714286,
+     "reuse_achieved": 1.4285714285714286,
+     "ks_multiplicity": 0.0
+    },
+    "Normoblast|donor9": {
+     "n_s": 30,
+     "d_s_target": 22,
+     "d_s_achieved": 22,
+     "reuse_target": 1.3636363636363635,
+     "reuse_achieved": 1.3636363636363635,
+     "ks_multiplicity": 0.0
+    },
+    "Plasma cell|donor1": {
+     "n_s": 286,
+     "d_s_target": 200,
+     "d_s_achieved": 200,
+     "reuse_target": 1.43,
+     "reuse_achieved": 1.43,
+     "ks_multiplicity": 0.0
+    },
+    "Plasma cell|donor10": {
+     "n_s": 13,
+     "d_s_target": 9,
+     "d_s_achieved": 9,
+     "reuse_target": 1.4444444444444444,
+     "reuse_achieved": 1.4444444444444444,
+     "ks_multiplicity": 0.0
+    },
+    "Plasma cell|donor2": {
+     "n_s": 13,
+     "d_s_target": 10,
+     "d_s_achieved": 10,
+     "reuse_target": 1.3,
+     "reuse_achieved": 1.3,
+     "ks_multiplicity": 0.0
+    },
+    "Plasma cell|donor3": {
+     "n_s": 25,
+     "d_s_target": 19,
+     "d_s_achieved": 19,
+     "reuse_target": 1.3157894736842106,
+     "reuse_achieved": 1.3157894736842106,
+     "ks_multiplicity": 0.0
+    },
+    "Plasma cell|donor5": {
+     "n_s": 16,
+     "d_s_target": 13,
+     "d_s_achieved": 13,
+     "reuse_target": 1.2307692307692308,
+     "reuse_achieved": 1.2307692307692308,
+     "ks_multiplicity": 0.0
+    },
+    "Plasma cell|donor8": {
+     "n_s": 26,
+     "d_s_target": 18,
+     "d_s_achieved": 18,
+     "reuse_target": 1.4444444444444444,
+     "reuse_achieved": 1.4444444444444444,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor1": {
+     "n_s": 472,
+     "d_s_target": 328,
+     "d_s_achieved": 328,
+     "reuse_target": 1.4390243902439024,
+     "reuse_achieved": 1.4390243902439024,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor10": {
+     "n_s": 111,
+     "d_s_target": 76,
+     "d_s_achieved": 76,
+     "reuse_target": 1.4605263157894737,
+     "reuse_achieved": 1.4605263157894737,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor2": {
+     "n_s": 30,
+     "d_s_target": 21,
+     "d_s_achieved": 21,
+     "reuse_target": 1.4285714285714286,
+     "reuse_achieved": 1.4285714285714286,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor3": {
+     "n_s": 313,
+     "d_s_target": 216,
+     "d_s_achieved": 216,
+     "reuse_target": 1.4490740740740742,
+     "reuse_achieved": 1.4490740740740742,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor4": {
+     "n_s": 316,
+     "d_s_target": 220,
+     "d_s_achieved": 220,
+     "reuse_target": 1.4363636363636363,
+     "reuse_achieved": 1.4363636363636363,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor5": {
+     "n_s": 18,
+     "d_s_target": 14,
+     "d_s_achieved": 14,
+     "reuse_target": 1.2857142857142858,
+     "reuse_achieved": 1.2857142857142858,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor6": {
+     "n_s": 27,
+     "d_s_target": 19,
+     "d_s_achieved": 19,
+     "reuse_target": 1.4210526315789473,
+     "reuse_achieved": 1.4210526315789473,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor7": {
+     "n_s": 21,
+     "d_s_target": 15,
+     "d_s_achieved": 15,
+     "reuse_target": 1.4,
+     "reuse_achieved": 1.4,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor8": {
+     "n_s": 800,
+     "d_s_target": 543,
+     "d_s_achieved": 543,
+     "reuse_target": 1.4732965009208103,
+     "reuse_achieved": 1.4732965009208103,
+     "ks_multiplicity": 0.0
+    },
+    "Proerythroblast|donor9": {
+     "n_s": 192,
+     "d_s_target": 136,
+     "d_s_achieved": 136,
+     "reuse_target": 1.411764705882353,
+     "reuse_achieved": 1.411764705882353,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor1": {
+     "n_s": 809,
+     "d_s_target": 575,
+     "d_s_achieved": 575,
+     "reuse_target": 1.4069565217391304,
+     "reuse_achieved": 1.4069565217391304,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor10": {
+     "n_s": 359,
+     "d_s_target": 260,
+     "d_s_achieved": 260,
+     "reuse_target": 1.3807692307692307,
+     "reuse_achieved": 1.3807692307692307,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor2": {
+     "n_s": 40,
+     "d_s_target": 29,
+     "d_s_achieved": 29,
+     "reuse_target": 1.3793103448275863,
+     "reuse_achieved": 1.3793103448275863,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor3": {
+     "n_s": 197,
+     "d_s_target": 137,
+     "d_s_achieved": 137,
+     "reuse_target": 1.437956204379562,
+     "reuse_achieved": 1.437956204379562,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor4": {
+     "n_s": 185,
+     "d_s_target": 138,
+     "d_s_achieved": 138,
+     "reuse_target": 1.3405797101449275,
+     "reuse_achieved": 1.3405797101449275,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor6": {
+     "n_s": 18,
+     "d_s_target": 13,
+     "d_s_achieved": 13,
+     "reuse_target": 1.3846153846153846,
+     "reuse_achieved": 1.3846153846153846,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor7": {
+     "n_s": 30,
+     "d_s_target": 21,
+     "d_s_achieved": 21,
+     "reuse_target": 1.4285714285714286,
+     "reuse_achieved": 1.4285714285714286,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor8": {
+     "n_s": 630,
+     "d_s_target": 434,
+     "d_s_achieved": 434,
+     "reuse_target": 1.4516129032258065,
+     "reuse_achieved": 1.4516129032258065,
+     "ks_multiplicity": 0.0
+    },
+    "Transitional B|donor9": {
+     "n_s": 542,
+     "d_s_target": 381,
+     "d_s_achieved": 381,
+     "reuse_target": 1.4225721784776904,
+     "reuse_achieved": 1.4225721784776904,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor1": {
+     "n_s": 181,
+     "d_s_target": 124,
+     "d_s_achieved": 124,
+     "reuse_target": 1.4596774193548387,
+     "reuse_achieved": 1.4596774193548387,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor10": {
+     "n_s": 83,
+     "d_s_target": 58,
+     "d_s_achieved": 58,
+     "reuse_target": 1.4310344827586208,
+     "reuse_achieved": 1.4310344827586208,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor2": {
+     "n_s": 89,
+     "d_s_target": 64,
+     "d_s_achieved": 64,
+     "reuse_target": 1.390625,
+     "reuse_achieved": 1.390625,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor3": {
+     "n_s": 188,
+     "d_s_target": 132,
+     "d_s_achieved": 132,
+     "reuse_target": 1.4242424242424243,
+     "reuse_achieved": 1.4242424242424243,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor4": {
+     "n_s": 53,
+     "d_s_target": 38,
+     "d_s_achieved": 38,
+     "reuse_target": 1.394736842105263,
+     "reuse_achieved": 1.394736842105263,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor5": {
+     "n_s": 30,
+     "d_s_target": 23,
+     "d_s_achieved": 23,
+     "reuse_target": 1.3043478260869565,
+     "reuse_achieved": 1.3043478260869565,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor6": {
+     "n_s": 26,
+     "d_s_target": 19,
+     "d_s_achieved": 19,
+     "reuse_target": 1.368421052631579,
+     "reuse_achieved": 1.368421052631579,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor7": {
+     "n_s": 25,
+     "d_s_target": 17,
+     "d_s_achieved": 17,
+     "reuse_target": 1.4705882352941178,
+     "reuse_achieved": 1.4705882352941178,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor8": {
+     "n_s": 160,
+     "d_s_target": 113,
+     "d_s_achieved": 113,
+     "reuse_target": 1.415929203539823,
+     "reuse_achieved": 1.415929203539823,
+     "ks_multiplicity": 0.0
+    },
+    "cDC2|donor9": {
+     "n_s": 24,
+     "d_s_target": 18,
+     "d_s_achieved": 18,
+     "reuse_target": 1.3333333333333333,
+     "reuse_achieved": 1.3333333333333333,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor1": {
+     "n_s": 338,
+     "d_s_target": 243,
+     "d_s_achieved": 243,
+     "reuse_target": 1.3909465020576133,
+     "reuse_achieved": 1.3909465020576133,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor10": {
+     "n_s": 427,
+     "d_s_target": 300,
+     "d_s_achieved": 300,
+     "reuse_target": 1.4233333333333333,
+     "reuse_achieved": 1.4233333333333333,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor2": {
+     "n_s": 53,
+     "d_s_target": 37,
+     "d_s_achieved": 37,
+     "reuse_target": 1.4324324324324325,
+     "reuse_achieved": 1.4324324324324325,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor3": {
+     "n_s": 133,
+     "d_s_target": 94,
+     "d_s_achieved": 94,
+     "reuse_target": 1.4148936170212767,
+     "reuse_achieved": 1.4148936170212767,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor4": {
+     "n_s": 48,
+     "d_s_target": 34,
+     "d_s_achieved": 34,
+     "reuse_target": 1.411764705882353,
+     "reuse_achieved": 1.411764705882353,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor5": {
+     "n_s": 55,
+     "d_s_target": 41,
+     "d_s_achieved": 41,
+     "reuse_target": 1.3414634146341464,
+     "reuse_achieved": 1.3414634146341464,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor6": {
+     "n_s": 39,
+     "d_s_target": 31,
+     "d_s_achieved": 31,
+     "reuse_target": 1.2580645161290323,
+     "reuse_achieved": 1.2580645161290323,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor7": {
+     "n_s": 55,
+     "d_s_target": 37,
+     "d_s_achieved": 37,
+     "reuse_target": 1.4864864864864864,
+     "reuse_achieved": 1.4864864864864864,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor8": {
+     "n_s": 24,
+     "d_s_target": 17,
+     "d_s_achieved": 17,
+     "reuse_target": 1.411764705882353,
+     "reuse_achieved": 1.411764705882353,
+     "ks_multiplicity": 0.0
+    },
+    "pDC|donor9": {
+     "n_s": 19,
+     "d_s_target": 14,
+     "d_s_achieved": 14,
+     "reuse_target": 1.3571428571428572,
+     "reuse_achieved": 1.3571428571428572,
+     "ks_multiplicity": 0.0
+    }
+   }
+  }
+ }
+}

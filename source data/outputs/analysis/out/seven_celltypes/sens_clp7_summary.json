@@ -1,0 +1,423 @@
+{
+  "admitted_celltypes_seven": [
+    "CLP",
+    "Early.Basophil",
+    "Early.Erythrocyte",
+    "GMP",
+    "HSC",
+    "Monocytes",
+    "Progenitor"
+  ],
+  "paired_patients_per_celltype": {
+    "GMP": 18,
+    "HSC": 17,
+    "Progenitor": 17,
+    "Monocytes": 11,
+    "Early.Erythrocyte": 10,
+    "Early.Basophil": 7,
+    "CLP": 6,
+    "cDC": 3,
+    "CD16.Monocytes": 2,
+    "pDC": 2,
+    "Pre.B.Cell": 1
+  },
+  "bar_sensitivity": 5,
+  "primary_bar": "4 of 6",
+  "controls_passed": [
+    "C1 e2 betas",
+    "C2 same-sign counts",
+    "C3 funnel and membership",
+    "C4 frozen 55 with CLP equals the earlier sandbox run of f6_07"
+  ],
+  "ax2_note": "stored; already computed on seven malignant types (s3br_13)",
+  "funnels": {
+    "4_of_7": {
+      "pool": 201,
+      "ax1": 160,
+      "ax1_and_ax2": 71,
+      "final": 65,
+      "TFs": 39,
+      "kept_from_primary_55": 54,
+      "new": [
+        "ARID3A_direct_-/+",
+        "CREB3L4_direct_+/-",
+        "GATA2_direct_+/-",
+        "HOXA10_direct_+/-",
+        "IRF1_direct_-/-",
+        "IRF9_direct_+/+",
+        "MECP2_direct_-/-",
+        "REL_direct_-/+",
+        "RUNX3_direct_-/-",
+        "XBP1_direct_+/+",
+        "ZEB2_direct_+/+"
+      ],
+      "lost": [
+        "MAFF_direct_+/-"
+      ]
+    },
+    "5_of_7": {
+      "pool": 201,
+      "ax1": 160,
+      "ax1_and_ax2": 71,
+      "final": 52,
+      "TFs": 30,
+      "kept_from_primary_55": 51,
+      "new": [
+        "ZEB2_direct_+/+"
+      ],
+      "lost": [
+        "GATA2_direct_+/+",
+        "IRF8_direct_-/-",
+        "KLF11_direct_+/+",
+        "MAFF_direct_+/-"
+      ]
+    },
+    "6_of_7": {
+      "pool": 201,
+      "ax1": 160,
+      "ax1_and_ax2": 71,
+      "final": 33,
+      "TFs": 21,
+      "kept_from_primary_55": 33,
+      "new": [],
+      "lost": [
+        "BACH1_direct_+/+",
+        "CEBPA_direct_-/+",
+        "EP300_direct_-/+",
+        "EP300_direct_-/-",
+        "GABPB1_direct_-/+",
+        "GATA2_direct_+/+",
+        "ILF2_direct_+/-",
+        "IRF8_direct_-/-",
+        "KLF10_direct_+/+",
+        "KLF10_direct_+/-",
+        "KLF10_direct_-/+",
+        "KLF10_direct_-/-",
+        "KLF11_direct_+/+",
+        "KLF3_direct_+/+",
+        "MAFB_direct_+/+",
+        "MAFF_direct_+/-",
+        "PBX3_direct_-/+",
+        "SPI1_direct_-/-",
+        "XBP1_direct_+/-",
+        "ZBTB7A_direct_+/+",
+        "ZBTB7A_direct_+/-",
+        "ZBTB7A_direct_-/+"
+      ]
+    },
+    "primary_4_of_6": {
+      "pool": 201,
+      "ax1": 160,
+      "ax1_and_ax2": 73,
+      "final": 55,
+      "TFs": 31
+    }
+  },
+  "ax1_flips_six_to_seven": [
+    "E2F2_direct_+/+",
+    "GATA3_direct_+/+",
+    "KLF13_direct_+/+",
+    "MAFF_direct_+/-",
+    "MECP2_direct_-/-",
+    "MYC_direct_+/+",
+    "ZEB2_direct_+/+",
+    "ZNF207_direct_+/+"
+  ],
+  "sensitivity_module": {
+    "bar": "5 of 7",
+    "n_regulons": 52,
+    "n_TFs": 30,
+    "regulons": [
+      "ERG_direct_-/-",
+      "TFDP2_direct_+/-",
+      "TFDP2_direct_-/-",
+      "ZBTB7A_direct_-/-",
+      "ZBTB7A_direct_-/+",
+      "SPI1_direct_-/-",
+      "SPI1_direct_-/+",
+      "MAFB_direct_-/-",
+      "HMGA1_direct_+/+",
+      "KLF4_direct_-/-",
+      "XBP1_direct_+/-",
+      "SPI1_direct_+/-",
+      "CEBPD_direct_-/+",
+      "FOSL2_direct_-/-",
+      "ZBTB7A_direct_+/-",
+      "ZBTB7A_direct_+/+",
+      "EP300_direct_-/-",
+      "FOSL2_direct_-/+",
+      "SPI1_direct_+/+",
+      "RXRA_direct_+/+",
+      "RXRA_direct_+/-",
+      "KLF11_direct_-/-",
+      "MAFB_direct_+/-",
+      "KLF4_direct_+/+",
+      "MAFB_direct_+/+",
+      "YBX1_direct_+/-",
+      "SMC3_direct_+/-",
+      "ILF2_direct_+/-",
+      "IRF8_direct_+/+",
+      "KLF10_direct_+/+",
+      "RUNX2_direct_-/+",
+      "BACH1_direct_+/+",
+      "STAT5A_direct_-/+",
+      "IRF8_direct_-/+",
+      "CEBPA_direct_-/+",
+      "GABPB1_direct_-/+",
+      "STAT5A_direct_+/+",
+      "MBD2_direct_+/-",
+      "KLF4_direct_+/-",
+      "IRF5_direct_+/+",
+      "WT1_direct_+/+",
+      "EP300_direct_-/+",
+      "PBX3_direct_-/+",
+      "CEBPA_direct_+/-",
+      "YBX1_direct_+/+",
+      "KLF10_direct_-/-",
+      "KLF10_direct_-/+",
+      "STAT6_direct_+/+",
+      "IRF8_direct_+/-",
+      "KLF3_direct_+/+",
+      "KLF10_direct_+/-",
+      "ZEB2_direct_+/+"
+    ],
+    "TFs": [
+      "BACH1",
+      "CEBPA",
+      "CEBPD",
+      "EP300",
+      "ERG",
+      "FOSL2",
+      "GABPB1",
+      "HMGA1",
+      "ILF2",
+      "IRF5",
+      "IRF8",
+      "KLF10",
+      "KLF11",
+      "KLF3",
+      "KLF4",
+      "MAFB",
+      "MBD2",
+      "PBX3",
+      "RUNX2",
+      "RXRA",
+      "SMC3",
+      "SPI1",
+      "STAT5A",
+      "STAT6",
+      "TFDP2",
+      "WT1",
+      "XBP1",
+      "YBX1",
+      "ZBTB7A",
+      "ZEB2"
+    ]
+  },
+  "TF_level_vs_primary": {
+    "primary_TFs": 31,
+    "shared_TFs": 29,
+    "sensitivity_only_TFs": [
+      "ZEB2"
+    ],
+    "primary_only_TFs": [
+      "GATA2",
+      "MAFF"
+    ]
+  },
+  "fig4d_analogue": {
+    "primary_55": {
+      "n_regulons": 55,
+      "intersection_with_LMM26_regulons": 3,
+      "jaccard_regulon": 0.038461538461538464,
+      "intersection_TFs": 5,
+      "jaccard_TF": 0.11627906976744186,
+      "n_regulons_whose_TF_in_IEG_list": 5,
+      "ieg_list_size": 19
+    },
+    "sensitivity_5of7": {
+      "n_regulons": 52,
+      "intersection_with_LMM26_regulons": 3,
+      "jaccard_regulon": 0.04,
+      "intersection_TFs": 6,
+      "jaccard_TF": 0.14634146341463414,
+      "n_regulons_whose_TF_in_IEG_list": 5,
+      "ieg_list_size": 19
+    }
+  },
+  "decomposition": {
+    "primary_55_with_CLP": {
+      "offsetcentred": {
+        "Diagnosis": {
+          "n_patients": 19,
+          "naive_mean": 0.00043615063181102353,
+          "rewiring_mean": 0.0009285652949643696,
+          "composition_mean": -0.0004924146631533457,
+          "p_rewiring": 0.312408447265625,
+          "p_composition": 0.22532272338867188,
+          "composition_share": 0.34653174405472764,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.8011644123234408,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 5
+        },
+        "Relapse": {
+          "n_patients": 19,
+          "naive_mean": -0.00012967439955383834,
+          "rewiring_mean": 0.00010677081315435868,
+          "composition_mean": -0.0002364452127081974,
+          "p_rewiring": 0.6225624084472656,
+          "p_composition": 0.3320655822753906,
+          "composition_share": 0.6889107585054435,
+          "same_sign_naive_vs_rewiring": false,
+          "p_heterogeneity": 0.44553885637465496,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 5
+        }
+      },
+      "raw": {
+        "Diagnosis": {
+          "n_patients": 19,
+          "naive_mean": -0.0023959729365095562,
+          "rewiring_mean": -0.0018665206302522028,
+          "composition_mean": -0.0005294523062573533,
+          "p_rewiring": 0.9529838562011719,
+          "p_composition": 0.6794281005859375,
+          "composition_share": 0.22097591261972152,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.8612791035357128,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 5
+        },
+        "Relapse": {
+          "n_patients": 19,
+          "naive_mean": 0.0004879866406778531,
+          "rewiring_mean": 0.00042200184807820404,
+          "composition_mean": 6.598479259964885e-05,
+          "p_rewiring": 0.6794281005859375,
+          "p_composition": 0.8905677795410156,
+          "composition_share": 0.1352184406277816,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.8618502246757391,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 3
+        }
+      },
+      "oriented_offsetcentred": {
+        "Diagnosis": {
+          "n_patients": 19,
+          "naive_mean": 0.012603744654735613,
+          "rewiring_mean": 0.01036492646042075,
+          "composition_mean": 0.002238818194314863,
+          "p_rewiring": 0.001171112060546875,
+          "p_composition": 0.3954620361328125,
+          "composition_share": 0.17763119260541907,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.6416232656613508,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 7
+        },
+        "Relapse": {
+          "n_patients": 19,
+          "naive_mean": 0.010324073369066445,
+          "rewiring_mean": 0.008600458109756928,
+          "composition_mean": 0.0017236152593095165,
+          "p_rewiring": 0.00141143798828125,
+          "p_composition": 0.4180412292480469,
+          "composition_share": 0.16695108584504129,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.4657496129336801,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 7
+        }
+      }
+    },
+    "sensitivity_5of7": {
+      "offsetcentred": {
+        "Diagnosis": {
+          "n_patients": 19,
+          "naive_mean": 0.0001621239098531394,
+          "rewiring_mean": 0.0007007313709232086,
+          "composition_mean": -0.0005386074610700693,
+          "p_rewiring": 0.5152778625488281,
+          "p_composition": 0.48996734619140625,
+          "composition_share": 0.4345925804679302,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.7347910944336769,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 4
+        },
+        "Relapse": {
+          "n_patients": 19,
+          "naive_mean": 2.2177959685737913e-05,
+          "rewiring_mean": 0.00025157430440291305,
+          "composition_mean": -0.00022939634471717523,
+          "p_rewiring": 0.5948867797851562,
+          "p_composition": 0.48996734619140625,
+          "composition_share": 0.4769445809985378,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.5209946897324886,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 5
+        }
+      },
+      "raw": {
+        "Diagnosis": {
+          "n_patients": 19,
+          "naive_mean": -0.002669999658467449,
+          "rewiring_mean": -0.002094354554293372,
+          "composition_mean": -0.0005756451041740765,
+          "p_rewiring": 0.8905677795410156,
+          "p_composition": 0.5948867797851562,
+          "composition_share": 0.21559744487176852,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.8585360696481298,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 5
+        },
+        "Relapse": {
+          "n_patients": 19,
+          "naive_mean": 0.0006398389999174157,
+          "rewiring_mean": 0.000566805339326755,
+          "composition_mean": 7.303366059066162e-05,
+          "p_rewiring": 0.76800537109375,
+          "p_composition": 0.7380905151367188,
+          "composition_share": 0.11414380898958643,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.8345711382553263,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 3
+        }
+      },
+      "oriented_offsetcentred": {
+        "Diagnosis": {
+          "n_patients": 19,
+          "naive_mean": 0.013021357222173154,
+          "rewiring_mean": 0.010645125116177535,
+          "composition_mean": 0.002376232105995619,
+          "p_rewiring": 0.001171112060546875,
+          "p_composition": 0.3954620361328125,
+          "composition_share": 0.18248728342613166,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.6223768727875021,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 7
+        },
+        "Relapse": {
+          "n_patients": 19,
+          "naive_mean": 0.010621679261401932,
+          "rewiring_mean": 0.008917697192403158,
+          "composition_mean": 0.0017039820689987745,
+          "p_rewiring": 0.001171112060546875,
+          "p_composition": 0.4180412292480469,
+          "composition_share": 0.16042492218635018,
+          "same_sign_naive_vs_rewiring": true,
+          "p_heterogeneity": 0.5097619886998543,
+          "n_celltypes": 7,
+          "n_celltypes_same_sign": 7
+        }
+      }
+    }
+  },
+  "decomposition_note": "seven admitted cell types; patient-level Wilcoxon p-values; permutation calibration NOT re-run; orientation frozen from the module definition (carried verbatim for all 201 regulons)"
+}

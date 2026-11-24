@@ -1,0 +1,884 @@
+[
+  {
+    "artifact": "source data/outputs/analysis/out/f1_sets_and_targets.json",
+    "original_artifact": "analysis/out/f1_sets_and_targets.json",
+    "producer": "analysis/pairing/pairing_target_sets.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_set_members.csv",
+    "original_artifact": "analysis/out/f1_set_members.csv",
+    "producer": "analysis/pairing/pairing_target_sets.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_shared_regulon_jaccard.csv",
+    "original_artifact": "analysis/out/f1_shared_regulon_jaccard.csv",
+    "producer": "analysis/pairing/pairing_target_sets.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_shared_tf_jaccard.csv",
+    "original_artifact": "analysis/out/f1_shared_tf_jaccard.csv",
+    "producer": "analysis/pairing/pairing_target_sets.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_signmode_mismatch.csv",
+    "original_artifact": "analysis/out/f1_signmode_mismatch.csv",
+    "producer": "analysis/pairing/pairing_target_sets.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_celltype_agreement_allshared.csv",
+    "original_artifact": "analysis/out/f1_celltype_agreement_allshared.csv",
+    "producer": "analysis/activity/shared_regulon_activity.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_activity_vs_target.csv",
+    "original_artifact": "analysis/out/f1_activity_vs_target.csv",
+    "producer": "analysis/pairing/activity_target_agreement.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_random_geneset_control.csv",
+    "original_artifact": "analysis/out/f1_random_geneset_control.csv",
+    "producer": "analysis/activity/random_gene_sets.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_random_geneset_control.json",
+    "original_artifact": "analysis/out/f1_random_geneset_control.json",
+    "producer": "analysis/activity/random_gene_sets.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_random_geneset_control_draws.npz",
+    "original_artifact": "analysis/out/f1_random_geneset_control_draws.npz",
+    "producer": "analysis/activity/random_gene_sets.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f1_label_provenance.json",
+    "original_artifact": "analysis/out/f1_label_provenance.json",
+    "producer": "analysis/pairing/celltype_labels.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/l6_ceiling_test.json",
+    "original_artifact": "analysis/out/l6_ceiling_test.json",
+    "producer": "analysis/activity/nearest_neighbor_comparator.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/pbmc/out/trackb_rungs_pbmc10k_all.json",
+    "original_artifact": "cubic_pbmc_pairing/out/trackb_rungs_pbmc10k_all.json",
+    "producer": "benchmarks/bmmc/scripts/network_agreement.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/pbmc/out/trackA_L6_10k.json",
+    "original_artifact": "cubic_pbmc_pairing/out/trackA_L6_10k.json",
+    "producer": "benchmarks/pbmc/scripts/activity_agreement.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/pbmc/out/trackA_L6_10k_subcluster_arm.json",
+    "original_artifact": "cubic_pbmc_pairing/out/trackA_L6_10k_subcluster_arm.json",
+    "producer": "MISSING_ORIGINAL_WRITER",
+    "status": "missing_original",
+    "note": "Original unsaved edited writer is absent. Existing p_08_variant_subcluster_arm.py is explicitly reconstructed and excluded from strict historical-source release."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/pbmc/out/stat3_celltype_profile_10k.json",
+    "original_artifact": "cubic_pbmc_pairing/out/stat3_celltype_profile_10k.json",
+    "producer": "benchmarks/pbmc/scripts/group_mean_activity.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/pbmc/out/random_arms_report_10k_seed555_full.json",
+    "original_artifact": "cubic_pbmc_pairing/out/random_arms_report_10k_seed555_full.json",
+    "producer": "benchmarks/pbmc/scripts/make_random_arms.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/trackb_rungs_bmmc_all.json",
+    "original_artifact": "cubic_bmmc_ladder/out/trackb_rungs_bmmc_all.json",
+    "producer": "benchmarks/bmmc/scripts/network_agreement.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b05_pairing_error_bmmc.json",
+    "original_artifact": "cubic_bmmc_ladder/out/b05_pairing_error_bmmc.json",
+    "producer": "benchmarks/bmmc/scripts/pairing_error.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b06_trackA_L6_bmmc.json",
+    "original_artifact": "cubic_bmmc_ladder/out/b06_trackA_L6_bmmc.json",
+    "producer": "benchmarks/bmmc/scripts/activity_agreement.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b06_trackA_L6_per_celltype_bmmc.csv",
+    "original_artifact": "cubic_bmmc_ladder/out/b06_trackA_L6_per_celltype_bmmc.csv",
+    "producer": "benchmarks/bmmc/scripts/activity_agreement.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b06_trackA_L6_per_regulon_bmmc.csv",
+    "original_artifact": "cubic_bmmc_ladder/out/b06_trackA_L6_per_regulon_bmmc.csv",
+    "producer": "benchmarks/bmmc/scripts/activity_agreement.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b07_stat3_celltype_profile_bmmc.json",
+    "original_artifact": "cubic_bmmc_ladder/out/b07_stat3_celltype_profile_bmmc.json",
+    "producer": "benchmarks/bmmc/scripts/group_mean_activity.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b07_stat3_per_regulon_bmmc.csv",
+    "original_artifact": "cubic_bmmc_ladder/out/b07_stat3_per_regulon_bmmc.csv",
+    "producer": "benchmarks/bmmc/scripts/group_mean_activity.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b00_stratum_census.csv",
+    "original_artifact": "cubic_bmmc_ladder/out/b00_stratum_census.csv",
+    "producer": "benchmarks/bmmc/scripts/census.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b02_matched_cap14_report.json",
+    "original_artifact": "cubic_bmmc_ladder/out/b02_matched_cap14_report.json",
+    "producer": "benchmarks/bmmc/scripts/arms.py",
+    "status": "mapped",
+    "note": "Matched-arm construction uses prep_02_arms.py; script writes b02_arm_report.json and archived cap14 report is renamed. Exact renaming invocation is not recorded here."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b04b_link_restricted_report.json",
+    "original_artifact": "cubic_bmmc_ladder/out/b04b_link_restricted_report.json",
+    "producer": "benchmarks/bmmc/scripts/infer_stratified_pairings.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b04d_capacity_sweep.json",
+    "original_artifact": "cubic_bmmc_ladder/out/b04d_capacity_sweep.json",
+    "producer": "benchmarks/bmmc/scripts/infer_capped_pairings.py",
+    "status": "mapped",
+    "note": "Two existing script runs were manually merged; saved automated merge writer is absent. See old REGENERATION_COMMANDS row15."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b04d_link_capped_report.json",
+    "original_artifact": "cubic_bmmc_ladder/out/b04d_link_capped_report.json",
+    "producer": "benchmarks/bmmc/scripts/infer_capped_pairings.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out/b04e_cap14_pair_verify.json",
+    "original_artifact": "cubic_bmmc_ladder/out/b04e_cap14_pair_verify.json",
+    "producer": "benchmarks/bmmc/scripts/verify_matched_reuse.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/stratum_activity/f3_stratum_mean_grid.csv",
+    "original_artifact": "analysis/out/f3_stratum_mean_proposal/f3_stratum_mean_grid.csv",
+    "producer": "analysis/activity/stratum_mean_activity.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/stratum_activity/f3_stratum_mean_summary.csv",
+    "original_artifact": "analysis/out/f3_stratum_mean_proposal/f3_stratum_mean_summary.csv",
+    "producer": "analysis/activity/stratum_mean_activity.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/stratum_activity/f3_stratum_mean_summary.json",
+    "original_artifact": "analysis/out/f3_stratum_mean_proposal/f3_stratum_mean_summary.json",
+    "producer": "analysis/activity/stratum_mean_activity.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/figures/supplementary/figS_reuse_native_agreement.csv",
+    "original_artifact": "figures/journal_v3/figS_reuse_native_agreement.csv",
+    "producer": "figures/supplementary/make_figS_reuse_native_agreement.R",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/paml/corrected/out/a00_feasibility_report.json",
+    "original_artifact": "cubic_aml_repair/out/a00_feasibility_report.json",
+    "producer": "paml/corrected/scripts/feasibility_census.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/paml/corrected/out/a00_stratum_census.csv",
+    "original_artifact": "cubic_aml_repair/out/a00_stratum_census.csv",
+    "producer": "paml/corrected/scripts/feasibility_census.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/paml/corrected/out/a01_assignment_report.json",
+    "original_artifact": "cubic_aml_repair/out/a01_assignment_report.json",
+    "producer": "paml/corrected/scripts/capacity_assign.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/paml/corrected/out/a01_per_stratum.csv",
+    "original_artifact": "cubic_aml_repair/out/a01_per_stratum.csv",
+    "producer": "paml/corrected/scripts/capacity_assign.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/paml/corrected/out/a03_t2_report.json",
+    "original_artifact": "cubic_aml_repair/out/a03_t2_report.json",
+    "producer": "paml/corrected/scripts/compare_networks.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/aml_reuse_composite_key.json",
+    "original_artifact": "analysis/out/aml_reuse_composite_key.json",
+    "producer": "analysis/pairing/aml_reuse_composite_key.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_set55.json",
+    "original_artifact": "analysis/out/f6_set55.json",
+    "producer": "analysis/functional/module_characterization.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_set55_per_regulon.csv",
+    "original_artifact": "analysis/out/f6_set55_per_regulon.csv",
+    "producer": "analysis/functional/module_characterization.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_per_regulon.json",
+    "original_artifact": "analysis/out/f6_per_regulon.json",
+    "producer": "analysis/functional/regulon_characterization.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_per_regulon_table.csv",
+    "original_artifact": "analysis/out/f6_per_regulon_table.csv",
+    "producer": "analysis/functional/regulon_characterization.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/corrected/out/nomination_funnel.csv",
+    "original_artifact": "stage3_repair_analysis/out/nomination_funnel.csv",
+    "producer": "longitudinal/corrected/scripts/nomination.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/corrected/out/e2_paired_wilcoxon_fits.csv",
+    "original_artifact": "stage3_repair_analysis/out/e2_paired_wilcoxon_fits.csv",
+    "producer": "longitudinal/corrected/scripts/recalibrate.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/corrected/out/lmm_fits_by_definition.csv",
+    "original_artifact": "stage3_repair_analysis/out/lmm_fits_by_definition.csv",
+    "producer": "longitudinal/corrected/scripts/model.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/corrected/out/paired_units.csv",
+    "original_artifact": "stage3_repair_analysis/out/paired_units.csv",
+    "producer": "longitudinal/corrected/scripts/prep.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/corrected/out/s3_recalibrated.json",
+    "original_artifact": "stage3_repair_analysis/out/s3_recalibrated.json",
+    "producer": "longitudinal/corrected/scripts/recalibrate.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/published/out/nomination_funnel.csv",
+    "original_artifact": "stage3_local_analysis/out/nomination_funnel.csv",
+    "producer": "longitudinal/published/scripts/nomination.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/published/out/e2_paired_wilcoxon_fits.csv",
+    "original_artifact": "stage3_local_analysis/out/e2_paired_wilcoxon_fits.csv",
+    "producer": "longitudinal/published/scripts/recalibrate.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/published/out/lmm_fits_by_definition.csv",
+    "original_artifact": "stage3_local_analysis/out/lmm_fits_by_definition.csv",
+    "producer": "longitudinal/published/scripts/model.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/published/out/paired_units.csv",
+    "original_artifact": "stage3_local_analysis/out/paired_units.csv",
+    "producer": "longitudinal/published/scripts/prep.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/longitudinal/published/out/s3_recalibrated.json",
+    "original_artifact": "stage3_local_analysis/out/s3_recalibrated.json",
+    "producer": "longitudinal/published/scripts/recalibrate.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/modules/out/corrected_module.json",
+    "original_artifact": "modules/out/module_definition_T3_repair.json",
+    "producer": "modules/scripts/module_definitions.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/gate5_result_T3_repair.json",
+    "original_artifact": "replication_repair/out/gate5_result_T3_repair.json",
+    "producer": "adult/shared/test.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/per_patient_deltas_T3_repair.csv",
+    "original_artifact": "replication_repair/out/per_patient_deltas_T3_repair.csv",
+    "producer": "adult/shared/test.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/per_regulon_external_T3_repair_Diagnosis.csv",
+    "original_artifact": "replication_repair/out/per_regulon_external_T3_repair_Diagnosis.csv",
+    "producer": "adult/shared/test.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/per_regulon_external_T3_repair_Relapse.csv",
+    "original_artifact": "replication_repair/out/per_regulon_external_T3_repair_Relapse.csv",
+    "producer": "adult/shared/test.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/scores_aucell_Diagnosis.csv",
+    "original_artifact": "replication_repair/out/scores_aucell_Diagnosis.csv",
+    "producer": "adult/corrected/scripts/score.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/scores_aucell_Relapse.csv",
+    "original_artifact": "replication_repair/out/scores_aucell_Relapse.csv",
+    "producer": "adult/corrected/scripts/score.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/scores_singscore_Diagnosis.csv",
+    "original_artifact": "replication_repair/out/scores_singscore_Diagnosis.csv",
+    "producer": "adult/corrected/scripts/score.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/scores_singscore_Relapse.csv",
+    "original_artifact": "replication_repair/out/scores_singscore_Relapse.csv",
+    "producer": "adult/corrected/scripts/score.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/scores_meanz_Diagnosis.csv",
+    "original_artifact": "replication_repair/out/scores_meanz_Diagnosis.csv",
+    "producer": "adult/corrected/scripts/score.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/scores_meanz_Relapse.csv",
+    "original_artifact": "replication_repair/out/scores_meanz_Relapse.csv",
+    "producer": "adult/corrected/scripts/score.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/scoring_params.json",
+    "original_artifact": "replication_repair/out/scoring_params.json",
+    "producer": "adult/corrected/scripts/score.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/sample_table.csv",
+    "original_artifact": "replication_repair/out/sample_table.csv",
+    "producer": "adult/corrected/scripts/score.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/target_coverage_T3_repair.csv",
+    "original_artifact": "replication_repair/out/target_coverage_T3_repair.csv",
+    "producer": "adult/shared/coverage.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/coverage_T3_repair.json",
+    "original_artifact": "replication_repair/out/coverage_T3_repair.json",
+    "producer": "adult/shared/coverage.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/nullB_pool_T3_repair_meta.json",
+    "original_artifact": "replication_repair/out/nullB_pool_T3_repair_meta.json",
+    "producer": "adult/shared/nullB_pool.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_fig06_mixture.csv",
+    "original_artifact": "analysis/out/f6_fig06_mixture.csv",
+    "producer": "analysis/module/module_figure_data.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_fig06_support.json",
+    "original_artifact": "analysis/out/f6_fig06_support.json",
+    "producer": "analysis/module/module_figure_data.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_fig06_arm_enrichment.csv",
+    "original_artifact": "analysis/out/f6_fig06_arm_enrichment.csv",
+    "producer": "analysis/module/module_figure_data.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_unit_correction_enrichment.csv",
+    "original_artifact": "analysis/out/f6_unit_correction_enrichment.csv",
+    "producer": "analysis/module/patient_unit_adjustment.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_unit_correction_degree.csv",
+    "original_artifact": "analysis/out/f6_unit_correction_degree.csv",
+    "producer": "analysis/module/patient_unit_adjustment.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_ribosome_gene_list.csv",
+    "original_artifact": "analysis/out/f6_ribosome_gene_list.csv",
+    "producer": "analysis/functional/ribosomal_controls.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_ribosome_enrichment.csv",
+    "original_artifact": "analysis/out/f6_ribosome_enrichment.csv",
+    "producer": "analysis/functional/ribosomal_controls.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_ribosome_check.json",
+    "original_artifact": "analysis/out/f6_ribosome_check.json",
+    "producer": "analysis/functional/ribosomal_controls.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/adult/corrected/out/axis_lambo_T3_repair.json",
+    "original_artifact": "replication_repair/out/axis_lambo_T3_repair.json",
+    "producer": "adult/shared/axis_lambo.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/axis_genes.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/axis_genes.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/module_change_comparison.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/module_change_comparison.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/per_patient_changes.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/per_patient_changes.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/per_regulon_target_audit.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/per_regulon_target_audit.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/sample_scores_A1_lambo_HSC_minus_Monocyte_Diagnosis.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/sample_scores_A1_lambo_HSC_minus_Monocyte_Diagnosis.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/sample_scores_A1_lambo_HSC_minus_Monocyte_Relapse.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/sample_scores_A1_lambo_HSC_minus_Monocyte_Relapse.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/sample_scores_A2_lambo_HSCProg_minus_MonoGMP_Diagnosis.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/sample_scores_A2_lambo_HSCProg_minus_MonoGMP_Diagnosis.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/sample_scores_A2_lambo_HSCProg_minus_MonoGMP_Relapse.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/sample_scores_A2_lambo_HSCProg_minus_MonoGMP_Relapse.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/scores_marker_excluded_A1_lambo_HSC_minus_Monocyte_Diagnosis.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/scores_marker_excluded_A1_lambo_HSC_minus_Monocyte_Diagnosis.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/scores_marker_excluded_A1_lambo_HSC_minus_Monocyte_Relapse.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/scores_marker_excluded_A1_lambo_HSC_minus_Monocyte_Relapse.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/scores_marker_excluded_A2_lambo_HSCProg_minus_MonoGMP_Diagnosis.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/scores_marker_excluded_A2_lambo_HSCProg_minus_MonoGMP_Diagnosis.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/scores_marker_excluded_A2_lambo_HSCProg_minus_MonoGMP_Relapse.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/scores_marker_excluded_A2_lambo_HSCProg_minus_MonoGMP_Relapse.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/summary.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/summary.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/target_retention.csv",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/target_retention.csv",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/results.json",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/results.json",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/protocol.json",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/protocol.json",
+    "producer": "analysis/sensitivity/exclude_maturity_markers.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/marker_exclusion/independent_verification.json",
+    "original_artifact": "analysis/out/module_marker_exclusion_20261111/independent_verification.json",
+    "producer": "analysis/sensitivity/verify_marker_exclusion.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/go_stage_comparison/displayed_terms.csv",
+    "original_artifact": "analysis/out/go_stage_comparison_20260928/displayed_terms.csv",
+    "producer": "analysis/functional/go_stage_comparison.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/go_stage_comparison/enrichment_counts.csv",
+    "original_artifact": "analysis/out/go_stage_comparison_20260928/enrichment_counts.csv",
+    "producer": "analysis/functional/go_stage_comparison.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/go_stage_comparison/gene_membership.csv",
+    "original_artifact": "analysis/out/go_stage_comparison_20260928/gene_membership.csv",
+    "producer": "analysis/functional/go_stage_comparison.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/go_stage_comparison/go_enrichment_all_terms.csv",
+    "original_artifact": "analysis/out/go_stage_comparison_20260928/go_enrichment_all_terms.csv",
+    "producer": "analysis/functional/go_stage_comparison.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/go_stage_comparison/go_exclusive_target_contrast.csv",
+    "original_artifact": "analysis/out/go_stage_comparison_20260928/go_exclusive_target_contrast.csv",
+    "producer": "analysis/functional/go_stage_comparison.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/go_stage_comparison/per_regulon_target_overlap.csv",
+    "original_artifact": "analysis/out/go_stage_comparison_20260928/per_regulon_target_overlap.csv",
+    "producer": "analysis/functional/go_stage_comparison.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/go_stage_comparison/target_coverage.csv",
+    "original_artifact": "analysis/out/go_stage_comparison_20260928/target_coverage.csv",
+    "producer": "analysis/functional/go_stage_comparison.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/go_stage_comparison/findings_summary.json",
+    "original_artifact": "analysis/out/go_stage_comparison_20260928/findings_summary.json",
+    "producer": "analysis/functional/summarize_go_stage_comparison.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_decomposition.json",
+    "original_artifact": "analysis/out/f6_decomposition.json",
+    "producer": "analysis/module/module_decomposition.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_decomposition_module_by_patient.csv",
+    "original_artifact": "analysis/out/f6_decomposition_module_by_patient.csv",
+    "producer": "analysis/module/module_decomposition.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/f6_decomposition_set55_per_regulon.csv",
+    "original_artifact": "analysis/out/f6_decomposition_set55_per_regulon.csv",
+    "producer": "analysis/module/module_decomposition.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/seven_celltypes/sens_clp7_summary.json",
+    "original_artifact": "analysis/out/sens_clp7_20261021/sens_clp7_summary.json",
+    "producer": "analysis/sensitivity/seven_celltype_nomination.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/seven_celltypes/sens_clp7_funnel_by_regulon.csv",
+    "original_artifact": "analysis/out/sens_clp7_20261021/sens_clp7_funnel_by_regulon.csv",
+    "producer": "analysis/sensitivity/seven_celltype_nomination.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/seven_celltypes/sens_clp7_per_regulon_decomposition.csv",
+    "original_artifact": "analysis/out/sens_clp7_20261021/sens_clp7_per_regulon_decomposition.csv",
+    "producer": "analysis/sensitivity/seven_celltype_nomination.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/seven_celltypes/module_definition_SENS_CLP7_5of7.json",
+    "original_artifact": "analysis/out/sens_clp7_20261021/module_definition_SENS_CLP7_5of7.json",
+    "producer": "analysis/sensitivity/seven_celltype_module.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/seven_celltypes/external/gate5_result_SENS_CLP7_5of7.json",
+    "original_artifact": "analysis/out/sens_clp7_20261021/external/gate5_result_SENS_CLP7_5of7.json",
+    "producer": "adult/shared/test.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/seven_celltypes/external/per_patient_deltas_SENS_CLP7_5of7.csv",
+    "original_artifact": "analysis/out/sens_clp7_20261021/external/per_patient_deltas_SENS_CLP7_5of7.csv",
+    "producer": "adult/shared/test.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/seven_celltypes/external/gate5_result_CTRL55_sens_clp7.json",
+    "original_artifact": "analysis/out/sens_clp7_20261021/external/gate5_result_CTRL55_sens_clp7.json",
+    "producer": "adult/shared/test.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/patient_omission/all_candidate_fold_decisions.csv",
+    "original_artifact": "manuscript/review/patient_omission_20260929/all_candidate_fold_decisions.csv",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/manuscript/review/patient_omission/baseline_parity.json",
+    "original_artifact": "manuscript/review/patient_omission_20260929/baseline_parity.json",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/manuscript/review/patient_omission/baseline_rebuilt_nomination.csv",
+    "original_artifact": "manuscript/review/patient_omission_20260929/baseline_rebuilt_nomination.csv",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/manuscript/review/patient_omission/external_sample_pairs.csv",
+    "original_artifact": "manuscript/review/patient_omission_20260929/external_sample_pairs.csv",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/manuscript/review/patient_omission/fixed_module_patient_deltas.csv",
+    "original_artifact": "manuscript/review/patient_omission_20260929/fixed_module_patient_deltas.csv",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/patient_omission/fixed_module_patient_influence.csv",
+    "original_artifact": "manuscript/review/patient_omission_20260929/fixed_module_patient_influence.csv",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/patient_omission/nomination_by_omitted_patient.csv",
+    "original_artifact": "manuscript/review/patient_omission_20260929/nomination_by_omitted_patient.csv",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/patient_omission/regulon_selection_frequency.csv",
+    "original_artifact": "manuscript/review/patient_omission_20260929/regulon_selection_frequency.csv",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/manuscript/review/patient_omission/reselected_module_scores.csv",
+    "original_artifact": "manuscript/review/patient_omission_20260929/reselected_module_scores.csv",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/analysis/out/patient_omission/summary.json",
+    "original_artifact": "manuscript/review/patient_omission_20260929/summary.json",
+    "producer": "analysis/sensitivity/patient_omission.py",
+    "status": "mapped",
+    "note": "Producer identified from its inputs and outputs; the exact executed version is not recorded."
+  },
+  {
+    "artifact": "source data/outputs/manuscript/review/patient_omission/validation.json",
+    "original_artifact": "manuscript/review/patient_omission_20260929/validation.json",
+    "producer": "MANUAL_REVIEW_RECORD",
+    "status": "manual_review_record",
+    "note": "Contemporaneous validation log combining tests and visual review. No single automatic producer found; not an analysis result to reconstruct. Source outputs copied from analysis/out/patient_omission_20260929 into review folder."
+  },
+  {
+    "artifact": "source data/outputs/benchmarks/bmmc/out_matched/b02_arm_report.json",
+    "original_artifact": "cubic_bmmc_ladder/out_matched/b02_arm_report.json",
+    "producer": "benchmarks/bmmc/scripts/arms.py",
+    "status": "mapped",
+    "note": "Existing matched-reuse assignment report. Per-stratum multiplicity checks are extracted into Supplementary Data 3."
+  }
+]

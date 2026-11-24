@@ -1,0 +1,405 @@
+{
+  "stage": "bmmc",
+  "seed": 555,
+  "reference_arm": "truth",
+  "cohort": {
+    "n_cells": 69249,
+    "n_batches": 13,
+    "n_donors": 10,
+    "n_sites": 4,
+    "n_cell_types": 22,
+    "donors_spanning_more_than_one_site": [
+      "donor1",
+      "donor3"
+    ],
+    "n_donors_spanning_more_than_one_site": 2,
+    "donors_spanning_more_than_one_batch": [
+      "donor1",
+      "donor3"
+    ],
+    "every_batch_has_exactly_one_donor": true,
+    "cells_per_donor": {
+      "donor1": 18467,
+      "donor10": 6781,
+      "donor2": 6740,
+      "donor3": 8604,
+      "donor4": 6111,
+      "donor5": 4895,
+      "donor6": 1679,
+      "donor7": 1771,
+      "donor8": 9876,
+      "donor9": 4325
+    },
+    "cells_per_site": {
+      "site1": 17243,
+      "site2": 15226,
+      "site3": 14556,
+      "site4": 22224
+    }
+  },
+  "arms": {
+    "truth": {
+      "bijection": {
+        "n_rows": 69249,
+        "atac_barcodes_unique": true,
+        "assigned_rna_barcodes_unique": true,
+        "image_equals_domain": true,
+        "n_atac_unique": 69249,
+        "n_assigned_rna_unique": 69249,
+        "n_rna_not_in_atac_set": 0,
+        "cells_covered_equals_expected": true,
+        "expected_n_cells": 69249,
+        "is_exact_bijection": true
+      },
+      "rates_from_join": {
+        "self_hit": 1.0,
+        "same_cell_type": 1.0,
+        "same_donor": 1.0,
+        "same_site": 1.0,
+        "same_batch": 1.0
+      },
+      "declared_columns_corroboration": {
+        "is_self": {
+          "declared_rate": 1.0,
+          "join_derived_rate": 1.0,
+          "agrees": true
+        },
+        "cross_donor": {
+          "declared_rate": 1.0,
+          "join_derived_rate": 1.0,
+          "agrees": true
+        },
+        "cross_site": {
+          "declared_rate": 1.0,
+          "join_derived_rate": 1.0,
+          "agrees": true
+        }
+      }
+    },
+    "rand_celltype_1to1": {
+      "bijection": {
+        "n_rows": 69249,
+        "atac_barcodes_unique": true,
+        "assigned_rna_barcodes_unique": true,
+        "image_equals_domain": true,
+        "n_atac_unique": 69249,
+        "n_assigned_rna_unique": 69249,
+        "n_rna_not_in_atac_set": 0,
+        "cells_covered_equals_expected": true,
+        "expected_n_cells": 69249,
+        "is_exact_bijection": true
+      },
+      "rates_from_join": {
+        "self_hit": 0.00033213476006873743,
+        "same_cell_type": 1.0,
+        "same_donor": 0.19738913197302488,
+        "same_site": 0.33030079856748834,
+        "same_batch": 0.14333780993227338
+      },
+      "declared_columns_corroboration": {
+        "is_self": {
+          "declared_rate": 0.00033213476006873743,
+          "join_derived_rate": 0.00033213476006873743,
+          "agrees": true
+        },
+        "cross_donor": {
+          "declared_rate": 0.19738913197302488,
+          "join_derived_rate": 0.19738913197302488,
+          "agrees": true
+        },
+        "cross_site": {
+          "declared_rate": 0.33030079856748834,
+          "join_derived_rate": 0.33030079856748834,
+          "agrees": true
+        }
+      }
+    },
+    "rand_celltype_x_donor_1to1": {
+      "bijection": {
+        "n_rows": 69249,
+        "atac_barcodes_unique": true,
+        "assigned_rna_barcodes_unique": true,
+        "image_equals_domain": true,
+        "n_atac_unique": 69249,
+        "n_assigned_rna_unique": 69249,
+        "n_rna_not_in_atac_set": 0,
+        "cells_covered_equals_expected": true,
+        "expected_n_cells": 69249,
+        "is_exact_bijection": true
+      },
+      "rates_from_join": {
+        "self_hit": 0.0027004000057762566,
+        "same_cell_type": 1.0,
+        "same_donor": 1.0,
+        "same_site": 0.7917948273621279,
+        "same_batch": 0.7917948273621279
+      },
+      "declared_columns_corroboration": {
+        "is_self": {
+          "declared_rate": 0.0027004000057762566,
+          "join_derived_rate": 0.0027004000057762566,
+          "agrees": true
+        },
+        "cross_donor": {
+          "declared_rate": 1.0,
+          "join_derived_rate": 1.0,
+          "agrees": true
+        },
+        "cross_site": {
+          "declared_rate": 0.7917948273621279,
+          "join_derived_rate": 0.7917948273621279,
+          "agrees": true
+        }
+      }
+    },
+    "rand_global": {
+      "bijection": {
+        "n_rows": 69249,
+        "atac_barcodes_unique": true,
+        "assigned_rna_barcodes_unique": true,
+        "image_equals_domain": true,
+        "n_atac_unique": 69249,
+        "n_assigned_rna_unique": 69249,
+        "n_rna_not_in_atac_set": 0,
+        "cells_covered_equals_expected": true,
+        "expected_n_cells": 69249,
+        "is_exact_bijection": true
+      },
+      "rates_from_join": {
+        "self_hit": 2.888128348423804e-05,
+        "same_cell_type": 0.09016736703779116,
+        "same_donor": 0.14244249014426202,
+        "same_site": 0.2558737310286069,
+        "same_batch": 0.0895897413681064
+      },
+      "declared_columns_corroboration": {
+        "is_self": {
+          "declared_rate": 2.888128348423804e-05,
+          "join_derived_rate": 2.888128348423804e-05,
+          "agrees": true
+        },
+        "cross_donor": {
+          "declared_rate": 0.14244249014426202,
+          "join_derived_rate": 0.14244249014426202,
+          "agrees": true
+        },
+        "cross_site": {
+          "declared_rate": 0.2558737310286069,
+          "join_derived_rate": 0.2558737310286069,
+          "agrees": true
+        }
+      }
+    }
+  },
+  "expected_invariants": {
+    "note": "independently verified by the owner on the uploaded tables before this script existed; encoded here as assertions with a tolerance of half a unit in the last quoted decimal place. A FAIL is a finding, not rounding.",
+    "n_checks": 14,
+    "n_failed": 0,
+    "all_pass": true,
+    "checks": [
+      {
+        "arm": "truth",
+        "statistic": "self_hit",
+        "expected": 1.0,
+        "tolerance": 5e-07,
+        "measured": 1.0,
+        "abs_diff": 0.0,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "truth",
+        "statistic": "exact_bijection_over_69249_cells",
+        "expected": true,
+        "tolerance": 0,
+        "measured": true,
+        "abs_diff": null,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_celltype_1to1",
+        "statistic": "same_cell_type",
+        "expected": 1.0,
+        "tolerance": 5e-05,
+        "measured": 1.0,
+        "abs_diff": 0.0,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_celltype_1to1",
+        "statistic": "same_donor",
+        "expected": 0.1974,
+        "tolerance": 5e-05,
+        "measured": 0.19738913197302488,
+        "abs_diff": 1.0868026975113798e-05,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_celltype_1to1",
+        "statistic": "self_hit",
+        "expected": 0.000332,
+        "tolerance": 5e-07,
+        "measured": 0.00033213476006873743,
+        "abs_diff": 1.3476006873743658e-07,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_celltype_1to1",
+        "statistic": "exact_bijection_over_69249_cells",
+        "expected": true,
+        "tolerance": 0,
+        "measured": true,
+        "abs_diff": null,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_celltype_x_donor_1to1",
+        "statistic": "same_cell_type",
+        "expected": 1.0,
+        "tolerance": 5e-05,
+        "measured": 1.0,
+        "abs_diff": 0.0,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_celltype_x_donor_1to1",
+        "statistic": "same_donor",
+        "expected": 1.0,
+        "tolerance": 5e-05,
+        "measured": 1.0,
+        "abs_diff": 0.0,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_celltype_x_donor_1to1",
+        "statistic": "self_hit",
+        "expected": 0.0027,
+        "tolerance": 5e-07,
+        "measured": 0.0027004000057762566,
+        "abs_diff": 4.00005776256436e-07,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_celltype_x_donor_1to1",
+        "statistic": "exact_bijection_over_69249_cells",
+        "expected": true,
+        "tolerance": 0,
+        "measured": true,
+        "abs_diff": null,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_global",
+        "statistic": "same_cell_type",
+        "expected": 0.0902,
+        "tolerance": 5e-05,
+        "measured": 0.09016736703779116,
+        "abs_diff": 3.263296220884504e-05,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_global",
+        "statistic": "same_donor",
+        "expected": 0.1424,
+        "tolerance": 5e-05,
+        "measured": 0.14244249014426202,
+        "abs_diff": 4.249014426202513e-05,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_global",
+        "statistic": "self_hit",
+        "expected": 2.9e-05,
+        "tolerance": 5e-07,
+        "measured": 2.888128348423804e-05,
+        "abs_diff": 1.1871651576195961e-07,
+        "verdict": "PASS"
+      },
+      {
+        "arm": "rand_global",
+        "statistic": "exact_bijection_over_69249_cells",
+        "expected": true,
+        "tolerance": 0,
+        "measured": true,
+        "abs_diff": null,
+        "verdict": "PASS"
+      }
+    ]
+  },
+  "declared_column_disagreements": [],
+  "donor_axis": {
+    "donor_blind_arm": "rand_celltype_1to1",
+    "donor_aware_arm": "rand_celltype_x_donor_1to1",
+    "contrast_is_one_variable": true,
+    "contrast_checks": {
+      "both_exact_bijections": true,
+      "same_cell_set_size": true,
+      "both_same_cell_type_is_1": true,
+      "donor_concordance_differs": true,
+      "aware_arm_is_fully_within_donor": true
+    },
+    "contrast_note": "Both arms are exact bijections within cell type over the same cells; they differ in whether the bijection is confined to the donor. PBMC 10k CANNOT carry this contrast: it is a single donor, so every constructed pairing there is trivially within-donor.",
+    "confound_site_and_batch_co_move": {
+      "why": "site and batch are nested under donor for most BMMC donors, so constraining the bijection to stay within donor also raises SITE and BATCH concordance. The contrast is therefore donor+site-composite, not pure-donor.",
+      "same_site": {
+        "donor_blind": 0.33030079856748834,
+        "donor_aware": 0.7917948273621279,
+        "delta_aware_minus_blind": 0.4614940287946396
+      },
+      "same_batch": {
+        "donor_blind": 0.14333780993227338,
+        "donor_aware": 0.7917948273621279,
+        "delta_aware_minus_blind": 0.6484570174298545
+      }
+    },
+    "assignment_side": {
+      "self_hit": {
+        "donor_blind": 0.00033213476006873743,
+        "donor_aware": 0.0027004000057762566,
+        "delta_aware_minus_blind": 0.002368265245707519
+      },
+      "same_cell_type": {
+        "donor_blind": 1.0,
+        "donor_aware": 1.0,
+        "delta_aware_minus_blind": 0.0
+      },
+      "same_donor": {
+        "donor_blind": 0.19738913197302488,
+        "donor_aware": 1.0,
+        "delta_aware_minus_blind": 0.8026108680269751
+      },
+      "same_site": {
+        "donor_blind": 0.33030079856748834,
+        "donor_aware": 0.7917948273621279,
+        "delta_aware_minus_blind": 0.4614940287946396
+      },
+      "same_batch": {
+        "donor_blind": 0.14333780993227338,
+        "donor_aware": 0.7917948273621279,
+        "delta_aware_minus_blind": 0.6484570174298545
+      }
+    },
+    "grn_side": {
+      "status": "PENDING -- b_04 has not been run (or its report is not at the path given)",
+      "expected_report": "D:\\AML-GRN\\cubic_bmmc_ladder\\out\\trackb_rungs_bmmc.json",
+      "produce_it_with": "python b_04_edge_rungs.py --out-dir ../out --stage bmmc"
+    }
+  },
+  "provenance": {
+    "script": "b_05_pairing_error.py",
+    "metadata": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\b00_cell_metadata.csv",
+    "uploads_dir": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads",
+    "arm_tables": {
+      "truth": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_truth_bmmc_seed555_full.csv",
+      "rand_celltype_1to1": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_celltype_1to1_bmmc_seed555_full.csv",
+      "rand_celltype_x_donor_1to1": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_celltype_donor_1to1_bmmc_seed555_full.csv",
+      "rand_global": "D:\\AML-GRN\\cubic_bmmc_ladder\\uploads\\arm_rand_global_bmmc_seed555_full.csv"
+    },
+    "trackb_report": null,
+    "join_key": "h5ad_barcode (atac_barcode and assigned_rna_barcode both join to it)",
+    "library_versions": {
+      "python": "3.12.7",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2"
+    }
+  }
+}

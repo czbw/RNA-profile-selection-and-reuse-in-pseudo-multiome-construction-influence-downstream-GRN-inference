@@ -1,0 +1,33 @@
+{
+ "status": "corroboration of DA60 (6) computed against the MALIGNANT RNA object, not a reproduction of DA60's own denominator - see the module docstring",
+ "mechanism_source": "Longitudinal_pAML_paper/Data_processing/Annotate_ATAC.R:34-41 - the ATAC cell type is copied from the single best-matching RNA cell (`predictedCell`), which is the object deposited as `Linked_scRNA_barcode` and is this project's pairing source",
+ "join_key": "(Linked_scRNA_Sample, Linked_scRNA_barcode) -> (Library_ID, barcode)",
+ "by_stage": {
+  "Diagnosis": {
+   "n_atac_cells": 123422,
+   "n_rna_cells_in_malignant_object": 135596,
+   "barcode_only_collisions": 2397,
+   "barcode_only_is_ambiguous": true,
+   "n_partner_resolvable_in_malignant_object": 92160,
+   "frac_partner_resolvable": 0.7467064218696828,
+   "n_label_agrees": 92069,
+   "celltype_label_agreement_among_resolvable": 0.9990125868055556,
+   "n_partner_unresolvable": 31262,
+   "frac_partner_unresolvable": 0.2532935781303171,
+   "frac_linked_partner_from_other_timepoint": 0.16052243522224563
+  },
+  "Relapse": {
+   "n_atac_cells": 77614,
+   "n_rna_cells_in_malignant_object": 84553,
+   "barcode_only_collisions": 890,
+   "barcode_only_is_ambiguous": true,
+   "n_partner_resolvable_in_malignant_object": 52090,
+   "frac_partner_resolvable": 0.6711418043136548,
+   "n_label_agrees": 52090,
+   "celltype_label_agreement_among_resolvable": 1.0,
+   "n_partner_unresolvable": 25524,
+   "frac_partner_unresolvable": 0.3288581956863452,
+   "frac_linked_partner_from_other_timepoint": 0.25151390213105884
+  }
+ }
+}
